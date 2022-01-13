@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JS Wizard</title>
+	<link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+	<div class="container">
+		
+		<form class="tab__wrapper">
+			<!-- Добавляем  в самом конце -->
+			<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="Wizard">
+				<input type="hidden" name="admin_email" value="evgeniy.nagola@gmail.com">
+				<input type="hidden" name="form_subject" value="Wizard">
+			<!-- END Hidden Required Fields -->
+
+			<ul class="tab__nav">
+				<li class="active"><span>Page 1</span></li>
+				<li><span>Page 2</span></li>
+				<li><span>Page 3</span></li>
+				<li><span>Done</span></li>
+			</ul>
+
+			<div class="tab__content">
+				<div class="tab__panel active">
+					<h2>Content 1</h2>
+					<input type="text" placeholder="Ваше имя" name="name">
+					<label>
+						<span class="error">error</span>
+						<input type="text" placeholder="Ваш email" name="email">
+					</label>
+					<input type="phone" placeholder="Ваш Телефон" name="phone">
+					<div class="tab__controls">
+						<button class="next-btn">Next</button>
+						<button class="prev-btn">Prev</button>
+					</div>
+				</div>
+				<div class="tab__panel">
+					<h2>Content 2</h2>
+					<label>
+						<span class="error">error</span>
+						<span class="error-num">Число более 1000, уменьшено до 1000</span>
+						<input type="number" placeholder="Цифра" name="quant">
+					</label>
+					<div class="tab__controls">
+						<button class="next-btn">Next</button>
+						<button class="prev-btn">Prev</button>
+					</div>
+				</div>
+				<div class="tab__panel">
+					<h2>Content 3</h2>
+					<p class="price">$<span></span></p>
+					<input type="hidden" class="price__hidden" name="price">
+					<div class="tab__controls">
+						<button class="send-btn">Send</button>
+						<button class="prev-btn">Prev</button>
+					</div>
+				</div>
+				<div class="tab__panel">
+					<h2>Done</h2>
+					<p class="form-success"></p>
+					<p class="form-error"></p>
+					<input type="hidden" class="price__hidden" name="price">
+					<div class="tab__controls">
+						<button class="restart-btn">Start again</button>
+					</div>
+				</div>
+			</div>
+
+			<!-- <div class="tab__controls">
+				<button class="next-btn">Next</button>
+				<button class="prev-btn">Prev</button>
+			</div> -->
+
+		</form>
+
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="common.js"></script>
+</body>
+</html>

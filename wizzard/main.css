@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	border-radius: 10px;
+	background-color: #ccc;
+	min-height: 200px;
+	padding: 30px 40px;
+}
+.tab__panel {
+	background-color: #fff;
+	padding: 15px;
+	border-radius: 10px;
+	display: none;
+}
+.tab__panel.active {
+	display: block;
+}
+.tab__nav {
+	display: flex;
+	list-style-type: none;
+	margin-bottom: 20px;
+}
+.tab__nav li {
+	padding: 15px;
+	margin: 0 10px;
+	color: #fff;
+	border-radius: 10px;
+	background-color: #cfcfcf;
+}
+
+.tab__nav li.active {
+	background-color: mediumseagreen;
+}
+
+.tab__controls {
+	display: flex;
+	margin-top: 30px;
+}
+
+label {
+	display: block;
+	width: 100%;
+}
+input {
+	display: block;
+	width: 100%;
+	margin: 20px 0;
+	padding: 15px;
+	border-radius: 10px;
+}
+.error, .error-num {
+	display: none;
+	padding: 15px;
+	color: #fff;
+	background-color: red;
+}
+.error.active {
+	display: block;
+}
+button {
+	width: 200px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 10px 15px;
+}
+
+button.unable {
+	pointer-events: none;
+	opacity: .3;
+}
+.price {
+	font-size: 50px;
+	font-weight: 700;
+}
