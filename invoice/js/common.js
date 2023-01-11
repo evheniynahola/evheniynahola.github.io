@@ -26,5 +26,13 @@ document.addEventListener('DOMContentLoaded', function(){
 	$('.modal_close').click(function(){
 		$('.modal').fadeOut()
 	})
+
+	$('.tableInvoiceList_checkbox_head input').change(function(){
+		if (this.checked) {
+			$('.tableInvoiceList_checkbox input').prop('checked', true)
+		} else {
+			$('.tableInvoiceList_checkbox input').prop('checked', false)
+		}
+	})
 	
 })
