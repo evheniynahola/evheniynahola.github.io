@@ -129,7 +129,6 @@
 												מסמכים
 											</span>
 											<ul class="dropDownWrapper_list">
-												<li><a href="./document.html">מסמכים</a></li>
 												<li><a href="./document.html">חשבונית מס</a></li>
 												<li><a href="./document.html">קבלה</a></li>
 												<li><a href="./document.html">חשבונית מס / קבלה</a></li>
@@ -195,7 +194,7 @@
 														</div>
 														<div class="orderData_panel_wrapper">
 															<span class="orderData_panel_userName">שם הלקוח</span>
-															<span class="orderData_panel_userContacts">פרטי הקשר</span>
+															<span class="orderData_panel_userContacts"><input type="text" value="" placeholder="פרטי הקשר"></span>
 														</div>
 													</div>
 
@@ -206,7 +205,7 @@
 																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_orderSubject"/></svg>
 																</div>
 																<div class="orderData_panel_wrapper">
-																	<span class="orderData_panel_date"><input type="text" value="אסמכתא"></span>
+																	<span class="orderData_panel_date"><input type="text" value="" placeholder="אסמכתא"></span>
 																</div>
 															</div>
 														</div>
@@ -216,11 +215,11 @@
 																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_orderCart"/></svg>
 																</div>
 																<div class="orderData_panel_wrapper">
-																	<span class="orderData_panel_date"><input type="text" value="הזמנה"></span>
+																	<span class="orderData_panel_date"><input type="text" value="" placeholder="הזמנה"></span>
 																</div>
 															</div>
 														</div>
-														<div class="col-3">
+														<div class="col-5">
 															<div class="orderData_panel">
 																<div class="orderData_panel_icon">
 																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_orderDate"/></svg>
@@ -278,7 +277,7 @@
 																</div>
 																<div class="orderData_totalPanel_group">
 																	<div class="orderData_totalPanel_group_name">% הנחה</div>
-																	<div class="orderData_totalPanel_group_prop orderData_totalPanel_group_number"><input type="text" value="0"></div>
+																	<div class="orderData_totalPanel_group_prop orderData_totalPanel_group_number"><input type="text" placeholder="0"></div>
 																</div>
 																<div class="orderData_totalPanel_group">
 																	<div class="orderData_totalPanel_group_name">הנחה</div>
@@ -403,7 +402,7 @@
 													<ul>
 														<li>03.12.2022 15:36:04</li>
 														<li>מסמך ממוחשב</li>
-														<li>עמוד 1 מתוך 2</li>
+														<li>עמוד 2 מתוך 2</li>
 													</ul>
 												</div>
 
@@ -436,7 +435,7 @@
 												<div class="documentSidebar_list documentSidebar_selectList">
 													<h3 class="documentSidebar_checklistTitle">הגדרות</h3>
 													<form>
-														<label class="documentData_currency">
+														<label class="documentData_currency d-flex align-items-center justify-content-between">
 															<span>מטבע</span>
 															<select class="documentData_select">
 																<option value='ש"ח'>ש"ח</option>
@@ -444,14 +443,14 @@
 															</select>
 														</label>
 
-														<label class="documentData_currency">
+														<label class="documentData_currency d-flex align-items-center justify-content-between">
 															<span>מע"מ</span>
 															<select class="documentData_select">
 																<option value='כולל מע"מ'>כולל מע"מ</option>
 															</select>
 														</label>
 
-														<label class="documentData_currency">
+														<label class="documentData_currency d-flex align-items-center justify-content-between">
 															<span>שפת המסמך</span>
 															<select class="documentData_select">
 																<option value='עברית'>עברית</option>
@@ -604,6 +603,22 @@
 </symbol>
 <symbol id="ico_sortBottom" viewBox="0 0 8 5">
 	<path d="M7.32714 0.352539H0.672857C0.0745304 0.352539 -0.224633 1.07311 0.197551 1.49321L3.52749 4.80395C3.78751 5.06547 4.21249 5.06547 4.47531 4.80395L7.80245 1.49321C8.22463 1.07311 7.92547 0.352539 7.32714 0.352539Z"/>
+</symbol>
+<symbol id="ico_pdf2" viewBox="0 0 24 24">
+	<path d="M20.905 16.631L21.0171 16.824C21.1721 17.1522 21.2474 17.5052 21.2474 17.8599C21.2474 18.0134 21.2314 18.1677 21.1989 18.3234C21.1381 18.5914 21.0453 18.8486 20.9081 19.0836C20.7861 19.2836 20.6506 19.4596 20.5039 19.6064L20.4955 19.6148L20.4875 19.6236C20.4196 19.6982 20.3399 19.7654 20.2315 19.8469C19.8139 20.1464 19.3068 20.3199 18.7674 20.3199C17.8755 20.3199 17.0807 19.8647 16.6303 19.0896C16.6301 19.0893 16.63 19.0891 16.6298 19.0889L15.3205 16.82L15.1762 16.5699H14.8874H9.10744H8.8187L8.67438 16.82L7.36505 19.0889C7.36495 19.089 7.36486 19.0892 7.36477 19.0893C6.91438 19.8646 6.11943 20.3199 5.22744 20.3199C4.33527 20.3199 3.54017 19.8644 3.08984 19.0889L3.08865 19.0868C2.64086 18.3239 2.63949 17.4066 3.08984 16.631C3.54018 15.8554 4.33527 15.3999 5.22744 15.3999H7.84744H8.13625L8.28055 15.1498L11.1706 10.1398L11.3147 9.88988L11.1705 9.64002L9.8605 7.37002L9.86051 7.37001L9.85865 7.36683C9.41086 6.60394 9.40949 5.6866 9.85984 4.911C10.3102 4.13542 11.1053 3.67993 11.9974 3.67993C12.8896 3.67993 13.6847 4.13542 14.135 4.911L14.1362 4.91303C14.584 5.67593 14.5854 6.59326 14.135 7.36886L14.1344 7.37002L12.8244 9.64002L12.6802 9.88988L12.8243 10.1398L15.7143 15.1498L15.8586 15.3999H16.1474H18.7674C19.6596 15.3999 20.4547 15.8554 20.905 16.631ZM7.03066 17.3296L7.46266 16.5799H6.59744H5.23744C4.56591 16.5799 4.23294 17.0339 4.12555 17.218C4.01316 17.4107 3.79611 17.9354 4.12332 18.508C4.45543 19.0892 5.02621 19.1499 5.23744 19.1499C5.44857 19.1499 6.01891 19.0893 6.35109 18.5088C6.35125 18.5085 6.35141 18.5083 6.35156 18.508L7.03066 17.3296ZM13.1207 6.78958L13.1207 6.78961L13.1245 6.78275C13.4463 6.20351 13.233 5.6929 13.1193 5.498C13.0119 5.31391 12.679 4.85993 12.0074 4.85993C11.3359 4.85993 11.0029 5.31391 10.8956 5.498C10.7832 5.69067 10.5661 6.21539 10.8933 6.788L10.8942 6.78958L11.5742 7.96958L12.0074 8.72134L12.4407 7.96958L13.1207 6.78958ZM9.94417 14.6504L9.51245 15.3999H10.3774H12.0074H13.6374H14.5024L14.0707 14.6504L12.4407 11.8204L12.0074 11.0681L11.5742 11.8204L9.94417 14.6504ZM19.8916 18.508L19.8916 18.508L19.8945 18.5028C20.2163 17.9235 20.003 17.4129 19.8893 17.218C19.782 17.0339 19.449 16.5799 18.7774 16.5799H17.4174H16.5522L16.9842 17.3296L17.6633 18.508C17.6635 18.5083 17.6637 18.5086 17.6639 18.5089C17.9961 19.0893 18.5663 19.1499 18.7774 19.1499C18.9887 19.1499 19.5595 19.0892 19.8916 18.508Z" fill="" stroke=""/>
+</symbol>
+
+<symbol id="ico_exel2" viewBox="0 0 24 24">
+	<path d="M12.6101 20.54L3.08008 18.54V5.45996L12.6101 3.45996V20.54Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M12.6104 6.03003H20.9204V17.97H13.4704" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M5.87988 9.78003L9.61988 14.06" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M9.72988 9.29004L5.87988 14.24" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M12.6104 9.13989H14.7604" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M17.3804 9.13989H18.2404" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M12.6104 12H14.7604" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M17.3804 12H18.2404" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M12.6104 14.8599H14.7604" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M17.3804 14.8599H18.2404" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 </svg>
 	

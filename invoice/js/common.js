@@ -10,8 +10,14 @@ document.addEventListener('DOMContentLoaded', function(){
 		})
 	})
 
-	$('.documentAdd_button_getMenu').click(function(){
-		$('.documentAdd_list').slideToggle()
+	$('.documentAdd_button_getMenu').each(function(){
+		let ths = $(this);
+		
+		ths.click(function(){
+			$('.documentAdd_list').not(ths.siblings('.documentAdd_list')).slideUp()
+			ths.siblings('.documentAdd_list').toggleClass('active').slideToggle()
+		})
+		
 	})
 
 	$('.dropDownWrapper').click(function(){
@@ -19,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		$(this).find('.dropDownWrapper_list').slideToggle()
 	})
 
-	$('.documentAdd_button_main').click(function(){
+	$('.documentAdd_cardCharge').click(function(){
 		$('.modal').fadeIn().css('display', 'flex')
 	})
 
