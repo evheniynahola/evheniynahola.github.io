@@ -106,15 +106,15 @@
 									<div class="userMain_avatar">
 										<img src="./img/users/photo1.png" alt="user avatar">
 									</div>
-									<div class="userMain_control d-flex">
+									<div class="userMain_control d-flex align-items-center">
 										<div class="userMain_name">שם עסק</div>
-										<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_chevronDrop"/></svg>
+										<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_exit"/></svg>
 									</div>
 								</div>
 							</div>
 						</div>
 						<div class="row">
-							<div class="col-2">
+							<div class="col-2 sidebarMin">
 								<div class="mainContent_sidebar">
 									<ul class="mainContent_sidebarMenu">
 										<li>
@@ -160,8 +160,38 @@
 										</li>
 									</ul>
 								</div>
+
+								<div class="mainContent_sidebar mainContent_sidebar_min hidden">
+									<ul class="mainContent_sidebarMenu mainContent_sidebarMenu_min">
+										<li>
+											<span>
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_chart"/></svg>
+											</span>
+										</li>
+										<li class="dropDownWrapper">
+											<span>
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_fileDocument"/></svg>
+											</span>
+										</li>
+										<li class="dropDownWrapper">
+											<span>
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_suitcase"/></svg>
+											</span>
+										</li>
+										<li class="dropDownWrapper">
+											<span>
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_usersGroup"/></svg>
+											</span>
+										</li>
+										<li>
+											<span>
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_chartPie"/></svg>
+											</span>
+										</li>
+									</ul>
+								</div>
 							</div>
-							<div class="col-10">
+							<div class="col">
 								<div class="mainContent_wrapper">
 									<div class="row">
 										<div class="mainContent-mid-w col-8 mainContent_scrollWrapper">
@@ -194,7 +224,7 @@
 														</div>
 														<div class="orderData_panel_wrapper">
 															<span class="orderData_panel_userName">שם הלקוח</span>
-															<span class="orderData_panel_userContacts"><input type="text" value="" placeholder="פרטי הקשר"></span>
+															<span class="orderData_panel_userContacts"><span class="orderData_panel_dataDescr">פרטי הקשר:</span><input type="text" value="" placeholder="פרטי הקשר"></span>
 														</div>
 													</div>
 
@@ -205,7 +235,7 @@
 																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_orderSubject"/></svg>
 																</div>
 																<div class="orderData_panel_wrapper">
-																	<span class="orderData_panel_date"><input type="text" value="" placeholder="אסמכתא"></span>
+																	<span class="orderData_panel_date"><span class="orderData_panel_dataDescr">אסמכתא:</span><input type="text" value="" placeholder="אסמכתא"></span>
 																</div>
 															</div>
 														</div>
@@ -215,7 +245,7 @@
 																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_orderCart"/></svg>
 																</div>
 																<div class="orderData_panel_wrapper">
-																	<span class="orderData_panel_date"><input type="text" value="" placeholder="הזמנה"></span>
+																	<span class="orderData_panel_date"><span class="orderData_panel_dataDescr">הזמנה:</span><input type="text" value="" placeholder="הזמנה"></span>
 																</div>
 															</div>
 														</div>
@@ -225,7 +255,7 @@
 																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_orderDate"/></svg>
 																</div>
 																<div class="orderData_panel_wrapper">
-																	<label><span class="orderData_panel_date">בחרו תאריך פרעון</span> <input class="orderData_panel_dateInput" type="date"></label>
+																	<label><span class="orderData_panel_date">בחרו תאריך פרעון:</span> <input class="orderData_panel_dateInput" type="date"></label>
 																</div>
 															</div>
 														</div>
@@ -244,15 +274,16 @@
 																	<td class="cell_medium">סה"כ לשורה</td>
 																</tr>
 															</thead>
-															<tbody>
-																<tr>
-																	<td class="cell_medium"><label><input name="itemNumber" type="text" placeholder="מספר פריט"></label></td>
-																	<td class="cell_large"><label class="orderData_error"><input name="description" type="text" placeholder="תיאור"></label></td>
-																	<td class="cell_small"><label><input name="sku" type="text" placeholder="%"></label></td>
-																	<td class="cell_small"><label><input name="quantity" type="text" placeholder="כמות"></label></td>
-																	<td class="cell_small"><label><input name="storage" type="text" placeholder="מחסן"></label></td>
-																	<td class="cell_medium"><label><input name="price" type="text" placeholder="מחיר"></label></td>
-																	<td class="cell_medium"><label><input name="total" type="text" placeholder='סה"כ לשורה'></label></td>
+															<tbody class="orderData_table_container">
+																<tr class="orderData_table_rowTpl">
+																	<!-- Add class="orderData_error" to label for Data Error -->
+																	<td class="cell_medium"><label><input name="itemNumber" data-type="dataOrder" type="text" placeholder="מספר פריט"></label></td>
+																	<td class="cell_large"><label><input data-type="dataPayment" name="description" type="text" placeholder="תיאור"></label></td>
+																	<td class="cell_small"><label><input data-type="dataPayment" name="sku" type="text" placeholder="%"></label></td>
+																	<td class="cell_small"><label><input data-type="dataPayment" name="quantity" type="text" placeholder="כמות"></label></td>
+																	<td class="cell_small"><label><input data-type="dataPayment"  name="storage" type="text" placeholder="מחסן"></label></td>
+																	<td class="cell_medium"><label><input data-type="dataPayment" name="price" type="text" placeholder="מחיר"></label></td>
+																	<td class="cell_medium"><label><span class="orderData_tablePayment_tpl_remove"></span><input data-type="dataOrder" name="total" type="text" placeholder='סה"כ לשורה'></label></td>
 																</tr>
 															</tbody>
 														</table>
@@ -273,7 +304,7 @@
 															<div class="orderData_totalPanel_body">
 																<div class="orderData_totalPanel_group">
 																	<div class="orderData_totalPanel_group_name">סה"כ לפני מע"מ</div>
-																	<div class="orderData_totalPanel_group_prop">0.00 ₪</div>
+																	<div class="orderData_totalPanel_group_prop">0.00 <span class="paymentTotal_currency">₪</span></div>
 																</div>
 																<div class="orderData_totalPanel_group">
 																	<div class="orderData_totalPanel_group_name">% הנחה</div>
@@ -281,11 +312,11 @@
 																</div>
 																<div class="orderData_totalPanel_group">
 																	<div class="orderData_totalPanel_group_name">הנחה</div>
-																	<div class="orderData_totalPanel_group_prop">0.00 ₪</div>
+																	<div class="orderData_totalPanel_group_prop">0.00 <span class="paymentTotal_currency">₪</span></div>
 																</div>
 																<div class="orderData_totalPanel_group">
 																	<div class="orderData_totalPanel_group_name">מע"מ</div>
-																	<div class="orderData_totalPanel_group_prop">0.00 ₪</div>
+																	<div class="orderData_totalPanel_group_prop">0.00 <span class="paymentTotal_currency">₪</span></div>
 																</div>
 																<div class="orderData_totalPanel_group_final">
 																	<div class="orderData_totalPanel_group_name">סה"כ כולל מע"מ</div>
@@ -338,7 +369,7 @@
 													</div>
 													<div class="documentBlock_paymentItem_tabsBody">
 														<div class="documentBlock_paymentItem_tabsBody_item" data-tab="1">
-															<form class="orderData_table_wrapper orderData_form">
+															<div class="orderData_table_wrapper orderData_form">
 																<table class="orderData_table orderData_tablePayment">
 																	<thead>
 																		<tr>
@@ -350,24 +381,24 @@
 																			<td class="cell_payment"></td>
 																		</tr>
 																	</thead>
-																	<tbody>
-																		<tr>
-																			<td class="cell_payment"><label><input name="price" type="text" placeholder="תאריך"></label></td>
-																			<td class="cell_payment"><label><input name="storage" type="text" placeholder="בנק"></label></td>
-																			<td class="cell_payment"><label><input name="quantity" type="text" placeholder="סניף"></label></td>
-																			<td class="cell_payment"><label><input name="sku" type="text" placeholder="מספר חשבון"></label></td>
-																			<td class="cell_payment"><label><input name="description" type="text" placeholder="סכום"></label></td>
+																	<tbody class="orderData_tablePayment_container">
+																		<tr class="orderData_tablePayment_tpl">
+																			<td class="cell_payment"><label><input data-type="dataPayment" name="price" type="text" placeholder="תאריך"></label></td>
+																			<td class="cell_payment"><label><input data-type="dataPayment" name="storage" type="text" placeholder="בנק"></label></td>
+																			<td class="cell_payment"><label><input data-type="dataPayment" name="quantity" type="text" placeholder="סניף"></label></td>
+																			<td class="cell_payment"><label><input data-type="dataPayment" name="sku" type="text" placeholder="מספר חשבון"></label></td>
+																			<td class="cell_payment"><label><input data-type="dataPayment" name="description" type="text" placeholder="סכום"></label></td>
 																			<td class="cell_payment">
-																				<button class="documentButton documentButton_cellButton">הוסף תשלום</button>
+																				<button class="documentButton documentButton_cellButton documentButton_addData">הוסף תשלום</button>
 																			</td>												
 																		</tr>
 																	</tbody>
 																</table>
-																<button class="documentButton documentButton_addPayment">
+																<button class="documentButton documentButton_addPayment documentButton_addData">
 																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_plus"/></svg>
 																	הוסף תשלום
 																</button>
-															</form>
+															</div>
 
 															<button class="documentAdd_button documentAdd_cardCharge">
 																<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_creditCard"/></svg>
@@ -376,7 +407,7 @@
 
 															<div class="paymentTotal">
 																<div class="paymentTotal_name">סה"כ שולם</div>
-																<div class="paymentTotal_prop">0.00 ₪</div>
+																<div class="paymentTotal_prop">0.00 <span class="paymentTotal_currency">₪</span></div>
 															</div>
 
 															<div class="documentBlock_paymentItem_title">הערות</div>
@@ -385,7 +416,7 @@
 																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_remark"></use></svg>
 																</div>
 																<div class="orderData_panel_wrapper">
-																	<span class="orderData_panel_userName orderData_panel_userNote"><input type="text" value="עד 700 תווים"></span>
+																	<span class="orderData_panel_userName orderData_panel_userNote"><input type="text" value="" placeholder="עד 700 תווים"></span>
 																</div>
 															</div>
 
@@ -426,10 +457,10 @@
 													<h3 class="documentSidebar_checklistTitle">צ'ק ליסט</h3>
 													<ul class="documentSidebar_checklistProp">
 														<!-- documentData_active -->
-														<li class="">בחרו תאריך</li>
-														<li>שם הלקוח</li>
-														<li>בחרו תאריך פירעון</li>
-														<li>פריטים</li>
+														<li data-type="documentDate">בחרו תאריך</li>
+														<li data-type="documentCustomerName">שם הלקוח</li>
+														<li data-type="documentPaymentDate">בחרו תאריך פירעון</li>
+														<li data-type="documentItems">פריטים</li>
 													</ul>
 												</div>
 												<div class="documentSidebar_list documentSidebar_selectList">
@@ -437,9 +468,12 @@
 													<form>
 														<label class="documentData_currency d-flex align-items-center justify-content-between">
 															<span>מטבע</span>
-															<select class="documentData_select">
-																<option value='ש"ח'>ש"ח</option>
-																<option value='דולרים'>דולרים</option>
+															<select data-type="documentCurrency" class="documentData_select">
+																<option value="">ש"ח</option>
+																<option value='EUR'>EUR</option>
+																<option value='USD'>USD</option>
+																<option value='CHF'>CHF</option>
+																<option value='GBE'>GBE</option>
 															</select>
 														</label>
 
@@ -452,8 +486,10 @@
 
 														<label class="documentData_currency d-flex align-items-center justify-content-between">
 															<span>שפת המסמך</span>
-															<select class="documentData_select">
-																<option value='עברית'>עברית</option>
+															<select data-type="documentLanguage" class="documentData_select">
+																<option value=''>עברית</option>
+																<option value='GBE'>English</option>
+																<option value='GBE'>Hebrew</option>
 															</select>
 														</label>
 														<button class="documentAdd_button">לִשְׁלוֹחַ</button>
@@ -492,6 +528,33 @@
 		</div>
 	</div>
 </div>
+
+<table id="tableTemplates" style="display:none">
+	<thead></thead>
+	<tbody>
+		<tr class="orderData_tablePayment_tpl">
+			<td class="cell_payment"><label><input data-type="dataPayment" name="price" type="text" placeholder="תאריך"></label></td>
+			<td class="cell_payment"><label><input data-type="dataPayment" name="storage" type="text" placeholder="בנק"></label></td>
+			<td class="cell_payment"><label><input data-type="dataPayment" name="quantity" type="text" placeholder="סניף"></label></td>
+			<td class="cell_payment"><label><input data-type="dataPayment" name="sku" type="text" placeholder="מספר חשבון"></label></td>
+			<td class="cell_payment"><label><input data-type="dataPayment" name="description" type="text" placeholder="סכום"></label></td>
+			<td class="cell_payment">
+				<button class="documentButton documentButton_cellButton documentButton_addData">הוסף תשלום</button>
+			</td>												
+		</tr>
+	
+		<tr class="orderData_table_rowTpl">
+			<!-- Add class="orderData_error" to label for Data Error -->
+			<td class="cell_medium"><label><input data-type="dataPayment" name="itemNumber" type="text" placeholder="מספר פריט"></label></td>
+			<td class="cell_large"><label><input data-type="dataPayment" name="description" type="text" placeholder="תיאור"></label></td>
+			<td class="cell_small"><label><input data-type="dataPayment" name="sku" type="text" placeholder="%"></label></td>
+			<td class="cell_small"><label><input data-type="dataPayment" name="quantity" type="text" placeholder="כמות"></label></td>
+			<td class="cell_small"><label><input data-type="dataPayment" name="storage" type="text" placeholder="מחסן"></label></td>
+			<td class="cell_medium"><label><input data-type="dataPayment" name="price" type="text" placeholder="מחיר"></label></td>
+			<td class="cell_medium"><label><span class="orderData_tablePayment_tpl_remove"></span><input data-type="dataPayment" name="total" type="text" placeholder='סה"כ לשורה'></label></td>
+		</tr>
+	</tbody>
+</table>
 
 <svg fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
 
@@ -620,6 +683,11 @@
 	<path d="M12.6104 14.8599H14.7604" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 	<path d="M17.3804 14.8599H18.2404" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
+
+<symbol id="ico_exit" viewBox="0 0 24 24">
+	<path d="M12 15L9 12M9 12L12 9M9 12L20 12M20 17C20 17.9319 20 18.3978 19.8478 18.7654C19.6448 19.2554 19.2552 19.6448 18.7651 19.8478C18.3976 20 17.9319 20 17 20H7.2C6.07989 20 5.52004 20 5.09221 19.782C4.71589 19.5902 4.40952 19.2844 4.21777 18.908C3.99979 18.4802 4 17.9201 4 16.8V7.19995C4 6.07985 3.99979 5.51986 4.21777 5.09204C4.40952 4.71572 4.71589 4.40973 5.09221 4.21799C5.52004 4 6.07989 4 7.2 4H17C17.9319 4 18.3976 4 18.7651 4.15224C19.2552 4.35523 19.6448 4.74456 19.8478 5.23462C20 5.60216 20 6.0681 20 6.99999" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
 </svg>
 	
 
