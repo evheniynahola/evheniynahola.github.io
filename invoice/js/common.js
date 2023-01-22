@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	const choices = document.querySelectorAll('.documentData_select');
 
 	let checker = false;
+	let checkerImport = false;
 
 	choices.forEach(el => {
 		const choice = new Choices(el, {
@@ -15,27 +16,39 @@ document.addEventListener('DOMContentLoaded', function(){
 	$('.documentAdd_button_getMenu').each(function(){
 		let ths = $(this);
 		
-		ths.click(function(){
+		ths.on('click', function(){
 			$('.documentAdd_list').not(ths.siblings('.documentAdd_list')).slideUp();
 			ths.siblings('.documentAdd_list').toggleClass('active').slideToggle();
 		})
 		
 	})
 
-	$('.dropDownWrapper').click(function(){
+	$('.dropDownWrapper').on('click', function(){
 		$(this).toggleClass('active');
 		$(this).find('.dropDownWrapper_list').slideToggle();
 	})
 
-	$('.documentAdd_cardCharge').click(function(){
-		$('.modal').fadeIn().css('display', 'flex');
+	$('.documentAdd_cardCharge').on('click', function(){
+		$('.modal_info').fadeIn().css('display', 'flex');
 	})
 
-	$('.modal_close').click(function(){
+	$('.documentButton_copy').on('click', function(){
+		$('.documentsCopyList').fadeIn().css('display', 'flex');
+	})
+
+	$('.documentButton_import').on('click', function(){
+		$('.documentsImportList').fadeIn().css('display', 'flex');
+	})
+
+	$('.modal_close').on('click',function(){
 		$('.modal').fadeOut();
 	})
 
-	$('.tableInvoiceList_checkbox_head input').change(function(){
+	$('.tableImportList .tableDocumentImports_checkbox input').on('change', function(){
+		$(this).closest('tr').toggleClass('tableDocumentImports_activeItem')
+	})
+
+	$('.tableInvoiceList_checkbox_head input').on('change', function(){
 		if (this.checked) {
 			$('.tableInvoiceList_checkbox input').prop('checked', true);
 		} else {
@@ -43,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		}
 	})
 
-	$('.tableInvoiceList_checkbox input').change(function(){
+	$('.tableInvoiceList_checkbox input').on('change', function(){
 		$('.tableInvoiceList_checkbox input').each(function(){
 			if (this.checked) {
 				checker = true;
@@ -57,6 +70,26 @@ document.addEventListener('DOMContentLoaded', function(){
 			$('.mainContent_interfaceList li').removeClass('active');
 		} else {
 			$('.mainContent_interfaceList li').addClass('active');
+		}
+
+	})
+
+	$('.tableImportList .tableDocumentImports_checkbox input').on('change', function(){
+		$('.tableImportList .tableDocumentImports_checkbox input').each(function(){
+			if (this.checked) {
+				checkerImport = true;
+				return false;
+			} else {
+				checkerImport = false;
+			}
+		})
+
+		if (checkerImport == false) {
+			$('.documentsImport_description').removeClass('active');
+			$('.documentsImport_buttonWrapper').removeClass('active');
+		} else {
+			$('.documentsImport_description').addClass('active');
+			$('.documentsImport_buttonWrapper').addClass('active');
 		}
 
 	})
@@ -109,6 +142,10 @@ document.addEventListener('DOMContentLoaded', function(){
 	$('.mainSidebar_menuButton').on('click', function(){
 		$('.sidebarMin').toggleClass('sidebarMin-col')
 		$('.mainContent_sidebar').toggleClass('hidden');
+	})
+
+	$('.userNotifications_group').on('click', function(){
+		$('.userNotifications_listWrapper').fadeToggle();
 	})
 	
 })
