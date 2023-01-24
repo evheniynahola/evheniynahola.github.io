@@ -20,8 +20,17 @@ document.addEventListener('DOMContentLoaded', function(){
 			$('.documentAdd_list').not(ths.siblings('.documentAdd_list')).slideUp();
 			ths.siblings('.documentAdd_list').toggleClass('active').slideToggle();
 		})
-		
 	})
+
+	$(document).on('mouseup', function (e){ // событие клика по веб-документу
+		var getMenu = $(".documentAdd_button_getMenu"); // тут указываем ID элемента
+		if (!getMenu.is(e.target) // если клик был не по нашему блоку
+		    && getMenu.has(e.target).length === 0) { // и не по его дочерним элементам
+				getMenu.siblings('.documentAdd_list').removeClass('active').slideUp()
+		}
+     });
+
+	
 
 	$('.dropDownWrapper').on('click', function(){
 		$(this).toggleClass('active');
@@ -43,6 +52,14 @@ document.addEventListener('DOMContentLoaded', function(){
 	$('.modal_close').on('click',function(){
 		$('.modal').fadeOut();
 	})
+
+	$(document).on('mouseup', function (e){ // событие клика по веб-документу
+		var modal = $(".modal_body"); // тут указываем ID элемента
+		if (!modal.is(e.target) // если клик был не по нашему блоку
+		    && modal.has(e.target).length === 0) { // и не по его дочерним элементам
+				$('.modal').fadeOut();
+		}
+     });
 
 	$('.tableImportList .tableDocumentImports_checkbox input').on('change', function(){
 		$(this).closest('tr').toggleClass('tableDocumentImports_activeItem')
@@ -146,6 +163,16 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	$('.userNotifications_group').on('click', function(){
 		$('.userNotifications_listWrapper').fadeToggle();
+		$(this).toggleClass('is-open')
 	})
+
+	$(document).on('mouseup', function (e){ // событие клика по веб-документу
+		var notify = $(".userNotifications_group"); // тут указываем ID элемента
+		if (!notify.is(e.target) // если клик был не по нашему блоку
+		    && notify.has(e.target).length === 0) { // и не по его дочерним элементам
+				$('.userNotifications_listWrapper').fadeOut();
+				notify.removeClass('is-open')
+		}
+     });
 	
 })
