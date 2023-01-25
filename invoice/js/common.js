@@ -192,13 +192,26 @@ document.addEventListener('DOMContentLoaded', function(){
 		if (!notify.is(e.target)
 		    && notify.has(e.target).length === 0) {
 				$('.userNotifications_listWrapper').fadeOut();
-				notify.removeClass('is-open')
+				notify.removeClass('is-open');
 		}
      });
 
 	 $('.documentBlock_orderInfo_documentDate').on('focus', function(){
-		console.log('test')
-		$(this).val('')
+		$(this).val('');
 	 })
+
+	 $('.tableInvoiceList_seeMore').on('click', function(){
+		$(this).toggleClass('seeMore_active');
+		$(this).find('.toolTip').fadeToggle();
+	 })
+
+	 $(document).on('mouseup', function (e){
+		var seeMore = $(".tableInvoiceList_seeMore");
+		if (!seeMore.is(e.target)
+		    && seeMore.has(e.target).length === 0) {
+				seeMore.removeClass('seeMore_active');
+				seeMore.find('.toolTip').fadeOut();
+		}
+     });
 	
 })
