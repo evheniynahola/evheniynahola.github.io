@@ -22,10 +22,10 @@ document.addEventListener('DOMContentLoaded', function(){
 		})
 	})
 
-	$(document).on('mouseup', function (e){ // событие клика по веб-документу
-		var getMenu = $(".documentAdd_button_getMenu"); // тут указываем ID элемента
-		if (!getMenu.is(e.target) // если клик был не по нашему блоку
-		    && getMenu.has(e.target).length === 0) { // и не по его дочерним элементам
+	$(document).on('mouseup', function (e){
+		var getMenu = $(".documentAdd_button_getMenu");
+		if (!getMenu.is(e.target)
+		    && getMenu.has(e.target).length === 0) {
 				getMenu.siblings('.documentAdd_list').removeClass('active').slideUp()
 		}
      });
@@ -53,10 +53,10 @@ document.addEventListener('DOMContentLoaded', function(){
 		$('.modal').fadeOut();
 	})
 
-	$(document).on('mouseup', function (e){ // событие клика по веб-документу
-		var modal = $(".modal_body"); // тут указываем ID элемента
-		if (!modal.is(e.target) // если клик был не по нашему блоку
-		    && modal.has(e.target).length === 0) { // и не по его дочерним элементам
+	$(document).on('mouseup', function (e){
+		var modal = $(".modal_body");
+		if (!modal.is(e.target)
+		    && modal.has(e.target).length === 0) { 
 				$('.modal').fadeOut();
 		}
      });
@@ -129,31 +129,52 @@ document.addEventListener('DOMContentLoaded', function(){
 	})
 
 	$('.orderData_panel input').on('focusin', function(){
-		$(this).closest('.orderData_panel').addClass('orderData_panel_focus');
-		$(this).closest('.orderData_panel').removeClass('orderData_panel_dataIn');
+		$('.orderData_panel input').each(function(){
+			$(this).closest('.orderData_panel').addClass('orderData_panel_focus');
+			$(this).closest('.orderData_panel').removeClass('orderData_panel_dataIn');
+		})
 	})
 
 	$('.orderData_panel input').on('focusout', function(){
-		if ( $(this).val().length != 0 ) {
-			$(this).closest('.orderData_panel').addClass('orderData_panel_dataIn');
-			$(this).closest('.orderData_panel').removeClass('orderData_panel_focus');
-		} else {
-			$(this).closest('.orderData_panel').removeClass('orderData_panel_dataIn');
-			$(this).closest('.orderData_panel').removeClass('orderData_panel_focus');
-		}
-		$(this).closest('.orderData_panel').removeClass('orderData_panel_focus')
+		$('.orderData_panel input').each(function(){
+			let ths = $(this)
+			if ( $(this).val().length != 0 ) {
+				$(this).closest('.orderData_panel').addClass('orderData_panel_dataIn');
+				$(this).closest('.orderData_panel').removeClass('orderData_panel_focus');
+				$('.documentSidebar_checklistProp li').each(function(){
+					if(ths.attr('data-type') == $(this).attr('data-type')) {
+						$(this).addClass('documentData_active');
+					}
+				})
+			} else {
+				$(this).closest('.orderData_panel').removeClass('orderData_panel_dataIn');
+				$(this).closest('.orderData_panel').removeClass('orderData_panel_focus');
+				$('.documentSidebar_checklistProp li').each(function(){
+					if(ths.attr('data-type') == $(this).attr('data-type')) {
+						$(this).removeClass('documentData_active');
+					}
+				})
+			}
+			$(this).closest('.orderData_panel').removeClass('orderData_panel_focus')
+		})
+	})
+
+	$('.orderData_panel_dateInput').on('change', function(){
+		$('.orderData_panel_dateActive').text($(this).val())
 	})
 
 	$('input[data-type="dataPayment"]').on('focusin', function(){
-			$(this).removeClass('dataIn');
+		$(this).parents('tr').find($('input[data-type="dataPayment"]')).removeClass('dataIn');
 	})
 
 	$('input[data-type="dataPayment"]').on('focusout', function(){
-		if ( $(this).val().length != 0 ) {
+		$('input[data-type="dataPayment"]').each(function(){
+			if ( $(this).val().length != 0 ) {
 			$(this).addClass('dataIn');
 		} else {
 			$(this).removeClass('dataIn');
 		}
+		})	
 	})
 
 	$('.mainSidebar_menuButton').on('click', function(){
@@ -166,13 +187,18 @@ document.addEventListener('DOMContentLoaded', function(){
 		$(this).toggleClass('is-open')
 	})
 
-	$(document).on('mouseup', function (e){ // событие клика по веб-документу
-		var notify = $(".userNotifications_group"); // тут указываем ID элемента
-		if (!notify.is(e.target) // если клик был не по нашему блоку
-		    && notify.has(e.target).length === 0) { // и не по его дочерним элементам
+	$(document).on('mouseup', function (e){
+		var notify = $(".userNotifications_group");
+		if (!notify.is(e.target)
+		    && notify.has(e.target).length === 0) {
 				$('.userNotifications_listWrapper').fadeOut();
 				notify.removeClass('is-open')
 		}
      });
+
+	 $('.documentBlock_orderInfo_documentDate').on('focus', function(){
+		console.log('test')
+		$(this).val('')
+	 })
 	
 })

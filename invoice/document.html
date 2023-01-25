@@ -251,7 +251,7 @@
 												</div>
 
 												<div class="documentBlock_orderInfo">
-													<span class="documentBlock_orderInfo_date"><input type="text" value="04.04.2022"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_editDate"/></svg></span>
+													<span class="documentBlock_orderInfo_date"><input class="documentBlock_orderInfo_documentDate" placeholder="להזין את התאריך" type="text" value="04.04.2022"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_editDate"/></svg></span>
 													<span class="documentBlock_orderInfo_title">חשבונית מס קבלה 88888888</span>
 													<span class="documentBlock_orderInfo_descr">(מקור)</span>
 												</div>
@@ -264,7 +264,7 @@
 														</div>
 														<div class="orderData_panel_wrapper">
 															<span class="orderData_panel_userName">שם הלקוח</span>
-															<span class="orderData_panel_userContacts"><span class="orderData_panel_dataDescr">פרטי הקשר:</span><input type="text" value="" placeholder="פרטי הקשר"></span>
+															<span class="orderData_panel_userContacts"><span class="orderData_panel_dataDescr">פרטי הקשר:</span><input type="text" value="" placeholder="פרטי הקשר" data-type="documentCustomerName"></span>
 														</div>
 													</div>
 
@@ -275,7 +275,7 @@
 																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_orderSubject"/></svg>
 																</div>
 																<div class="orderData_panel_wrapper">
-																	<span class="orderData_panel_date"><span class="orderData_panel_dataDescr">אסמכתא:</span><input type="text" value="" placeholder="אסמכתא"></span>
+																	<span class="orderData_panel_date"><span class="orderData_panel_dataDescr">אסמכתא:</span><input type="text" value="" placeholder="אסמכתא" data-type="documentItems"></span>
 																</div>
 															</div>
 														</div>
@@ -295,7 +295,7 @@
 																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_orderDate"/></svg>
 																</div>
 																<div class="orderData_panel_wrapper">
-																	<label><span class="orderData_panel_date">בחרו תאריך פרעון:</span> <input class="orderData_panel_dateInput" type="date"></label>
+																	<label><span class="orderData_panel_date">בחרו תאריך פרעון: <span class="orderData_panel_dateActive"></span></span> <input class="orderData_panel_dateInput" type="date" data-type="documentPaymentDate"></label>
 																</div>
 															</div>
 														</div>
@@ -317,13 +317,13 @@
 															<tbody class="orderData_table_container">
 																<tr class="orderData_table_rowTpl">
 																	<!-- Add class="orderData_error" to label for Data Error -->
-																	<td class="cell_medium"><label><input name="itemNumber" data-type="dataOrder" type="text" placeholder="מספר פריט"></label></td>
+																	<td class="cell_medium"><label><input data-type="dataPayment" name="itemNumber" type="text" placeholder="מספר פריט"></label></td>
 																	<td class="cell_large"><label><input data-type="dataPayment" name="description" type="text" placeholder="תיאור"></label></td>
 																	<td class="cell_small"><label><input data-type="dataPayment" name="sku" type="text" placeholder="%"></label></td>
 																	<td class="cell_small"><label><input data-type="dataPayment" name="quantity" type="text" placeholder="כמות"></label></td>
-																	<td class="cell_small"><label><input data-type="dataPayment"  name="storage" type="text" placeholder="מחסן"></label></td>
+																	<td class="cell_small"><label><input data-type="dataPayment" name="storage" type="text" placeholder="מחסן"></label></td>
 																	<td class="cell_medium"><label><input data-type="dataPayment" name="price" type="text" placeholder="מחיר"></label></td>
-																	<td class="cell_medium"><label><span class="orderData_tablePayment_tpl_remove"></span><input data-type="dataOrder" name="total" type="text" placeholder='סה"כ לשורה'></label></td>
+																	<td class="cell_medium"><label class="itemContoller"><span class="orderData_tablePayment_tpl_remove"></span><input data-type="dataPayment" name="total" type="text" placeholder='סה"כ לשורה'></label></td>
 																</tr>
 															</tbody>
 														</table>
@@ -497,7 +497,6 @@
 													<h3 class="documentSidebar_checklistTitle">צ'ק ליסט</h3>
 													<ul class="documentSidebar_checklistProp">
 														<!-- documentData_active -->
-														<li data-type="documentDate">בחרו תאריך</li>
 														<li data-type="documentCustomerName">שם הלקוח</li>
 														<li data-type="documentPaymentDate">בחרו תאריך פירעון</li>
 														<li data-type="documentItems">פריטים</li>
@@ -1002,7 +1001,7 @@
 			<td class="cell_small"><label><input data-type="dataPayment" name="quantity" type="text" placeholder="כמות"></label></td>
 			<td class="cell_small"><label><input data-type="dataPayment" name="storage" type="text" placeholder="מחסן"></label></td>
 			<td class="cell_medium"><label><input data-type="dataPayment" name="price" type="text" placeholder="מחיר"></label></td>
-			<td class="cell_medium"><label><span class="orderData_tablePayment_tpl_remove"></span><input data-type="dataPayment" name="total" type="text" placeholder='סה"כ לשורה'></label></td>
+			<td class="cell_medium"><label class="itemContoller"><span class="orderData_tablePayment_tpl_remove"></span><input data-type="dataPayment" name="total" type="text" placeholder='סה"כ לשורה'></label></td>
 		</tr>
 	</tbody>
 </table>
