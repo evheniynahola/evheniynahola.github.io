@@ -5,13 +5,13 @@
 
 	<meta charset="utf-8">
 
-	<title>שם אתר</title>
+	<title>ריבועים בע"מ</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<meta property="og:image" content="path/to/image.jpg">
+	<!-- <meta property="og:image" content="path/to/image.jpg"> -->
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/favicon.png">
 
@@ -43,7 +43,6 @@
 
 								<ul class="mainSidebar_addMenu">
 									<li class="active">
-										<!-- <a href="#"><span class="mainSidebar_addMenu_icon mainSidebar_addMenu_icon_notebook"></span></a> -->
 										<a href="#"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_notebook"/></svg></a>
 									</li>
 									<li>
@@ -79,17 +78,18 @@
 									<div class="documentAdd_button documentAdd_button_getMenu">
 										<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_plus"/></svg>
 									</div>
+									<!-- listActive - activate menu -->
 									<ul class="documentAdd_list">
-										<li><a href="./document.html">חשבונית מס</a></li>
-										<li><a href="./document.html">קבלה</a></li>
-										<li><a href="./document.html">חשבונית מס / קבלה</a></li>
-										<li><a href="./document.html">חשבונית מס זיכוי</a></li>
-										<li><a href="./document.html">חשבון עסקה</a></li>
-										<li><a href="./document.html">הזמנת עבודה</a></li>
-										<li><a href="./document.html">הצעת מחיר</a></li>
-										<li><a href="./document.html">תעודת משלוח</a></li>
-										<li><a href="./document.html">תעודת החזרה</a></li>
-										<li><a href="./document.html">חשבונית עבור קבלה</a></li>
+										<li><a href="/">חשבונית מס</a></li>
+										<li><a href="/">קבלה</a></li>
+										<li><a href="/">חשבונית מס / קבלה</a></li>
+										<li><a href="/">חשבונית מס זיכוי</a></li>
+										<li><a href="/">חשבון עסקה</a></li>
+										<li><a href="/">הזמנת עבודה</a></li>
+										<li><a href="/">הצעת מחיר</a></li>
+										<li><a href="/">תעודת משלוח</a></li>
+										<li><a href="/">תעודת החזרה</a></li>
+										<li><a href="/">חשבונית עבור קבלה</a></li>
 									</ul>
 								</div>
 							</div>
@@ -238,314 +238,54 @@
 							</div>
 							<div class="col">
 								<div class="mainContent_wrapper">
-									<div class="row">
-										<div class="mainContent-mid-w col-8 mainContent_scrollWrapper">
-											<div class="mainContent_documentBlock mainContent_documentBlock_order">
+									<div class="mainContent_clientPage_title">הוספת לקוח חדש</div>
 
-												<div class="documentBlock_headline d-flex justify-content-between align-items-center">
-													<div class="documentBlock_headline_logo">
-														<img src="./img/content/openbayesLogo.svg" alt="openbayes logo">
+									<div class="mainContent_clientPage_tabWrapper">
+
+										<div class="mainContent_clientPage_tabBody">
+
+											<div class="mainContent_clientPage_tabItem active">
+												<form>
+													<label>
+														<p>מספר כרטיס</p>
+														<input type="text" placeholder="מספר כרטיס">
+													</label>
+
+													<label>
+														<p>*שם משפחה/עסק</p>
+														<input type="text" placeholder="*שם משפחה/עסק">
+													</label>
+
+													<label>
+														<p>שם פרטי</p>
+														<input type="text" placeholder="שם פרטי">
+													</label>
+
+													<label>
+														<p>כתובת דוא"ל</p>
+														<input type="text" placeholder="כתובת דוא"ל">
+													</label>
+
+													<label>
+														<p>מספר ת"ז</p>
+														<input type="text" placeholder='מספר ת"ז'>
+													</label>
+
+													<label>
+														<p>עוסק מורשה</p>
+														<input type="text" placeholder="עוסק מורשה">
+													</label>
+													
+
+													<div class="w-100 d-flex flex-row-reverse">
+														<a href="./client-page-more.html" class="documentAdd_button">שמירה</a>
 													</div>
-													<ul class="documentBlock_headline_list">
-														<li><span class="documentBlock_headline_title">קוביות בע"מ</span></li>
-														<li>זינגר 57, ירושלים, 52510, ישראל</li>
-														<li><a href="mailto:email@email.com">email@email.com</a></li>
-														<li><a href="tel:+28189786878">28189786878+</a></li>
-														<li>עוסק מורשה: <span class="documentBlock_headline_license">234293497</span></li>
-													</ul>
-												</div>
-
-												<div class="documentBlock_orderInfo">
-													<span class="documentBlock_orderInfo_date"><input class="documentBlock_orderInfo_documentDate" placeholder="להזין את התאריך" type="text" value="04.04.2022"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_editDate"/></svg></span>
-													<span class="documentBlock_orderInfo_title">חשבונית מס קבלה 88888888</span>
-													<span class="documentBlock_orderInfo_descr">(מקור)</span>
-												</div>
-
-												<div class="documentBlock_orderData">
-
-													<div class="orderData_panel orderData_panel_customer">
-														<div class="orderData_panel_icon">
-															<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_orderUser"/></svg>
-														</div>
-														<div class="orderData_panel_wrapper">
-															<span class="orderData_panel_userName">שם הלקוח</span>
-															<span class="orderData_panel_userContacts"><span class="orderData_panel_dataDescr">פרטי הקשר:</span><input type="text" value="" placeholder="פרטי הקשר" data-type="documentCustomerName"></span>
-														</div>
-													</div>
-
-													<div class="row orderData_wrapper">
-														<div class="col">
-															<div class="orderData_panel">
-																<div class="orderData_panel_icon">
-																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_orderSubject"/></svg>
-																</div>
-																<div class="orderData_panel_wrapper">
-																	<span class="orderData_panel_date"><span class="orderData_panel_dataDescr">אסמכתא:</span><input type="text" value="" placeholder="אסמכתא" data-type="documentItems"></span>
-																</div>
-															</div>
-														</div>
-														<div class="col">
-															<div class="orderData_panel">
-																<div class="orderData_panel_icon">
-																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_orderCart"/></svg>
-																</div>
-																<div class="orderData_panel_wrapper">
-																	<span class="orderData_panel_date"><span class="orderData_panel_dataDescr">הזמנה:</span><input type="text" value="" placeholder="הזמנה"></span>
-																</div>
-															</div>
-														</div>
-														<div class="col-5">
-															<div class="orderData_panel">
-																<div class="orderData_panel_icon">
-																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_orderDate"/></svg>
-																</div>
-																<div class="orderData_panel_wrapper">
-																	<label><span class="orderData_panel_date">בחרו תאריך פרעון: <span class="orderData_panel_dateActive"></span></span> <input class="orderData_panel_dateInput" type="date" data-type="documentPaymentDate"></label>
-																</div>
-															</div>
-														</div>
-													</div>
-
-													<form class="orderData_table_wrapper orderData_form">
-														<table class="orderData_table">
-															<thead>
-																<tr>
-																	<td class="cell_medium">מספר פריט</td>
-																	<td class="cell_large">תיאור</td>
-																	<td class="cell_small">מק"ט</td>
-																	<td class="cell_small">כמות</td>
-																	<td class="cell_small">מחסן</td>
-																	<td class="cell_medium">מחיר</td>
-																	<td class="cell_medium">סה"כ לשורה</td>
-																</tr>
-															</thead>
-															<tbody class="orderData_table_container">
-																<tr class="orderData_table_rowTpl">
-																	<!-- Add class="orderData_error" to label for Data Error -->
-																	<td class="cell_medium"><label><input data-type="dataPayment" name="itemNumber" type="text" placeholder="מספר פריט"></label></td>
-																	<td class="cell_large"><label><input data-type="dataPayment" name="description" type="text" placeholder="תיאור"></label></td>
-																	<td class="cell_small"><label><input data-type="dataPayment" name="sku" type="text" placeholder="%"></label></td>
-																	<td class="cell_small"><label><input data-type="dataPayment" name="quantity" type="text" placeholder="כמות"></label></td>
-																	<td class="cell_small"><label><input data-type="dataPayment" name="storage" type="text" placeholder="מחסן"></label></td>
-																	<td class="cell_medium"><label><input data-type="dataPayment" name="price" type="text" placeholder="מחיר"></label></td>
-																	<td class="cell_medium"><label class="itemContoller"><span class="orderData_tablePayment_tpl_remove"></span><input data-type="dataPayment" name="total" type="text" placeholder='סה"כ לשורה'></label></td>
-																</tr>
-															</tbody>
-														</table>
-														<div class="orderData_buttonsWrapper d-flex justify-content-between">
-															<button class="documentButton documentButton_addItem">
-																<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_plus"/></svg>
-																להוסיף פריט
-															</button>
-															<button class="documentButton documentButton_catalogItem">
-																בחר פריטי קטלוג
-															</button>
-														</div>
-													</form>
-
-													<div class="orderData_totalPanel_wrapper">
-														<div class="orderData_totalPanel">
-															<div class="orderData_totalPanel_heading">סיכום</div>
-															<div class="orderData_totalPanel_body">
-																<div class="orderData_totalPanel_group">
-																	<div class="orderData_totalPanel_group_name">סה"כ לפני מע"מ</div>
-																	<div class="orderData_totalPanel_group_prop">0.00 <span class="paymentTotal_currency">₪</span></div>
-																</div>
-																<div class="orderData_totalPanel_group">
-																	<div class="orderData_totalPanel_group_name">% הנחה</div>
-																	<div class="orderData_totalPanel_group_prop orderData_totalPanel_group_number"><input type="text" placeholder="0"></div>
-																</div>
-																<div class="orderData_totalPanel_group">
-																	<div class="orderData_totalPanel_group_name">הנחה</div>
-																	<div class="orderData_totalPanel_group_prop">0.00 <span class="paymentTotal_currency">₪</span></div>
-																</div>
-																<div class="orderData_totalPanel_group">
-																	<div class="orderData_totalPanel_group_name">מע"מ</div>
-																	<div class="orderData_totalPanel_group_prop">0.00 <span class="paymentTotal_currency">₪</span></div>
-																</div>
-																<div class="orderData_totalPanel_group_final">
-																	<div class="orderData_totalPanel_group_name">סה"כ כולל מע"מ</div>
-																	<div class="orderData_totalPanel_group_prop orderData_totalPanel_group_number">0</div>
-																</div>
-															</div>
-														</div>
-													</div>
-
-												</div>
-
-												<div class="documentBlock_footer d-flex justify-content-between align-items-center">
-													<span class="logo"><img src="./img/content/mainLogo.svg" alt="שם אתר"></span>
-													<ul>
-														<li>03.12.2022 15:36:04</li>
-														<li>מסמך ממוחשב</li>
-														<li>עמוד 1 מתוך 2</li>
-													</ul>
-												</div>
-
+												</form>
 											</div>
 
-											<div class="mainContent_documentBlock mainContent_documentBlock_payment">
-
-												<div class="documentBlock_headline d-flex justify-content-between align-items-center">
-													<div class="documentBlock_headline_logo">
-														<img src="./img/content/openbayesLogo.svg" alt="openbayes logo">
-													</div>
-													<ul class="documentBlock_headline_list">
-														<li><span class="documentBlock_headline_title">קוביות בע"מ</span></li>
-														<li>זינגר 57, ירושלים, 52510, ישראל</li>
-														<li><a href="mailto:email@email.com">email@email.com</a></li>
-														<li><a href="tel:+28189786878">28189786878+</a></li>
-														<li>עוסק מורשה: <span class="documentBlock_headline_license">234293497</span></li>
-													</ul>
-												</div>			
-												
-												<div class="mainContent_documentBlock_paymentItem">
-													<div class="documentBlock_paymentItem_title">פירוט תשלומים</div>
-													<div class="documentBlock_paymentItem_tabsHeading">
-														<ul>
-															<li data-tab="1">צ'ק</li>
-															<li data-tab="2">אשראי</li>
-															<li data-tab="3" class="tabsHeading_active">העברה בנקאית</li>
-															<li data-tab="4">מזומן</li>
-															<li data-tab="5">פייפאל</li>
-															<li data-tab="6">ניכוי במקור</li>
-															<li data-tab="7">אחר</li>
-														</ul>
-													</div>
-													<div class="documentBlock_paymentItem_tabsBody">
-														<div class="documentBlock_paymentItem_tabsBody_item" data-tab="1">
-															<div class="orderData_table_wrapper orderData_form">
-																<table class="orderData_table orderData_tablePayment">
-																	<thead>
-																		<tr>
-																			<td class="cell_payment">תאריך</td>
-																			<td class="cell_payment">בנק</td>
-																			<td class="cell_payment">סניף</td>
-																			<td class="cell_payment">מספר חשבון</td>
-																			<td class="cell_payment">סכום</td>
-																			<td class="cell_payment"></td>
-																		</tr>
-																	</thead>
-																	<tbody class="orderData_tablePayment_container">
-																		<tr class="orderData_tablePayment_tpl">
-																			<td class="cell_payment"><label><input data-type="dataPayment" name="price" type="text" placeholder="תאריך"></label></td>
-																			<td class="cell_payment"><label><input data-type="dataPayment" name="storage" type="text" placeholder="בנק"></label></td>
-																			<td class="cell_payment"><label><input data-type="dataPayment" name="quantity" type="text" placeholder="סניף"></label></td>
-																			<td class="cell_payment"><label><input data-type="dataPayment" name="sku" type="text" placeholder="מספר חשבון"></label></td>
-																			<td class="cell_payment"><label><input data-type="dataPayment" name="description" type="text" placeholder="סכום"></label></td>
-																			<td class="cell_payment">
-																				<button class="documentButton documentButton_cellButton documentButton_addData">הוסף תשלום</button>
-																			</td>												
-																		</tr>
-																	</tbody>
-																</table>
-																<button class="documentButton documentButton_addPayment documentButton_addData">
-																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_plus"/></svg>
-																	הוסף תשלום
-																</button>
-															</div>
-
-															<button class="documentAdd_button documentAdd_cardCharge">
-																<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_creditCard"/></svg>
-																חיוב כרטיס אשראי	
-															</button>
-
-															<div class="paymentTotal">
-																<div class="paymentTotal_name">סה"כ שולם</div>
-																<div class="paymentTotal_prop">0.00 <span class="paymentTotal_currency">₪</span></div>
-															</div>
-
-															<div class="documentBlock_paymentItem_title">הערות</div>
-															<div class="orderData_panel orderData_panel_customer">
-																<div class="orderData_panel_icon orderData_panel_icon_remark">
-																	<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_remark"></use></svg>
-																</div>
-																<div class="orderData_panel_wrapper">
-																	<span class="orderData_panel_userName orderData_panel_userNote"><input type="text" value="" placeholder="עד 700 תווים"></span>
-																</div>
-															</div>
-
-															<div class="documentBlock_paymentItem_signature">
-																<img src="./img/content/signature.png" alt="signature">
-															</div>
-
-														</div>
-													</div>
-												</div>
-
-												<div class="documentBlock_footer d-flex justify-content-between align-items-center">
-													<span class="logo"><img src="./img/content/mainLogo.svg" alt="שם אתר"></span>
-													<ul>
-														<li>03.12.2022 15:36:04</li>
-														<li>מסמך ממוחשב</li>
-														<li>עמוד 2 מתוך 2</li>
-													</ul>
-												</div>
-
-											</div>
-
-										</div>
-										<div class="sidebar-mid-w col-4">
-											<div class="mainContent_documentSidebar">
-												<div class="documentSidebar_buttonWrapper d-flex justify-content-between">
-													<div class="documentButton documentButton_import">
-														<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_documentImport"/></svg>
-														 קליטה ממסמך
-													</div>
-													<div class="documentButton documentButton_copy">
-														<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_documentCopy"/></svg>
-														 שכפול ממסמך
-													</div>
-												</div>
-												<h2 class="documentSidebar_title">הגדרות מסמך</h2>
-												<div class="documentSidebar_list documentSidebar_checklist">
-													<h3 class="documentSidebar_checklistTitle">צ'ק ליסט</h3>
-													<ul class="documentSidebar_checklistProp">
-														<!-- documentData_active -->
-														<li data-type="documentCustomerName">שם הלקוח</li>
-														<li data-type="documentPaymentDate">בחרו תאריך פירעון</li>
-														<li data-type="documentItems">פריטים</li>
-													</ul>
-												</div>
-												<div class="documentSidebar_list documentSidebar_selectList">
-													<h3 class="documentSidebar_checklistTitle">הגדרות</h3>
-													<form>
-														<label class="documentData_currency d-flex align-items-center justify-content-between">
-															<span>מטבע</span>
-															<select data-type="documentCurrency" class="documentData_select">
-																<option value="">ש"ח</option>
-																<option value='EUR'>EUR</option>
-																<option value='USD'>USD</option>
-																<option value='CHF'>CHF</option>
-																<option value='GBE'>GBE</option>
-															</select>
-														</label>
-
-														<label class="documentData_currency d-flex align-items-center justify-content-between">
-															<span>מע"מ</span>
-															<select class="documentData_select">
-																<option value=''>כולל מע"מ</option>
-																<option value="1">ללא מע"מ</option>
-																<option value="2">כולל מע"מ</option>
-																<option value="3">ללא מע"מ</option>
-															</select>
-														</label>
-
-														<label class="documentData_currency d-flex align-items-center justify-content-between">
-															<span>שפת המסמך</span>
-															<select data-type="documentLanguage" class="documentData_select">
-																<option value=''>עברית</option>
-																<option value='GBE'>English</option>
-																<option value='GBE'>Hebrew</option>
-															</select>
-														</label>
-														<button class="documentAdd_button">לִשְׁלוֹחַ</button>
-													</form>
-												</div>
-											</div>
-											
 										</div>
 									</div>
+
 								</div>
 							</div>
 						</div>
@@ -555,463 +295,436 @@
 		</div>
 	</div>
 
-<!-- modal_active - display flex -->
-<div class="modal modal_info">
-	<div class="modal_body">
-		<div class="modal_head">
-			<div class="modal_close">
-				<img src="./img/icons/modal_close.svg" alt="modal close">
+	<!-- modal_active - display flex -->
+	<div class="modal modal_info">
+		<div class="modal_body">
+			<div class="modal_head">
+				<div class="modal_close">
+					<img src="./img/icons/modal_close.svg" alt="modal close">
+				</div>
 			</div>
-		</div>
-		<div class="modal_content">
-			<div class="modal_logo">
-				<img src="./img/icons/modalLogo.svg" alt="modal logo">
-				<h2>אוי, כמה חבל.</h2>
-				<p>אין לכם מודול סליקת כרטיסי אשראי ICREDIT.</p>
-				<p>על מנת לחייב לקוחות באשראי ישירות מתוך המסמך, נדרש להפעיל את המודול.</p>
-				<p></p>
-				<p>למידע נוסף והצטרפות - <a href="/">לחצו</a></p>
-			</div>
-		</div>
-	</div>
-</div>
-
-<div class="modal modal_documents documentsCopyList">
-	<div class="modal_body">
-		<div class="modal_head d-flex justify-content-between align-items-center">
-			<div class="modal_close">
-				<img src="./img/icons/modal_close.svg" alt="modal close">
-			</div>
-			<div class="modal_title">שכפול ממסמך</div>
-		</div>
-		<div class="modal_content">
-			<form class="searchForm">
-				<label class="inputWrapper searchField">
-					<span class="searchButton"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_search"/></svg></span>
-					<input type="search" placeholder="חיפוש גלובלי...">
-				</label>
-			</form>
-			<div class="searchResult">נמצאו <span class="searchResult_count">51 רשומות</span></div>
-			<div class="tableWrapper">
-				<table class="tableInvoiceList tableDocumentsList">
-					<thead>
-						<tr>
-							<th>
-								<div class="tableInvoiceList_controlsWrapper d-flex">
-									<div class="tableInvoiceList_controlsTitle">
-										סוג מסמך
-									</div>
-									<div class="tableInvoiceList_controls">
-										<span class="controlGroup_upChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
-										</span>
-										<span class="controlGroup_downChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
-										</span>
-									</div>
-								</div>
-							</th>
-							<th>
-								<div class="tableInvoiceList_controlsWrapper d-flex">
-									<div class="tableInvoiceList_controlsTitle">
-										מספר מסמך
-									</div>
-									<div class="tableInvoiceList_controls">
-										<span class="controlGroup_upChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
-										</span>
-										<span class="controlGroup_downChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
-										</span>
-									</div>
-								</div>
-							</th>
-							<th>
-								<div class="tableInvoiceList_controlsWrapper d-flex">
-									<div class="tableInvoiceList_controlsTitle">
-										סכום
-									</div>
-									<div class="tableInvoiceList_controls">
-										<span class="controlGroup_upChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
-										</span>
-										<span class="controlGroup_downChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
-										</span>
-									</div>
-								</div>
-							</th>
-							<th></th>
-							<th></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<div class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</div>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<div class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</div>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+			<div class="modal_content">
+				<div class="modal_logo">
+					<img src="./img/icons/modalLogo.svg" alt="modal logo">
+					<h2>אוי, כמה חבל.</h2>
+					<p>אין לכם מודול סליקת כרטיסי אשראי ICREDIT.</p>
+					<p>על מנת לחייב לקוחות באשראי ישירות מתוך המסמך, נדרש להפעיל את המודול.</p>
+					<p></p>
+					<p>למידע נוסף והצטרפות - <a href="/">לחצו</a></p>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<div class="modal modal_documents documentsImportList">
-	<div class="modal_body">
-		<div class="modal_head d-flex justify-content-between align-items-center">
-			<div class="modal_close">
-				<img src="./img/icons/modal_close.svg" alt="modal close">
+	<div class="modal modal_documents documentsCopyList">
+		<div class="modal_body">
+			<div class="modal_head d-flex justify-content-between align-items-center">
+				<div class="modal_close">
+					<img src="./img/icons/modal_close.svg" alt="modal close">
+				</div>
+				<div class="modal_title">שכפול ממסמך</div>
 			</div>
-			<div class="modal_title">שכפול ממסמך</div>
-		</div>
-		<div class="modal_content">
-			<form class="searchForm">
-				<label class="inputWrapper searchField">
-					<span class="searchButton"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_search"/></svg></span>
-					<input type="search" placeholder="חיפוש גלובלי...">
-				</label>
-			</form>
-			<div class="searchResult">נמצאו <span class="searchResult_count">51 רשומות</span></div>
-			<div class="tableWrapper">
-				<table class="tableInvoiceList tableDocumentsList tableImportList">
-					<thead>
-						<tr>
-							<th>
-								<div class="tableInvoiceList_controlsWrapper d-flex">
-									<div class="tableInvoiceList_controlsTitle">
-										סוג מסמך
+			<div class="modal_content">
+				<form class="searchForm">
+					<label class="inputWrapper searchField">
+						<span class="searchButton"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_search"/></svg></span>
+						<input type="search" placeholder="חיפוש גלובלי...">
+					</label>
+				</form>
+				<div class="searchResult">נמצאו <span class="searchResult_count">51 רשומות</span></div>
+				<div class="tableWrapper">
+					<table class="tableInvoiceList tableDocumentsList">
+						<thead>
+							<tr>
+								<th>
+									<div class="tableInvoiceList_controlsWrapper d-flex">
+										<div class="tableInvoiceList_controlsTitle">
+											סוג מסמך
+										</div>
+										<div class="tableInvoiceList_controls">
+											<span class="controlGroup_upChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+											</span>
+											<span class="controlGroup_downChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+											</span>
+										</div>
 									</div>
-									<div class="tableInvoiceList_controls">
-										<span class="controlGroup_upChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
-										</span>
-										<span class="controlGroup_downChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
-										</span>
+								</th>
+								<th>
+									<div class="tableInvoiceList_controlsWrapper d-flex">
+										<div class="tableInvoiceList_controlsTitle">
+											מספר מסמך
+										</div>
+										<div class="tableInvoiceList_controls">
+											<span class="controlGroup_upChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+											</span>
+											<span class="controlGroup_downChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+											</span>
+										</div>
 									</div>
-								</div>
-							</th>
-							<th>
-								<div class="tableInvoiceList_controlsWrapper d-flex">
-									<div class="tableInvoiceList_controlsTitle">
-										מספר מסמך
+								</th>
+								<th>
+									<div class="tableInvoiceList_controlsWrapper d-flex">
+										<div class="tableInvoiceList_controlsTitle">
+											סכום
+										</div>
+										<div class="tableInvoiceList_controls">
+											<span class="controlGroup_upChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+											</span>
+											<span class="controlGroup_downChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+											</span>
+										</div>
 									</div>
-									<div class="tableInvoiceList_controls">
-										<span class="controlGroup_upChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
-										</span>
-										<span class="controlGroup_downChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
-										</span>
+								</th>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
 									</div>
-								</div>
-							</th>
-							<th>
-								<div class="tableInvoiceList_controlsWrapper d-flex">
-									<div class="tableInvoiceList_controlsTitle">
-										סכום
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<div class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
 									</div>
-									<div class="tableInvoiceList_controls">
-										<span class="controlGroup_upChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
-										</span>
-										<span class="controlGroup_downChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
-										</span>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
 									</div>
-								</div>
-							</th>
-							<th></th>
-							<th></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</div>
-			<p class="documentsImport_description">המסמכים המסומנים יסגרו ופרטיהם יקלטו במסמך החדש.</p>
-			<div class="documentsImport_buttonWrapper">
-				<button class="documentAdd_button">סגור מסמכים מסומנים</button>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<div class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</div>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
 
-<table id="tableTemplates" style="display:none">
-	<thead></thead>
-	<tbody>
-		<tr class="orderData_tablePayment_tpl">
-			<td class="cell_payment"><label><input data-type="dataPayment" name="price" type="text" placeholder="תאריך"></label></td>
-			<td class="cell_payment"><label><input data-type="dataPayment" name="storage" type="text" placeholder="בנק"></label></td>
-			<td class="cell_payment"><label><input data-type="dataPayment" name="quantity" type="text" placeholder="סניף"></label></td>
-			<td class="cell_payment"><label><input data-type="dataPayment" name="sku" type="text" placeholder="מספר חשבון"></label></td>
-			<td class="cell_payment"><label><input data-type="dataPayment" name="description" type="text" placeholder="סכום"></label></td>
-			<td class="cell_payment">
-				<button class="documentButton documentButton_cellButton documentButton_addData">הוסף תשלום</button>
-			</td>												
-		</tr>
-	
-		<tr class="orderData_table_rowTpl">
-			<!-- Add class="orderData_error" to label for Data Error -->
-			<td class="cell_medium"><label><input data-type="dataPayment" name="itemNumber" type="text" placeholder="מספר פריט"></label></td>
-			<td class="cell_large"><label><input data-type="dataPayment" name="description" type="text" placeholder="תיאור"></label></td>
-			<td class="cell_small"><label><input data-type="dataPayment" name="sku" type="text" placeholder="%"></label></td>
-			<td class="cell_small"><label><input data-type="dataPayment" name="quantity" type="text" placeholder="כמות"></label></td>
-			<td class="cell_small"><label><input data-type="dataPayment" name="storage" type="text" placeholder="מחסן"></label></td>
-			<td class="cell_medium"><label><input data-type="dataPayment" name="price" type="text" placeholder="מחיר"></label></td>
-			<td class="cell_medium"><label class="itemContoller"><span class="orderData_tablePayment_tpl_remove"></span><input data-type="dataPayment" name="total" type="text" placeholder='סה"כ לשורה'></label></td>
-		</tr>
-	</tbody>
-</table>
+	<div class="modal modal_documents documentsImportList">
+		<div class="modal_body">
+			<div class="modal_head d-flex justify-content-between align-items-center">
+				<div class="modal_close">
+					<img src="./img/icons/modal_close.svg" alt="modal close">
+				</div>
+				<div class="modal_title">שכפול ממסמך</div>
+			</div>
+			<div class="modal_content">
+				<form class="searchForm">
+					<label class="inputWrapper searchField">
+						<span class="searchButton"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_search"/></svg></span>
+						<input type="search" placeholder="חיפוש גלובלי...">
+					</label>
+				</form>
+				<div class="searchResult">נמצאו <span class="searchResult_count">51 רשומות</span></div>
+				<div class="tableWrapper">
+					<table class="tableInvoiceList tableDocumentsList tableImportList">
+						<thead>
+							<tr>
+								<th>
+									<div class="tableInvoiceList_controlsWrapper d-flex">
+										<div class="tableInvoiceList_controlsTitle">
+											סוג מסמך
+										</div>
+										<div class="tableInvoiceList_controls">
+											<span class="controlGroup_upChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+											</span>
+											<span class="controlGroup_downChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+											</span>
+										</div>
+									</div>
+								</th>
+								<th>
+									<div class="tableInvoiceList_controlsWrapper d-flex">
+										<div class="tableInvoiceList_controlsTitle">
+											מספר מסמך
+										</div>
+										<div class="tableInvoiceList_controls">
+											<span class="controlGroup_upChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+											</span>
+											<span class="controlGroup_downChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+											</span>
+										</div>
+									</div>
+								</th>
+								<th>
+									<div class="tableInvoiceList_controlsWrapper d-flex">
+										<div class="tableInvoiceList_controlsTitle">
+											סכום
+										</div>
+										<div class="tableInvoiceList_controls">
+											<span class="controlGroup_upChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+											</span>
+											<span class="controlGroup_downChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+											</span>
+										</div>
+									</div>
+								</th>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p class="documentsImport_description">המסמכים המסומנים יסגרו ופרטיהם יקלטו במסמך החדש.</p>
+				<div class="documentsImport_buttonWrapper">
+					<button class="documentAdd_button">סגור מסמכים מסומנים</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-<svg fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
+	<svg fill="none" xmlns="http://www.w3.org/2000/svg" style="display:none">
 
 		<symbol id="ico_notebook" viewBox="0 0 24 24">
 	<path d="M4.21799 5.09204L5.10899 5.54603L4.21799 5.09204ZM5.0918 4.21799L5.54579 5.10899L5.0918 4.21799ZM5.0918 19.782L5.54579 18.891H5.54579L5.0918 19.782ZM4.21799 18.908L3.32698 19.362H3.32698L4.21799 18.908ZM19.7822 18.908L18.8912 18.454L19.7822 18.908ZM18.9078 19.782L18.4538 18.891L18.9078 19.782ZM19.7822 5.09204L18.8912 5.54603V5.54603L19.7822 5.09204ZM18.9078 4.21799L19.3618 3.32698V3.32698L18.9078 4.21799ZM12 10C11.4477 10 11 10.4477 11 11C11 11.5523 11.4477 12 12 12V10ZM16 12C16.5523 12 17 11.5523 17 11C17 10.4477 16.5523 10 16 10V12ZM12 7C11.4477 7 11 7.44772 11 8C11 8.55228 11.4477 9 12 9V7ZM16 9C16.5523 9 17 8.55228 17 8C17 7.44772 16.5523 7 16 7V9ZM7 20C7 20.5523 7.44772 21 8 21C8.55228 21 9 20.5523 9 20H7ZM9 4C9 3.44772 8.55229 3 8 3C7.44772 3 7 3.44772 7 4L9 4ZM19 7.20001V16.8H21V7.20001H19ZM16.8002 19H7.2002V21H16.8002V19ZM5 16.8V7.20001H3V16.8H5ZM7.2002 5H16.8002V3H7.2002V5ZM5 7.20001C5 6.62346 5.00078 6.25119 5.02393 5.96785C5.04612 5.69619 5.0838 5.59548 5.10899 5.54603L3.32698 4.63805C3.13419 5.01643 3.06287 5.40964 3.03057 5.80499C2.99922 6.18866 3 6.65646 3 7.20001H5ZM7.2002 3C6.65663 3 6.18874 2.99922 5.80498 3.03057C5.40962 3.06286 5.01624 3.13416 4.63781 3.32698L5.54579 5.10899C5.59517 5.08383 5.69595 5.04613 5.9678 5.02393C6.25126 5.00078 6.62365 5 7.2002 5V3ZM5.10899 5.54603C5.205 5.35761 5.35788 5.20474 5.54579 5.10899L4.63781 3.32698C4.07306 3.61473 3.61447 4.07382 3.32698 4.63805L5.10899 5.54603ZM7.2002 19C6.62367 19 6.25127 18.9992 5.96782 18.9761C5.69598 18.9538 5.59519 18.9161 5.54579 18.891L4.63781 20.673C5.01623 20.8658 5.40959 20.9371 5.80496 20.9694C6.18873 21.0008 6.65662 21 7.2002 21V19ZM3 16.8C3 17.3436 2.99922 17.8114 3.03057 18.195C3.06287 18.5904 3.13419 18.9836 3.32698 19.362L5.10899 18.454C5.0838 18.4045 5.04612 18.3038 5.02393 18.0322C5.00078 17.7488 5 17.3766 5 16.8H3ZM5.54579 18.891C5.35784 18.7952 5.20498 18.6424 5.10899 18.454L3.32698 19.362C3.61449 19.9262 4.0731 20.3853 4.63781 20.673L5.54579 18.891ZM19 16.8C19 17.3767 18.9993 17.7489 18.9762 18.0323C18.954 18.304 18.9164 18.4046 18.8912 18.454L20.6732 19.362C20.8661 18.9835 20.9373 18.5902 20.9695 18.1949C21.0008 17.8113 21 17.3435 21 16.8H19ZM16.8002 21C17.3438 21 17.8115 21.0008 18.1951 20.9694C18.5904 20.9371 18.9835 20.8657 19.3618 20.673L18.4538 18.891C18.4043 18.9162 18.3036 18.9539 18.0321 18.9761C17.7489 18.9992 17.3767 19 16.8002 19V21ZM18.8912 18.454C18.7956 18.6417 18.6424 18.7949 18.4538 18.891L19.3618 20.673C19.9258 20.3856 20.3854 19.9269 20.6732 19.362L18.8912 18.454ZM21 7.20001C21 6.65656 21.0008 6.18875 20.9696 5.80515C20.9373 5.40986 20.8661 5.01654 20.6732 4.63805L18.8912 5.54603C18.9164 5.59536 18.954 5.69598 18.9762 5.96769C18.9993 6.2511 19 6.62336 19 7.20001H21ZM16.8002 5C17.3768 5 17.7489 5.00078 18.0321 5.02393C18.3036 5.04611 18.4043 5.08377 18.4538 5.10899L19.3618 3.32698C18.9835 3.13421 18.5904 3.06288 18.1951 3.03057C17.8115 2.99922 17.3437 3 16.8002 3V5ZM20.6732 4.63805C20.3854 4.07315 19.9259 3.61439 19.3618 3.32698L18.4538 5.10899C18.6424 5.20508 18.7956 5.35828 18.8912 5.54603L20.6732 4.63805ZM12 12H16V10H12V12ZM12 9H16V7H12V9ZM9 20L9 4L7 4L7 20H9Z"/>
@@ -1104,7 +817,7 @@
 	<path d="M21 10.2H22H21ZM21 14H20H21ZM20.8477 15.7654L19.9238 15.3827L20.8477 15.7654ZM18 16C17.4477 16 17 16.4477 17 17C17 17.5523 17.4477 18 18 18L18 16ZM19.7654 16.8478L19.3827 15.9239L19.7654 16.8478ZM19.9078 7.21799L20.3618 6.32698V6.32698L19.9078 7.21799ZM20.7822 8.09204L21.6732 7.63805L20.7822 8.09204ZM3.21799 8.09204L2.32698 7.63805L2.32698 7.63805L3.21799 8.09204ZM4.0918 7.21799L4.54579 8.10899H4.54579L4.0918 7.21799ZM6.00023 18C6.55251 18 7.00023 17.5523 7.00023 17C7.00023 16.4477 6.55251 16 6.00023 16L6.00023 18ZM4.23486 16.8478L3.85218 17.7717L4.23486 16.8478ZM3.15224 15.7654L4.07612 15.3827L4.07612 15.3827L3.15224 15.7654ZM15 21V22V21ZM9 21V20V21ZM17.9999 18H18.9999H17.9999ZM17.8477 19.7654L18.7715 20.1481L17.8477 19.7654ZM16.7654 20.8478L16.3827 19.9239L16.7654 20.8478ZM16.7654 15.1522L17.1481 14.2284H17.148L16.7654 15.1522ZM17.8477 16.2346L16.9238 16.6173L17.8477 16.2346ZM6.15224 16.2346L5.22836 15.8519V15.8519L6.15224 16.2346ZM7.23486 15.1522L7.61755 16.0761L7.23486 15.1522ZM6.15224 19.7654L7.07612 19.3827L7.07612 19.3827L6.15224 19.7654ZM7.23486 20.8478L7.61755 19.9239L7.23486 20.8478ZM10 10C9.44772 10 9 10.4477 9 11C9 11.5523 9.44772 12 10 12V10ZM14 12C14.5523 12 15 11.5523 15 11C15 10.4477 14.5523 10 14 10V12ZM6 7.00001H5C5 7.26523 5.10536 7.51958 5.29289 7.70712C5.48043 7.89466 5.73478 8.00001 6 8.00001V7.00001ZM18 6.20001H19H18ZM18 7.00001V8.00001C18.5523 8.00001 19 7.5523 19 7.00001H18ZM16.9078 3.21799L17.3618 2.32698V2.32698L16.9078 3.21799ZM17.7822 4.09204L18.6732 3.63805L17.7822 4.09204ZM6.21799 4.09204L5.32698 3.63805L5.32698 3.63805L6.21799 4.09204ZM7.0918 3.21799L7.54579 4.10899L7.54579 4.10899L7.0918 3.21799ZM4 14V10.2H2V14H4ZM6.2002 8H17.8002V6H6.2002V8ZM20 10.2V14H22V10.2H20ZM20 14C20 14.4796 19.9994 14.7892 19.9832 15.0262C19.9677 15.2541 19.941 15.341 19.9238 15.3827L21.7715 16.1481C21.9065 15.8222 21.9561 15.4923 21.9786 15.1625C22.0005 14.8416 22 14.4523 22 14H20ZM18 18C18.4523 18 18.8415 18.0006 19.1624 17.9787C19.4922 17.9562 19.8221 17.9067 20.1481 17.7717L19.3827 15.9239C19.3411 15.9411 19.2542 15.9678 19.0262 15.9833C18.7893 15.9995 18.4796 16 18 16L18 18ZM19.9238 15.3827C19.8222 15.6278 19.6276 15.8225 19.3827 15.9239L20.1481 17.7717C20.8832 17.4671 21.4671 16.883 21.7715 16.1481L19.9238 15.3827ZM17.8002 8C18.3768 8 18.7489 8.00078 19.0321 8.02393C19.3036 8.04611 19.4043 8.08377 19.4538 8.10899L20.3618 6.32698C19.9834 6.13421 19.5904 6.06288 19.1951 6.03057C18.8115 5.99922 18.3437 6 17.8002 6V8ZM22 10.2C22 9.65656 22.0008 9.18875 21.9696 8.80515C21.9373 8.40986 21.8661 8.01654 21.6732 7.63805L19.8912 8.54603C19.9164 8.59536 19.954 8.69598 19.9762 8.96769C19.9993 9.25109 20 9.62336 20 10.2H22ZM19.4538 8.10899C19.6424 8.20508 19.7956 8.35828 19.8912 8.54603L21.6732 7.63805C21.3854 7.07315 20.9258 6.61439 20.3618 6.32698L19.4538 8.10899ZM4 10.2C4 9.62346 4.00078 9.25119 4.02393 8.96785C4.04612 8.69619 4.0838 8.59548 4.10899 8.54603L2.32698 7.63805C2.13419 8.01643 2.06287 8.40964 2.03057 8.80499C1.99922 9.18866 2 9.65646 2 10.2H4ZM6.2002 6C5.65663 6 5.18874 5.99922 4.80498 6.03057C4.40962 6.06286 4.01624 6.13416 3.63781 6.32698L4.54579 8.10899C4.59517 8.08383 4.69595 8.04613 4.9678 8.02393C5.25126 8.00078 5.62365 8 6.2002 8V6ZM4.10899 8.54603C4.205 8.35761 4.35788 8.20474 4.54579 8.10899L3.63781 6.32698C3.07306 6.61473 2.61447 7.07382 2.32698 7.63805L4.10899 8.54603ZM6.00023 16C5.5206 16 5.21097 15.9995 4.97399 15.9833C4.74599 15.9678 4.65916 15.9411 4.61755 15.9239L3.85218 17.7717C4.17811 17.9067 4.50802 17.9562 4.83785 17.9787C5.15869 18.0006 5.54797 18 6.00023 18L6.00023 16ZM2 14C2 14.4523 1.99946 14.8415 2.02135 15.1624C2.04385 15.4922 2.09336 15.8221 2.22836 16.148L4.07612 15.3827C4.05888 15.3411 4.03227 15.2542 4.01671 15.0262C4.00054 14.7893 4 14.4796 4 14H2ZM4.61755 15.9239C4.37233 15.8223 4.17754 15.6275 4.07612 15.3827L2.22836 16.148C2.53292 16.8833 3.11728 17.4673 3.85218 17.7717L4.61755 15.9239ZM9 16H15V14H9V16ZM15 20H9V22H15V20ZM16.9999 18C16.9999 18.4796 16.9994 18.7893 16.9832 19.0262C16.9676 19.2542 16.941 19.3411 16.9238 19.3827L18.7715 20.1481C18.9065 19.8221 18.956 19.4922 18.9785 19.1624C19.0004 18.8415 18.9999 18.4523 18.9999 18H16.9999ZM15 22C15.4522 22 15.8415 22.0005 16.1624 21.9787C16.4922 21.9562 16.8221 21.9067 17.1481 21.7717L16.3827 19.9239C16.3411 19.9411 16.2543 19.9677 16.0263 19.9833C15.7893 19.9995 15.4796 20 15 20V22ZM16.9238 19.3827C16.8222 19.6278 16.6276 19.8225 16.3827 19.9239L17.1481 21.7717C17.8832 21.4671 18.4671 20.883 18.7715 20.1481L16.9238 19.3827ZM15 16C15.4796 16 15.7893 16.0005 16.0262 16.0167C16.2542 16.0323 16.3411 16.0589 16.3827 16.0761L17.148 14.2284C16.8221 14.0934 16.4922 14.0439 16.1624 14.0213C15.8415 13.9995 15.4523 14 15 14V16ZM18.9999 18C18.9999 17.5477 19.0004 17.1585 18.9785 16.8376C18.956 16.5078 18.9065 16.1779 18.7715 15.8519L16.9238 16.6173C16.941 16.6589 16.9676 16.7457 16.9832 16.9738C16.9994 17.2107 16.9999 17.5204 16.9999 18H18.9999ZM16.3827 16.0761C16.6276 16.1776 16.8222 16.3722 16.9238 16.6173L18.7715 15.8519C18.4671 15.1169 17.8832 14.5329 17.1481 14.2284L16.3827 16.0761ZM7 18C7 17.5204 7.00054 17.2107 7.01671 16.9737C7.03227 16.7457 7.05888 16.6589 7.07612 16.6173L5.22836 15.8519C5.09336 16.1779 5.04385 16.5078 5.02135 16.8376C4.99946 17.1585 5 17.5477 5 18H7ZM9 14C8.54775 14 8.15852 13.9995 7.83772 14.0214C7.5079 14.0439 7.17807 14.0934 6.85218 14.2284L7.61755 16.0761C7.65919 16.0589 7.74599 16.0323 7.97389 16.0167C8.2108 16.0005 8.52037 16 9 16V14ZM7.07612 16.6173C7.17752 16.3725 7.3723 16.1777 7.61755 16.0761L6.85218 14.2284C6.11732 14.5328 5.53293 15.1166 5.22836 15.8519L7.07612 16.6173ZM5 18C5 18.4522 4.99946 18.8415 5.02135 19.1624C5.04385 19.4922 5.09336 19.8221 5.22836 20.1481L7.07612 19.3827C7.05888 19.3411 7.03227 19.2542 7.01671 19.0262C7.00054 18.7893 7 18.4796 7 18H5ZM9 20C8.52036 20 8.21079 19.9995 7.97387 19.9833C7.74597 19.9678 7.65918 19.9411 7.61755 19.9239L6.85218 21.7717C7.17809 21.9067 7.50793 21.9562 7.83774 21.9787C8.15853 22.0005 8.54776 22 9 22V20ZM5.22836 20.1481C5.53292 20.8833 6.11729 21.4673 6.85218 21.7717L7.61755 19.9239C7.37233 19.8223 7.17754 19.6275 7.07612 19.3827L5.22836 20.1481ZM10 12H14V10H10V12ZM7 7.00001V6.20001H5V7.00001H7ZM9.2002 4H14.8002V2H9.2002V4ZM17 6.20001V7.00001H19V6.20001H17ZM18 6.00001L6 6.00001V8.00001L18 8.00001V6.00001ZM14.8002 4C15.3768 4 15.7489 4.00078 16.0321 4.02393C16.3036 4.04611 16.4043 4.08377 16.4538 4.10899L17.3618 2.32698C16.9835 2.13421 16.5904 2.06288 16.1951 2.03057C15.8115 1.99922 15.3437 2 14.8002 2V4ZM19 6.20001C19 5.65656 19.0008 5.18875 18.9696 4.80515C18.9373 4.40986 18.8661 4.01654 18.6732 3.63805L16.8912 4.54603C16.9164 4.59536 16.954 4.69598 16.9762 4.96769C16.9993 5.2511 17 5.62336 17 6.20001H19ZM16.4538 4.10899C16.6424 4.20508 16.7956 4.35828 16.8912 4.54603L18.6732 3.63805C18.3854 3.07316 17.9259 2.61439 17.3618 2.32698L16.4538 4.10899ZM7 6.20001C7 5.62346 7.00078 5.25119 7.02393 4.96785C7.04612 4.69619 7.0838 4.59548 7.10899 4.54603L5.32698 3.63805C5.13419 4.01643 5.06287 4.40964 5.03057 4.80499C4.99922 5.18866 5 5.65646 5 6.20001H7ZM9.2002 2C8.65663 2 8.18874 1.99922 7.80498 2.03057C7.40962 2.06286 7.01624 2.13416 6.63781 2.32698L7.54579 4.10899C7.59517 4.08383 7.69595 4.04613 7.9678 4.02393C8.25126 4.00078 8.62365 4 9.2002 4V2ZM7.10899 4.54603C7.205 4.35761 7.35788 4.20474 7.54579 4.10899L6.63781 2.32698C6.07306 2.61473 5.61447 3.07382 5.32698 3.63805L7.10899 4.54603Z"/>
 </symbol>
 <symbol id="ico_envelope" viewBox="0 0 24 24">
-	<path d="M4 6L12.2286 12L19.9999 6M21 8.19995V15.8C21 16.9201 21.0002 17.4802 20.7822 17.908C20.5905 18.2844 20.2841 18.5902 19.9078 18.782C19.48 19 18.9203 19 17.8002 19H6.2002C5.08009 19 4.51962 19 4.0918 18.782C3.71547 18.5902 3.40973 18.2844 3.21799 17.908C3 17.4802 3 16.9201 3 15.8V8.19995C3 7.07985 3 6.51986 3.21799 6.09204C3.40973 5.71572 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.48 5 19.9078 5.21799C20.2841 5.40973 20.5905 5.71572 20.7822 6.09204C21.0002 6.51986 21 7.07985 21 8.19995Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M4 6L12.2286 12L19.9999 6M21 8.19995V15.8C21 16.9201 21.0002 17.4802 20.7822 17.908C20.5905 18.2844 20.2841 18.5902 19.9078 18.782C19.48 19 18.9203 19 17.8002 19H6.2002C5.08009 19 4.51962 19 4.0918 18.782C3.71547 18.5902 3.40973 18.2844 3.21799 17.908C3 17.4802 3 16.9201 3 15.8V8.19995C3 7.07985 3 6.51986 3.21799 6.09204C3.40973 5.71572 3.71547 5.40973 4.0918 5.21799C4.51962 5 5.08009 5 6.2002 5H17.8002C18.9203 5 19.48 5 19.9078 5.21799C20.2841 5.40973 20.5905 5.71572 20.7822 6.09204C21.0002 6.51986 21 7.07985 21 8.19995Z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 <symbol id="ico_PDF" viewBox="0 0 24 24">
 	<path d="M19.0002 9H16.2002C15.0801 9 14.5196 8.99997 14.0918 8.78198C13.7155 8.59024 13.4097 8.28429 13.218 7.90797C13 7.48014 13 6.9201 13 5.8V3M19 17.8V9.3255C19 8.83632 18.9996 8.59169 18.9443 8.36151C18.8953 8.15744 18.8147 7.96238 18.705 7.78343C18.5814 7.5816 18.4089 7.40864 18.063 7.06274L14.9375 3.93726C14.5916 3.59135 14.4186 3.41842 14.2168 3.29474C14.0379 3.18508 13.8428 3.10425 13.6388 3.05526C13.4086 3 13.1639 3 12.6747 3H8.2002C7.08009 3 6.51962 3 6.0918 3.21799C5.71547 3.40973 5.40973 3.71572 5.21799 4.09204C5 4.51986 5 5.07991 5 6.20001V17.8C5 18.9201 5 19.4801 5.21799 19.908C5.40973 20.2843 5.71547 20.5902 6.0918 20.782C6.51962 21 7.08009 21 8.2002 21H15.8002C16.9203 21 17.48 21 17.9078 20.782C18.2841 20.5902 18.5905 20.2843 18.7822 19.908C19.0002 19.4801 19 18.9201 19 17.8Z" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -1122,6 +835,7 @@
 <symbol id="ico_sortBottom" viewBox="0 0 8 5">
 	<path d="M7.32714 0.352539H0.672857C0.0745304 0.352539 -0.224633 1.07311 0.197551 1.49321L3.52749 4.80395C3.78751 5.06547 4.21249 5.06547 4.47531 4.80395L7.80245 1.49321C8.22463 1.07311 7.92547 0.352539 7.32714 0.352539Z"/>
 </symbol>
+
 <symbol id="ico_pdf2" viewBox="0 0 24 24">
 	<path d="M20.905 16.631L21.0171 16.824C21.1721 17.1522 21.2474 17.5052 21.2474 17.8599C21.2474 18.0134 21.2314 18.1677 21.1989 18.3234C21.1381 18.5914 21.0453 18.8486 20.9081 19.0836C20.7861 19.2836 20.6506 19.4596 20.5039 19.6064L20.4955 19.6148L20.4875 19.6236C20.4196 19.6982 20.3399 19.7654 20.2315 19.8469C19.8139 20.1464 19.3068 20.3199 18.7674 20.3199C17.8755 20.3199 17.0807 19.8647 16.6303 19.0896C16.6301 19.0893 16.63 19.0891 16.6298 19.0889L15.3205 16.82L15.1762 16.5699H14.8874H9.10744H8.8187L8.67438 16.82L7.36505 19.0889C7.36495 19.089 7.36486 19.0892 7.36477 19.0893C6.91438 19.8646 6.11943 20.3199 5.22744 20.3199C4.33527 20.3199 3.54017 19.8644 3.08984 19.0889L3.08865 19.0868C2.64086 18.3239 2.63949 17.4066 3.08984 16.631C3.54018 15.8554 4.33527 15.3999 5.22744 15.3999H7.84744H8.13625L8.28055 15.1498L11.1706 10.1398L11.3147 9.88988L11.1705 9.64002L9.8605 7.37002L9.86051 7.37001L9.85865 7.36683C9.41086 6.60394 9.40949 5.6866 9.85984 4.911C10.3102 4.13542 11.1053 3.67993 11.9974 3.67993C12.8896 3.67993 13.6847 4.13542 14.135 4.911L14.1362 4.91303C14.584 5.67593 14.5854 6.59326 14.135 7.36886L14.1344 7.37002L12.8244 9.64002L12.6802 9.88988L12.8243 10.1398L15.7143 15.1498L15.8586 15.3999H16.1474H18.7674C19.6596 15.3999 20.4547 15.8554 20.905 16.631ZM7.03066 17.3296L7.46266 16.5799H6.59744H5.23744C4.56591 16.5799 4.23294 17.0339 4.12555 17.218C4.01316 17.4107 3.79611 17.9354 4.12332 18.508C4.45543 19.0892 5.02621 19.1499 5.23744 19.1499C5.44857 19.1499 6.01891 19.0893 6.35109 18.5088C6.35125 18.5085 6.35141 18.5083 6.35156 18.508L7.03066 17.3296ZM13.1207 6.78958L13.1207 6.78961L13.1245 6.78275C13.4463 6.20351 13.233 5.6929 13.1193 5.498C13.0119 5.31391 12.679 4.85993 12.0074 4.85993C11.3359 4.85993 11.0029 5.31391 10.8956 5.498C10.7832 5.69067 10.5661 6.21539 10.8933 6.788L10.8942 6.78958L11.5742 7.96958L12.0074 8.72134L12.4407 7.96958L13.1207 6.78958ZM9.94417 14.6504L9.51245 15.3999H10.3774H12.0074H13.6374H14.5024L14.0707 14.6504L12.4407 11.8204L12.0074 11.0681L11.5742 11.8204L9.94417 14.6504ZM19.8916 18.508L19.8916 18.508L19.8945 18.5028C20.2163 17.9235 20.003 17.4129 19.8893 17.218C19.782 17.0339 19.449 16.5799 18.7774 16.5799H17.4174H16.5522L16.9842 17.3296L17.6633 18.508C17.6635 18.5083 17.6637 18.5086 17.6639 18.5089C17.9961 19.0893 18.5663 19.1499 18.7774 19.1499C18.9887 19.1499 19.5595 19.0892 19.8916 18.508Z" fill="" stroke=""/>
 </symbol>
@@ -1216,9 +930,7 @@
 </symbol>
 
 </svg>
-	
-
-	<script src="js/scripts.min.js"></script>
+<script src="js/scripts.min.js"></script>
 
 </body>
 </html>

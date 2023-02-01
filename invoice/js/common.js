@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
 
 	const choices = document.querySelectorAll('.documentData_select');
+	const choicesCode = document.querySelectorAll('.documentData_selectCode');
 
 	let checker = false;
 	let checkerImport = false;
@@ -10,6 +11,14 @@ document.addEventListener('DOMContentLoaded', function(){
 			itemSelectText: '',
 			noResultsText: 'לא נמצאו תוצאות',
 			searchEnabled: false
+		})
+	})
+
+	choicesCode.forEach(el => {
+		const choice = new Choices(el, {
+			itemSelectText: '',
+			noResultsText: 'לא נמצאו תוצאות',
+			searchEnabled: false,
 		})
 	})
 
@@ -213,5 +222,16 @@ document.addEventListener('DOMContentLoaded', function(){
 				seeMore.find('.toolTip').fadeOut();
 		}
      });
+
+	 $(".mainContent_clientPage_tabList").on("click", "li:not(.active)", function() {
+		$(this)
+		  .addClass("active")
+		  .siblings()
+		  .removeClass("active")
+		  $(".mainContent_clientPage_tabBody").find(".mainContent_clientPage_tabItem")
+		  .removeClass("active")
+		  .eq($(this).index())
+		  .addClass("active");
+	  });
 	
 })
