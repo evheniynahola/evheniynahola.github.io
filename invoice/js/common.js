@@ -223,15 +223,33 @@ document.addEventListener('DOMContentLoaded', function(){
 		}
      });
 
-	 $(".mainContent_clientPage_tabList").on("click", "li:not(.active)", function() {
-		$(this)
-		  .addClass("active")
-		  .siblings()
-		  .removeClass("active")
-		  $(".mainContent_clientPage_tabBody").find(".mainContent_clientPage_tabItem")
-		  .removeClass("active")
-		  .eq($(this).index())
-		  .addClass("active");
+	  $('.mainContent_clientPage_tabList').each(function(i) {
+		var storage = localStorage.getItem('tab' + i);
+		if (storage) {
+		  $(this).find('li').removeClass('active').eq(storage).addClass('active')
+
+		  $(".mainContent_clientPage_tabBody").find(".mainContent_clientPage_tabItem").removeClass('active').eq(storage).addClass('active');
+		}
 	  });
+   
+	  $('.mainContent_clientPage_tabList').on('click', 'li:not(.active)', function() {
+		$(this)
+		.addClass('active').siblings().removeClass('active')
+
+		$(".mainContent_clientPage_tabBody").find(".mainContent_clientPage_tabItem").removeClass('active').eq($(this).index()).addClass('active');
+		var ulIndex = $('.mainContent_clientPage_tabList').index($(this).parents('.mainContent_clientPage_tabList'));
+		localStorage.removeItem('tab' + ulIndex);
+		localStorage.setItem('tab' + ulIndex, $(this).index());
+	  });
+
+	  
+	  var animation = bodymovin.loadAnimation({
+		container: document.querySelector('.dataPanel_lottie'), // Required
+		path: '../img/media/data.json', // Required
+		renderer: 'svg', // Required
+		loop: false, // Optional
+		autoplay: true, // Optional
+	  })
+	  
 	
 })
