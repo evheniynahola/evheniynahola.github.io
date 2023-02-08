@@ -246,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	  
 	  var animation = bodymovin.loadAnimation({
 		container: document.querySelector('.dataPanel_lottie'), // Required
-		path: '../img/media/graph.json', // Required
+		path: './img/media/graph.json', // Required
 		renderer: 'svg', // Required
 		loop: false, // Optional
 		autoplay: true, // Optional
