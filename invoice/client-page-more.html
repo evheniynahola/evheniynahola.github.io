@@ -193,8 +193,8 @@
 												לקוחות וספקים
 											</span>
 											<ul class="dropDownWrapper_list dropDownWrapper_list_userMenu">
-												<li><a href="./client-page.html"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_userGroup_download"/></svg> ספקים</a></li>
-												<li><a href="./client-page.html"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_userGroup_suitcase"/></svg> סוכנים</a></li>
+												<li><a href="./client-flow-providers.html"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_userGroup_download"/></svg> ספקים</a></li>
+												<li><a href="./client-flow-providers.html"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_userGroup_suitcase"/></svg> סוכנים</a></li>	
 											</ul>
 										</li>
 										<li>
@@ -238,8 +238,21 @@
 							</div>
 							<div class="col">
 								<div class="mainContent_wrapper">
-									<div class="mainContent_clientPage_title">ריבועים בע"מ</div>
-									<div class="mainContent_clientPage_descr">כרטיס לקוח</div>
+									
+									<div class="mainContent_clientPage_topControl d-flex justify-content-between align-items-center">
+										<div>
+											<div class="mainContent_clientPage_title">ריבועים בע"מ</div>
+											<div class="mainContent_clientPage_descr">כרטיס לקוח</div>
+										</div>
+										<div class="d-flex">
+											<div class="documentAdd_button documentButton_client">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_plus"></use></svg>
+											</div>
+											<div class="documentAdd_button documentButton_client">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_chart"></use></svg>
+											</div>
+										</div>
+									</div>
 
 									<div class="mainContent_clientPage_tabWrapper">
 										<div class="mainContent_clientPage_tabHeader">
@@ -320,7 +333,7 @@
 															<div class="dataPanel_item dataPanel_content dataPanel_item_table dataPanel_layout">
 																<div class="dataPanel_head d-flex align-items-center justify-content-between">
 																	<h2>מסמכים אחרונים</h2>
-																	<div class="documentAdd_button">
+																	<div class="documentAdd_button documentButton_client">
 																		<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_plus"></use></svg>
 																	</div>
 																</div>
@@ -485,8 +498,8 @@
 															</div>
 														</div>
 														<div class="col-6">
-															<div class="dataPanel_item dataPanel_content dataPanel_layout dataPanel_fake">
-																<!-- <h2>הכנסות מלקוח</h2> -->
+															<div class="dataPanel_item dataPanel_content dataPanel_layout dataPanel_graph">
+																<h2>הכנסות מלקוח</h2>
 																<div class="dataPanel_lottie">
 
 																</div>
@@ -496,10 +509,791 @@
 												</div>
 											</div>
 
-											<div class="mainContent_clientPage_tabItem">
-												<form class="mainContent_clientPage_form">
-													<h2 class="w-100" style="text-align:center">...טעינת נתונים</h2>
-												</form>
+											<div class="mainContent_clientPage_tabItem mainContent_clientPage_tabItem_wide mainContent_clientPage_tabTable">
+
+												<div class="mainContent_topInterface d-flex justify-content-between align-items-center">
+
+													<div class="searchForm">
+														<label class="inputWrapper searchField">
+															<span class="searchButton"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_search"/></svg></span>
+															<input type="search">
+														</label>
+													</div>
+													
+													<ul class="mainContent_interfaceList d-flex align-items-center">
+														<li>
+															<a href="#"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_exel2"></use></svg></a>
+														</li>
+														<li>
+															<a href="#"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_pdf2"></use></svg></a>
+														</li>
+														<li class="">
+															<a href="#"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_envelope"></use></svg></a>
+														</li>
+														<li>
+															<a href="#"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_print"></use></svg></a>
+														</li>
+													</ul>
+												</div>
+
+												<div class="mainContent_documentListWrapper">
+													<div class="documentListWrapper_navigation d-flex align-items-center justify-content-between">
+														<div class="navigationAdd d-flex align-items-center">
+															<div class="navigationAdd_search">
+																<img src="./img/icons/search.svg" alt="search">
+															</div>
+															<div class="navigationAdd_filter">
+																<img src="./img/icons/filter.svg" alt="filter">
+																סנן
+															</div>
+														</div>
+														<div class="navigationPag d-flex align-items-center">
+															<div class="navigationPag_listCount"><span class="activeCount">1-50</span> of <span class="totalCount">2 567</span></div>
+															<div class="navigationPag_controls d-flex">
+																<span class="navigationPag_next"></span>
+																<span class="navigationPag_prev"></span>
+															</div>
+														</div>
+													</div>
+													<div class="mainContent_tableWrapper">
+														<table class="tableInvoiceList">
+															<thead>
+																<tr>
+																	<th>
+																		<label class="tableInvoiceList_checkbox tableInvoiceList_checkbox_head">
+																			<input type="checkbox">
+																			<span></span>
+																		</label>
+																	</th>
+																	<th>
+																		<div class="tableInvoiceList_controlsWrapper d-flex">
+																			<div class="tableInvoiceList_controlsTitle">
+																				מס'
+																			</div>
+																			<div class="tableInvoiceList_controls">
+																				<span class="controlGroup_upChange">
+																					<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+																				</span>
+																				<span class="controlGroup_downChange">
+																					<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+																				</span>
+																			</div>
+																		</div>
+																	</th>
+																	<th>
+																		<div class="tableInvoiceList_controlsWrapper d-flex">
+																			<div class="tableInvoiceList_controlsTitle">
+																				סוג מסמך
+																			</div>
+																			<div class="tableInvoiceList_controls">
+																				<span class="controlGroup_upChange">
+																					<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+																				</span>
+																				<span class="controlGroup_downChange">
+																					<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+																				</span>
+																			</div>
+																		</div>
+																	</th>
+																	<th>
+																		<div class="tableInvoiceList_controlsWrapper d-flex">
+																			<div class="tableInvoiceList_controlsTitle">
+																				תאריך
+																			</div>
+																			<div class="tableInvoiceList_controls">
+																				<span class="controlGroup_upChange">
+																					<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+																				</span>
+																				<span class="controlGroup_downChange">
+																					<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+																				</span>
+																			</div>
+																		</div>
+																	</th>
+																	<th>
+																		<div class="tableInvoiceList_controlsWrapper d-flex">
+																			<div class="tableInvoiceList_controlsTitle">
+																				<span class="toolTip_title">Lorem ipsum dolor</span>
+																				סכום
+																			</div>
+																			<div class="tableInvoiceList_controls">
+																				<span class="controlGroup_upChange">
+																					<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+																				</span>
+																				<span class="controlGroup_downChange">
+																					<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+																				</span>
+																			</div>
+																		</div>
+																	</th>
+																	<th>
+																		<span class="tableExpander"></span>
+																		<div class="tableInvoiceList_controlsWrapper d-flex">
+																			<div class="tableInvoiceList_controlsTitle">
+																				<span class="toolTip_title">Lorem ipsum dolor</span>
+																				מטבע
+																			</div>
+																			<div class="tableInvoiceList_controls">
+																				<span class="controlGroup_upChange">
+																					<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+																				</span>
+																				<span class="controlGroup_downChange">
+																					<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+																				</span>
+																			</div>
+																		</div>
+																	</th>
+																	<th>
+																		<div class="tableInvoiceList_controlsWrapper d-flex">
+																			<div class="tableInvoiceList_controlsTitle">
+																				<span class="toolTip_title">Lorem ipsum dolor</span>
+																				סטטוס
+																			</div>
+																			<div class="tableInvoiceList_controls">
+																				<span class="controlGroup_upChange">
+																					<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+																				</span>
+																				<span class="controlGroup_downChange">
+																					<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+																				</span>
+																			</div>
+																		</div>
+																	</th>
+																	<th></th>
+																	<th><span class="tableExpander"></span></th>
+																	<th></th>
+																</tr>
+															</thead>
+															<tbody>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבונית מס / קבלה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>USD</td>
+																	<td>-</td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבון עסקה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>ש"ח</td>
+																	<td><span class="tableInvoiceList_success">פתוחה</span></td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבונית מס / קבלה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>USD</td>
+																	<td>-</td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבון עסקה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>ש"ח</td>
+																	<td><span class="tableInvoiceList_success">פתוחה</span></td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבונית מס / קבלה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>USD</td>
+																	<td>-</td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבון עסקה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>ש"ח</td>
+																	<td><span class="tableInvoiceList_success">פתוחה</span></td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבונית מס / קבלה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>USD</td>
+																	<td>-</td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבון עסקה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>ש"ח</td>
+																	<td><span class="tableInvoiceList_success">פתוחה</span></td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבונית מס / קבלה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>USD</td>
+																	<td>-</td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבון עסקה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>ש"ח</td>
+																	<td><span class="tableInvoiceList_success">פתוחה</span></td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבונית מס / קבלה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>USD</td>
+																	<td>-</td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבון עסקה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>ש"ח</td>
+																	<td><span class="tableInvoiceList_success">פתוחה</span></td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבונית מס / קבלה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>USD</td>
+																	<td>-</td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבון עסקה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>ש"ח</td>
+																	<td><span class="tableInvoiceList_success">פתוחה</span></td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבונית מס / קבלה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>USD</td>
+																	<td>-</td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+																<tr>
+																	<td><label class="tableInvoiceList_checkbox"><input type="checkbox"><span></span></label></td>
+																	<td class="tableInvoiceList_companyName">6048590</td>
+																	<td>חשבון עסקה</td>
+																	<td>24/05/2021</td>
+																	<td>550,555,678.56</td>
+																	<td>ש"ח</td>
+																	<td><span class="tableInvoiceList_success">פתוחה</span></td>
+																	<td colspan="3">
+																		<div class="tableInvoiceList_seeMore">
+																			<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore"></use></svg>
+																			<div class="toolTip">
+																				<ul>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_show"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_lockOpen"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_mail"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoMix" xlink:href="#ico_seeMore_whatsapp"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileDocument"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_fileClose"></use></svg>
+																					</li>
+																					<li>
+																						<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_seeMore_check"></use></svg>
+																					</li>
+																				</ul>
+																			</div>
+																		</div>
+																	</td>
+																</tr>
+															</tbody>
+														</table>
+													</div>
+												</div>
+
 											</div>
 
 											<div class="mainContent_clientPage_tabItem">
@@ -1305,8 +2099,9 @@
 	<path d="M3.33333 5.00008L10.1905 10.0001L16.6666 5.00008M17.5 6.83337V13.1667C17.5 14.1001 17.5002 14.5669 17.3185 14.9234C17.1587 15.237 16.9034 15.4919 16.5898 15.6517C16.2333 15.8334 15.7669 15.8334 14.8335 15.8334H5.16683C4.23341 15.8334 3.76635 15.8334 3.40983 15.6517C3.09623 15.4919 2.84144 15.237 2.68166 14.9234C2.5 14.5669 2.5 14.1001 2.5 13.1667V6.83337C2.5 5.89995 2.5 5.4333 2.68166 5.07678C2.84144 4.76318 3.09623 4.50819 3.40983 4.3484C3.76635 4.16675 4.23341 4.16675 5.16683 4.16675H14.8335C15.7669 4.16675 16.2333 4.16675 16.5898 4.3484C16.9034 4.50819 17.1587 4.76318 17.3185 5.07678C17.5002 5.4333 17.5 5.89995 17.5 6.83337Z" stroke="#8C8D92" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 
-<symbol id="ico_seeMore_show" viewBox="0 0 20 20">
-	<path d="M2.98924 11.4824C4.47211 12.9566 7.05819 15 10.0004 15C12.9426 15 15.5284 12.9566 17.0113 11.4824L17.012 11.4817C17.4029 11.0931 17.5986 10.8985 17.7231 10.5169C17.812 10.2445 17.812 9.75549 17.7231 9.48313C17.5986 9.10146 17.4029 8.90689 17.0119 8.51821L17.0113 8.51759C15.5284 7.0434 12.9426 5 10.0004 5C7.05819 5 4.47211 7.0434 2.98924 8.51759C2.59786 8.90669 2.40215 9.10125 2.27757 9.48313C2.18873 9.75549 2.18873 10.2445 2.27757 10.5169C2.40214 10.8987 2.59784 11.0933 2.98919 11.4823L2.98924 11.4824Z" stroke="#8C8D92" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<symbol id="ico_seeMore_show" viewBox="0 0 24 24">
+	<path d="M3.5868 13.7789C5.36623 15.5479 8.46953 18 12.0002 18C15.5308 18 18.6338 15.5479 20.4133 13.7789L20.4141 13.778C20.8832 13.3117 21.118 13.0782 21.2674 12.6202C21.3741 12.2934 21.3741 11.7066 21.2674 11.3798C21.118 10.9218 20.8832 10.6883 20.414 10.2219L20.4133 10.2211C18.6338 8.45208 15.5308 6 12.0002 6C8.46953 6 5.36623 8.45208 3.5868 10.2211C3.11714 10.688 2.88229 10.9215 2.7328 11.3798C2.62618 11.7066 2.62618 12.2934 2.7328 12.6202C2.88228 13.0785 3.11711 13.3119 3.58673 13.7788L3.5868 13.7789Z" stroke="#8C8D92" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+	<path d="M10 12C10 13.1046 10.8954 14 12 14C13.1046 14 14 13.1046 14 12C14 10.8954 13.1046 10 12 10C10.8954 10 10 10.8954 10 12Z" stroke="#8C8D92" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 
 <symbol id="ico_seeMore_whatsapp" viewBox="0 0 20 20">

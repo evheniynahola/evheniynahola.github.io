@@ -24,10 +24,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
 	$('.documentAdd_button_getMenu').each(function(){
 		let ths = $(this);
-		
 		ths.on('click', function(){
 			$('.documentAdd_list').not(ths.siblings('.documentAdd_list')).slideUp();
 			ths.siblings('.documentAdd_list').toggleClass('active').slideToggle();
+			ths.toggleClass('active')
 		})
 	})
 
@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		if (!getMenu.is(e.target)
 		    && getMenu.has(e.target).length === 0) {
 				getMenu.siblings('.documentAdd_list').removeClass('active').slideUp()
+				getMenu.removeClass('active')
 		}
      });
 
@@ -245,7 +246,7 @@ document.addEventListener('DOMContentLoaded', function(){
 	  
 	  var animation = bodymovin.loadAnimation({
 		container: document.querySelector('.dataPanel_lottie'), // Required
-		path: '../img/media/data.json', // Required
+		path: '../img/media/graph.json', // Required
 		renderer: 'svg', // Required
 		loop: false, // Optional
 		autoplay: true, // Optional
