@@ -186,7 +186,7 @@
 												קטלוג
 											</span>
 										</li>
-										<li><a href="./client-page.html"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_userGroup_user"/></svg> לקוחות</a></li>
+										<li><a href="./client-flow-providers.html"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_userGroup_user"/></svg> לקוחות</a></li>
 										<li class="dropDownWrapper">
 											<span>
 												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_usersGroup"/></svg>											
@@ -555,12 +555,12 @@
 		</div>
 	</div>
 
-<!-- modal_active - display flex -->
+<!-- modal -->
 <div class="modal modal_info">
 	<div class="modal_body">
 		<div class="modal_head">
 			<div class="modal_close">
-				<img src="./img/icons/modal_close.svg" alt="modal close">
+				<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_modalClose"/></svg>
 			</div>
 		</div>
 		<div class="modal_content">
@@ -580,7 +580,7 @@
 	<div class="modal_body">
 		<div class="modal_head d-flex justify-content-between align-items-center">
 			<div class="modal_close">
-				<img src="./img/icons/modal_close.svg" alt="modal close">
+				<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_modalClose"/></svg>
 			</div>
 			<div class="modal_title">שכפול ממסמך</div>
 		</div>
@@ -592,232 +592,234 @@
 				</label>
 			</form>
 			<div class="searchResult">נמצאו <span class="searchResult_count">51 רשומות</span></div>
-			<div class="tableWrapper">
-				<table class="tableInvoiceList tableDocumentsList">
-					<thead>
-						<tr>
-							<th>
-								<div class="tableInvoiceList_controlsWrapper d-flex">
-									<div class="tableInvoiceList_controlsTitle">
-										סוג מסמך
+			<div class="tableFlask_documents">
+				<div class="tableWrapper">
+					<table class="tableInvoiceList tableDocumentsList">
+						<thead>
+							<tr>
+								<th>
+									<div class="tableInvoiceList_controlsWrapper d-flex">
+										<div class="tableInvoiceList_controlsTitle">
+											סוג מסמך
+										</div>
+										<div class="tableInvoiceList_controls">
+											<span class="controlGroup_upChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+											</span>
+											<span class="controlGroup_downChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+											</span>
+										</div>
 									</div>
-									<div class="tableInvoiceList_controls">
-										<span class="controlGroup_upChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
-										</span>
-										<span class="controlGroup_downChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
-										</span>
+								</th>
+								<th>
+									<div class="tableInvoiceList_controlsWrapper d-flex">
+										<div class="tableInvoiceList_controlsTitle">
+											מספר מסמך
+										</div>
+										<div class="tableInvoiceList_controls">
+											<span class="controlGroup_upChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+											</span>
+											<span class="controlGroup_downChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+											</span>
+										</div>
 									</div>
-								</div>
-							</th>
-							<th>
-								<div class="tableInvoiceList_controlsWrapper d-flex">
-									<div class="tableInvoiceList_controlsTitle">
-										מספר מסמך
+								</th>
+								<th>
+									<div class="tableInvoiceList_controlsWrapper d-flex">
+										<div class="tableInvoiceList_controlsTitle">
+											סכום
+										</div>
+										<div class="tableInvoiceList_controls">
+											<span class="controlGroup_upChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+											</span>
+											<span class="controlGroup_downChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+											</span>
+										</div>
 									</div>
-									<div class="tableInvoiceList_controls">
-										<span class="controlGroup_upChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
-										</span>
-										<span class="controlGroup_downChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
-										</span>
+								</th>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
 									</div>
-								</div>
-							</th>
-							<th>
-								<div class="tableInvoiceList_controlsWrapper d-flex">
-									<div class="tableInvoiceList_controlsTitle">
-										סכום
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<div class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
 									</div>
-									<div class="tableInvoiceList_controls">
-										<span class="controlGroup_upChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
-										</span>
-										<span class="controlGroup_downChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
-										</span>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
 									</div>
-								</div>
-							</th>
-							<th></th>
-							<th></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<div class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</div>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<div class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</div>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td>
-								<a href="./document.html" class="documentButton documentButton_copy">
-									צפה במסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
-								</a>
-							</td>
-							<td>
-								<div class="documentButton documentButton_solid documentButton_copy">
-									שכפל מסמך
-									<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
-								</div>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<div class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</div>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td>
+									<a href="./document.html" class="documentButton documentButton_copy">
+										צפה במסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_show"></use></svg>
+									</a>
+								</td>
+								<td>
+									<div class="documentButton documentButton_solid documentButton_copy">
+										שכפל מסמך
+										<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_copyTableDoc"></use></svg>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -827,7 +829,7 @@
 	<div class="modal_body">
 		<div class="modal_head d-flex justify-content-between align-items-center">
 			<div class="modal_close">
-				<img src="./img/icons/modal_close.svg" alt="modal close">
+				<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_modalClose"/></svg>
 			</div>
 			<div class="modal_title">שכפול ממסמך</div>
 		</div>
@@ -839,142 +841,144 @@
 				</label>
 			</form>
 			<div class="searchResult">נמצאו <span class="searchResult_count">51 רשומות</span></div>
-			<div class="tableWrapper">
-				<table class="tableInvoiceList tableDocumentsList tableImportList">
-					<thead>
-						<tr>
-							<th>
-								<div class="tableInvoiceList_controlsWrapper d-flex">
-									<div class="tableInvoiceList_controlsTitle">
-										סוג מסמך
+			<div class="tableFlask_documents">
+				<div class="tableWrapper">
+					<table class="tableInvoiceList tableDocumentsList tableImportList">
+						<thead>
+							<tr>
+								<th>
+									<div class="tableInvoiceList_controlsWrapper d-flex">
+										<div class="tableInvoiceList_controlsTitle">
+											סוג מסמך
+										</div>
+										<div class="tableInvoiceList_controls">
+											<span class="controlGroup_upChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+											</span>
+											<span class="controlGroup_downChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+											</span>
+										</div>
 									</div>
-									<div class="tableInvoiceList_controls">
-										<span class="controlGroup_upChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
-										</span>
-										<span class="controlGroup_downChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
-										</span>
+								</th>
+								<th>
+									<div class="tableInvoiceList_controlsWrapper d-flex">
+										<div class="tableInvoiceList_controlsTitle">
+											מספר מסמך
+										</div>
+										<div class="tableInvoiceList_controls">
+											<span class="controlGroup_upChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+											</span>
+											<span class="controlGroup_downChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+											</span>
+										</div>
 									</div>
-								</div>
-							</th>
-							<th>
-								<div class="tableInvoiceList_controlsWrapper d-flex">
-									<div class="tableInvoiceList_controlsTitle">
-										מספר מסמך
+								</th>
+								<th>
+									<div class="tableInvoiceList_controlsWrapper d-flex">
+										<div class="tableInvoiceList_controlsTitle">
+											סכום
+										</div>
+										<div class="tableInvoiceList_controls">
+											<span class="controlGroup_upChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
+											</span>
+											<span class="controlGroup_downChange">
+												<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
+											</span>
+										</div>
 									</div>
-									<div class="tableInvoiceList_controls">
-										<span class="controlGroup_upChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
-										</span>
-										<span class="controlGroup_downChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
-										</span>
-									</div>
-								</div>
-							</th>
-							<th>
-								<div class="tableInvoiceList_controlsWrapper d-flex">
-									<div class="tableInvoiceList_controlsTitle">
-										סכום
-									</div>
-									<div class="tableInvoiceList_controls">
-										<span class="controlGroup_upChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortTop"></use></svg>																
-										</span>
-										<span class="controlGroup_downChange">
-											<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_sortBottom"></use></svg>															
-										</span>
-									</div>
-								</div>
-							</th>
-							<th></th>
-							<th></th>
-						</tr>
-					</thead>
-					<tbody>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-						<tr>
-							<td>הצעת מחיר</td>
-							<td>90567</td>
-							<td>1,234,567.89 ש"ח</td>
-							<td colspan="2">
-								<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
-							</td>
-						</tr>
-					</tbody>
-				</table>
+								</th>
+								<th></th>
+								<th></th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+							<tr>
+								<td>הצעת מחיר</td>
+								<td>90567</td>
+								<td>1,234,567.89 ש"ח</td>
+								<td colspan="2">
+									<label class="tableInvoiceList_checkbox tableDocumentImports_checkbox"><input type="checkbox"><span></span></label>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 			<p class="documentsImport_description">המסמכים המסומנים יסגרו ופרטיהם יקלטו במסמך החדש.</p>
 			<div class="documentsImport_buttonWrapper">
@@ -983,6 +987,7 @@
 		</div>
 	</div>
 </div>
+<!-- modal -->
 
 <table id="tableTemplates" style="display:none">
 	<thead></thead>
@@ -1244,10 +1249,14 @@
 	<path d="M17 16.0256L13 12.0256L17 8.02563M11 16.0256L7 12.0256L11 8.02563" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 
+<symbol id="ico_modalClose" viewBox="0 0 24 25">
+	<path d="M17.9962 18.5L6.17383 6.5M17.9962 6.5L6.17383 18.5" stroke="" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
 </svg>
 	
 
-	<script src="js/scripts.min.js"></script>
+<script src="js/scripts.min.js"></script>
 
 </body>
 </html>
