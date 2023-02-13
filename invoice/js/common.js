@@ -22,6 +22,23 @@ document.addEventListener('DOMContentLoaded', function(){
 		})
 	})
 
+	$('.customSelect').on('click', function(){
+		$(this).parent().siblings('.customSelect_list').addClass('active')
+	})
+
+	$('.customSelect_list li').on('click', function(){
+		let val = $(this).attr('data-value');
+		$(this).parent().siblings('.customSelect_label').find($('.customSelect')).val(val)
+	})
+
+	$(document).on('mouseup', function (e){
+		var getSelect = $(".customSelect");
+		if (!getSelect.is(e.target)
+		    && getSelect.has(e.target).length === 0) {
+				getSelect.parent().siblings('.customSelect_list').removeClass('active')
+		}
+     });
+
 	$('.documentAdd_button_getMenu').each(function(){
 		let ths = $(this);
 		ths.on('click', function(){
@@ -246,11 +263,24 @@ document.addEventListener('DOMContentLoaded', function(){
 	  
 	  var animation = bodymovin.loadAnimation({
 		container: document.querySelector('.dataPanel_lottie'), // Required
-		path: './img/media/graph.json', // Required
+		path: './img/media/graph_edit.json', // Required
 		renderer: 'svg', // Required
 		loop: false, // Optional
 		autoplay: true, // Optional
 	  })
+
+	  animation.addEventListener('complete', function(){
+		$('.dataPanel_lottie').addClass('unactive')
+		$('.dataPanel_lottieGraph').addClass('active')
+	  })
+
+
+	  //match height
+
+	  let matchHeight = $('.dataPanel_lottieGraph').height();
+	  
+
+	  $('.dataPanel_tableWrapper').height(matchHeight)
 	  
 	
 })
