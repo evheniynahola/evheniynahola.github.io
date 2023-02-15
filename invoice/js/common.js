@@ -280,7 +280,16 @@ document.addEventListener('DOMContentLoaded', function(){
 	  let matchHeight = $('.dataPanel_lottieGraph').height();
 	  
 
-	  $('.dataPanel_tableWrapper').height(matchHeight)
+	  $('.dataPanel_tableWrapper').height(matchHeight);
+
+
+	  $('.dataPanel_buttonAllDocuments').on('click', function(e){
+		e.preventDefault();
+		$(".mainContent_clientPage_tabBody").find(".mainContent_clientPage_tabItem").removeClass('active');
+		$(".mainContent_clientPage_tabItem").eq(1).addClass('active');
+		$('.mainContent_clientPage_tabList li').removeClass('active');
+		$('.mainContent_clientPage_tabList li').eq(1).addClass('active');
+	  })
 	  
 	
 })
