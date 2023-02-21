@@ -223,9 +223,7 @@ document.addEventListener('DOMContentLoaded', function(){
 		}
      });
 
-	 $('.documentBlock_orderInfo_documentDate').on('focus', function(){
-		$(this).val('');
-	 })
+	 
 
 	 $('.tableInvoiceList_seeMore').on('click', function(){
 		$(this).toggleClass('seeMore_active');
@@ -291,5 +289,14 @@ document.addEventListener('DOMContentLoaded', function(){
 		$('.mainContent_clientPage_tabList li').eq(1).addClass('active');
 	  })
 	  
-	
+	  $(".documentBlock_orderInfo_documentDate").mask("99.99.9999");
+
+	  $('.documentBlock_orderInfo_date').on('focusin', function(){
+		$(this).addClass('editable');
+	  })
+
+	  $('.documentBlock_orderInfo_date').on('focusout', function(){
+		$(this).removeClass('editable');
+	  })
+
 })
