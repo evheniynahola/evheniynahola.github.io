@@ -13,8 +13,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<!-- <meta property="og:image" content="path/to/image.jpg"> -->
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/favicon.png">
+	<link rel="shortcut icon" href="./assets/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="./assets/img/favicon/favicon.png">
 
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#F56311">
@@ -23,7 +23,7 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#F56311">
 
-	<link rel="stylesheet" href="css/main.min.css">
+	<link rel="stylesheet" href="./assets/css/main.css">
 
 </head>
 
@@ -68,7 +68,7 @@
 					<div class="mainContent">
 						<div class="mainContent_topLine">
     <div class="topLine_start">
-        <a href="/" class="logo"><img src="./img/content/mainLogo.svg" alt="שם אתר"></a>
+        <a href="/" class="logo"><img src="./assets/img/content/mainLogo.svg" alt="שם אתר"></a>
         <button class="topLine_mobileMenu">
             <span class="topLine_mobileMenu_toggle topLine_mobileMenu_toggleActive"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_hamburger"></use></svg></span>
             <span class="topLine_mobileMenu_toggle topLine_mobileMenu_toggleClose"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_modalClose"></use></svg></span>
@@ -149,7 +149,7 @@
         </div>
         <div class="userMain d-flex align-items-center">
             <div class="userMain_avatar">
-                <img src="./img/users/photo1.png" alt="user avatar">
+                <img src="./assets/img/users/photo1.png" alt="user avatar">
             </div>
             <div class="userMain_control d-flex align-items-center">
                 <div class="userMain_name">שם עסק</div>
@@ -260,7 +260,7 @@
             </div>
             <div class="userMain d-flex align-items-center">
                 <div class="userMain_avatar">
-                    <img src="./img/users/photo1.png" alt="user avatar">
+                    <img src="./assets/img/users/photo1.png" alt="user avatar">
                 </div>
                 <div class="userMain_control d-flex align-items-center">
                     <div class="userMain_name">שם עסק</div>
@@ -309,7 +309,7 @@
 
 												<div class="documentBlock_headline d-flex justify-content-between align-items-center">
 													<div class="documentBlock_headline_logo">
-														<img src="./img/content/openbayesLogo.svg" alt="openbayes logo">
+														<img src="./assets/img/content/openbayesLogo.svg" alt="openbayes logo">
 													</div>
 													<ul class="documentBlock_headline_list">
 														<li><span class="documentBlock_headline_title">קוביות בע"מ</span></li>
@@ -335,8 +335,94 @@
 												</div>
 
 												<div class="documentBlock_orderData">
+													
 
-													<div class="orderData_panel orderData_panel_customer">
+													<div class="orderData_customer_section">
+
+														<div class="row">
+															<div class="col">
+																<button class="documentButton documentButton_addItem documentButton_addCustomer">
+																	<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_plus"/></svg>
+																	להוסיף פריט
+																</button>
+															</div>
+															<div class="col">
+																
+															</div>
+															<div class="col-5">
+																
+															</div>
+														</div>
+
+														<div class="row">
+															<div class="col">
+																<div class="orderData_panel orderData_customerField">
+																	<div class="orderData_panel_wrapper">
+																		<span class="orderData_panel_date"><input type="text" value="" placeholder="שם משפחה/עסק " data-type="documentItems"></span>
+																	</div>
+																</div>
+															</div>
+															<div class="col">
+																<div class="orderData_panel orderData_customerField">
+																	<div class="orderData_panel_wrapper">
+																		<span class="orderData_panel_date"><input type="text" value="" placeholder="שם פרטי" data-type="documentItems"></span>
+																	</div>
+																</div>
+															</div>
+															<div class="col-5">
+																
+															</div>
+														</div>
+
+														<div class="row">
+															<div class="col">
+																<div class="orderData_panel orderData_customerField">
+																	<div class="orderData_panel_wrapper">
+																		<span class="orderData_panel_date"><input type="text" value="" placeholder="ע.מ / ת.ז" data-type="documentItems"></span>
+																	</div>
+																</div>
+															</div>
+															<div class="col">
+																<div class="orderData_panel orderData_customerField">
+																	<div class="orderData_panel_icon">
+																		<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_envelope"/></svg>
+																	</div>
+																	<div class="orderData_panel_wrapper">
+																		<span class="orderData_panel_date"><input type="text" value="" placeholder='כתובת דוא"ל' data-type="documentItems"></span>
+																	</div>
+																</div>
+															</div>
+															<div class="col-5">
+																
+															</div>
+														</div>
+
+														<div class="row">
+															<div class="col">
+												
+															</div>
+															<div class="col">
+																<div class="orderData_panel orderData_customerField">
+																	<div class="orderData_panel_icon">
+																		<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_customerPhone"/></svg>
+																	</div>
+																	<div class="orderData_panel_wrapper">
+																		<span class="orderData_panel_date"><input type="text" value="" placeholder="מספר טלפון" data-type="documentItems"></span>
+																	</div>
+																</div>
+															</div>
+															<div class="col-5">
+																<button class="orderData_customerAddButton">
+																	<svg class="mainIcon_accent" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_customerPlus"/></svg>
+																	להוסיף ללקוחות קבועים
+																</button>
+															</div>
+														</div>
+
+													</div>
+													
+													<!-- <div class="orderData_panel orderData_panel_customer">
+														
 														<div class="orderData_panel_icon">
 															<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_orderUser"/></svg>
 														</div>
@@ -344,7 +430,7 @@
 															<span class="orderData_panel_userName">שם הלקוח</span>
 															<span class="orderData_panel_userContacts"><span class="orderData_panel_dataDescr">פרטי הקשר:</span><input type="text" value="" placeholder="פרטי הקשר" data-type="documentCustomerName"></span>
 														</div>
-													</div>
+													</div> -->
 
 													<div class="row orderData_wrapper">
 														<div class="col">
@@ -447,7 +533,7 @@
 												</div>
 
 												<div class="documentBlock_footer d-flex justify-content-between align-items-center">
-													<span class="logo"><img src="./img/content/mainLogo.svg" alt="שם אתר"></span>
+													<span class="logo"><img src="./assets/img/content/mainLogo.svg" alt="שם אתר"></span>
 													<ul>
 														<li><span>15:36</span> 03.12.2022</li>
 														<li>מסמך ממוחשב</li>
@@ -461,7 +547,7 @@
 
 												<div class="documentBlock_headline d-flex justify-content-between align-items-center">
 													<div class="documentBlock_headline_logo">
-														<img src="./img/content/openbayesLogo.svg" alt="openbayes logo">
+														<img src="./assets/img/content/openbayesLogo.svg" alt="openbayes logo">
 													</div>
 													<ul class="documentBlock_headline_list">
 														<li><span class="documentBlock_headline_title">קוביות בע"מ</span></li>
@@ -539,7 +625,7 @@
 															</div>
 
 															<div class="documentBlock_paymentItem_signature">
-																<img src="./img/content/signature.png" alt="signature">
+																<img src="./assets/img/content/signature.png" alt="signature">
 															</div>
 
 														</div>
@@ -547,7 +633,7 @@
 												</div>
 
 												<div class="documentBlock_footer d-flex justify-content-between align-items-center">
-													<span class="logo"><img src="./img/content/mainLogo.svg" alt="שם אתר"></span>
+													<span class="logo"><img src="./assets/img/content/mainLogo.svg" alt="שם אתר"></span>
 													<ul>
 														<li><span>15:36</span> 03.12.2022</li>
 														<li>מסמך ממוחשב</li>
@@ -639,7 +725,7 @@
 		</div>
 		<div class="modal_content">
 			<div class="modal_logo">
-				<img src="./img/icons/modalLogo.svg" alt="modal logo">
+				<img src="./assets/img/icons/modalLogo.svg" alt="modal logo">
 				<h2>אוי, כמה חבל.</h2>
 				<p>אין לכם מודול סליקת כרטיסי אשראי ICREDIT.</p>
 				<p>על מנת לחייב לקוחות באשראי ישירות מתוך המסמך, נדרש להפעיל את המודול.</p>
@@ -1059,6 +1145,69 @@
 		</div>
 	</div>
 </div>
+<div class="modal modal_documents documentsAddCustomer">
+	<div class="modal_body">
+		<div class="modal_head d-flex justify-content-between align-items-center">
+			<div class="modal_close">
+				<svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoStroke" xlink:href="#ico_modalClose"/></svg>
+			</div>
+			<div class="modal_title">בחר לקוח</div>
+		</div>
+		<div class="modal_content">
+			<form class="searchForm">
+				<label class="inputWrapper searchField">
+					<span class="searchButton"><svg class="mainIcon" xmlns:xlink="http://www.w3.org/1999/xlink"><use class="icoFill" xlink:href="#ico_search"/></svg></span>
+					<input type="search" placeholder="חיפוש">
+				</label>
+			</form>
+			
+            <div class="customerListWrapper">
+                <div class="customerList_item">
+                    <div class="customerList_item_title">משולשים בע"מ</div>
+                    <div class="customerList_item_content"><span class="address"> זינגר 57<br> ירושלים, 52510 <br> ישראל</span></div>
+                    <div class="customerList_item_content">
+                        <div class="customerList_item_content">
+                            <a href="mailto:email@email.com">email@email.com</a>
+                            <a href="tel:email@email.com">+28189786878</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="customerList_item">
+                    <div class="customerList_item_title">משולשים בע"מ</div>
+                    <div class="customerList_item_content"><span class="address"> זינגר 57<br> ירושלים, 52510 <br> ישראל</span></div>
+                    <div class="customerList_item_content">
+                        <div class="customerList_item_content">
+                            <a href="mailto:email@email.com">email@email.com</a>
+                            <a href="tel:email@email.com">+28189786878</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="customerList_item">
+                    <div class="customerList_item_title">משולשים בע"מ</div>
+                    <div class="customerList_item_content"><span class="address"> זינגר 57<br> ירושלים, 52510 <br> ישראל</span></div>
+                    <div class="customerList_item_content">
+                        <div class="customerList_item_content">
+                            <a href="mailto:email@email.com">email@email.com</a>
+                            <a href="tel:email@email.com">+28189786878</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="customerList_item">
+                    <div class="customerList_item_title">משולשים בע"מ</div>
+                    <div class="customerList_item_content"><span class="address"> זינגר 57<br> ירושלים, 52510 <br> ישראל</span></div>
+                    <div class="customerList_item_content">
+                        <div class="customerList_item_content">
+                            <a href="mailto:email@email.com">email@email.com</a>
+                            <a href="tel:email@email.com">+28189786878</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+		</div>
+	</div>
+</div>
 
 <!-- modal -->
 
@@ -1275,6 +1424,14 @@
 	<path d="M10.3353 6.83815C10.1328 6.33193 9.64254 6 9.09733 6H7.26316C6.56554 6 6 6.56556 6 7.26318C6 13.193 10.8072 18 16.737 18C17.4346 18 18 17.4345 18 16.7369L17.9999 14.9027C17.9999 14.3575 17.6679 13.8672 17.1617 13.6648L15.4048 12.9619C14.95 12.78 14.4324 12.862 14.0561 13.1755L13.6021 13.5538C13.0723 13.9953 12.2933 13.96 11.8057 13.4724L10.5276 12.1943C10.04 11.7067 10.0048 10.9277 10.4463 10.3979L10.8245 9.94398C11.1381 9.56775 11.22 9.04995 11.0381 8.59524L10.3353 6.83815Z" stroke="#8C8D92" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </symbol>
 
+<symbol id="ico_customerPhone" viewBox="0 0 25 24">
+	<path d="M10.296 5.13267C10.0261 4.45772 9.37235 4.01514 8.64541 4.01514H6.19984C5.26967 4.01514 4.51562 4.76922 4.51562 5.69939C4.51562 13.6058 10.9252 20.0151 18.8316 20.0151C19.7618 20.0151 20.5157 19.2612 20.5157 18.331L20.5156 15.8854C20.5156 15.1585 20.0729 14.5048 19.398 14.2348L17.0553 13.2977C16.449 13.0552 15.7588 13.1645 15.2571 13.5825L14.6517 14.0869C13.9454 14.6755 12.9067 14.6285 12.2566 13.9783L10.5524 12.2743C9.90224 11.6241 9.85539 10.5854 10.444 9.87905L10.9484 9.27379C11.3664 8.77215 11.4757 8.08175 11.2331 7.47547L10.296 5.13267Z" stroke="#8C8D92" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</symbol>
+
+<symbol id="ico_customerPlus" viewBox="0 0 25 24">
+	<path d="M8.5 11C7.94772 11 7.5 11.4477 7.5 12C7.5 12.5523 7.94772 13 8.5 13V11ZM16.5 13C17.0523 13 17.5 12.5523 17.5 12C17.5 11.4477 17.0523 11 16.5 11V13ZM11.5 16C11.5 16.5523 11.9477 17 12.5 17C13.0523 17 13.5 16.5523 13.5 16H11.5ZM13.5 8C13.5 7.44772 13.0523 7 12.5 7C11.9477 7 11.5 7.44772 11.5 8H13.5ZM12.5 20C8.08172 20 4.5 16.4183 4.5 12H2.5C2.5 17.5228 6.97715 22 12.5 22V20ZM4.5 12C4.5 7.58172 8.08172 4 12.5 4V2C6.97715 2 2.5 6.47715 2.5 12H4.5ZM12.5 4C16.9183 4 20.5 7.58172 20.5 12H22.5C22.5 6.47715 18.0228 2 12.5 2V4ZM20.5 12C20.5 16.4183 16.9183 20 12.5 20V22C18.0228 22 22.5 17.5228 22.5 12H20.5ZM8.5 13H16.5V11H8.5V13ZM13.5 16V8H11.5V16H13.5Z" fill=""/>
+</symbol>
+
 <symbol id="ico_infoMapPin" viewBox="0 0 24 24">
 	<path fill-rule="evenodd" clip-rule="evenodd" d="M9.40303 8.06281C10.0898 7.38356 11.0237 7 11.9997 7C12.9757 7 13.9095 7.38356 14.5963 8.06282C15.2827 8.7417 15.6663 9.66009 15.6663 10.6154C15.6663 11.9422 15.0824 13.216 14.2832 14.3273C13.5105 15.4016 12.5917 16.2469 11.9997 16.7363C11.4078 16.2469 10.4889 15.4016 9.71622 14.3273C8.91691 13.216 8.33301 11.9422 8.33301 10.6154C8.33301 9.66012 8.7166 8.74169 9.40303 8.06281ZM11.9997 5C10.5004 5 9.0602 5.58895 7.99665 6.6408C6.93274 7.69302 6.33301 9.12252 6.33301 10.6154C6.33301 12.5231 7.16393 14.204 8.09257 15.4951C9.02625 16.7933 10.1185 17.781 10.7816 18.324L10.817 18.3533L10.817 18.3533C10.9603 18.4723 11.2042 18.6748 11.5479 18.7716C11.8293 18.8508 12.17 18.8508 12.4513 18.7716C12.7951 18.6748 13.039 18.4724 13.1826 18.3531L13.2178 18.324C13.881 17.781 14.9732 16.7933 15.9068 15.4951C16.8354 14.204 17.6663 12.5231 17.6663 10.6154C17.6663 9.12251 17.0666 7.69304 16.0027 6.64081C14.9392 5.58897 13.4991 5 11.9997 5ZM11.6663 10.6667C11.6663 10.4826 11.8156 10.3333 11.9997 10.3333C12.1838 10.3333 12.333 10.4826 12.333 10.6667C12.333 10.8508 12.1838 11 11.9997 11C11.8156 11 11.6663 10.8508 11.6663 10.6667ZM11.9997 8.33333C10.711 8.33333 9.66634 9.378 9.66634 10.6667C9.66634 11.9553 10.711 13 11.9997 13C13.2883 13 14.333 11.9553 14.333 10.6667C14.333 9.378 13.2883 8.33333 11.9997 8.33333Z" fill=""/>
 </symbol>
@@ -1312,7 +1469,7 @@
 
 </svg>
 
-<script src="js/scripts.min.js"></script>
+<script src="./assets/js/scripts.js"></script>
 
 </body>
 </html>
