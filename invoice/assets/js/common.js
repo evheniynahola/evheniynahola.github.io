@@ -81,6 +81,10 @@ document.addEventListener('DOMContentLoaded', function(){
 		$('.documentsAddCustomer').fadeIn().css('display', 'flex');
 	})
 
+	$('.orderData_customerAddButton').on('click', function(){
+		$('.documentsCustomerSave').fadeIn().css('display', 'flex');
+	})
+
 	$('.modal_close').on('click',function(){
 		$('.modal').fadeOut();
 	})
@@ -334,14 +338,6 @@ document.addEventListener('DOMContentLoaded', function(){
 	  })
 
 	  //Icons
-
-	//   lottie.loadAnimation({
-	// 	container: document.querySelector('.lottieIcon'), // the dom element
-	// 	renderer: 'svg',
-	// 	loop: true,
-	// 	autoplay: true,
-	// });
-
 
 	  //match height
 
