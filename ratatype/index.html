@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratatype</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon/favicon-16x16.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+<body>
+
+    <section class="login min-h-screen w-full flex justify-center items-center bg-white px-4 ">        
+       
+        <form class="login-form mx-auto w-full">
+            <img src="./assets/img/logo.svg" alt="Логотип Ratatype" class="mainLogo mx-auto mb-6 md:mb-10">
+            <img src="./assets/img/ms-starky.png" alt="Логотип" class="mx-auto">
+            <h1 class="login-title text-center my-3 md:my-4">Увійти</h1>
+            <button class="login-google login-button pb-2 pt-2 flex justify-center items-center w-full rounded-lg transition duration-300">
+                <span class="login-buttonText flex"><img src="./assets/img/brand-google.svg" class="mr-1" alt="Google логотип"> <b>Google</b></span>
+            </button>
+
+            <div class="login-separator text-center leading-6 my-3 md:my-4 font-medium">або</div>
+
+            <div class="login-inputGroup font-medium">
+                <label class="login-itemWrapper block mb-3 md:mb-4">
+                    <span class="login-focusInfo">Ел. пошта</span>
+                    <input type="text" class="login-input login-email w-full bg-gray-200 rounded-lg py-3 px-4" placeholder="Ел. пошта">
+                    <span class="login-input_error">Вкажіть вашу ел. пошту</span>
+                </label>
+                <label class="block mb-1 login-itemWrapper">
+                    <span class="login-focusInfo">Пароль</span>
+                    <input type="password" class="login-input w-full bg-gray-200 rounded-lg py-4 px-3" placeholder="Пароль">
+                    <span class="login-input_error">Пароль або логін невірні</span>
+                </label>
+                <a class="login-passReminder block font-medium underline" href="#">Не пам'ятаєш пароль?</a>
+            </div>
+            <span class="login-input_error login-form_error font-medium font-bold mt-4 text-center"></span>
+            <button class="login-enter login-button my-3 md:my-4 w-full rounded-lg py-2 transition duration-300 font-bold">
+                <span class="login-buttonText">Увійти</span>
+            </button>
+            
+            <div class="login-rgstrLink text-center font-medium">
+                Ще не з нами? <a href="#" class="font-bold underline">Зареєструватися</a>
+            </div>
+        </form>
+    </section>
+    
+    <script src="./assets/scripts/common.js"></script>
+</body>
+</html>
