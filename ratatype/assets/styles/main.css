@@ -13,6 +13,12 @@
 
 input {
     outline: none;
+    border: none;
+}
+
+button {
+    outline: none; 
+    /* Можна прибрати outline для кнопок, якщо користувач використовує Tab, або схожі програмні елементи, та це впливає на доступність і чи варто це робити ? */
 }
 
 body {
@@ -96,6 +102,11 @@ a:hover {
     display: block;
 }
 
+.login-itemWrapper.error .login-input {
+    border: 2px solid var(--error);
+    /* Змінив структуру в html, але не змінив в css, в результаті відвалився border на помилці */
+}
+
 .login-focusInfo {
     position: absolute;
     top: 16px;
@@ -111,10 +122,7 @@ a:hover {
     background: var(--light-bg-secondary);
     color: var(--text-dark);
     height: 70px;
-}
-
-.login-input.login-input_error {
-    border: 2px solid var(--error);
+    font-size: 1rem;
 }
 
 .login-input::placeholder {
