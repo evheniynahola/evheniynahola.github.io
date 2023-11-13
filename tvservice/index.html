@@ -1,0 +1,828 @@
+
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Console Service</title>
+	<meta name="description" content="Console Service">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<meta property="og:image" content="images/dist/favicon/favicon-96x96.png">
+
+	<!-- Console Service -->
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="images/dist/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/dist/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/dist/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/dist/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/dist/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/dist/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/dist/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/dist/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/dist/favicon/favicon-16x16.png">
+    <meta name="msapplication-TileColor" content="#1860FD">
+    <meta name="msapplication-TileImage" content="images/dist/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#1860FD"> -->
+
+    <!-- Teleremont -->
+    <link rel="apple-touch-icon" sizes="120x120" href="images/dist/favicon/teleremontICO/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/dist/favicon/teleremontICO/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/dist/favicon/teleremontICO/favicon-16x16.png">
+    <link rel="mask-icon" href="images/dist/favicon/teleremontICO/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#1860FD">
+    <meta name="theme-color" content="#ffffff">
+	
+	<link rel="stylesheet" href="css/app.min.css">
+
+</head>
+
+<body class='blog'>
+
+
+    <header>
+        <div class="header_topLine">
+            <section class="container">
+                <div class="row justify-content-between align-items-xl-center align-items-end g-0">
+                    <div class="col-xl-4 col-6">
+                        <div class="topLineFirst">
+                            <a class="mainLogo" href="/"><img src="./images/dist/main/tv-remont-blackLogo.svg" alt="console service logotype"></a>
+                            <div class="workingHours">
+    <span class="workingHoursDay">Пн</span>
+    <span class="workingHoursTime">10:00 - 18:00</span>
+</div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="menuWrapper">
+                            <ul class="mainDeskMenu">
+                                <li><a href="#">Головна</a></li>
+                                <li><a href="#">Контакти</a></li>
+                                <li><a href="#">Вартість послуг</a></li>
+                                <li><a href="#">Про нас</a></li>
+                            </ul>
+                            <div class="hiddenMenu">
+                                <span class="text">Menu</span>
+                                <div class="menuBlock">
+                                    <span class="mTopBlock"></span>
+                                    <span class="mBottomBlock"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-2 d-none d-xl-block">
+                        <div class="topLineLast">
+                            <div class="mainTel">
+    <div class="mainTelItem">
+        <svg width="24" height="33" viewBox="0 0 24 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 6C5 5.44772 5.44772 5 6 5H18C18.5523 5 19 5.44772 19 6V28C19 28.5523 18.5523 29 18 29H6C5.44772 29 5 28.5523 5 28V6ZM6 8C6 7.44772 6.44772 7 7 7H11C11 6.44772 11.4477 6 12 6C12.5523 6 13 6.44772 13 7H17C17.5523 7 18 7.44772 18 8V26C18 26.5523 17.5523 27 17 27H7C6.44772 27 6 26.5523 6 26V8Z" fill="#1860FD"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M9 6C8.44772 6 8 6.44772 8 7C8 7.55228 8.44772 8 9 8H12H15C15.5523 8 16 7.55228 16 7C16 6.44772 15.5523 6 15 6H12H9ZM12 6C11.4477 6 11 6.44772 11 7C11 7.55228 11.4477 8 12 8C12.5523 8 13 7.55228 13 7C13 6.44772 12.5523 6 12 6Z" fill="#1860FD"/>
+        </svg>
+        <a href="tel:+380975399260">              
+            +38 <span class="countryCode">097</span> 539 92 60</a>
+        <!-- <svg class="phoneDropArrow" width="16" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m13.631 0-5.65 4.237L2.37 0H0l7.982 6L16 0h-2.369Z" fill="#1860FD"/></svg> -->
+    </div>
+</div>
+                            <div class="workingHours">
+    <span class="workingHoursDay">Пн</span>
+    <span class="workingHoursTime">10:00 - 18:00</span>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    
+        <section class="topBanner topBanner_home">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="topBanner_title">
+                            <span>Ремонт телевізорів</span> з Екранами <br> Великого Розміру!
+                        </h1>
+                        <div class="topBanner_title_descr">
+                            <p>Samsung Sony Phillips LG Panasonic</p>
+                            <span>Сервіс - Якість - Чесність</span>
+                        </div>
+                        <!-- Modal Callback -->
+                        <a href="#" data-modal-type="callbackModal" data-modal-mobile-type="callbackMobileModal" class="wideButton openModal">Замовити Ремонт</a>
+                        <!-- Modal Content -->
+                        <!-- <a href="#" data-modal-type="callbackModal_content1" data-modal-mobile-type="callbackModal_content1" class="wideButton openModal">Контент</a> -->
+                    </div>
+                </div>
+            </div>
+            <div class="mobileDivider"></div>
+        </section>
+    </header>
+
+    <main>
+        <section class="ourAdvantages">
+            <div class="ourAdvantages_mTitle">Наші переваги</div>
+            <div class="ourAdvantages_all ourAdvantages_all_show">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xxl-4 col-lg-6 ourAdvantages_itemWrapper">
+                            <div class="ourAdvantages_item">
+                                <div class="ourAdvantages_item_headerMob">
+                                    <img src="./images/dist/main/advantagesPic/exp.png" alt="Маємо Більше 20 років досвіду праці Teleremont Kiev">
+                                </div>
+                                <h2 class="ourAdvantages_item_title">Маємо Більше 20 років досвіду праці</h2>
+                                <p class="ourAdvantages_item_desc">На ринку сервісного обслуговування з 1996 року.</p>
+                            </div>
+                        </div>
+    
+                        <div class="col-xxl-4 col-lg-6 ourAdvantages_itemWrapper">
+                            <div class="ourAdvantages_item">
+                                <div class="ourAdvantages_item_headerMob">
+                                    <img src="./images/dist/main/advantagesPic/tech.png" alt="Відремонтовано більше 6000 аппаратів Teleremont Kiev">
+                                </div>
+                                <h2 class="ourAdvantages_item_title">Відремонтовано більше 6000 аппаратів</h2>
+                                <p class="ourAdvantages_item_desc">Так як ми знаємо типові несправності телевізорів, попередня діагностика не потрібна.</p>
+                            </div>
+                        </div>
+    
+                        <div class="col-xxl-4 col-lg-6 ourAdvantages_itemWrapper ">
+                            <div class="ourAdvantages_item">
+                                <div class="ourAdvantages_item_headerMob">
+                                    <img src="./images/dist/main/advantagesPic/warranty.png" alt="Гарантія 6/12 місяців на виконані роботи Teleremont Kiev">
+                                </div>
+                                <h2 class="ourAdvantages_item_title">Гарантія 6/12 місяців на виконані роботи</h2>
+                                <p class="ourAdvantages_item_desc">Документальне підтвердження гарантії - <a href="#" class="accentText">Акт про виконанний ремонт</a> із зазначенням характеру несправності та Гарантійними Зобов’язаннями.</p>
+                            </div>
+                        </div>
+    
+                        <div class="col-xxl-4 col-lg-6 ourAdvantages_itemWrapper">
+                            <div class="ourAdvantages_item">
+                                <div class="ourAdvantages_item_headerMob">
+                                    <img src="./images/dist/main/advantagesPic/modern.png" alt="Сучасне діагностичне обладнання Teleremont Kiev">
+                                </div>
+                                <h2 class="ourAdvantages_item_title">Сучасне діагностичне обладнання</h2>
+                                <p class="ourAdvantages_item_desc">Дозволяє відновити та усунути найскладніші дефекти телевізорів.</p>
+                            </div>
+                        </div>
+    
+                        <div class="col-xxl-4 col-lg-6 ourAdvantages_itemWrapper ">
+                            <div class="ourAdvantages_item">
+                                <div class="ourAdvantages_item_headerMob">
+                                    <img src="./images/dist/main/advantagesPic/clients.png" alt="Клієнто-орієнтований менеджмент Teleremont Kiev">
+                                </div>
+                                <h2 class="ourAdvantages_item_title">Клієнто-орієнтований менеджмент</h2>
+                                <p class="ourAdvantages_item_desc">Хочемо бути кращими для вас:) Звертайтесь до <a href="#" class="accentText">Відділу обслуговування клієнтів.</a></p>
+                            </div>
+                        </div>
+    
+                        <div class="col-xxl-4 col-lg-6 ourAdvantages_itemWrapper ">
+                            <div class="ourAdvantages_item">
+                                <div class="ourAdvantages_item_headerMob">
+                                    <img src="./images/dist/main/advantagesPic/special.png" alt="Ремонт телевізорів у вас вдома! Teleremont Kiev">
+                                </div>
+                                <h2 class="ourAdvantages_item_title"><span class="accentText">Ремонт телевізорів у вас вдома!</span></h2>
+                                <p class="ourAdvantages_item_desc">В залежності від складності ремонт може бути виконаний у вас вдома або у сервісному центрі.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <a href="#" class="wideButton wideButton_context ourAdvantages_hiddenButton">переглянути усі переваги</a>
+            <a href="#" class="wideButton wideButton_context ourAdvantages_hiddenButton inactive">згорнути список <img src="./images/dist/main/menuClose_white.svg" alt=""></a> -->
+        </section>
+
+        <!-- <section class="callback_frame">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="frame_title">Замовлення, Прийняті</div>
+                        <div class="frame_subTitle">до 12:00 ранку</div>
+                        <div class="frame_desc">опрацьовуються цього ж дня!</div>
+                        <a href="#" data-modal-type="callbackModal" class="wideButton openModal">Замовити Ремонт</a>
+                        <p class="frame_supTitle">Чекаємо на ваше звернення :)</p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="callback_cta">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-xxl-5 col-lg-6">
+                        <div class="frame_title">Зібрався перепочити,</div>
+                        <div class="callback_cta_desc">а виявилось, що <span>телевізор не працює?</span></div>
+                        <div class="centerText">
+                            <img class="callback_cta_dogMob" src="./images/dist/forms/dog_cry_mobile.svg" alt="Teleremont залишити заявку на ремонт телевізора">
+                        </div>
+                        <div class="callback_cta_panel">
+                            <div class="callback_cta_panelTitle">
+                                - Ми тобі допоможемо! 
+                            </div>
+                            <div class="callback_cta_panelDesc">
+                                Надсилай замовлення на ремонт, <br> а все інше, ми зробимо за тебе :)
+                            </div>
+                            <a href="#" data-modal-type="callbackModal" class="wideButton openModal">Замовити Ремонт</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <img class="callback_cta_dogDesk" src="./images/dist/forms/dog_cry.svg" alt="Teleremont залишити заявку на ремонт телевізора">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ourWorkFlow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="frame_title">Як відбувається <br> взаємодія з нами?</div>
+                    </div>
+                    <div class="col-xl-4 ourWorkFlow_itemWrapper">
+                        <div class="row g-xl-0">
+                            <div class="col-xl-12 col-lg-6">
+                                <div class="ourWorkFlow_item">
+                                    <div class="ourWorkFlow_item_num">01</div>
+                                    <div class="ourWorkFlow_item_title"><span class="track_hiddenDot"></span>Онлайн діагностика.</div>
+                                    <div class="ourWorkFlow_item_descr">Маючи великий досвід роботи, у 95% випадків нам достатньо отримати <span class="accentText">модель телевізора</span> та опис його дефекту, щоб зрозуміти у чому є проблема та визначити орієнтовну вартість ремонтних робіт.</div>
+                                </div>
+                            </div>
+    
+                            <div class="col-xl-12 col-lg-6">
+                                <div class="ourWorkFlow_item">
+                                    <div class="ourWorkFlow_item_num">02</div>
+                                    <div class="ourWorkFlow_item_title">Замовлення та Доставка.</div>
+                                    <div class="ourWorkFlow_item_descr">Замовляючи ремонт ви отримуєте <span class="accentText">Акт прийому-видачі</span> з описом фізичного стану, дефектів та переліком необхідних робіт. <br> <br>
+                                        Якщо ремонт потребує особливих технічних умов, техніку потрібно доставити в сервісний центр. За погодженням з вами, ми можемо самостійно доставити телевізор в
+                                         сервіс та після виконаного ремонту повернути його назад.Якщо ви самостійно транспортуєте телевізор, отримаєте знижку в 300 - 500 гривень на поточний ремонт.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 ourWorkFlow_itemWrapper">
+                        <div class="row g-xl-0">
+                            <div class="col-xl-12 col-lg-6">
+                                <div class="ourWorkFlow_item">
+                                    <div class="ourWorkFlow_item_num">03</div>
+                                    <div class="ourWorkFlow_item_title">Контроль вартості.</div>
+                                    <div class="ourWorkFlow_item_descr">Намагаємося знайти оптимальне цінове рішення, звертаючи увагу на вартість роботи спеціаліста та вартість комплектуючих для компонентного чи модульного ремонту. Завжди доводимо до відома клієнта усі переваги та недоліки того чи іншого варіанту.</div>
+                                </div>
+                            </div>
+    
+                            <div class="col-xl-12 col-lg-6">
+                                <div class="ourWorkFlow_item">
+                                    <div class="ourWorkFlow_item_num">04</div>
+                                    <div class="ourWorkFlow_item_title">Оплата після ремонту.</div>
+                                    <div class="ourWorkFlow_item_descr">Оплата роботи спеціаліста відбувається після виконання погодженого об’єму робіт. Окремо оплачується замовлення комплектуючих.</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 ourWorkFlow_itemWrapper">
+                        <div class="row g-xl-0">
+                            <div class="col-xl-12 col-lg-6">
+                                <div class="ourWorkFlow_item">
+                                    <div class="ourWorkFlow_item_num">05</div>
+                                    <div class="ourWorkFlow_item_title">Гарантійне обслуговування.</div>
+                                    <div class="ourWorkFlow_item_descr">Робота, що виконана нашим інженером завжди підкріплюється <span class="accentText">Актом про виконанний ремонт з Гарантійними зобов’язаннями</span>. У разі Гарантійного ремонту телевізора ми забезпечуємо безкоштовну доставку телевізора до сервісного центру та назад.</div>
+                                </div>
+                            </div>
+    
+                            <div class="col-xl-12 col-lg-6">
+                                <div class="ourWorkFlow_item_icon">
+                                    <img src="./images/dist/main/ourWorkFlow_img.png" alt="Teleremont Service">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="popularServices">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="frame_title"><span class="accentText">Перелік <span class="textDiv"></span> популярних послуг</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="popularServices_wrapper">
+                <div class="container">
+                    <div class="row align-items-center">
+                        <div class="col-lg-3">
+                            <div class="popularServices_item">
+                                <p>Проводимо сервісне обслуговування та ремонт сучасних телевізорів <br> <strong>Samsung Smart TV QLED | LED</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="popularServices_item">
+                                <p>Ремонт та сервіс телевізорів <strong>Sony Bravia OLED Full Array LED | міні LED | LED | Google TV | Smart TV</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="popularServices_item">
+                                <p>Ремонтуємо та обслуговуємо сучасні телевізори <strong>LG OLED | QNED Mini LED | NanoCell | LED | Smart TV</strong></p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3">
+                            <div class="popularServices_item">
+                                <p>Телевізори <strong>Philips Ambilight | OLED | LED | Google TV | Smart TV</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="aboutUsShort">
+
+            <div class="container">
+                <div class="row justify-content-between aboutUsShort_line">
+                    <div class="col-xxl-6 col-lg-7">
+                        <div class="aboutUsShort_wrapper">
+                            <div class="frame_title">Оптимальний підхід до <br> швидкості та якості <br> роботи</div>
+                            <p>
+                                Фахівці нашого сервісного центру <strong>“Телеремонт”</strong> мають <strong>досвід роботи більш ніж 20 років</strong> у галузі сервісного обслуговування, що дозволяє забезпечувати <strong>правильну діагностику</strong> та <strong>якісний ремонт</strong> в максимально короткий термін.
+                                <br><br>
+                                <strong>Ремонт телевізору виконується Вдома або у Сервісному центрі</strong>, залежить від моделі апарату та характеру дефекту.
+                                <br><br>
+                                Виконання ремонтних робіт у клієнта вдома можливо, якщо ремонт не потребує специфічного обладнання та тривалого тестування для забезпечення відсутності повтору виявленого дефекту.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-lg-5">
+                        <div class="aboutUsShort_img">
+                            <img src="./images/dist/main/brainTech.png" alt="Фахівці нашого сервісного центру Телеремонт мають досвід роботи більш ніж 20 років">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between aboutUsShort_line">
+                    <div class="col-xxl-6 col-lg-5">
+                        <div class="aboutUsShort_img">
+                            <img src="./images/dist/main/lightTech.png" alt="Фахівці нашого сервісного центру Телеремонт мають досвід роботи більш ніж 20 років">
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-lg-7">
+                        <div class="aboutUsShort_wrapper">
+                            <div class="frame_title">Онлайн діагностика</div>
+                            <p>
+                                У випадках типових дефектів <strong>телемайстер з великим досвідом</strong>, накопиченому роками практики, <span class="accentText">за вашим описом характеру дефекту та коду моделі продукту</span> може <strong>ОНЛАЙН</strong> визначити:                                
+                            </p>
+                            <ul class="tv_list">
+                                <li>дефектний модуль,</li>
+                                <li>розрахувати вартість сервісного обслуговування,</li>
+                                <li>необхідні умови робочого простору,</li>
+                                <li>час ремонту.</li>
+                            </ul>  
+                            <a href="#" class="wideButton">Отримати діагностику!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="warrantyService">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="warrantyService_item">
+                            <div class="frame_title">Гарантійне обслуговування</div>
+                            <p>
+                                Робота, що виконана нашим інженером завжди підкріплюється <a href="#" class="accentText">Актом про виконанний ремонт з Гарантійними зобов’язаннями.</a> У разі Гарантійного ремонту телевізора <strong>ми забезпечуємо БЕЗКОШТОВНУ доставку телевізора до сервісного центру та назад.</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+<footer>
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-md-3">
+				<a class="mainLogo" href="/"><img src="./images/dist/main/tv-remont-whiteLogo.svg" alt="tv teleremont service logotype"></a>
+				<div class="copy">© Teleremont Service, 2001-2023.</div>
+				<p class="created created_desktop">Дизайн та розробка <a href="#"><img src="./images/dist/main/logoCreatedBy.png" alt="logo wayinweb"></a></p>
+				<div class="languageWrapper languageWrapper_desktop">
+					<div>Оберіть мову:</div>
+					<ul class="languageList">
+						<li><a href="#" class="active">UA</a></li>
+						<li><a href="#">RU</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-md-3 col-xl-3 col-lg-4">
+				<div class="footerMenu">
+					<div class="footerMenu_title">Меню</div>
+					<ul>
+						<li><a href="#">Головна</a></li>
+						<li><a href="#">Контакти</a></li>
+						<li><a href="#">Вартість послуг</a></li>
+						<li><a href="#">Про нас</a></li>
+						<li><a href="#">Акції та новини</a></li>
+					</ul>
+				</div>
+				
+			</div>
+			<div class="col-xl-3 col-lg-4">
+				<div class="footerContactsWrapper">
+
+					<div class="footerPhone">
+						<div class="footerContacts_title">Телефонуйте по телефону або зв'яжіться з нами у мессенжері:</div>
+						<div class="mainTelItem">
+							<svg width="24" height="33" viewBox="0 0 24 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M5 6C5 5.44772 5.44772 5 6 5H18C18.5523 5 19 5.44772 19 6V28C19 28.5523 18.5523 29 18 29H6C5.44772 29 5 28.5523 5 28V6ZM6 8C6 7.44772 6.44772 7 7 7H11C11 6.44772 11.4477 6 12 6C12.5523 6 13 6.44772 13 7H17C17.5523 7 18 7.44772 18 8V26C18 26.5523 17.5523 27 17 27H7C6.44772 27 6 26.5523 6 26V8Z" fill="#1860FD"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M9 6C8.44772 6 8 6.44772 8 7C8 7.55228 8.44772 8 9 8H12H15C15.5523 8 16 7.55228 16 7C16 6.44772 15.5523 6 15 6H12H9ZM12 6C11.4477 6 11 6.44772 11 7C11 7.55228 11.4477 8 12 8C12.5523 8 13 7.55228 13 7C13 6.44772 12.5523 6 12 6Z" fill="#1860FD"/>
+                            </svg>
+							<a href="tel:+380975399260">+38 <span class="countryCode">097</span> 539 92 60</a>
+							<!-- <svg class="phoneDropArrow" width="16" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m13.631 0-5.65 4.237L2.37 0H0l7.982 6L16 0h-2.369Z"/></svg> -->
+						</div>
+					</div>
+
+					<div class="social">
+    <ul>
+        <li>
+            <a href="#">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32.3542 33.5512C32.3542 35.3858 30.9744 35.8444 29.5947 34.9271L21.3163 28.9646L17.1771 32.6339C16.7172 33.0925 16.2573 33.5512 15.3374 33.5512L15.7973 25.2954L31.4343 11.5358C31.8943 11.0772 31.4343 10.6185 30.5145 11.0772L11.6581 23.0021L3.37973 20.2502C1.54009 19.7916 1.54009 18.4156 3.37973 17.4983L35.5735 5.11466C37.4132 4.65601 38.333 5.57332 37.8731 7.86658L32.3542 33.5512Z" fill="white"/>
+                    </svg>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M37.4348 23.2922C36.324 32.2457 29.6592 32.8053 28.5484 33.3649C27.993 33.3649 23.5498 34.4841 17.4404 33.9245C16.885 35.0437 16.3296 36.1629 15.7742 36.7225C14.6634 37.8417 13.5526 38.9609 12.4418 38.4013C11.331 38.4013 11.331 36.7225 11.331 36.7225V32.8053C3 30.567 3 21.6134 3 16.5771C3 11.5407 4.1108 8.18317 6.8878 5.3852C11.331 1.46804 21.3282 2.02763 21.3282 2.02763C29.6592 2.02763 32.9916 4.82561 34.1024 5.3852C36.8794 8.18317 38.5456 13.7791 37.4348 23.2922ZM31.8808 7.62358C31.3254 7.06399 27.993 4.82561 20.7728 4.82561C20.7728 4.82561 12.4418 4.26601 8.554 8.18317C6.3324 10.4216 5.777 13.7791 5.777 17.6963C5.777 21.6134 5.2216 29.4478 12.4418 31.1266C12.4418 31.1266 12.4418 36.7225 12.4418 37.2821C12.4418 37.8417 12.9972 37.8417 12.9972 37.8417C14.108 36.7225 17.9958 32.2457 17.9958 32.2457C22.9944 32.8053 26.8822 31.6861 27.4376 31.6861C28.5484 31.1266 34.1024 31.1266 34.6578 23.2922C35.7686 14.8983 34.6578 9.86196 31.8808 7.62358ZM29.1038 25.5306C27.993 27.2094 26.8822 28.3286 25.216 27.769C23.5498 27.769 20.2174 25.5306 17.9958 23.8518C16.885 23.2922 15.7742 22.173 15.2188 21.0539C14.108 19.9347 13.5526 18.8155 12.9972 17.6963C11.331 14.8983 10.7756 13.7791 10.7756 13.7791C10.2202 12.1003 11.8864 10.4216 13.5526 9.86196C14.108 9.30236 14.6634 9.86196 15.2188 9.86196C15.2188 9.86196 16.3296 10.9811 16.3296 11.5407C16.885 12.1003 16.885 12.6599 17.4404 13.2195C17.9958 13.7791 17.4404 14.8983 17.4404 14.8983L16.3296 16.0175C15.7742 16.5771 15.7742 17.1367 15.7742 17.1367C15.7742 17.1367 16.885 22.173 21.8836 23.2922C21.8836 23.2922 22.439 23.2922 22.9944 22.7326L23.5498 21.6134C24.1052 21.0539 24.6606 21.0539 25.216 21.6134C26.3268 22.173 27.993 23.2922 28.5484 23.8518C29.1038 24.4114 29.1038 24.971 29.1038 25.5306ZM29.1038 18.8155C29.1038 13.2195 25.216 9.86196 20.7728 9.86196C20.2174 9.86196 20.2174 8.74277 20.7728 8.74277C25.7714 8.74277 30.2146 12.6599 30.2146 18.8155C29.6592 19.3751 29.1038 19.3751 29.1038 18.8155ZM21.3282 12.1003C20.7728 12.1003 20.7728 10.9811 21.3282 10.9811C25.216 11.5407 27.4376 14.3387 27.4376 17.6963C27.4376 18.2559 26.3268 18.2559 26.3268 17.6963C26.3268 14.3387 24.6606 12.1003 21.3282 12.1003ZM24.1052 16.5771C24.1052 14.8983 23.5498 14.3387 21.8836 14.3387C21.3282 14.3387 21.3282 13.2195 21.8836 13.2195C24.1052 13.2195 25.216 14.3387 25.216 16.5771C25.216 17.1367 24.1052 17.6963 24.1052 16.5771Z" fill="white"/>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.6173 2.0867C11.1324 3.10775 5.30739 8.55574 3.88347 15.8629C3.17526 19.5278 3.70061 23.2615 5.41382 26.7131L6.0306 27.9396L4.50025 32.4584C3.6549 34.9348 2.9849 36.9844 3.00026 36.9997C3.01562 37.0151 5.14739 36.3597 7.7288 35.5366L12.4345 34.0356L13.3331 34.4623C17.0109 36.1842 21.0923 36.6034 24.9755 35.6435C30.9376 34.1653 35.7347 29.5325 37.3872 23.6503C38.08 21.1665 38.1943 18.2098 37.6843 15.6877C36.5118 9.90452 32.3847 5.09625 26.7958 3.01626C25.9505 2.69604 24.5723 2.33794 23.5291 2.15532C22.5312 1.9877 19.6452 1.94196 18.6173 2.0867ZM22.8816 4.83714C28.4933 5.59909 33.2601 9.78229 34.7601 15.2685C35.3997 17.608 35.4301 20.2212 34.8436 22.5378C33.6404 27.2771 30.0544 31.125 25.3941 32.6718C21.4116 33.9977 16.9952 33.5402 13.4545 31.4299C13.127 31.2394 12.8302 31.0793 12.7995 31.0793C12.7766 31.0793 11.5277 31.4681 10.0277 31.9481C8.53523 32.4205 7.30952 32.7862 7.30952 32.7483C7.30952 32.7179 7.70559 31.5214 8.19273 30.0965L9.07594 27.5058L8.67987 26.9114C8.18487 26.1649 7.38523 24.5416 7.08845 23.6807C4.76668 16.945 7.83523 9.49281 14.277 6.23166C16.9345 4.89075 19.8205 4.42579 22.8816 4.83714Z" fill="white"/>
+                <path d="M13.9254 11.1021C13.2973 11.4092 12.4304 12.6072 12.1123 13.6082C12.0485 13.8052 11.969 14.3253 11.9451 14.7589C11.8896 15.7676 12.0884 16.6426 12.6371 17.7773C13.0425 18.6127 13.981 20.0155 14.9117 21.1662C16.5421 23.1914 18.5541 24.8466 20.4628 25.753C21.95 26.4545 24.2402 27.2031 25.2104 27.3054C26.5387 27.4396 28.5586 26.5647 29.2665 25.5401C29.7279 24.878 29.9823 23.2546 29.672 22.9711C29.5131 22.8292 26.4988 21.3713 25.9024 21.1429C25.6957 21.0641 25.441 21.0246 25.3376 21.0564C25.2183 21.08 24.9083 21.3953 24.558 21.8285C23.6994 22.8994 23.2779 23.3093 23.047 23.3093C22.737 23.3093 21.1939 22.5686 20.3274 22.0012C19.2218 21.2759 17.7984 19.8576 17.027 18.7147C16.7088 18.2497 16.4544 17.777 16.4544 17.6746C16.4544 17.5641 16.6611 17.2569 17.011 16.8551C17.5198 16.264 17.9651 15.5628 17.9651 15.3418C17.9651 15.2945 17.5992 14.3804 17.1538 13.3084C16.629 12.0631 16.2631 11.291 16.1281 11.149C15.9214 10.9442 15.8815 10.9361 15.0862 10.9361C14.4104 10.9365 14.2037 10.9679 13.9254 11.1021Z" fill="white"/>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+
+					<a href="#" class="wideButton">Надіслати запит</a>
+
+					<div class="languageWrapper languageWrapper_mobile">
+						<div>Оберіть мову:</div>
+						<ul class="languageList">
+							<li><a href="#" class="active">UA</a></li>
+							<li><a href="#">RU</a></li>
+						</ul>
+					</div>
+
+					<p class="created created_mobile">Дизайн та розробка <a href="#"><img src="./images/dist/main/logoCreatedBy.png" alt="logo wayinweb"></a></p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="bgLogo">
+		<img src="./images/dist/main/footer-tvLogo-bg.png" alt="tleremont service logo">
+	</div>
+</footer>	
+	
+	<!-- Mobile menu -->
+	<div class="dropDownMenu_wrapper modal modal_menu" id="mainmenuModal">
+        <div class="dropDownMenu_topLine">
+            <div class="mainLogo_wrapper">
+                <a class="mainLogo" href="/"><img src="./images/dist/main/tv-remont-blackLogo.svg" alt="console service logotype"></a>
+            </div>
+            <div class="dropDownMenu_close closeModal">
+                <span>Закрити</span>
+                <span class="closeButton"></span>
+            </div>
+        </div>
+        <nav>
+            <ul class="dropDownMenu_list">
+                <li><a href="#" class="active">Головна</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Вартість послуг</a></li>
+                <li><a href="#">Про нас</a></li>
+                <li><a href="#">Акції та новини</a></li>
+            </ul>
+
+            <div class="mainTelItem">
+				<svg width="24" height="33" viewBox="0 0 24 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M5 6C5 5.44772 5.44772 5 6 5H18C18.5523 5 19 5.44772 19 6V28C19 28.5523 18.5523 29 18 29H6C5.44772 29 5 28.5523 5 28V6ZM6 8C6 7.44772 6.44772 7 7 7H11C11 6.44772 11.4477 6 12 6C12.5523 6 13 6.44772 13 7H17C17.5523 7 18 7.44772 18 8V26C18 26.5523 17.5523 27 17 27H7C6.44772 27 6 26.5523 6 26V8Z" fill="#1860FD"/>
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M9 6C8.44772 6 8 6.44772 8 7C8 7.55228 8.44772 8 9 8H12H15C15.5523 8 16 7.55228 16 7C16 6.44772 15.5523 6 15 6H12H9ZM12 6C11.4477 6 11 6.44772 11 7C11 7.55228 11.4477 8 12 8C12.5523 8 13 7.55228 13 7C13 6.44772 12.5523 6 12 6Z" fill="#1860FD"/>
+				</svg>
+                <a href="tel:+380975399260">+38 <span class="countryCode">097</span> 539 92 60</a>
+                <svg class="phoneDropArrow" width="16" height="6" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m13.631 0-5.65 4.237L2.37 0H0l7.982 6L16 0h-2.369Z"/></svg>
+            </div>
+
+            <div class="social">
+    <ul>
+        <li>
+            <a href="#">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M32.3542 33.5512C32.3542 35.3858 30.9744 35.8444 29.5947 34.9271L21.3163 28.9646L17.1771 32.6339C16.7172 33.0925 16.2573 33.5512 15.3374 33.5512L15.7973 25.2954L31.4343 11.5358C31.8943 11.0772 31.4343 10.6185 30.5145 11.0772L11.6581 23.0021L3.37973 20.2502C1.54009 19.7916 1.54009 18.4156 3.37973 17.4983L35.5735 5.11466C37.4132 4.65601 38.333 5.57332 37.8731 7.86658L32.3542 33.5512Z" fill="white"/>
+                    </svg>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M37.4348 23.2922C36.324 32.2457 29.6592 32.8053 28.5484 33.3649C27.993 33.3649 23.5498 34.4841 17.4404 33.9245C16.885 35.0437 16.3296 36.1629 15.7742 36.7225C14.6634 37.8417 13.5526 38.9609 12.4418 38.4013C11.331 38.4013 11.331 36.7225 11.331 36.7225V32.8053C3 30.567 3 21.6134 3 16.5771C3 11.5407 4.1108 8.18317 6.8878 5.3852C11.331 1.46804 21.3282 2.02763 21.3282 2.02763C29.6592 2.02763 32.9916 4.82561 34.1024 5.3852C36.8794 8.18317 38.5456 13.7791 37.4348 23.2922ZM31.8808 7.62358C31.3254 7.06399 27.993 4.82561 20.7728 4.82561C20.7728 4.82561 12.4418 4.26601 8.554 8.18317C6.3324 10.4216 5.777 13.7791 5.777 17.6963C5.777 21.6134 5.2216 29.4478 12.4418 31.1266C12.4418 31.1266 12.4418 36.7225 12.4418 37.2821C12.4418 37.8417 12.9972 37.8417 12.9972 37.8417C14.108 36.7225 17.9958 32.2457 17.9958 32.2457C22.9944 32.8053 26.8822 31.6861 27.4376 31.6861C28.5484 31.1266 34.1024 31.1266 34.6578 23.2922C35.7686 14.8983 34.6578 9.86196 31.8808 7.62358ZM29.1038 25.5306C27.993 27.2094 26.8822 28.3286 25.216 27.769C23.5498 27.769 20.2174 25.5306 17.9958 23.8518C16.885 23.2922 15.7742 22.173 15.2188 21.0539C14.108 19.9347 13.5526 18.8155 12.9972 17.6963C11.331 14.8983 10.7756 13.7791 10.7756 13.7791C10.2202 12.1003 11.8864 10.4216 13.5526 9.86196C14.108 9.30236 14.6634 9.86196 15.2188 9.86196C15.2188 9.86196 16.3296 10.9811 16.3296 11.5407C16.885 12.1003 16.885 12.6599 17.4404 13.2195C17.9958 13.7791 17.4404 14.8983 17.4404 14.8983L16.3296 16.0175C15.7742 16.5771 15.7742 17.1367 15.7742 17.1367C15.7742 17.1367 16.885 22.173 21.8836 23.2922C21.8836 23.2922 22.439 23.2922 22.9944 22.7326L23.5498 21.6134C24.1052 21.0539 24.6606 21.0539 25.216 21.6134C26.3268 22.173 27.993 23.2922 28.5484 23.8518C29.1038 24.4114 29.1038 24.971 29.1038 25.5306ZM29.1038 18.8155C29.1038 13.2195 25.216 9.86196 20.7728 9.86196C20.2174 9.86196 20.2174 8.74277 20.7728 8.74277C25.7714 8.74277 30.2146 12.6599 30.2146 18.8155C29.6592 19.3751 29.1038 19.3751 29.1038 18.8155ZM21.3282 12.1003C20.7728 12.1003 20.7728 10.9811 21.3282 10.9811C25.216 11.5407 27.4376 14.3387 27.4376 17.6963C27.4376 18.2559 26.3268 18.2559 26.3268 17.6963C26.3268 14.3387 24.6606 12.1003 21.3282 12.1003ZM24.1052 16.5771C24.1052 14.8983 23.5498 14.3387 21.8836 14.3387C21.3282 14.3387 21.3282 13.2195 21.8836 13.2195C24.1052 13.2195 25.216 14.3387 25.216 16.5771C25.216 17.1367 24.1052 17.6963 24.1052 16.5771Z" fill="white"/>
+                </svg>
+            </a>
+        </li>
+        <li>
+            <a href="#">
+                <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.6173 2.0867C11.1324 3.10775 5.30739 8.55574 3.88347 15.8629C3.17526 19.5278 3.70061 23.2615 5.41382 26.7131L6.0306 27.9396L4.50025 32.4584C3.6549 34.9348 2.9849 36.9844 3.00026 36.9997C3.01562 37.0151 5.14739 36.3597 7.7288 35.5366L12.4345 34.0356L13.3331 34.4623C17.0109 36.1842 21.0923 36.6034 24.9755 35.6435C30.9376 34.1653 35.7347 29.5325 37.3872 23.6503C38.08 21.1665 38.1943 18.2098 37.6843 15.6877C36.5118 9.90452 32.3847 5.09625 26.7958 3.01626C25.9505 2.69604 24.5723 2.33794 23.5291 2.15532C22.5312 1.9877 19.6452 1.94196 18.6173 2.0867ZM22.8816 4.83714C28.4933 5.59909 33.2601 9.78229 34.7601 15.2685C35.3997 17.608 35.4301 20.2212 34.8436 22.5378C33.6404 27.2771 30.0544 31.125 25.3941 32.6718C21.4116 33.9977 16.9952 33.5402 13.4545 31.4299C13.127 31.2394 12.8302 31.0793 12.7995 31.0793C12.7766 31.0793 11.5277 31.4681 10.0277 31.9481C8.53523 32.4205 7.30952 32.7862 7.30952 32.7483C7.30952 32.7179 7.70559 31.5214 8.19273 30.0965L9.07594 27.5058L8.67987 26.9114C8.18487 26.1649 7.38523 24.5416 7.08845 23.6807C4.76668 16.945 7.83523 9.49281 14.277 6.23166C16.9345 4.89075 19.8205 4.42579 22.8816 4.83714Z" fill="white"/>
+                <path d="M13.9254 11.1021C13.2973 11.4092 12.4304 12.6072 12.1123 13.6082C12.0485 13.8052 11.969 14.3253 11.9451 14.7589C11.8896 15.7676 12.0884 16.6426 12.6371 17.7773C13.0425 18.6127 13.981 20.0155 14.9117 21.1662C16.5421 23.1914 18.5541 24.8466 20.4628 25.753C21.95 26.4545 24.2402 27.2031 25.2104 27.3054C26.5387 27.4396 28.5586 26.5647 29.2665 25.5401C29.7279 24.878 29.9823 23.2546 29.672 22.9711C29.5131 22.8292 26.4988 21.3713 25.9024 21.1429C25.6957 21.0641 25.441 21.0246 25.3376 21.0564C25.2183 21.08 24.9083 21.3953 24.558 21.8285C23.6994 22.8994 23.2779 23.3093 23.047 23.3093C22.737 23.3093 21.1939 22.5686 20.3274 22.0012C19.2218 21.2759 17.7984 19.8576 17.027 18.7147C16.7088 18.2497 16.4544 17.777 16.4544 17.6746C16.4544 17.5641 16.6611 17.2569 17.011 16.8551C17.5198 16.264 17.9651 15.5628 17.9651 15.3418C17.9651 15.2945 17.5992 14.3804 17.1538 13.3084C16.629 12.0631 16.2631 11.291 16.1281 11.149C15.9214 10.9442 15.8815 10.9361 15.0862 10.9361C14.4104 10.9365 14.2037 10.9679 13.9254 11.1021Z" fill="white"/>
+                </svg>
+            </a>
+        </li>
+    </ul>
+</div>
+
+			<div class="workingHours">
+    <span class="workingHoursDay">Пн</span>
+    <span class="workingHoursTime">10:00 - 18:00</span>
+</div>
+			
+        </nav>
+
+		
+
+        <div class="languageWrapper">
+            <div>Оберіть мову:</div>
+            <ul class="languageList">
+                <li><a href="#" class="active">UA</a></li>
+                <li><a href="#">RU</a></li>
+            </ul>
+        </div>
+    </div>
+	<!-- Mobile menu -->
+
+	<!-- Desktop main form -->
+
+		<div class="applicationForm_container modal" id="callbackModal">
+			<div class="container">
+				<div class="row g-0 justify-content-center">
+					<div class="col-10 applicationForm_wrapper">
+						<div class="applicationForm_close closeModal">
+							<span class="applicationForm_closeIcon"></span>
+							<span>Закрити</span>
+						</div>
+						<div class="row g-0">
+							<div class="col-md-6">
+								<form class="applicationForm_body">
+									<div class="applicationForm_header">
+										<div class="applicationForm_title">Привіт,</div>
+										<p class="applicationForm_descr">Тут ви можете <b>ЗРУЧНО</b> та <b>ШВИДКО</b> зробити замовлення на ремонт телевізора!</p>
+									</div>
+		
+									<div class="applicationForm_inputs">
+										<label class="applicationForm_label">
+											<div class="applicationForm_labelTitle">Вкажіть ваше ім’я:</div>
+											<div class="applicationForm_inputWrapper">
+												<span class="applicationForm_inputStatus"></span>
+												<input data-input-obj="userName" class="applicationForm_input userInfoPC" type="text" placeholder="Микола Миколайович">
+											</div>
+										</label>
+
+										<label class="applicationForm_label">
+											<div class="applicationForm_labelTitle">Вкажіть номер за яким ми з вами зв’яжемось:</div>
+											<div class="applicationForm_inputWrapper">
+												<span class="applicationForm_inputStatus"></span>
+												<input data-input-obj="userPhone" class="applicationForm_input userInfoPC" type="tel" placeholder="+ ХХ (ХХХ) ХХХ - ХХ -ХХ">
+											</div>
+										</label>
+
+										<label class="applicationForm_label">
+											<div class="applicationForm_labelTitle">Вкажіть виробника та номер моделі вашого телевізору:</div>
+											<div class="applicationForm_inputWrapper">
+												<span class="applicationForm_inputStatus"></span>
+												<input data-input-obj="userTVmodel" class="applicationForm_input userInfoPC" type="text" placeholder="LG 43UK6710">
+											</div>
+										</label>
+
+										<label class="applicationForm_label">
+											<div class="applicationForm_labelTitle">Додайте невелий опис проблеми, що виникла:</div>
+											<div class="applicationForm_inputWrapper">
+												<span class="applicationForm_inputStatus"></span>
+												<textarea data-input-obj="userMessage" class="applicationForm_message userInfoPC" placeholder="(Наприклад: Телевізор не вмикається, індикатор очікування миготить з періодичністю 2 швидкий і одне довге миготіння..)"></textarea>
+											</div>
+										</label>
+									</div>
+									<button class="wideButton submitForm submitInactive">Відправити запит</button>
+								</form>
+							</div>
+							<div class="col-md-6">
+								<div class="applicationForm_hero">
+									<img id="applicationForm_heroPC"  src="./images/dist/forms/dog_1_hi_desk.svg" alt="teleremont kiev hero dog">
+								</div>
+							</div>
+						</div>
+						<div class="applicationForm_Thx">
+							<div class="container">
+								<div class="row justify-content-center">
+									<div class="col-10">
+										<div class="applicationForm_headerThx">
+											<div class="applicationForm_titleThx">Чудово!
+												<span>Ваш Запит відправлено.</span></div>
+												<p class="applicationForm_descrThx">Дякуємо вам, що зв’язалися з нами. Наш менеджер вже у пошуках рішення для вашого запиту
+													та наразі звя’жеться з вами :)</p>
+										</div>
+										<div class="applicationForm_hero applicationForm_hero">
+											<img id="applicationForm_heroPC"  src="./images/dist/forms/dog_8_thx_desk.svg" alt="teleremont kiev hero dog">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="applicationForm_container callbackModal_content modal" id="callbackModal_content1">
+			<div class="container">
+				<div class="row g-0 justify-content-center">
+					<div class="col-12 applicationForm_wrapper">
+						<div class="applicationForm_close closeModal">
+							<span class="applicationForm_closeIcon"></span>
+							<span>Закрити</span>
+						</div>
+						<div class="row g-0">
+							<div class="col-md-12">
+								<div class="applicationForm_body">
+									<img src="/images/dist/main/act_tpl.jpg" alt="Акт про виконання ремонтних робіт">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Desktop main form -->
+
+	<!-- Mobile main form -->
+
+	<div class="wizzardMobile_container modal" id="callbackMobileModal">
+
+		<div class="wizzardMobile_wrapper">
+
+			<div class="wizzardMobile_head">
+				<div class="wizzardMobile_close closeModal">
+					<span>Закрити</span>
+					<span class="wizzardMobile_closeIcon"></span>
+				</div>
+
+				<div class="wizzardMobile_roadmap">
+					<!-- <span class="wizzardMobile_roadmapItem wizzardMobile_roadmapActive"></span>
+					<span class="wizzardMobile_roadmapItem"></span>
+					<span class="wizzardMobile_roadmapItem"></span>
+					<span class="wizzardMobile_roadmapItem"></span>
+					<span class="wizzardMobile_roadmapItem"></span> -->
+				</div>
+				
+				<div class="wizzardMobile_hero">
+					<img id="wizzardMobile_heroMobile"  src="./images/dist/forms/dog_1_hi_mob.svg" alt="teleremont kiev hero dog">
+				</div>
+
+			</div>
+			<div class="wizzardMobile_body wizzardMobile_startPage">
+
+				<div class="wizzardMobile_formsWrapper">
+					<div class="wizzardMobile_form wizzardMobile_start" data-form-id="1">
+						<div class="wizzardMobile_title">Привіт,</div>
+						<div class="wizzardMobile_descr">
+							Тут ви можете <b>ЗРУЧНО</b> та <b>ШВИДКО</b> зробити
+							запит на ремонт телевізора!
+						</div>
+					</div>
+					
+					<div class="wizzardMobile_form" data-form-id="2">
+						<form novalidate name="userNameForm" class="wizzardMobile_formName">
+							<label class="applicationForm_label">
+								<div class="applicationForm_labelTitle">Вкажіть ваше ім’я:</div>
+								<div class="applicationForm_inputWrapper">
+									<span class="applicationForm_inputStatus"></span>
+									<input data-input-obj="userName" name="userName" class="applicationForm_input userInfoPC userNameWizzard" type="text" placeholder="Микола Миколайович" required>
+								</div>
+								<div class="wizzardMobile_formError">Упс! Здається не всі необхідні поля заповнені!</div>
+							</label>
+						</form>
+					</div>
+	
+					<div class="wizzardMobile_form" data-form-id="3">
+						<form novalidate name="userPhoneForm" class="wizzardMobile_formPhone">
+							<label class="applicationForm_label">
+								<div class="applicationForm_labelTitle">Вкажіть номер за яким ми з вами зв’яжемось:</div>
+								<div class="applicationForm_inputWrapper">
+									<span class="applicationForm_inputStatus"></span>
+									<input data-input-obj="userPhone" name="userPhone" class="applicationForm_input userPhoneWizzard userInfoPC" type="tel" placeholder="+ ХХ (ХХХ) ХХХ - ХХ -ХХ" required>
+								</div>
+								<div class="wizzardMobile_formError">Упс! Здається не всі необхідні поля заповнені!</div>
+							</label>
+						</form>
+					</div>
+	
+					<div class="wizzardMobile_form" data-form-id="4">
+						<form novalidate name="userTVForm">
+							<label class="applicationForm_label">
+								<div class="applicationForm_labelTitle">Вкажіть виробника та номер моделі вашого телевізору:</div>
+								<div class="applicationForm_inputWrapper">
+									<span class="applicationForm_inputStatus"></span>
+									<input data-input-obj="userTV" name="userTV" class="applicationForm_input userInfoPC" type="text" placeholder="LG 43UK6710">
+								</div>
+								<div class="wizzardMobile_formError">Упс! Здається не всі необхідні поля заповнені!</div>
+							</label>
+						</form>
+					</div>
+	
+					<div class="wizzardMobile_form" data-form-id="5">
+						<form novalidate name="userMessageForm">
+							<label class="applicationForm_label">
+								<div class="applicationForm_labelTitle">Додайте невелий опис проблеми, що виникла:</div>
+								<div class="applicationForm_inputWrapper">
+									<span class="applicationForm_inputStatus"></span>
+									<textarea data-input-obj="userMessage" name="userMessage" class="applicationForm_message userInfoPC" placeholder="(Наприклад: Телевізор не вмикається, індикатор очікування миготить з періодичністю 2 швидких і одне довге миготіння..)"></textarea>
+								</div>
+								<div class="wizzardMobile_formError">Упс! Здається не всі необхідні поля заповнені!</div>
+							</label>
+						</form>
+					</div>
+	
+					<div class="wizzardMobile_form wizzardMobile_done" data-form-id="6">
+						<div class="wizzardMobile_title applicationForm_titleThx">Чудово! <br>
+							<span>Ваш Запит відправлено.</span></div>
+						<div class="wizzardMobile_descr wizzardMobile_descrThx">
+							Дякуємо вам, що зв’язалися з нами. Наш менеджер вже у пошуках рішення для вашого запиту
+							та наразі звя’жеться з вами :)
+						</div>
+					</div>
+				</div>
+
+				<form name="mobileSubmitForm" class="wizzardMobile_buttonsWrapper">
+					<div class="none">
+						<input name="hiddenUserName" type="text" value="">
+						<input name="hiddenUserPhone" type="text" value="">
+						<input name="hiddenUserTV" type="text" value="">
+						<input name="hiddenUserMessage" type="text" value="">
+					</div>
+					<button class="wideButton noaction wideButton_back">Назад</button>
+					<button class="wideButton noaction wideButton_next">Далі</button>
+					<button class="wideButton noaction wideButton_start">Розпочати</button>
+					<button class="wideButton wideButton_submit">Відправити</button>
+				</form>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Mobile main form -->
+
+	<!-- Cookies -->
+
+		<section class="cookiesWrapper">
+			<div class="container">
+				<div class="row g-0">
+					<div class="col-12">
+						<div class="cookiesItem">
+							<div class="cookiesText">Ми використовуємо <a href="#">cookies</a></div> <button class="cookieButton commonButton">Погоджуюсь</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	<!-- Cookies -->
+
+	<a href="#"  data-modal-type="callbackModal" data-modal-mobile-type="callbackMobileModal" class="fixedCallback openModal">
+		<div class="fixedCallback_wrapper">
+			<div class="fixedCallback_img fixedCallback_block"></div>
+			<div class="fixedCallback_one fixedCallback_block fixedCallback_anim fixedCallback_anim_active"></div>
+			<div class="fixedCallback_two fixedCallback_block fixedCallback_anim"></div>
+		</div>
+		<span>
+			Потрібен
+		</span>
+		<br>
+		<span>
+			Ремонт ТВ ?
+		</span>
+	</a>
+	
+	<script src="js/app.min.js"></script>
+
+</body>
+</html>
