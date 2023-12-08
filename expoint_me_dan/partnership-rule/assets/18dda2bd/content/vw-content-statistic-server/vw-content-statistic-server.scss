@@ -1,0 +1,8 @@
+#vw-content-statistic-server {
+    img{
+        width: 40px;
+        &+div{
+            min-width: 90px;
+        }
+    }
+}

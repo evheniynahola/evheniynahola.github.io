@@ -1,0 +1,81 @@
+#banners-brief {
+    margin-top: 36px;
+    display: none;
+    .redesign-banners-block {
+        display: flex;
+        column-gap: 12px;
+        margin-bottom: 1rem;
+    }
+    .redesign-banners-block-item {
+        box-shadow: 0 3px 5px -1px lightgrey;
+        height: 185px;
+        background: rgb(73 92 161 / 5%);
+        border-radius: 4px;
+        width: 50%;
+        padding: 12px;
+        position: relative;
+        line-height: 1rem;
+        text-decoration: none !important;
+    }
+    .redesign-banners-block-item img.bb-image {
+        width: 40px;
+        height: 40px;
+    }
+    .redesign-banners-block-title {
+        margin-top: 0.5rem;
+        color: #325CF0;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .redesign-banners-block-desc {
+        line-height: 1rem;
+        font-size: 14px;
+        font-weight: 400;
+        color: black;
+    }
+    .redesign-banners-block-btn {
+        background: white;
+        padding: 5px 14px;
+        border-radius: 4px;
+        font-size: 15px;
+        font-weight: bold;
+        color: #262B3E;
+        position: absolute;
+        bottom: 13px;
+        text-decoration: none !important;
+    }
+    .redesign-banners-block-btn:hover {
+        color: #325CF0;
+    }
+    .redesign-banners-row {
+        box-shadow: 0 3px 5px -1px lightgrey;
+        display: flex;
+        align-items: center;
+        padding: 10px 12px;
+        background: rgb(73 92 161 / 5%);
+        border-radius: 4px;
+        margin-bottom: 1.2rem;
+        text-decoration: none !important;
+    }
+    .redesign-banners-row img.bb-image {
+        width: 40px;
+        height: 40px;
+        margin-right: 1rem;
+    }
+    .redesign-banners-row-item {
+        line-height: 1rem;
+    }
+    .redesign-banners-row-title {
+        font-size: 14px;
+        font-weight: 700;
+    }
+    .redesign-banners-row-desc {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    .lnk-text {
+        color: #325CF0;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}

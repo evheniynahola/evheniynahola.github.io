@@ -1,0 +1,48 @@
+#content {
+    color: #1d1e1e;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    #vw-content-title {
+        h4 {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+    }
+    #vw-content-body-head {
+        .show_pre_text>img {
+            width: 20%;
+            height: auto;
+            float: left;
+            margin-right: 15px;
+        }
+        p{
+            /*line-height: 25px;*/
+            color: #333;
+            /*font-size: 16px;*/
+        }
+        a{
+            color: #537dd6;
+        }
+    }
+    #vw-content-text {
+        line-height: 22px;
+        &::after {
+            margin: 0 0 0 16px;
+        }
+        .txt-link-keshbek{
+            font-size: 16px;
+            color: #537dd6;
+        }
+    }
+    #tab-tracking{
+        .field-needexchange{
+            label{
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 16px;
+                color: #65757b;
+            }
+        }
+    }
+}
+
+

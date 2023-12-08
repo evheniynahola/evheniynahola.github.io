@@ -1,0 +1,192 @@
+#tab-history {
+    .popular-banner {
+        padding: 18px 36px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        box-shadow: 4px 4px 8px #8093a18f;
+        margin-bottom: 20px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        text-decoration: none;
+        color: #000;
+        .banner-text {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .banner-icon {
+            display: inline-block;
+            width: 44px;
+            height: 40px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 0 0 1px;
+            text-align: center;
+            color: #3c5999;
+            font-weight: 500;
+            font-size: 11px;
+            line-height: 15px;
+            background-repeat: no-repeat;
+            background-size: 40px 40px;
+            vertical-align: middle;
+        }
+        .data-badge_have_cashback {
+            background-image: url(images/icn_have_cashback2.svg);
+            &.data-badge_const-2 {
+                background-image: url(images/icn_have_cashback1.svg);
+            }
+        }
+    }
+    .data-icon {
+        width: 16px;
+        height: 16px;
+        position: absolute;
+        left: 0;
+        top: 3px;
+        z-index: 3;
+        line-height: 14px;
+        text-align: center;
+    }
+    .title {
+        display: block;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        color: #26375c;
+        margin: 0 0 1px;
+    }
+    .popular-bar {
+        min-height: 175px;
+        padding: 0;
+        margin: -4px 0 20px;
+        list-style: none;
+        &.with-banner {
+            min-height: 78px;
+        }
+        .wrap-link {
+            display: flex;
+            padding-top: 8px;
+            padding-bottom: 5px;
+        }
+        .item-name {
+            display: inline-block;
+            vertical-align: top;
+            position: relative;
+            padding: 2px 0 2px 23px;
+            font-size: 15px;
+            line-height: 18px;
+            z-index: 3
+        }
+        .small-arrow {
+            font-size: 1.2rem;
+        }
+        .sprites,
+        .data-icon {
+            top: 3px
+        }
+        .popular-percent {
+            position: absolute;
+            top: 5px;
+            right: 0;
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            padding: 1px 4px 0;
+            transition: background-color .2s ease-in-out, color .2s ease-in-out, right .2s ease-in-out;
+            width: 54px;
+            height: 21px;
+            color: #fff;
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 500;
+            background-color: #527a99;
+            text-align: center;
+            z-index: 3
+        }
+        .active .popular-percent {
+            background-color: #fcfdfe;
+            color: #323232;
+            right: 5px;
+        }
+    }
+    .popular-bar li {
+        padding: 0;
+        position: relative;
+        a.wrap-link {
+            display: block;
+            padding: 5px 13px 5px 0;
+            font-size: 14px;
+            line-height: 18px;
+            font-weight: 400;
+            color: #323232;
+            text-decoration: none;
+            position: relative;
+            transition: background-color .2s ease-in-out, color .2s ease-in-out, padding .2s ease-in-out;
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 1;
+                height: 1px;
+                background-color: #ced6e8;
+            }
+            &:before {
+                content: '';
+                position: absolute;
+                top: -1px;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                opacity: 0;
+                //background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAcFBQYFBAcGBgYIBwcICxILCwoKCxYPEA0SGhYbGhkWGRgcICgiHB4mHhgZIzAkJiorLS4tGyIyNTEsNSgsLSz/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wgARCAAgACADAREAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAVAQEBAAAAAAAAAAAAAAAAAAAABf/aAAwDAQACEAMQAAAAmbM4AAAAAAAf/8QAFxAAAwEAAAAAAAAAAAAAAAAAADJxsf/aAAgBAQABPwBpo00aaNNGmjTRpo00aaNNGmjTRpo00aaNNP/EABQRAQAAAAAAAAAAAAAAAAAAAED/2gAIAQIBAT8AB//EABQRAQAAAAAAAAAAAAAAAAAAAED/2gAIAQMBAT8AB//Z) 0 0 repeat;
+                background: url(images/fone-last-active-item.png) 0 0 repeat;
+                transition: opacity .2s ease-in-out;
+                z-index: 2;
+            }
+            &:hover {
+                background: #e2eaf5;
+                padding-left: 5px;
+                /*  right: 5px*/
+            }
+            .item-name {
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 18px;
+                color: #323232;
+                text-decoration: none;
+                white-space: nowrap;
+                overflow: hidden;
+                &:first-child {
+                    flex-shrink: 0;
+                }
+            }
+        }
+    }
+    .popular-bar li:hover {
+        .popular-percent {
+            right: 5px;
+        }
+        .wrap-link {
+            background: #e2eaf5;
+            padding-left: 5px;
+        }
+    }
+    .popular-bar li.active {
+        .wrap-link {
+            color: #fff;
+            background: 0 0;
+            padding-left: 5px;
+            &:before {
+                opacity: 1;
+            }
+        }
+    }
+}

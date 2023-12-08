@@ -1,0 +1,72 @@
+#ex-head-banner .close,
+#ex-head-banner .blue, #ex-head-banner .tg {
+  background: linear-gradient(to left, #e0c519, #e6b50f, #e0c519);
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  overflow: hidden;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+#ex-head-banner .close.blue,
+#ex-head-banner .blue.blue, #ex-head-banner .tg.blue {
+  background: linear-gradient(to left, #3b5a99, #5884e3, #496fbe);
+}
+#ex-head-banner .close.tg,
+#ex-head-banner .blue.tg, #ex-head-banner .tg.tg {
+  background: #28a8e9;
+  z-index: 1;
+  position: relative;
+}
+#ex-head-banner .close.close,
+#ex-head-banner .blue.close, #ex-head-banner .tg.close {
+  z-index: 0;
+}
+#ex-head-banner .close.close .close-head-banner,
+#ex-head-banner .blue.close .close-head-banner, #ex-head-banner .tg.close .close-head-banner {
+  display: none;
+}
+#ex-head-banner .go-test {
+  font-size: 18px;
+  color: #fff;
+  line-height: 29px;
+  text-decoration: none;
+}
+#ex-head-banner .go-test:after, #ex-head-banner .go-test:before {
+  background: url(images/fone-chevron-right.png);
+  margin-top: 3px;
+}
+#ex-head-banner .go-test:after {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  float: right;
+  margin-left: 40px;
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+#ex-head-banner .go-test:before {
+  content: "";
+  display: block;
+  width: 21px;
+  height: 21px;
+  float: left;
+  margin-right: 40px;
+}
+#ex-head-banner .close-head-banner {
+  cursor: pointer;
+  width: 21px;
+  height: 20px;
+  position: absolute;
+  right: 11%;
+  text-indent: -99999px;
+  background: url(images/icon-btn-close.png) no-repeat;
+}/*# sourceMappingURL=vw-head-banner.css.map */

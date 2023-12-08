@@ -1,0 +1,28 @@
+/**
+ * Created by PhpStorm.
+ * User: PretorDH
+ * Date: 25.03.2019
+ * Time: 13:28
+ */
+
+.partners-container tr .alert {
+	color:red;
+}
+
+.red {
+	color: red;
+}
+.green {
+	color: green;
+}
+
+.wp-list-table.users .column-partner {
+	width: 80px;
+	text-align: center;
+}
+.row_gray {
+	background: #eee !important;
+}
+.row_white {
+	background: white !important;
+}

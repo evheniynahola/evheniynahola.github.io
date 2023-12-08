@@ -1,0 +1,73 @@
+#ex-head-banner {
+    .close,
+    .blue,.tg {
+        background: linear-gradient(to left, #e0c519, #e6b50f, #e0c519);
+        height: 45px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+        overflow: hidden;
+        z-index: 2;
+        position: absolute;
+        left: 0;
+        right: 0;
+        &.blue {
+            background: linear-gradient(to left, #3b5a99, #5884e3, #496fbe);
+        }
+        &.tg {
+            background: #28a8e9;
+            z-index: 1;
+            position: relative;
+        }
+        &.close {
+            z-index: 0;
+            .close-head-banner {
+                display: none;
+            }
+        }
+    }
+    .go-test {
+        font-size: 18px;
+        color: #fff;
+        line-height: 29px;
+        text-decoration: none;
+        &:after,
+        &:before {
+            //background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAACAklEQVQ4jZXUzavNexQG8M8+znE4l3PLey4Gh5O3G6W8ZCQvd4BQLsVAMrgjkzu9DPAnXGVAGSgzY0kZiEj2BFOJUleSkpKI5w72OvrZ2edsq771rKffd/U8a63vT5JrSW4nGU7yT5I7SUaSHE5yN8lYkvXF709iqjOIRZiBAfyKmYV/KX4Iw8XP1ke0kozU5bf9XOgnBvChUfAozmI6NuMc5mFZ8csqv4B9kxVtxjHsKeVbsRuLMVb8OBZiE3b2lNrV5EU1lIl8bgPP6eJbvQbVrfQVHhXejIMYxQL8WSpHi1+NwWrRiWaRwZ4WOI6NeIC5+AvP8V/h+fi3WgSXe9lvniVJ9iYZqHy8YXll7fIEv7B7T3vFyzrK9pJS+Qm/4T0+Fh7CaxzB1ylfR52TSdpJdiVZU/h0klmF79WLbCdpt5JMIvZbzMEKPCmlG/EUb3TW6w2e4cBUShcn2d3o6fJGT8cbPR1LsqB5d7KiF8rO+iTbC/+R5PfCp5LMnrDc76Cu6Ozs8xrQRTzWedaXcLcGdQMvvrv5gzXa0siXdrWjyU/r5bKbuFlWRpP8XXhdkm2FdyRZW/h8r6Ld9q9iVdl6oPM8X+EdbtbEP+AhbvXq28RKDeHzJP39qRjAddzX+d2dQRsjOv/WNpZjQ6k71G/R4AtaxX1t4GBa47tWd4Efxf/dMVm2HgnkmQAAAABJRU5ErkJggg==');
+            background: url(images/fone-chevron-right.png);
+            margin-top: 3px;
+        }
+        &:after {
+            content: '';
+            display: block;
+            width: 21px;
+            height: 21px;
+            float: right;
+            margin-left: 40px;
+            transform: rotate(180deg);
+            -ms-transform: rotate(180deg);
+            -moz-transform: rotate(180deg);
+            -webkit-transform: rotate(180deg);
+            -o-transform: rotate(180deg);
+        }
+        &:before {
+            content: '';
+            display: block;
+            width: 21px;
+            height: 21px;
+            float: left;
+            margin-right: 40px;
+        }
+    }
+    .close-head-banner {
+        cursor: pointer;
+        width: 21px;
+        height: 20px;
+        position: absolute;
+        right: 11%;
+        text-indent: -99999px;
+        //background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAABEUlEQVQ4jZ2SsU4CQRCGv7tQ+A6UNga0UaAgcBSKZ2MUChpsbU14EXqMvZW9sbEwodPOt/AB7H4KZ5PLwi7rTbK52Zl/vp292UzSEngDXqlnBTDNgXdgAvRrQM6AObBGEpL6klaSCtunrK7VjCVRTYwsMUiAdEx75WK+YGiCUUInZTW+S+g6G0Y6Kf1c6FTXWZECkUQjMI0P+94BP8AvcA+88PdUtiyTFBvvEbAwfwV8hYR5jAIcBPxti0xnbP/kUFLT/OuQPgQprbBTibUsNk0FXVpBb0fuxHI3+0AO0o1cuW2aSQhUJkD8zm590MU/IG4dV2GZpBlwDjwCn3ueg29t4AFY58Ap8FwDAvANPAGtDSsagxb97kG/AAAAAElFTkSuQmCC') no-repeat;
+        background: url(images/icon-btn-close.png) no-repeat;
+    }
+}

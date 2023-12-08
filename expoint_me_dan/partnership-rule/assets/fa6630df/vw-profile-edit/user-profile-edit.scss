@@ -1,0 +1,33 @@
+.user-log-in-page {
+    .user-profile-login {
+        min-height: 100vh;
+        padding-top: 30vh;
+        text-align: center;
+    }
+}
+
+#profile-form{
+    .block-profile-edit{
+        line-height: initial;
+    }
+    .form-group{
+        input{
+            border-width: 2px
+        }
+        label{
+            position: relative; 
+        }
+        label[for="profile-meta_nickname"],
+        label[for="profile-user_email"],
+        label[for="profile-new_user_pass"],
+        label[for="profile-new_user_pass_confirm"]{
+            &::after{
+                content: '*';
+                color: red;
+                font-size: 23px;
+                margin-left: 5px;
+                margin-top: -5px;
+            }
+        }
+    }
+}

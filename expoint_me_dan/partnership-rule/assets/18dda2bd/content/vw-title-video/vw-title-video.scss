@@ -1,0 +1,50 @@
+#vw-content-title {
+    a.ex-title-video-link {
+        font-weight: 300;
+        font-size: 1rem;
+        text-decoration: none;
+        color: red;
+        transition: color .2s ease-in-out;
+        &:before {
+            content: url(images/video-icon.svg);
+            display: inline-block;
+            width: 20px;
+            margin-left: 5px;
+            margin-right: 10px;
+            top: 3px;
+            position: relative;
+        }
+    }
+}
+
+
+#ytplayer {
+    text-align: center;
+    width: 340px;
+    height: 192px;
+    .icon-preloader {
+        display: inline-block;
+        vertical-align: top;
+        width: 38px;
+        height: 40px;
+        background: url(images/video-preloader-dark.svg) 0 0 no-repeat;
+        background-size: contain;
+        -webkit-animation-duration: 1.2s;
+        -moz-animation-duration: 1.2s;
+        -o-animation-duration: 1.2s;
+        animation-duration: 1.2s;
+        -webkit-animation-iteration-count: infinite;
+        -moz-animation-iteration-count: infinite;
+        -o-animation-iteration-count: infinite;
+        animation-iteration-count: infinite;
+        -webkit-animation-timing-function: linear;
+        -moz-animation-timing-function: linear;
+        -o-animation-timing-function: linear;
+        animation-timing-function: linear;
+        -webkit-animation-name: tada-loader;
+        -moz-animation-name: tada-loader;
+        -o-animation-name: tada-loader;
+        animation-name: tada-loader;
+        transform: rotate(0deg);
+    }
+}

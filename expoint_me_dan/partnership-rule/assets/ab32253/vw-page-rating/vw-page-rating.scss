@@ -1,0 +1,41 @@
+#vw-page-rating {
+    margin-top: 2px;
+    >meta {
+        display: none;
+    }
+    .bimsha-rating-hidden {
+        display: none;
+    }
+    .bimsha-rating {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        white-space: nowrap;
+        >meta {
+            display: none;
+        }
+        >.bimsha-rating-text {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 18px;
+            margin: 0 5px;
+        }
+        >.bimsha-rating-stars {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            >div {
+                background: url(images/bg-rating-gray.png) 0 0 no-repeat;
+                background-size: contain;
+                width: 16px;
+                height: 16px;
+                margin: 0 5px 0 0;
+                cursor: pointer;
+                &.active,
+                &._active {
+                    background-image: url(images/bg-rating.png);
+                }
+            }
+        }
+    }
+}

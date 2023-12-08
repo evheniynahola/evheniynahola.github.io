@@ -1,0 +1,395 @@
+:root {
+  --accent-dark: #3B5998;
+  --accent-light: #0D6EFD;
+}
+
+#content {
+  color: #333;
+}
+
+.pop-questions {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pop-questions_item {
+  border-radius: 5px;
+  background-color: #ececec;
+  font-weight: 500;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 15px;
+  padding: 12px 20px 11px;
+  font-size: 14px;
+}
+.pop-questions_item:hover {
+  background-color: var(--accent-dark);
+  color: #fff;
+}
+.pop-questions_item:last-of-type {
+  margin-bottom: 0;
+}
+
+.info-block {
+  margin-top: 50px;
+}
+.info-block a {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+.info-block strong, .info-block b {
+  font-weight: 600;
+}
+.info-block_title {
+  max-width: 310px;
+  font-size: 27px;
+  line-height: 45px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+}
+.info-block_title:after {
+  content: "?";
+  font-size: 165px;
+  font-weight: 900;
+  line-height: 24px;
+  color: #ececec;
+  position: absolute;
+  left: 50%;
+  transform: translate(-35%, -10px);
+  z-index: -1;
+}
+.info-block_descr a {
+  color: var(--accent-dark);
+  text-decoration: underline;
+}
+.info-block_panel {
+  background-color: #fff;
+  padding: 5px 7px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+}
+
+.next-pointer_ltr {
+  position: relative;
+}
+.next-pointer_ltr:after {
+  content: "";
+  width: 53px;
+  height: 29px;
+  background: url("../img/next-pointer-ltr.svg") center/cover;
+  position: absolute;
+}
+.next-pointer_ltr.pointer_blue:after {
+  background: url("../img/next-pointer-ltr_blue.svg") center/cover;
+}
+
+.next-pointer_ttb {
+  position: relative;
+}
+.next-pointer_ttb:after {
+  content: "";
+  width: 51px;
+  height: 47px;
+  background: url("../img/next-pointer-ttb.svg") center/cover;
+  position: absolute;
+}
+
+.cashback-works .info-block_title {
+  margin-bottom: 39px;
+}
+.cashback-works_item {
+  text-align: center;
+  position: relative;
+}
+.cashback-works_item .img-wrapper {
+  height: 94px;
+}
+.cashback-works_item.next-pointer_ltr:after {
+  top: 85px;
+  right: 0;
+  transform: translateX(calc(var(--bs-gutter-x) * 0.5 + 50%));
+}
+.cashback-works_item.next-pointer_ttb:after {
+  bottom: -71px;
+  right: 17px;
+}
+.cashback-works_title {
+  font-size: 18px;
+  line-height: 1.3;
+  margin: 18px 0 4px;
+}
+
+.cashback-get {
+  counter-reset: cashbackCounter;
+}
+.cashback-get_item {
+  counter-increment: cashbackCounter;
+}
+.cashback-get_item-descr:before {
+  content: counter(cashbackCounter);
+  font-size: 90px;
+  font-weight: 900;
+  color: #cac9c9;
+  display: block;
+  margin: 20px 0;
+}
+.cashback-get_item-descr.next-pointer_ltr:after {
+  bottom: 0;
+  right: 50px;
+  transform: rotate(45deg) translateY(50%);
+}
+.cashback-get_item-button {
+  margin-top: 26px;
+}
+.cashback-get_item-dest {
+  margin-top: 14px;
+}
+.cashback-get_item-dest .cashback-get_item-descr:before {
+  margin-right: 12px;
+  line-height: 38px;
+}
+.cashback-get_item-complete {
+  margin-top: 20px;
+}
+.cashback-get_item-complete .cashback-get_item-descr:before {
+  font-size: 70px;
+}
+.cashback-get_item-complete.next-pointer_ltr:after {
+  bottom: 0;
+  right: 35px;
+  transform: rotate(135deg) translateY(-100%);
+}
+.cashback-get_item-complete .cashback-get_item-descr {
+  max-width: 131px;
+  margin-right: 28px;
+}
+.cashback-get_item-complete img {
+  margin-top: 40px;
+}
+.cashback-get_item-site {
+  margin-top: 30px;
+}
+.cashback-get_item-site .cashback-get_item-descr:before {
+  font-size: 70px;
+  margin-right: 6px;
+}
+.cashback-get_item-site p {
+  margin-bottom: 0;
+}
+.cashback-get_item-site.next-pointer_ltr:after {
+  bottom: -22px;
+  left: 15px;
+  transform: rotate(45deg) scaleY(-1) translateY(-100%);
+}
+.cashback-get_item-site .info-block_panel {
+  margin-top: 11px;
+}
+.cashback-get_item-callback {
+  margin-top: 72px;
+}
+.cashback-get_item-callback .cashback-get_item-descr:before {
+  font-size: 70px;
+  margin: 0 5px 0 5px;
+}
+
+.cashback-obtain {
+  margin-top: 50px;
+}
+.cashback-obtain .info-block_title {
+  margin-bottom: 13px;
+}
+.cashback-obtain_item {
+  margin-bottom: 25px;
+}
+.cashback-obtain_rev .info-block_panel {
+  padding: 0 6px 0 4px;
+  background-color: #D9F1D4;
+}
+.cashback-obtain_img {
+  width: 111px;
+}
+.cashback-obtain_value {
+  color: var(--accent-dark);
+  font-size: 40px;
+  font-weight: 900;
+  width: 145px;
+}
+.cashback-obtain_descr {
+  margin-top: 13px;
+}
+.cashback-obtain_rise {
+  margin-top: 48px;
+}
+.cashback-obtain_rise .cashback-obtain_descr {
+  margin-top: 10px;
+}
+.cashback-obtain_rise .cashback-obtain_img {
+  transform: translateY(-22px);
+}
+.cashback-obtain_final .info-block_panel {
+  padding: 10px 23px;
+  text-align: center;
+}
+.cashback-obtain_final span {
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--accent-dark);
+}
+
+.cashback-miss .info-block_title {
+  letter-spacing: -0.81px;
+}
+.cashback-miss .info-block_title:after {
+  transform: translate(-20%, -18px);
+}
+.cashback-miss_item {
+  text-align: center;
+  margin-bottom: 11px;
+}
+.cashback-miss_subtitle {
+  font-size: 18px;
+}
+
+.cashback-howto .info-block_title:after {
+  transform: translate(-17%, -23px);
+}
+.cashback-howto_item {
+  margin-top: 15px;
+}
+.cashback-howto_item span {
+  font-size: 13px;
+  display: block;
+}
+.cashback-howto_tabs {
+  margin: 90px 0 46px 0;
+}
+.cashback-howto_tabs-nav {
+  margin-bottom: -2px;
+  position: relative;
+}
+.cashback-howto_tabs-body {
+  border: 1px solid #D9D9D9;
+  border-top: none;
+  background-color: #fff;
+  border-radius: 0 0 5px 5px;
+  padding: 19px 12px 23px;
+  overflow: hidden;
+  position: relative;
+  z-index: 3;
+}
+.cashback-howto_tabs-control {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px 5px 0 0;
+  padding: 8px 12px 8px 7px;
+  margin: 0 1px;
+  background: #fff;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+  text-decoration: none !important;
+}
+.cashback-howto_tabs-control span {
+  display: none;
+  font-size: 18px;
+  font-weight: 700;
+  margin-left: 7px;
+}
+.cashback-howto_tabs-control .cashback-howto_tabs-ico {
+  width: 30px;
+  height: 30px;
+}
+.cashback-howto_tabs-control:after {
+  content: "";
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #D9D9D9;
+}
+.cashback-howto_tabs-control:first-of-type {
+  margin-left: 0;
+}
+.cashback-howto_tabs-control:last-of-type {
+  margin-right: 0;
+}
+.cashback-howto_tabs-control.active {
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.cashback-howto_tabs-control.active span {
+  display: block;
+}
+.cashback-howto_tabs-control.active .cashback-howto_tabs-ico {
+  width: 45px;
+  height: 45px;
+}
+.cashback-howto_tabs-control.active:after {
+  display: none;
+}
+.cashback-howto_tab {
+  display: none;
+}
+.cashback-howto_tab.active {
+  display: block;
+}
+.cashback-howto_tab p, .cashback-howto_tab li {
+  margin-bottom: 12px;
+}
+.cashback-howto_tab p:last-of-type, .cashback-howto_tab li:last-of-type {
+  margin-bottom: 5px;
+}
+.cashback-howto_check:before {
+  content: "";
+  display: block;
+  min-width: 37px;
+  height: 39px;
+  margin-right: 10px;
+  background-image: url("../img/cashback-check.svg");
+}
+.cashback-howto_icon {
+  margin: 25px 0 20px 0;
+}
+.cashback-howto_icon p {
+  margin-bottom: 0;
+}
+.cashback-howto_icon:before {
+  content: "";
+  display: block;
+  min-width: 49px;
+  height: 51px;
+  background-image: url("../img/cashback-100.svg");
+  margin-right: 11px;
+}
+
+.cashback-howto-full {
+  margin-bottom: 150px;
+}
+.cashback-howto-full .info-block_title:after {
+  transform: translate(-45%, -13px);
+}
+.cashback-howto-full .cashback-howto_check:before {
+  margin-right: 23px;
+}
+
+.btn-callback, a.btn-callback {
+  padding: 13px 27px;
+  border-radius: 5px;
+  background: var(--accent-dark);
+  color: #fff;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.login-google_button {
+  display: block;
+  border-radius: 5px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.25);
+  height: 50px;
+  background: url("../img/login-w-google.png") no-repeat center #FFF;
+}/*# sourceMappingURL=content-main.css.map */

@@ -1,0 +1,38 @@
+#content {
+  color: #1d1e1e;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+#content #vw-content-title h4 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+#content #vw-content-body-head .show_pre_text > img {
+  width: 20%;
+  height: auto;
+  float: left;
+  margin-right: 15px;
+}
+#content #vw-content-body-head p {
+  /*line-height: 25px;*/
+  color: #333;
+  /*font-size: 16px;*/
+}
+#content #vw-content-body-head a {
+  color: #537dd6;
+}
+#content #vw-content-text {
+  line-height: 22px;
+}
+#content #vw-content-text::after {
+  margin: 0 0 0 16px;
+}
+#content #vw-content-text .txt-link-keshbek {
+  font-size: 16px;
+  color: #537dd6;
+}
+#content #tab-tracking .field-needexchange label {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #65757b;
+}/*# sourceMappingURL=vw-content.css.map */

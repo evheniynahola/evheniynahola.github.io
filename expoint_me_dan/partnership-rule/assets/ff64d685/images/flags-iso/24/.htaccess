@@ -1,0 +1,10 @@
+
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^.\.png$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /NON.png [L]
+</IfModule>
+
+# END WordPress

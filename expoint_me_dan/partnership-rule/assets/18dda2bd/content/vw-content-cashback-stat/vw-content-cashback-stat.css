@@ -1,0 +1,47 @@
+#vw-content-cashback-stat {
+  border: 1px solid #e6eef1;
+}
+#vw-content-cashback-stat .ex-cashback-left {
+  background-color: #f6fcff;
+  box-sizing: border-box;
+  background-image: url(images/fone-cashback-pig.png);
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#vw-content-cashback-stat .ex-cashback-left .txt-all-time {
+  font-size: 17px;
+}
+#vw-content-cashback-stat .ex-cashback-left .ex-order-count {
+  color: #1ba2ee;
+  font-size: 45px;
+}
+#vw-content-cashback-stat .ex-cashback-left:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #f6fcff;
+  right: -10px;
+  top: 13px;
+  transform: rotate(45deg);
+}
+#vw-content-cashback-stat .ex-cashback-right .ex-cashback-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+#vw-content-cashback-stat .ex-cashback-right .ex-cashback-text:after {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url(images/icon-cashback-size2.svg);
+  background-repeat: no-repeat;
+  margin-bottom: -3px;
+  margin-left: 12px;
+}
+#vw-content-cashback-stat .ex-cashback-right .ex-stat-header {
+  font-size: 13px;
+  color: #1ba2ee;
+}/*# sourceMappingURL=vw-content-cashback-stat.css.map */

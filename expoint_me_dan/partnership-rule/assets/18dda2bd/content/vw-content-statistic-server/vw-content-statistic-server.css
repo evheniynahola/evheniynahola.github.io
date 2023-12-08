@@ -1,0 +1,6 @@
+#vw-content-statistic-server img {
+  width: 40px;
+}
+#vw-content-statistic-server img + div {
+  min-width: 90px;
+}/*# sourceMappingURL=vw-content-statistic-server.css.map */

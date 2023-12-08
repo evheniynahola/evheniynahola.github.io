@@ -1,0 +1,60 @@
+@charset "UTF-8";
+#content_menu_head .btnl {
+  margin: 3px 9px 12px 0;
+  display: inline-block;
+  vertical-align: top;
+  padding: 0;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9em;
+  line-height: 1em;
+  position: relative;
+  color: #5473a9;
+}
+#content_menu_head .btnl span {
+  border-bottom: 1px dashed #b9c5db;
+  transition: border-color 0.2s ease-in-out;
+}
+#content_menu_head .btnl span:hover {
+  border-bottom: none;
+}
+#content_menu_head .btn-favorites:before {
+  border-bottom: 1px dashed #b9c5db;
+  transition: border-color 0.2s ease-in-out;
+  content: "В избранное";
+  text-align: center;
+}
+#content_menu_head .btn-favorites:hover:before {
+  border-bottom: none;
+}
+#content_menu_head .btn-favorites.active {
+  font-weight: 500;
+}
+#content_menu_head .btn-favorites.active:before {
+  content: "Из избранного";
+}
+#content_menu_head .btn-favorites.active:after {
+  content: "Добавлено в избранное";
+}
+#content_menu_head .btn-favorites:after {
+  content: "Удалено из избранного ";
+  color: white;
+  width: 180px;
+  position: absolute;
+  background: #3b5998;
+  left: 50%;
+  margin-left: -66px;
+  text-align: center;
+  line-height: 1.8;
+  border-radius: 4px;
+  top: 0;
+  transition: 0.5s;
+  opacity: 0;
+  box-shadow: 0 0 11px grey;
+  z-index: -1;
+}
+#content_menu_head .btn-favorites.animete:after {
+  top: -25px;
+  opacity: 1;
+  z-index: 1080;
+}/*# sourceMappingURL=obmen-content-menu-head.css.map */

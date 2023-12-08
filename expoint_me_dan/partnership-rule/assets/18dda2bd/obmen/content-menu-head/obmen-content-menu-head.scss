@@ -1,0 +1,74 @@
+#content_menu_head {
+  .btnl {
+    margin: 3px 9px 12px 0;
+    display: inline-block;
+    vertical-align: top;
+    padding: 0;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 0.900em;
+    line-height: 1em;
+    position: relative;
+    color: #5473a9;
+
+    span {
+      border-bottom: 1px dashed #b9c5db;
+      transition: border-color .2s ease-in-out;
+
+      &:hover {
+        border-bottom: none;
+      }
+    }
+  }
+
+  .btn-favorites {
+    &:before {
+      border-bottom: 1px dashed #b9c5db;
+      transition: border-color .2s ease-in-out;
+      content: 'В избранное';
+      text-align: center;
+    }
+
+    &:hover {
+      &:before {
+        border-bottom: none;
+      }
+    }
+
+    &.active {
+      font-weight: 500;
+
+      &:before {
+        content: 'Из избранного';
+      }
+
+      &:after {
+        content: "Добавлено в избранное";
+      }
+    }
+
+    &:after {
+      content: "Удалено из избранного ";
+      color: white;
+      width: 180px;
+      position: absolute;
+      background: #3b5998;
+      left: 50%;
+      margin-left: -66px;
+      text-align: center;
+      line-height: 1.8;
+      border-radius: 4px;
+      top: 0;
+      transition: 0.5s;
+      opacity: 0;
+      box-shadow: 0 0 11px grey;
+      z-index: -1;
+    }
+
+    &.animete:after {
+      top: -25px;
+      opacity: 1;
+      z-index: 1080;
+    }
+  }
+}

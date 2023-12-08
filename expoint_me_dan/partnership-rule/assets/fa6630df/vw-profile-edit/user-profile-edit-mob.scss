@@ -1,0 +1,34 @@
+
+#profile-form {
+  button.btn-primary {
+    border-radius: 5px;
+    margin-top: 1rem;
+    background-color: #325cf0;
+  }
+
+  label {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .field-group.required label::after {
+    font-size: 21px;
+  }
+
+  input {
+    color: #666;
+
+    &::placeholder {
+      color: #c4c4c4;
+    }
+  }
+
+  .field-hint {
+    font-style: oblique;
+    font-size: 13px;
+  }
+
+  .field-profile-meta_nickname .form-text {
+    max-width: 40%;
+  }
+}

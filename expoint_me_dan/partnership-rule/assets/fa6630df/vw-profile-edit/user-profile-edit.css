@@ -1,0 +1,25 @@
+.user-log-in-page .user-profile-login {
+  min-height: 100vh;
+  padding-top: 30vh;
+  text-align: center;
+}
+
+#profile-form .block-profile-edit {
+  line-height: initial;
+}
+#profile-form .form-group input {
+  border-width: 2px;
+}
+#profile-form .form-group label {
+  position: relative;
+}
+#profile-form .form-group label[for=profile-meta_nickname]::after,
+#profile-form .form-group label[for=profile-user_email]::after,
+#profile-form .form-group label[for=profile-new_user_pass]::after,
+#profile-form .form-group label[for=profile-new_user_pass_confirm]::after {
+  content: "*";
+  color: red;
+  font-size: 23px;
+  margin-left: 5px;
+  margin-top: -5px;
+}/*# sourceMappingURL=user-profile-edit.css.map */

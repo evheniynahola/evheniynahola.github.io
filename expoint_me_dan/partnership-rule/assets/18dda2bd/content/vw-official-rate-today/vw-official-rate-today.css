@@ -1,0 +1,40 @@
+body.def-iso #vw-official-rate-today {
+  border: 1px solid #f6f6f6;
+  width: -webkit-fill-available;
+}
+body.def-iso #vw-official-rate-today .off-curs {
+  font-size: 19px;
+  margin-left: 7px;
+}
+body.def-iso #vw-official-rate-today .off-flag {
+  font-size: 15px;
+}
+body.def-iso #vw-official-rate-today .off-value {
+  font-size: 24px;
+}
+body.def-iso #vw-official-rate-today .others-curs {
+  display: flex;
+}
+body.def-iso #vw-official-rate-today .uah-curs {
+  display: none;
+}
+body.iso-ua #vw-official-rate-today {
+  border: 1px solid #f6f6f6;
+  width: -webkit-fill-available;
+}
+body.iso-ua #vw-official-rate-today .off-curs {
+  font-size: 19px;
+  margin-left: 7px;
+}
+body.iso-ua #vw-official-rate-today .off-flag {
+  font-size: 15px;
+}
+body.iso-ua #vw-official-rate-today .off-value {
+  font-size: 24px;
+}
+body.iso-ua #vw-official-rate-today .uah-curs {
+  display: flex;
+}
+body.iso-ua #vw-official-rate-today .others-curs {
+  display: none;
+}/*# sourceMappingURL=vw-official-rate-today.css.map */

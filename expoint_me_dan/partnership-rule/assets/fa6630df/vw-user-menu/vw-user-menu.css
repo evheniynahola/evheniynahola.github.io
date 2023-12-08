@@ -1,0 +1,97 @@
+@charset "UTF-8";
+#vw-user-menu {
+  min-width: 160px;
+}
+#vw-user-menu #btn-login-popub {
+  background-color: #2d4475;
+  transition: 0.5s;
+  text-decoration: none;
+}
+#vw-user-menu #btn-login-popub .auth-avatar {
+  color: white;
+  margin-inline: 18px;
+}
+#vw-user-menu #btn-login-popub .auth-avatar:before {
+  content: "Авторизация";
+}
+#vw-user-menu #btn-login-popub#btn-user {
+  display: block;
+  text-decoration: none;
+}
+#vw-user-menu #btn-login-popub#btn-user span {
+  color: white;
+}
+#vw-user-menu #btn-login-popub i {
+  font-size: 25px;
+  position: absolute;
+  color: #192540;
+}
+#vw-user-menu #btn-login-popub:hover {
+  transition: 0.5s;
+  color: white;
+}
+#vw-user-menu #btn-login-popub:hover i {
+  transition: 0.5s;
+  color: white;
+}
+
+#btn-user {
+  display: block;
+  height: 38px;
+  text-indent: 0;
+  position: relative;
+  color: #fff;
+  line-height: 34px;
+  text-align: center;
+  background-color: #2d4475;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#vw-user-menu ul {
+  background: linear-gradient(to top, #2b3c62 0%, #1f2f53 100%);
+}
+#vw-user-menu ul a:hover {
+  background: rgba(255, 255, 225, 0.08);
+}
+#vw-user-menu .icon-preloader {
+  display: inline-block;
+  vertical-align: top;
+  width: 19px;
+  height: 20px;
+  background: url(images/icon-preloader.png) 0 0 no-repeat;
+  background-size: contain;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: tada-loader;
+  transform: rotate(0deg);
+}
+#vw-user-menu span.icon-preloader {
+  margin: 3px 0 0 0;
+}
+#vw-user-menu .icon-person-circle::before {
+  width: 25px;
+  height: 25px;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -16px;
+  background: url(images/icon-user-circle.png) 0 0 no-repeat;
+  background-size: contain;
+  transition: opacity 0.2s ease-in-out;
+}
+#vw-user-menu #btn-login-popub:hover .icon-person-circle::before,
+#vw-user-menu .icon-person-circle:hover::before {
+  background-image: url(images/icon-user-circle-white.png) !important;
+}
+
+@media (max-width: 1200px) {
+  #vw-user-menu .icon-person-circle:before {
+    left: 0;
+  }
+  #vw-user-menu #btn-login-popub .auth-avatar:before {
+    margin-left: 1rem;
+  }
+}/*# sourceMappingURL=vw-user-menu.css.map */

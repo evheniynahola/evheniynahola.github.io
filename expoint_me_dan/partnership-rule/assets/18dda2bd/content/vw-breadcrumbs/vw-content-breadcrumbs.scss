@@ -1,0 +1,13 @@
+#breadcrumbs {
+    font-size: 15px;
+    color: #333;
+    a.txt-home-link{
+        color: #537dd6;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    #links-breadcrumbs{
+        line-height: 21px;
+    }
+}

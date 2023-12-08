@@ -1,0 +1,32 @@
+#vw-content-gallery-news .carousel-item img {
+  width: 100%;
+}
+#vw-content-gallery-news .carousel-item .blc-img {
+  width: 100%;
+  min-height: 340px;
+}
+#vw-content-gallery-news .carousel-control-prev, #vw-content-gallery-news .carousel-control-next {
+  opacity: 1;
+  width: 35px;
+}
+#vw-content-gallery-news .carousel-control-prev-icon {
+  width: 9px;
+  height: 20px;
+  transform: rotate(180deg);
+  background-image: url("images/arrow-gallery.png");
+}
+#vw-content-gallery-news .carousel-control-next-icon {
+  width: 9px;
+  height: 20px;
+  background-image: url("images/arrow-gallery.png");
+}
+#vw-content-gallery-news .carousel-indicators [data-bs-target] {
+  width: 12px !important;
+  height: 12px !important;
+  border-radius: 50%;
+  background-color: #9095bd;
+}
+#vw-content-gallery-news .carousel-indicators .active {
+  opacity: 1;
+  background-color: #4c57aa !important;
+}/*# sourceMappingURL=vw-content-gallery-news-mob.css.map */

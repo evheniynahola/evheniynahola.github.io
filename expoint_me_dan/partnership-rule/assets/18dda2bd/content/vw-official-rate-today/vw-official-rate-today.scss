@@ -1,0 +1,51 @@
+body {
+  &.def-iso #vw-official-rate-today {
+      border: 1px solid #f6f6f6;
+      width: -webkit-fill-available;
+    .off-curs {
+      font-size: 19px;
+      margin-left: 7px;
+    }
+
+    .off-flag {
+      font-size: 15px;
+    }
+
+    .off-value {
+      font-size: 24px;
+    }
+
+    .others-curs {
+      display: flex;
+    }
+
+    .uah-curs {
+      display: none;
+    }
+  }
+
+  &.iso-ua #vw-official-rate-today {
+      border: 1px solid #f6f6f6;
+      width: -webkit-fill-available;
+    .off-curs {
+      font-size: 19px;
+      margin-left: 7px;
+    }
+
+    .off-flag {
+      font-size: 15px;
+    }
+
+    .off-value {
+      font-size: 24px;
+    }
+
+    .uah-curs {
+      display: flex;
+    }
+
+    .others-curs {
+      display: none;
+    }
+  }
+}

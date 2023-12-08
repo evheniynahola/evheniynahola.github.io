@@ -1,0 +1,35 @@
+#vw-content-title a.ex-title-video-link {
+  font-weight: 300;
+  font-size: 1rem;
+  text-decoration: none;
+  color: red;
+  transition: color 0.2s ease-in-out;
+}
+#vw-content-title a.ex-title-video-link:before {
+  content: url(images/video-icon.svg);
+  display: inline-block;
+  width: 20px;
+  margin-left: 5px;
+  margin-right: 10px;
+  top: 3px;
+  position: relative;
+}
+
+#ytplayer {
+  text-align: center;
+  width: 340px;
+  height: 192px;
+}
+#ytplayer .icon-preloader {
+  display: inline-block;
+  vertical-align: top;
+  width: 38px;
+  height: 40px;
+  background: url(images/video-preloader-dark.svg) 0 0 no-repeat;
+  background-size: contain;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: tada-loader;
+  transform: rotate(0deg);
+}/*# sourceMappingURL=vw-title-video.css.map */

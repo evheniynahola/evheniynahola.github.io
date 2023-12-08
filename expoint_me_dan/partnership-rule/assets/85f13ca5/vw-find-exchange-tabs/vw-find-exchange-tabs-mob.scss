@@ -1,0 +1,36 @@
+
+#pills-tabContent {
+
+  #tab-nav01 {
+    margin-inline: -17px;
+
+    #mobile_top_header {
+
+      .subtitle {
+        margin-bottom: -1px;
+        margin-top: 10px;
+        font-size:1em;
+        font-weight: 400;
+        color: #49515b;
+      }
+
+      .exchange-btn {
+        &.change {
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+
+        &.first {
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+      }
+    }
+  }
+}
+body:not(.profile-page){
+  #mobile_top_header {
+    background: white;
+    padding: 5px 15px 15px;
+  }
+}

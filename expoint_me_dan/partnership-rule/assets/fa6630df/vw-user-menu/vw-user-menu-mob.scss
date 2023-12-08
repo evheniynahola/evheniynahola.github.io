@@ -1,0 +1,109 @@
+#vw-user-menu {
+  a{
+    text-decoration: none;
+  }
+  .ex-avatar:not(#btn-user){
+    width: 100%;
+  }
+  .auth-avatar {
+    text-align: end;
+    margin-right: 8px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    &:before {
+      content: 'Войти';
+      padding-left: 28px;
+      background: url(images/user-circle-blue.svg) no-repeat 0;
+    }
+  }
+  #btn-user {
+    &.ex-avatar {
+      background-color: white;
+      border: none;
+
+      span {
+        color: black;
+        vertical-align: text-bottom;
+      }
+    }
+    &.show{
+      border: none !important;
+    }
+    span {
+      font-weight: 500;
+    }
+  }
+  ul {
+    &.dropdown-menu {
+      background: linear-gradient(to top, #2b3c62 0%, #1f2f53 100%);
+      margin-top: 12px;
+      right: -30px;
+      z-index: 10000;
+    }
+  }
+  .icon-preloader {
+    display: inline-block;
+    vertical-align: top;
+    width: 19px;
+    height: 20px;
+    background: url(images/icon-preloader.png) 0 0 no-repeat;
+    background-size: contain;
+    -webkit-animation-duration: 1.2s;
+    -moz-animation-duration: 1.2s;
+    -o-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: tada-loader;
+    -moz-animation-name: tada-loader;
+    -o-animation-name: tada-loader;
+    animation-name: tada-loader;
+    transform: rotate(0deg);
+  }
+
+  span.icon-preloader {
+    margin: 3px 0 0 0;
+  }
+
+  @-webkit-keyframes tada-loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @-moz-keyframes tada-loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @-o-keyframes tada-loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes tada-loader {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+}

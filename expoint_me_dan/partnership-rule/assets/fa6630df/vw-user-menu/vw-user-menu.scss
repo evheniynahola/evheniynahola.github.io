@@ -1,0 +1,125 @@
+#vw-user-menu {
+  min-width: 160px;
+  #btn-login-popub {
+    background-color: #2d4475;
+    transition: .5s;
+    text-decoration: none;
+    .auth-avatar{
+      color: white;
+      margin-inline: 18px;
+      &:before {
+        content: 'Авторизация';
+      }
+    }
+    &#btn-user {
+      display: block;
+      text-decoration: none;
+
+      & span {
+        color: white;
+      }
+    }
+
+    i {
+      font-size: 25px;
+      position: absolute;
+      color: #192540;
+    }
+
+    &:hover {
+      transition: .5s;
+      color: white;
+
+      i {
+        transition: .5s;
+        color: white;
+      }
+    }
+  }
+}
+#btn-user{
+  display: block;
+  height: 38px;
+  text-indent: 0;
+  position: relative;
+  color: #fff;
+  line-height: 34px;
+  text-align: center;
+  background-color: #2d4475;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+#vw-user-menu {
+  ul {
+    background: linear-gradient(to top, #2b3c62 0%, #1f2f53 100%);
+
+    a:hover {
+      background: rgba(255, 255, 225, .08);
+    }
+  }
+
+  .icon-preloader {
+    display: inline-block;
+    vertical-align: top;
+    width: 19px;
+    height: 20px;
+    background: url(images/icon-preloader.png) 0 0 no-repeat;
+    background-size: contain;
+    -webkit-animation-duration: 1.2s;
+    -moz-animation-duration: 1.2s;
+    -o-animation-duration: 1.2s;
+    animation-duration: 1.2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-name: tada-loader;
+    -moz-animation-name: tada-loader;
+    -o-animation-name: tada-loader;
+    animation-name: tada-loader;
+    transform: rotate(0deg);
+  }
+
+  span.icon-preloader {
+    margin: 3px 0 0 0;
+  }
+
+  .icon-person-circle::before {
+    width: 25px;
+    height: 25px;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -16px;
+    background: url(images/icon-user-circle.png) 0 0 no-repeat;
+    background-size: contain;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  #btn-login-popub:hover .icon-person-circle::before,
+  .icon-person-circle:hover::before {
+    background-image: url(images/icon-user-circle-white.png) !important;
+  }
+}
+@media (max-width: 1200px) {
+  #vw-user-menu{
+    .icon-person-circle{
+      &:before{
+        left: 0;
+      }
+    }
+    #btn-login-popub{
+      .auth-avatar{
+        &:before{
+          margin-left: 1rem;
+        }
+      }
+    }
+  }
+}

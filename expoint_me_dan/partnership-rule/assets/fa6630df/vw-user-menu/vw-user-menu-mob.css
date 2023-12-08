@@ -1,0 +1,62 @@
+@charset "UTF-8";
+#vw-user-menu a {
+  text-decoration: none;
+}
+#vw-user-menu .ex-avatar:not(#btn-user) {
+  width: 100%;
+}
+#vw-user-menu .auth-avatar {
+  text-align: end;
+  margin-right: 8px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+#vw-user-menu .auth-avatar:before {
+  content: "Войти";
+  padding-left: 28px;
+  background: url(images/user-circle-blue.svg) no-repeat 0;
+}
+#vw-user-menu #btn-user.ex-avatar {
+  background-color: white;
+  border: none;
+}
+#vw-user-menu #btn-user.ex-avatar span {
+  color: black;
+  vertical-align: text-bottom;
+}
+#vw-user-menu #btn-user.show {
+  border: none !important;
+}
+#vw-user-menu #btn-user span {
+  font-weight: 500;
+}
+#vw-user-menu ul.dropdown-menu {
+  background: linear-gradient(to top, #2b3c62 0%, #1f2f53 100%);
+  margin-top: 12px;
+  right: -30px;
+  z-index: 10000;
+}
+#vw-user-menu .icon-preloader {
+  display: inline-block;
+  vertical-align: top;
+  width: 19px;
+  height: 20px;
+  background: url(images/icon-preloader.png) 0 0 no-repeat;
+  background-size: contain;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: tada-loader;
+  transform: rotate(0deg);
+}
+#vw-user-menu span.icon-preloader {
+  margin: 3px 0 0 0;
+}
+@keyframes tada-loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}/*# sourceMappingURL=vw-user-menu-mob.css.map */

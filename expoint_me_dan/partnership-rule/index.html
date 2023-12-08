@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+
+<head>
+    <style>
+        body {
+            font-family: sans-serif;
+            background: #eaf3fa;
+        }
+
+        a {
+            color: #192540;
+            text-decoration: none;
+        }
+
+        .preload #wrapped,
+        #vw-header .ex-container,
+        #vw-footer .ex-container {
+            max-width: 1140px;
+        }
+
+        .preload-wrapped {
+            max-width: 1140px;
+        }
+
+        .preload-sidebar {
+            width: 33.33%;
+            float: left;
+            overflow-x: hidden;
+        }
+       
+        .preload .container-exchange{
+           position: relative;
+           height: 36px;
+           width: 100%;
+        }
+        .preload .container-exchange>* {
+            display:none;
+        }
+
+        .preload-content {
+            width: 66.66%;
+            float: right;
+        }
+        .preload-content .hold-table {
+            overflow-x: auto;
+            overflow-y: hidden;
+        }
+    </style>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="theme-color" content="#3b5998" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <title>Page Partnership Rule | ExchangeSumo YII2 Local</title>
+    <meta name="csrf-param" content="_vw_csrf">
+<meta name="csrf-token" content="rGJOXUdbfJI2bgFPxZMht0mIg0K6Af7pGTX2-iz5CGj7MCIzPwkp5nQARhD8-FjbEdj6B8tnvKdhY6SfdoxAWw==">
+<!-- <base href="https://next.exchangesumo.com/" /> -->
+    <!-- Seo Block -->
+<meta name="robots" content="noindex,follow" />
+
+<link href="https://next.exchangesumo.com/partnership/partnership-rule2/" rel="canonial">
+        <meta property="og:locale" content="ru_RU" />
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Page Partnership Rule | ExchangeSumo YII2 Local" />
+        <meta property="og:description" content="" />
+        <meta property="og:url" content="https://next.exchangesumo.com/partnership/partnership-rule2/" />
+        <meta property="og:site_name" content="ExchangeSumo YII2 Local" />
+        <meta property="og:image" content="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/9a1c7bf7/showimg/exchangesumo_banner11_1214x607.jpg" />
+        <meta property="og:image:secure_url" content="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/9a1c7bf7/showimg/exchangesumo_banner11_1214x607.jpg" />
+        <meta property="og:image:width" content="1214" />
+        <meta property="og:image:height" content="607" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:description" content="" />
+        <meta name="twitter:title" content="Page Partnership Rule | ExchangeSumo YII2 Local" />
+        <meta name="twitter:image" content="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/9a1c7bf7/showimg/exchangesumo_banner11_1214x607.jpg" />
+<script type='application/ld+json' class='schema-graph schema-graph--main'>{"@context":"https://schema.org","@graph":[{"@type":"WebSite","@id":"https://next.exchangesumo.com/#website","url":"https://next.exchangesumo.com/","name":"ExchangeSumo YII2 Local"},{"@type":"WebPage","@id":"https://next.exchangesumo.com/partnership/partnership-rule2/#webpage","url":"https://next.exchangesumo.com/partnership/partnership-rule2/","inLanguage":"ru-RU","name":"Page Partnership Rule | ExchangeSumo YII2 Local","isPartOf":{"@id":"https://sumo.yii2.expoint.client#website"},"datePublished":"2023-11-15T14:01:45+00:00","dateModified":"2023-11-15T14:01:45+00:00","description":""}]}</script>
+<link href="https://storage.sumo.yii2.expoint.client" rel="preconnect">
+<!-- /Seo Block -->     
+     
+    <script id="vw_send_ga4">
+var logger;
+const Ga4EventClick = new Event('ga4.click', {bubbles: true,cancelable: true});
+/** 
+ * data-ga4="event;action;method;place;option"
+*/
+const ga4={
+  send: function (action, method, place, option) {
+    window.dataLayer=window.dataLayer||[];
+    const evGa4={
+      "event": "ga4_interaction",
+      "action": action,
+      "parameters": {
+        "role": "ux",
+        "method": method,
+        "place": place,
+        'option': option
+      }
+    };
+    window.dataLayer.push(evGa4);
+    (!!logger)&&logger.console('ga4.send', method, evGa4);
+  },
+
+  trigerClick: function (element) {
+  
+    console.log(element);
+    if (!!element[0]._ga4&&1) {
+      element[0].dispatchEvent(Ga4EventClick);
+    } else if (!!element._ga4&&1) {
+      element.dispatchEvent(Ga4EventClick);
+    }
+  },
+
+  addEventListenerAndSend: function (element, eventName, eGa4) {
+    const _this=this;
+    element.addEventListener(eventName, function () {
+      _this.send(eGa4.action, eGa4.method, eGa4.place, eGa4.option);
+    }, {capture: true});
+  },
+
+  updateEventHandlers: function (element) {
+    const _this=this;
+    (!!logger)&&logger.console('start ga4.updateEventHandlers');
+    const eventElements=element.querySelectorAll('[data-ga4]:not([data-ga4-start="true"])');
+    eventElements.forEach(function (element) {
+      const dataGa4=element.getAttribute('data-ga4');
+      if (!dataGa4) {
+        return;
+      }
+      element.setAttribute('data-ga4-start', 'true');
+      const parts=dataGa4.split(';');
+      element._ga4={
+        event: parts[0]||'',
+        action: parts[1]||'',
+        method: parts[2]||'',
+        place: parts[3]||'',
+        option: parts[4]||'',
+      };
+      const eGa4=element._ga4;
+      (!!logger)&&logger.console('preGa4.send', element);
+      if (eGa4.event==='push') {
+        _this.send(eGa4.action, eGa4.method, eGa4.place, eGa4.option);
+      } else if (['click', 'submit', 'ga4.click'].includes(eGa4.event)) {
+        _this.addEventListenerAndSend(element, eGa4.event, eGa4);
+      }
+    });
+  }
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+  ga4.updateEventHandlers(document);
+});
+
+
+
+
+</script>
+<script id="vw_statistics">function sendSiGa(event, ec, ea, el, ev) {
+    window.analitikaSiGa = window.analitikaSiGa || [];
+    window.analitikaSiGa.push({
+        'event': event,
+        'ec': ec,
+        'ea': ea,
+        'el': el,
+        'ev': ev,
+        'time': new Date().getTime(),
+        'dl': location.pathname,
+        'ul': navigator.language,
+        'ni': 1
+    });
+    console.log('sendSiGa preload', { event, ec, ea, el, ev });
+}</script>    <link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/2595dfe9/images/tgbanner.jpg" rel="preload" as="image">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/2595dfe9/images/banner-cashback.png" rel="preload" as="image">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/2595dfe9/images/banner-chrome-extension.jpg" rel="preload" as="image">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/a25dec15/css/bootstrap.css?v=1679050992" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/preload.css?v=1697810632" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/style.css?v=1697810627" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/base/base.css?v=1697810627" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/header/vw-header/vw-header.css?v=1697810628" rel="stylesheet" media="only screen and (min-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/content/vw-content.css?v=1697810628" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/content/vw-breadcrumbs/vw-content-breadcrumbs.css?v=1697810628" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/footer/vw-footer/vw-footer.css?v=1697810629" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/footer/vw-messenger-feedback/vw-messenger-feedback.css?v=1697810629" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/base/base-mob.css?v=1697810630" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/header/vw-header/vw-header-mob.css?v=1697810630" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/content/vw-content-mob.css?v=1697810630" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/content/vw-breadcrumbs/vw-content-breadcrumbs-mob.css?v=1697810631" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/footer/vw-footer/vw-footer-mob.css?v=1697810631" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/footer/vw-messenger-feedback/vw-messenger-feedback-mob.css?v=1697810631" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/fa6630df/vw-user-menu/vw-user-menu.css?v=1697810632" rel="stylesheet" media="only screen and (min-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/fa6630df/vw-user-menu/vw-user-menu-mob.css?v=1697810633" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/base_url_icons.css?v=1690753127" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-base/vw-base.css?v=1697810633" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-find-exchange-tabs/vw-find-exchange-tabs.css?v=1697810634" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-favorites/vw-search-favorites.css?v=1697810634" rel="stylesheet" media="only screen and (min-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-list/vw-search-list.css?v=1697810635" rel="stylesheet" media="only screen and (min-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-list/vw-panel-list/vw-panel-list.css?v=1697810635" rel="stylesheet" media="only screen and (min-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-list/vw-update-list/vw-update-list.css?v=1697810635" rel="stylesheet" media="only screen and (min-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-list/vw-uploadgroup-list/vw-uploadgroup-list.css?v=1697810636" rel="stylesheet" media="only screen and (min-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-populars/vw-search-populars.css?v=1697810636" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-base/vw-base-mob.css?v=1697810637" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-find-exchange-tabs/vw-find-exchange-tabs-mob.css?v=1697810637" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-favorites/vw-search-favorites-mob.css?v=1697810637" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-list/vw-search-list-mob.css?v=1697810638" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-list/vw-panel-list/vw-panel-list-mob.css?v=1697810638" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-list/vw-update-list/vw-update-list-mob.css?v=1697810639" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-list/vw-uploadgroup-list/vw-uploadgroup-list-mob.css?v=1697810639" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-populars/vw-search-populars-mob.css?v=1697810639" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/ff64d685/user-geo.css?v=1693556380" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/d8960c6b/vw_lazyload.css?v=1697810640" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/ab32253/vw-page-rating/vw-page-rating.css?v=1697810651" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/ab32253/vw-page-rating/vw-page-rating-mob.css?v=1697810652" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/fa6630df/vw-login-popup-wp/user-login-popup.css?v=1697810652" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/c7b49b6a/vw-last-exchanges.css?v=1697810653" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/2595dfe9/vw-banners.css?v=1697810653" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/2595dfe9/vw-banners-mob.css?v=1697810653" rel="stylesheet" media="only screen and (max-width:992px)">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/c628ea77/banners-brief.css?v=1697810654" rel="stylesheet">
+<link href="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/c628ea77/banners-brief-mob.css?v=1697810654" rel="stylesheet" media="only screen and (max-width:992px)">
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/627e51b3/jquery.js?v=1679050986"></script>
+<link href="/assets/cashback/css/content-main.css" rel="stylesheet">
+<link href="/assets/cashback/css/content-desktop.css" rel="stylesheet" media="only screen and (min-width:1200px)">
+<script src="/assets/cashback/js/common.js"></script>
+<script> 
+window.dataLayer = window.dataLayer || [];
+const sendToGTM = obj => {
+  const dlObj = {event: 'coreWebVitals', webVitalsMeasurement: {}};
+  const cwvObj = {
+    name: obj.name,
+    id: obj.id,
+    value: obj.value,
+    delta: obj.delta,
+    valueRounded: Math.round(obj.name === 'CLS' ? obj.value * 1000 : obj.value),
+    deltaRounded: Math.round(obj.name === 'CLS' ? obj.delta * 1000 : obj.delta)
+  };
+  /*  dlObj.webVitalsMeasurement[obj.name] = cwvObj;*/
+  dlObj.webVitalsMeasurement = cwvObj;
+   dataLayer.push(dlObj); //это его функция пуша, у нас другая
+};
+(function() {
+  var script = document.createElement('script');
+  script.src = 'https://next.exchangesumo.com/wp-content/themes/exchange_monitoring_v2/js/web-vitals/web-vitals.attribution.iife.js';
+  script.onload = function() {
+    webVitals.onFID(sendToGTM);
+    webVitals.onCLS(sendToGTM);
+    webVitals.onFCP(sendToGTM);
+    webVitals.onLCP(sendToGTM);
+    webVitals.onINP(sendToGTM);
+  }
+  script.onerror=function(){
+     dataLayer.push({'event': 'coreWebVitals','ea':'Error Loading'});
+  }
+  document.head.appendChild(script);
+}());
+</script>
+
+
+</head>
+
+<body class="profile-page partnership-page-2 partnership-rule-2-page">
+        <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TMKXGF4" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>var user_iso = ''; {
+    var els = document.getElementsByTagName('body');
+    let matches = document.cookie.match(new RegExp(
+        "(?:^|; )" + 'country_iso'.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+    ));
+    let country_iso = matches ? decodeURIComponent(matches[1]) : undefined;
+    if (undefined !== country_iso) {
+        let result = JSON.parse(country_iso);
+        for (firstKey in result) {
+            user_iso = result[firstKey];
+            break;
+        }
+    }
+    console.log('user_iso', user_iso);
+    if (undefined !== els && user_iso && ((user_iso == 'UA') || (user_iso == 'RU'))) {
+        els[0].classList.add('iso-' + user_iso.toLowerCase());
+    } else {
+        els[0].classList.add('def-iso');
+    }
+}</script>    <script>$(function($) {
+    var lazyLoadInstance = new LazyLoad({
+        // Your custom settings go here
+    });
+    $(document).on("DOMNodeInserted", function(event) {
+        if ($('img.lazy[data-src]', event.target).is('img')) {
+            lazyLoadInstance.update();
+        };
+    });
+
+});</script>        <!-- layouts-base -->
+<div id="vw-container" class="preload container-fluid px-0"> 
+    <header>
+        <div id="vw-header" class="d-flex align-items-center" data-variant="1">
+    <nav class="ex-container container-xl navbar navbar-expand-lg navbar-light justify-content-end">
+        <div class="ex-header-logo d-flex ms-3 ms-xl-0 ms-lg-0 mx-auto">
+            <a href="https://sumo.yii2.expoint.client">
+                <img data-no-lazy="1" class="logo-sumo" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/header/vw-header/images/logo.svg" width="197" height="45">
+                <img data-no-lazy="1" class="logo-sumo-mob" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/header/vw-header/images/logo_mobile.svg" width="116" height="24">
+            </a>
+        </div>
+        <div id="collapsibleNavbar" class="ex-header-menu collapse navbar-collapse py-3 flex-grow-1 flex-sm-grow-1 justify-content-center">
+            <ul class="navbar-nav ps-lg-1 ps-xl-4">
+                <li class="nav-item">
+                    <a href="https://next.exchangesumo.com/" class="text-white nav-link py-0 px-md-2 small fw-500 " aria-current="page">Мониторинг</a>
+                </li>
+                <li class="nav-item ex-border-grey ms-2 ms-xl-3 ps-2 ps-xl-3">
+                    <a href="/exchanger" class="text-white nav-link py-0 px-md-2 px-lg-2 small fw-500 ">Обменники</a>
+                </li>
+                <li class="nav-item ex-border-grey ms-2 ms-xl-3 ps-2 ps-xl-3">
+                    <a href="/novosti" class="text-white nav-link py-0 px-md-2 px-lg-2 small fw-500 ">Новости</a>
+                </li>
+                <li class="nav-item ex-border-grey ms-2 ms-xl-3 ps-2 ps-xl-3">
+                    <a href="/contact" class="text-white nav-link py-0 px-md-2 px-lg-2 small fw-500 ">Контакты</a>
+                </li>
+                <li class="nav-item ex-border-grey ms-2 ms-xl-3 ps-2 ps-xl-3">
+                    <a href="/partnership-rule" class="text-white  nav-link px-md-2 px-lg-2 py-0 small fw-500 ">Партнерам</a>
+                </li>
+                <li class="nav-item ex-border-grey ms-2 ms-xl-3 ps-2 ps-xl-3 d-flex flex-nowrap">
+                    <i class="icon icon-cases  d-none d-lg-flex"></i>
+                    <a href="/cases" class="text-white nav-link px-sm-2 py-0 px-md-1 px-lg-2 small fw-500 ">Кейсы</a>
+                </li>
+            </ul>
+        </div>
+
+        
+<div id="vw-user-menu" data-variant="1" class="nav-text dropdown pr-0">
+            <a id="btn-login-popub" href="#login_popup" class="ex-avatar btn ps-lg-2 ps-xl-4 pe-lg-2 pe-xl-2 pointer align-items-center">
+             <i class="icon icon-person-circle d-none d-lg-flex"></i>
+             <div class="auth-avatar"></div>
+        </a> 
+         
+
+   
+    
+    
+</div>
+
+
+
+        <div data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <div class="navbar-toggler col-auto float-end border-0" data-toggle="collapse" data-target="#collapsibleNavbar" aria-expanded="false"
+              aria-controls="collapsibleNavbar"></div>
+        </div>
+
+        <div class="offcanvas offcanvas-end bg-black text-white d-lg-none" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+                <span></span>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body px-0">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item border-secondary">
+                        <a href="https://next.exchangesumo.com/" class="text-white small ps-2 fw-bold" aria-current="page">Мониторинг</a>
+                    </li>
+                    <li class="list-group-item border-secondary">
+                        <a href="/exchanger" class="text-white small ps-2 fw-bold">Обменники</a>
+                    </li>
+                    <li class="list-group-item border-secondary">
+                        <a href="/novosti" class="text-white small ps-2 fw-bold">Новости</a>
+                    </li>
+                    <li class="list-group-item border-secondary">
+                        <a href="/contact" class="text-white small ps-2 fw-bold">Контакты</a>
+                    </li>
+                    <li class="list-group-item border-secondary">
+                        <a href="/partnership-rule" class="text-white small ps-2 fw-bold">Партнерам</a>
+                    </li>
+                    <li class="list-group-item border-secondary d-flex align-items-center ps-2">
+                        <div class="icon-cases me-2"></div>
+                        <a href="/cases" class="text-white small ps-1 fw-bold">Кейсы</a>
+                    </li>
+                    <li class="list-group-item border-secondary d-flex align-items-center ps-2">
+                        <div class="icon-cashback me-2"></div>
+                        <a href="/cashback/#login_popup" class="text-white small ps-1 fw-bold">Получить кэшбек</a>
+                    </li>
+                    <li></li>
+                </ul>
+                    <a  href="/redir/https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCVko2q9vM-Puiv4IhdwP74Q/"   rel="noopener"
+                       class="banner-youtube-mob rounded-2 d-flex flex-column justify-content-center ps-5 ms-4" target="_blank" rel="nofollow">
+                        <span class="fw-bold mt-2 link-dark">Богатейший ДИ</span>
+                        <span class="small">рекомендует</span>
+                    </a>
+            </div>
+        </div>
+
+    </nav>
+
+</div>
+
+<div id="vw-banner-head-tg" class="head-banner-tg px-3 d-block d-lg-none">
+    <a  href="/redir/https%3A%2F%2Ft.me%2Fexchange_sumo/"  class="text-white d-flex justify-content-between py-1 txt-banner-tg"  target="_blank" rel="nofollow">
+        <div class="d-flex align-items-center">
+            <div class="icon-tg"></div>
+            <span class="small ms-2">Наш канал в Telegram</span>
+        </div>
+        <span class="small"> Подписаться</span>
+    </a>
+</div>
+</header> 
+    <div id="wrapped" class="preload-wrapped d-flex mx-auto row container-xl">
+        <!-- SIDEBAR -->
+        <div id="sidebar" class="preload-sidebar pb-2 pb-lg-0 ps-3 col-xs-12 col-sm-12 col-lg-4 pt-lg-3">
+         <div id="tab-history" class="tab d-none d-lg-block" data-block="vw-last-exchanges" data-variant="1">
+    <span class="title">Ваши последние направления:</span>
+    <ul class="popular-bar">
+         <li class="null-line ulpoad-history" style="text-align: center" >
+            Загрузка ...
+        </li>
+    </ul>
+</div>                  
+<div id="vw-find-exchange-tabs" class="gtm-tabs-active d-none d-lg-block" data-variant="1">
+
+    <span class="fw-bold float-start my-3 d-none">Найти выгодный обмен</span>
+
+    <ul id="pills-tab" class="tabset-nav nav nav-pills d-flex flex-nowrap mb-2"> 
+        <li data-tab="#tab-nav01" class="vw-tabs-item w-100"  role="presentation">
+            <div id="pills-rates-tab" class="nav-item active" data-bs-toggle="pill" data-bs-target="#pills-rates" role="tab"
+                  aria-controls="pills-rates" aria-selected="true">
+                <span class="sprites exchange-rates"></span>
+                <span class="sprites choice-exchange"></span>
+                <span class="gtm-tabs-show-text gtm-tabs-directions">Направления</span>
+            </div>  
+        </li>
+        <li data-tab="#tab-nav03" class="vw-tabs-item w-100" role="presentation">
+            <div id="pills-favorites-tab" class="nav-item" data-bs-toggle="pill" data-bs-target="#pills-favorites" role="tab"
+                  aria-controls="pills-favorites" aria-selected="false">
+                <span class="sprites sprites-heart"></span>
+                <span class="sprites choice-heart"></span>
+                <span class="gtm-tabs-show-text gtm-tabs-favorites">Избранное</span>
+            </div>
+        </li>
+        <li data-tab="#tab-nav02" class="vw-tabs-item w-100" role="presentation">
+            <div id="pills-populars-tab" class="nav-item" data-bs-toggle="pill" data-bs-target="#pills-populars"  role="tab"
+                  aria-controls="pills-populars" aria-selected="false">
+                <span class="sprites sprites-popular"></span>
+                <span class="sprites choice-star"></span>
+                <span class="gtm-tabs-show-text gtm-tabs-popular">Популярные</span>
+            </div>
+        </li>
+    </ul>
+</div>
+
+<div class="clearfix"></div>
+<div class="tab-content flex-row-reverse row flex-lg-row" id="pills-tabContent">
+    <div class="tab-pane fade show active" id="pills-rates" role="tabpanel" aria-labelledby="pills-rates-tab">
+         
+            <div class="tab" id="tab-nav01" data-block="vw-search-list" data-variant="1">
+                <span class="subtitle d-none d-lg-block">Выберите направление:</span>
+                <div class="vltlist-form desc d-none d-lg-block mt-3">
+                    <div class="vltlist-btn first"><input id="vltlist_first" type="text" placeholder="Отдадите" data-title="Отдадите"  data-vlt_id=""/>
+                        <div class="min_close d-none">×</div>
+                    </div>
+                    <div class="vltlist-btn change"><input id="vltlist_change" type="text" placeholder="Получите" data-title="Получите"  data-vlt_id=""/>
+                        <div class="min_close d-none">×</div>
+                    </div>
+                    <a href="" class="btn-exchange">exchange</a>
+                </div>
+
+                <!-- Mobile version search valute list -->
+                                <div id="mobile_top_header" class="d-block pb-3 d-lg-none w-100">
+                    <p class="subtitle mob">Выберите направление:</p>
+                    <div class="container-exchange d-flex bg-white small fw-500 mob vlt_not_edit">
+                        <div class="exchange-btn first d-inline-flex align-items-center overflow-hidden">
+                            <img class="nolazy data-icon vlt-icon me-1" src="" width="16px" height="16px"/>
+                            <div class="mob_btn_menu first_ib text-nowrap">Отдадите</div>
+                        </div>
+                        <icon class="data-icon icon_left"></icon>
+                        <a href="" class="btn-exchange">exchange</a>
+                        <div class="exchange-btn change d-inline-flex align-items-center overflow-hidden">
+                            <img class="nolazy data-icon vlt-icon me-1" src="" width="16px" height="16px"/>
+                            <div class="mob_btn_menu change_ib text-nowrap">Получите</div>
+                        </div>
+                        <icon class="data-icon icon_edit bg-white m-2"></icon>
+                    </div>
+                                    </div>
+               
+                                <div class="main-open vltlist-box">
+                    <div class="box-open"> 
+                        <div class="table-open">
+                            <ul class="bar-data-table">
+                                <li class="first-listonevlt first-valute valute1">
+                                    <div class="block-first-vltone wrap-open open group_0"> 
+    <strong class="panel-caption">Популярное <span class="arrow">arrow</span></strong> 
+    <ul id="first_group_0" class="bar-data left-table first-table box-open" data-vlt="valute1"> 
+        <li id="first-90" class="data-vlt first-90 def" >
+            <a  class="firstVltOne has-click" data-vlt_slug="SBRFRUB" data-vlt_id="90" href="/obmen/from/SBRFRUB/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/sber20.png"/> 
+                <span class="data-name" data-synonyms="Сбербанк России,Сбербанк Онлайн (рубли),Sberbank">Сбербанк RUB</span>
+            </a>
+        </li> 
+        <li id="first-91" class="data-vlt first-91 def" >
+            <a  class="firstVltOne has-click" data-vlt_slug="QIWIRUR" data-vlt_id="91" href="/obmen/from/QIWIRUR/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/qiwi.png"/> 
+                <span class="data-name" data-synonyms="Qiwi (рубли),Киви кошелек (рубли),Киви (рубли)">QIWI RUB</span>
+            </a>
+        </li> 
+        <li id="first-140" class="data-vlt first-140 def" >
+            <a  class="firstVltOne has-click" data-vlt_slug="BTC" data-vlt_id="140" href="/obmen/from/BTC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/btc_new.png"/> 
+                <span class="data-name" data-synonyms="Биткоин,Монеты Bitcoin,Криптовалюта Bitcoin">Bitcoin (BTC)</span>
+            </a>
+        </li> 
+        <li id="first-307" class="data-vlt first-307 def" >
+            <a  class="firstVltOne has-click" data-vlt_slug="USDTTRC" data-vlt_id="307" href="/obmen/from/USDTTRC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/usdt_erc20.png"/> 
+                <span class="data-name" data-synonyms="Тезер трц20,трон доллар,тезер токен стейблкоин">Tether TRC20 (USDT)</span>
+            </a>
+        </li> 
+        <li id="first-81" class="data-vlt first-81 def" >
+            <a  class="firstVltOne has-click" data-vlt_slug="P24UAH" data-vlt_id="81" href="/obmen/from/P24UAH/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/privat24.png"/> 
+                <span class="data-name" data-synonyms="Приват24 гривна,Приват Банк,privat24">Приват24 UAH</span>
+            </a>
+        </li> 
+        <li id="first-266" class="data-vlt first-266 def" >
+            <a  class="firstVltOne has-click" data-vlt_slug="MONOBUAH" data-vlt_id="266" href="/obmen/from/MONOBUAH/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/monob.png"/> 
+                <span class="data-name" data-synonyms="Монобанк UAH,Monobank (гривны),Монобанк (гривны)">Monobank UAH</span>
+            </a>
+        </li> 
+        <li id="first-137" class="data-vlt first-137 def" >
+            <a  class="firstVltOne has-click" data-vlt_slug="TKS" data-vlt_id="137" href="/obmen/from/TKS/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/tinkoff1.png"/> 
+                <span class="data-name" data-synonyms="Тинькофф Банк,Tinkoff,Tinkoff Банк">Тинькофф RUB</span>
+            </a>
+        </li> 
+        <li id="first-10" class="data-vlt first-10 def" >
+            <a  class="firstVltOne has-click" data-vlt_slug="YAMRUB" data-vlt_id="10" href="/obmen/from/YAMRUB/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/yoomoney.png"/> 
+                <span class="data-name" data-synonyms="яндекс кошелек,Yandex Money,Юмани">ЮMoney (Я.Деньги)</span>
+            </a>
+        </li> 
+        <li id="first-179" class="data-vlt first-179 def" >
+            <a  class="firstVltOne has-click" data-vlt_slug="DGC" data-vlt_id="179" href="/obmen/from/DGC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/dogechain.png"/> 
+                <span class="data-name" data-synonyms="Dogecoin кошелек,Догикоин,">Dogecoin (DOGE)</span>
+            </a>
+        </li> 
+        <li id="first-239" class="data-vlt first-239 def" >
+            <a  class="firstVltOne has-click" data-vlt_slug="TRX" data-vlt_id="239" href="/obmen/from/TRX/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/trn.png"/> 
+                <span class="data-name" data-synonyms="TRX,Tron,Трон">Tron (TRX)</span>
+            </a>
+        </li> 
+        <li id="first-90" class="data-vlt first-90 ru" >
+            <a  class="firstVltOne has-click" data-vlt_slug="SBRFRUB" data-vlt_id="90" href="/obmen/from/SBRFRUB/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/sber20.png"/> 
+                <span class="data-name" data-synonyms="Сбербанк России,Сбербанк Онлайн (рубли),Sberbank">Сбербанк RUB</span>
+            </a>
+        </li> 
+        <li id="first-140" class="data-vlt first-140 ru" >
+            <a  class="firstVltOne has-click" data-vlt_slug="BTC" data-vlt_id="140" href="/obmen/from/BTC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/btc_new.png"/> 
+                <span class="data-name" data-synonyms="Биткоин,Монеты Bitcoin,Криптовалюта Bitcoin">Bitcoin (BTC)</span>
+            </a>
+        </li> 
+        <li id="first-91" class="data-vlt first-91 ru" >
+            <a  class="firstVltOne has-click" data-vlt_slug="QIWIRUR" data-vlt_id="91" href="/obmen/from/QIWIRUR/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/qiwi.png"/> 
+                <span class="data-name" data-synonyms="Qiwi (рубли),Киви кошелек (рубли),Киви (рубли)">QIWI RUB</span>
+            </a>
+        </li> 
+        <li id="first-307" class="data-vlt first-307 ru" >
+            <a  class="firstVltOne has-click" data-vlt_slug="USDTTRC" data-vlt_id="307" href="/obmen/from/USDTTRC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/usdt_erc20.png"/> 
+                <span class="data-name" data-synonyms="Тезер трц20,трон доллар,тезер токен стейблкоин">Tether TRC20 (USDT)</span>
+            </a>
+        </li> 
+        <li id="first-137" class="data-vlt first-137 ru" >
+            <a  class="firstVltOne has-click" data-vlt_slug="TKS" data-vlt_id="137" href="/obmen/from/TKS/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/tinkoff1.png"/> 
+                <span class="data-name" data-synonyms="Тинькофф Банк,Tinkoff,Tinkoff Банк">Тинькофф RUB</span>
+            </a>
+        </li> 
+        <li id="first-189" class="data-vlt first-189 ru" >
+            <a  class="firstVltOne has-click" data-vlt_slug="ETH" data-vlt_id="189" href="/obmen/from/ETH/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/eth_new.png"/> 
+                <span class="data-name" data-synonyms="Ethereum,Эфириум,ETH">Ethereum (ETH)</span>
+            </a>
+        </li> 
+        <li id="first-239" class="data-vlt first-239 ru" >
+            <a  class="firstVltOne has-click" data-vlt_slug="TRX" data-vlt_id="239" href="/obmen/from/TRX/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/trn.png"/> 
+                <span class="data-name" data-synonyms="TRX,Tron,Трон">Tron (TRX)</span>
+            </a>
+        </li> 
+        <li id="first-10" class="data-vlt first-10 ru" >
+            <a  class="firstVltOne has-click" data-vlt_slug="YAMRUB" data-vlt_id="10" href="/obmen/from/YAMRUB/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/yoomoney.png"/> 
+                <span class="data-name" data-synonyms="яндекс кошелек,Yandex Money,Юмани">ЮMoney (Я.Деньги)</span>
+            </a>
+        </li> 
+        <li id="first-109" class="data-vlt first-109 ru" >
+            <a  class="firstVltOne has-click" data-vlt_slug="LTC" data-vlt_id="109" href="/obmen/from/LTC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/ltc_new.png"/> 
+                <span class="data-name" data-synonyms="Лайткоин,Lite coin,Криптовалюта Litecoin">Litecoin (LTC)</span>
+            </a>
+        </li> 
+        <li id="first-179" class="data-vlt first-179 ru" >
+            <a  class="firstVltOne has-click" data-vlt_slug="DGC" data-vlt_id="179" href="/obmen/from/DGC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/dogechain.png"/> 
+                <span class="data-name" data-synonyms="Dogecoin кошелек,Догикоин,">Dogecoin (DOGE)</span>
+            </a>
+        </li> 
+        <li id="first-81" class="data-vlt first-81 ua" >
+            <a  class="firstVltOne has-click" data-vlt_slug="P24UAH" data-vlt_id="81" href="/obmen/from/P24UAH/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/privat24.png"/> 
+                <span class="data-name" data-synonyms="Приват24 гривна,Приват Банк,privat24">Приват24 UAH</span>
+            </a>
+        </li> 
+        <li id="first-266" class="data-vlt first-266 ua" >
+            <a  class="firstVltOne has-click" data-vlt_slug="MONOBUAH" data-vlt_id="266" href="/obmen/from/MONOBUAH/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/monob.png"/> 
+                <span class="data-name" data-synonyms="Монобанк UAH,Monobank (гривны),Монобанк (гривны)">Monobank UAH</span>
+            </a>
+        </li> 
+        <li id="first-307" class="data-vlt first-307 ua" >
+            <a  class="firstVltOne has-click" data-vlt_slug="USDTTRC" data-vlt_id="307" href="/obmen/from/USDTTRC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/usdt_erc20.png"/> 
+                <span class="data-name" data-synonyms="Тезер трц20,трон доллар,тезер токен стейблкоин">Tether TRC20 (USDT)</span>
+            </a>
+        </li> 
+        <li id="first-91" class="data-vlt first-91 ua" >
+            <a  class="firstVltOne has-click" data-vlt_slug="QIWIRUR" data-vlt_id="91" href="/obmen/from/QIWIRUR/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/qiwi.png"/> 
+                <span class="data-name" data-synonyms="Qiwi (рубли),Киви кошелек (рубли),Киви (рубли)">QIWI RUB</span>
+            </a>
+        </li> 
+        <li id="first-140" class="data-vlt first-140 ua" >
+            <a  class="firstVltOne has-click" data-vlt_slug="BTC" data-vlt_id="140" href="/obmen/from/BTC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/btc_new.png"/> 
+                <span class="data-name" data-synonyms="Биткоин,Монеты Bitcoin,Криптовалюта Bitcoin">Bitcoin (BTC)</span>
+            </a>
+        </li> 
+        <li id="first-179" class="data-vlt first-179 ua" >
+            <a  class="firstVltOne has-click" data-vlt_slug="DGC" data-vlt_id="179" href="/obmen/from/DGC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/dogechain.png"/> 
+                <span class="data-name" data-synonyms="Dogecoin кошелек,Догикоин,">Dogecoin (DOGE)</span>
+            </a>
+        </li> 
+        <li id="first-10" class="data-vlt first-10 ua" >
+            <a  class="firstVltOne has-click" data-vlt_slug="YAMRUB" data-vlt_id="10" href="/obmen/from/YAMRUB/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/yoomoney.png"/> 
+                <span class="data-name" data-synonyms="яндекс кошелек,Yandex Money,Юмани">ЮMoney (Я.Деньги)</span>
+            </a>
+        </li> 
+        <li id="first-76" class="data-vlt first-76 ua" >
+            <a  class="firstVltOne has-click" data-vlt_slug="CardUAH" data-vlt_id="76" href="/obmen/from/CardUAH/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/card.png"/> 
+                <span class="data-name" data-synonyms="Карта Visa/Mastercard (гривны),Гривневая банковская карточка,Виза/Мастеркард (гривны)">Visa/Master UAH</span>
+            </a>
+        </li> 
+        <li id="first-90" class="data-vlt first-90 ua" >
+            <a  class="firstVltOne has-click" data-vlt_slug="SBRFRUB" data-vlt_id="90" href="/obmen/from/SBRFRUB/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/sber20.png"/> 
+                <span class="data-name" data-synonyms="Сбербанк России,Сбербанк Онлайн (рубли),Sberbank">Сбербанк RUB</span>
+            </a>
+        </li> 
+        <li id="first-239" class="data-vlt first-239 ua" >
+            <a  class="firstVltOne has-click" data-vlt_slug="TRX" data-vlt_id="239" href="/obmen/from/TRX/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/trn.png"/> 
+                <span class="data-name" data-synonyms="TRX,Tron,Трон">Tron (TRX)</span>
+            </a>
+        </li> 
+    </ul>
+</div>                                    <span class="upload-full-list">Загрузка...</span>
+                                    <p class="d-none notValute1">Не найдено валют по вашему запросу. Проверьте язык или попробуйте ввести синонимы.</p>
+                                    <div class="d-none notValuteTab1">В выбранной категории валюта не найдена.<span class="clickMoveAllCategory"> Включить поиск по всем категориям</span></div>
+                                </li>
+                                <li class="change-listonevlt change-valute valute2">
+                                    <div class="block-change-vltone wrap-open open group_0"> 
+    <strong class="panel-caption">Популярное <span class="arrow">arrow</span></strong> 
+    <ul id="change_group_0" class="bar-data left-table change-table box-open" data-vlt="valute2">
+        <li id="change-140" class="data-vlt change-140 def " >
+            <a  class="changeVltOne has-click" data-vlt_slug="BTC" data-vlt_id="140" href="/obmen/to/BTC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/btc_new.png"/>                <span class="data-name" data-synonyms="Биткоин,Монеты Bitcoin,Криптовалюта Bitcoin">Bitcoin (BTC)</span>
+            </a>
+        </li> 
+        <li id="change-90" class="data-vlt change-90 def " >
+            <a  class="changeVltOne has-click" data-vlt_slug="SBRFRUB" data-vlt_id="90" href="/obmen/to/SBRFRUB/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/sber20.png"/>                <span class="data-name" data-synonyms="Сбербанк России,Сбербанк Онлайн (рубли),Sberbank">Сбербанк RUB</span>
+            </a>
+        </li> 
+        <li id="change-81" class="data-vlt change-81 def " >
+            <a  class="changeVltOne has-click" data-vlt_slug="P24UAH" data-vlt_id="81" href="/obmen/to/P24UAH/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/privat24.png"/>                <span class="data-name" data-synonyms="Приват24 гривна,Приват Банк,privat24">Приват24 UAH</span>
+            </a>
+        </li> 
+        <li id="change-91" class="data-vlt change-91 def " >
+            <a  class="changeVltOne has-click" data-vlt_slug="QIWIRUR" data-vlt_id="91" href="/obmen/to/QIWIRUR/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/qiwi.png"/>                <span class="data-name" data-synonyms="Qiwi (рубли),Киви кошелек (рубли),Киви (рубли)">QIWI RUB</span>
+            </a>
+        </li> 
+        <li id="change-307" class="data-vlt change-307 def " >
+            <a  class="changeVltOne has-click" data-vlt_slug="USDTTRC" data-vlt_id="307" href="/obmen/to/USDTTRC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/usdt_erc20.png"/>                <span class="data-name" data-synonyms="Тезер трц20,трон доллар,тезер токен стейблкоин">Tether TRC20 (USDT)</span>
+            </a>
+        </li> 
+        <li id="change-137" class="data-vlt change-137 def " >
+            <a  class="changeVltOne has-click" data-vlt_slug="TKS" data-vlt_id="137" href="/obmen/to/TKS/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/tinkoff1.png"/>                <span class="data-name" data-synonyms="Тинькофф Банк,Tinkoff,Tinkoff Банк">Тинькофф RUB</span>
+            </a>
+        </li> 
+        <li id="change-266" class="data-vlt change-266 def " >
+            <a  class="changeVltOne has-click" data-vlt_slug="MONOBUAH" data-vlt_id="266" href="/obmen/to/MONOBUAH/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/monob.png"/>                <span class="data-name" data-synonyms="Монобанк UAH,Monobank (гривны),Монобанк (гривны)">Monobank UAH</span>
+            </a>
+        </li> 
+        <li id="change-10" class="data-vlt change-10 def " >
+            <a  class="changeVltOne has-click" data-vlt_slug="YAMRUB" data-vlt_id="10" href="/obmen/to/YAMRUB/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/yoomoney.png"/>                <span class="data-name" data-synonyms="яндекс кошелек,Yandex Money,Юмани">ЮMoney (Я.Деньги)</span>
+            </a>
+        </li> 
+        <li id="change-189" class="data-vlt change-189 def " >
+            <a  class="changeVltOne has-click" data-vlt_slug="ETH" data-vlt_id="189" href="/obmen/to/ETH/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/eth_new.png"/>                <span class="data-name" data-synonyms="Ethereum,Эфириум,ETH">Ethereum (ETH)</span>
+            </a>
+        </li> 
+        <li id="change-239" class="data-vlt change-239 def " >
+            <a  class="changeVltOne has-click" data-vlt_slug="TRX" data-vlt_id="239" href="/obmen/to/TRX/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/trn.png"/>                <span class="data-name" data-synonyms="TRX,Tron,Трон">Tron (TRX)</span>
+            </a>
+        </li> 
+        <li id="change-90" class="data-vlt change-90 ru " >
+            <a  class="changeVltOne has-click" data-vlt_slug="SBRFRUB" data-vlt_id="90" href="/obmen/to/SBRFRUB/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/sber20.png"/>                <span class="data-name" data-synonyms="Сбербанк России,Сбербанк Онлайн (рубли),Sberbank">Сбербанк RUB</span>
+            </a>
+        </li> 
+        <li id="change-140" class="data-vlt change-140 ru " >
+            <a  class="changeVltOne has-click" data-vlt_slug="BTC" data-vlt_id="140" href="/obmen/to/BTC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/btc_new.png"/>                <span class="data-name" data-synonyms="Биткоин,Монеты Bitcoin,Криптовалюта Bitcoin">Bitcoin (BTC)</span>
+            </a>
+        </li> 
+        <li id="change-137" class="data-vlt change-137 ru " >
+            <a  class="changeVltOne has-click" data-vlt_slug="TKS" data-vlt_id="137" href="/obmen/to/TKS/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/tinkoff1.png"/>                <span class="data-name" data-synonyms="Тинькофф Банк,Tinkoff,Tinkoff Банк">Тинькофф RUB</span>
+            </a>
+        </li> 
+        <li id="change-91" class="data-vlt change-91 ru " >
+            <a  class="changeVltOne has-click" data-vlt_slug="QIWIRUR" data-vlt_id="91" href="/obmen/to/QIWIRUR/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/qiwi.png"/>                <span class="data-name" data-synonyms="Qiwi (рубли),Киви кошелек (рубли),Киви (рубли)">QIWI RUB</span>
+            </a>
+        </li> 
+        <li id="change-307" class="data-vlt change-307 ru " >
+            <a  class="changeVltOne has-click" data-vlt_slug="USDTTRC" data-vlt_id="307" href="/obmen/to/USDTTRC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/usdt_erc20.png"/>                <span class="data-name" data-synonyms="Тезер трц20,трон доллар,тезер токен стейблкоин">Tether TRC20 (USDT)</span>
+            </a>
+        </li> 
+        <li id="change-10" class="data-vlt change-10 ru " >
+            <a  class="changeVltOne has-click" data-vlt_slug="YAMRUB" data-vlt_id="10" href="/obmen/to/YAMRUB/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/yoomoney.png"/>                <span class="data-name" data-synonyms="яндекс кошелек,Yandex Money,Юмани">ЮMoney (Я.Деньги)</span>
+            </a>
+        </li> 
+        <li id="change-239" class="data-vlt change-239 ru " >
+            <a  class="changeVltOne has-click" data-vlt_slug="TRX" data-vlt_id="239" href="/obmen/to/TRX/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/trn.png"/>                <span class="data-name" data-synonyms="TRX,Tron,Трон">Tron (TRX)</span>
+            </a>
+        </li> 
+        <li id="change-189" class="data-vlt change-189 ru " >
+            <a  class="changeVltOne has-click" data-vlt_slug="ETH" data-vlt_id="189" href="/obmen/to/ETH/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/eth_new.png"/>                <span class="data-name" data-synonyms="Ethereum,Эфириум,ETH">Ethereum (ETH)</span>
+            </a>
+        </li> 
+        <li id="change-181" class="data-vlt change-181 ru " >
+            <a  class="changeVltOne has-click" data-vlt_slug="XRP" data-vlt_id="181" href="/obmen/to/XRP/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/xrp_new.png"/>                <span class="data-name" data-synonyms="Рипл,Ripple,Монеты Ripple">Ripple (XRP)</span>
+            </a>
+        </li> 
+        <li id="change-191" class="data-vlt change-191 ru " >
+            <a  class="changeVltOne has-click" data-vlt_slug="DASH" data-vlt_id="191" href="/obmen/to/DASH/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/dash.png"/>                <span class="data-name" data-synonyms="Даш,DASH,dsh">DASH (DASH)</span>
+            </a>
+        </li> 
+        <li id="change-81" class="data-vlt change-81 ua " >
+            <a  class="changeVltOne has-click" data-vlt_slug="P24UAH" data-vlt_id="81" href="/obmen/to/P24UAH/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/privat24.png"/>                <span class="data-name" data-synonyms="Приват24 гривна,Приват Банк,privat24">Приват24 UAH</span>
+            </a>
+        </li> 
+        <li id="change-266" class="data-vlt change-266 ua " >
+            <a  class="changeVltOne has-click" data-vlt_slug="MONOBUAH" data-vlt_id="266" href="/obmen/to/MONOBUAH/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/monob.png"/>                <span class="data-name" data-synonyms="Монобанк UAH,Monobank (гривны),Монобанк (гривны)">Monobank UAH</span>
+            </a>
+        </li> 
+        <li id="change-307" class="data-vlt change-307 ua " >
+            <a  class="changeVltOne has-click" data-vlt_slug="USDTTRC" data-vlt_id="307" href="/obmen/to/USDTTRC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/usdt_erc20.png"/>                <span class="data-name" data-synonyms="Тезер трц20,трон доллар,тезер токен стейблкоин">Tether TRC20 (USDT)</span>
+            </a>
+        </li> 
+        <li id="change-90" class="data-vlt change-90 ua " >
+            <a  class="changeVltOne has-click" data-vlt_slug="SBRFRUB" data-vlt_id="90" href="/obmen/to/SBRFRUB/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/sber20.png"/>                <span class="data-name" data-synonyms="Сбербанк России,Сбербанк Онлайн (рубли),Sberbank">Сбербанк RUB</span>
+            </a>
+        </li> 
+        <li id="change-140" class="data-vlt change-140 ua " >
+            <a  class="changeVltOne has-click" data-vlt_slug="BTC" data-vlt_id="140" href="/obmen/to/BTC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/btc_new.png"/>                <span class="data-name" data-synonyms="Биткоин,Монеты Bitcoin,Криптовалюта Bitcoin">Bitcoin (BTC)</span>
+            </a>
+        </li> 
+        <li id="change-91" class="data-vlt change-91 ua " >
+            <a  class="changeVltOne has-click" data-vlt_slug="QIWIRUR" data-vlt_id="91" href="/obmen/to/QIWIRUR/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/qiwi.png"/>                <span class="data-name" data-synonyms="Qiwi (рубли),Киви кошелек (рубли),Киви (рубли)">QIWI RUB</span>
+            </a>
+        </li> 
+        <li id="change-189" class="data-vlt change-189 ua " >
+            <a  class="changeVltOne has-click" data-vlt_slug="ETH" data-vlt_id="189" href="/obmen/to/ETH/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/eth_new.png"/>                <span class="data-name" data-synonyms="Ethereum,Эфириум,ETH">Ethereum (ETH)</span>
+            </a>
+        </li> 
+        <li id="change-179" class="data-vlt change-179 ua " >
+            <a  class="changeVltOne has-click" data-vlt_slug="DGC" data-vlt_id="179" href="/obmen/to/DGC/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/dogechain.png"/>                <span class="data-name" data-synonyms="Dogecoin кошелек,Догикоин,">Dogecoin (DOGE)</span>
+            </a>
+        </li> 
+        <li id="change-181" class="data-vlt change-181 ua " >
+            <a  class="changeVltOne has-click" data-vlt_slug="XRP" data-vlt_id="181" href="/obmen/to/XRP/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/xrp_new.png"/>                <span class="data-name" data-synonyms="Рипл,Ripple,Монеты Ripple">Ripple (XRP)</span>
+            </a>
+        </li> 
+        <li id="change-251" class="data-vlt change-251 ua " >
+            <a  class="changeVltOne has-click" data-vlt_slug="BNB" data-vlt_id="251" href="/obmen/to/BNB/">
+                <img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/bnb.png"/>                <span class="data-name" data-synonyms="BNB,Binance Coin,Монеты Бинанс">Binance Coin BEP2 (BNB)</span>
+            </a>
+        </li> 
+    </ul>
+</div>
+
+                                    <span class="upload-full-list">Загрузка...</span>
+                                    <p class="d-none notValute2">Не найдено валют по вашему запросу. Проверьте язык или попробуйте ввести синонимы.</p>
+                                    <div class="d-none notValuteTab2">В выбранной категории валюта не найдена.<span class="clickMoveAllCategory"> Включить поиск по всем категориям</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <script>
+            var vltlist_active,vlt_list;
+            vltlist_active={
+                vlt_first: -1,
+                vlt_first_name: '',
+                vlt_change : -1,
+                vlt_change_name : '',
+                vlt_active_name : '',
+                startActive:function(){
+                    console.log('s.f='+this.vlt_first,'s.c='+this.vlt_change);
+                    var elsA = document.querySelectorAll('#tab-nav01 .bar-data-table a');
+                    if(elsA){
+                        for (var el of elsA) {
+                            el.onclick = function(){ return false; };
+                        } 
+                    };
+                    this.findActiveFirstValute();
+                    this.findActiveChangeValute();
+                   /* console.log(this);*/
+                },
+                findActiveFirstValute : function (){
+                    
+                    if(this.vlt_first>0){
+                        let el1 = document.querySelector('#tab-nav01 .vltlist-btn.first input');
+                        el1.setAttribute('data-vlt_id',this.vlt_first);
+                        el1.setAttribute('placeholder',this.vlt_first_name);
+                        let el2 = document.querySelectorAll('#tab-nav01 .first-'+this.vlt_first);
+                        el2.forEach(function(el) { el.classList.add('active'); });
+                    }else{
+                        this.vlt_first_name='';
+                    }
+                    console.log('s.f_n='+this.vlt_first_name);
+                },
+                findActiveChangeValute: function (){
+                    if(this.vlt_change>0){
+                        let el1 = document.querySelector('#tab-nav01 .vltlist-btn.change input');
+                        el1.setAttribute('data-vlt_id',this.vlt_change);
+                        el1.setAttribute('placeholder',this.vlt_change_name);
+                        let el2= document.querySelectorAll('#tab-nav01 .change-'+this.vlt_change);
+                        el2.forEach(function(el) { el.classList.add('active'); }); 
+                    }else{
+                        this.vlt_change_name='';
+                    }
+                    console.log('s.c_n='+this.vlt_change_name);
+                },
+                getVltListAll:function (){
+                    return vlt_list;
+                }
+            }
+            let timerId=setTimeout(() => vltlist_active.startActive(), 10); 
+        </script>
+        
+        <script>
+            var vltRef = '/obmen/';
+            var vltlist_template={
+                link_from_tmp: '',
+                link_to_tmp : '',
+                 group_tmp: '<div class="block-first-vltone wrap-open open group_{vltgroup_id}">'
+                        +'<strong class="panel-caption">{vltgroup_name} <span class="arrow">arrow</span></strong>' 
+                        +'<ul id="first_group_{vltgroup_id}" class="bar-data left-table first-table box-open">'
+                        +'{list_vlt}'
+                        +'</ul>'
+                        +'</div>',
+                 item_tmp: '<li id="first-{id}" class="data-vlt first-{id} {country_iso} " >'
+                        +'<a  class="firstVltOne" data-vlt_slug="{slug}" data-vlt_id="{id}" href="/{page_link}" >'
+                            +'<img class="nolazy data-icon vlt-icon" src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/7244a6e/icons/{vltlogo}"/>' 
+                            +'<span class="data-name" data-synonyms="{synonyms}">{name}</span>' 
+                        +'</a>'
+                        +'</li>'
+            };
+        </script>
+   
+     </div>
+       
+    <div class="tab-pane fade order-lg-0 order-2" id="pills-populars" role="tabpanel" aria-labelledby="pills-populars-tab">
+        
+<div id="tab-nav02" class="ex-search-populars tab hidden popular-list-vlt" data-block="vw-search-populars" data-variant="1">
+    <span class="subtitle">Популярные направления:</span>
+    <ul class="popular-bar mt-3 mb-4">
+        <li class="null-line ulpoad-history" style="text-align: center">
+            Загрузка ...
+        </li>
+    </ul>
+     
+    <div class="ex-popular-block-vlt">
+        <div class="ex-popular-block-item bg-white shadow-sm">
+            <div class="ex-popular-block-title"><strong>Популярные валюты:</strong></div>
+            <div class="ex-popular-block-list mx-3 pb-3 pt-3 mb-4">
+                <a href="/obmen/WMZ-WMR/">WMZ на WMR</a> <a href="/obmen/WMR-WMZ/">WMR на WMZ</a>
+                <a href="/obmen/WMR-WMU/">WMR на WMU</a> <a href="/obmen/WMU-WMR/">WMU на WMR</a>
+                <a href="/obmen/SBRFRUB-WEXRUB/">Cбербанк RUB на WEX RUB</a> <a href="/obmen/WEXRUB-SBRFRUB/">WEX RUB на Cбербанк RUB</a>
+                <a href="/obmen/WMZ-WMU/">WMZ на WMU</a> <a href="/obmen/WMU-WMZ/">WMU на WMZ</a>
+                <a href="/obmen/WireRUB-ADVCRUB/">Перевод RUB на AdvCash RUB</a> <a href="/obmen/ADVCRUB-WireRUB/">AdvCash RUB на перевод RUB</a>
+                <a href="/obmen/ADVCRUB-SBRFRUB/">Перевод AdvCash RUB на Сбербанк RUB</a> <a href="/obmen/SBRFRUB-ADVCRUB/">Перевод Сбербанк RUB на AdvCash RUB</a>
+                <a href="/obmen/WMR-WMB/">WMR на WMB</a> <a href="/obmen/WMB-WMR/">WMB на WMR</a>
+                <a href="/obmen/QIWIRUR-WEXRUB/">Qiwi RUB на WEX RUB</a> <a href="/obmen/WEXRUB-QIWIRUR/">WEX RUB на Qiwi RUB</a>
+                <a href="/obmen/SBRFRUB-EXMRUB/">Сбербанк RUB на EXMO RUB</a> <a href="/obmen/EXMRUB-SBRFRUB/">EXMO RUB на Сбербанк RUB</a>
+                <a href="/obmen/QIWIRUR-QIWI/">Обмен Qiwi RUB на Qiwi USD</a> <a href="/obmen/QIWI-QIWIRUR/">Обмен Qiwi USD на Qiwi RUB</a>
+            </div>
+        </div>
+        <div class="ex-popular-block-pay bg-white shadow-sm">
+            <div class="ex-popular-block-title"><strong>Популярные платежные системы:</strong></div>
+            <div class="ex-popular-block-list mx-3 pb-3 pt-3 mb-4">
+                <a href="/obmen/BTC-QIWIRUR/">Bitcoin (BTC) на Qiwi</a> <a href="/obmen/QIWIRUR-BTC/">Qiwi на Bitcoin (BTC)</a> <a href="/obmen/SBRFRUB-YAMRUB/">Сбербанк на Яндекс.Деньги</a> <a
+                    href="/obmen/SBRFRUB-TKS/">Cбербанк на Тинькофф</a> <a href="/obmen/QIWIRUR-WMR/">Qiwi на WebMoney</a> <a href="/obmen/YAMRUB-WMR/">Яндекс.Деньги на WebMoney</a> <a
+                    href="/obmen/PPUSD-SBRFRUB/">PayPal на Сбербанк</a> <a href="/obmen/YAMRUB-QIWIRUR/">Яндекс.Деньги на Qiwi</a> <a href="/obmen/Skrill-YAMRUB/">Skrill на Яндекс.Деньги</a> <a
+                    href="/obmen/BTC-QIWI/">Обмен Bitcoin (BTC) на Qiwi USD</a> <a href="/obmen/QIWIRUR-PPUSD/">Обмен Qiwi на PayPal</a> <a href="/obmen/SBERKZT-YAMRUB/">Обменять Сбербанк на Яндекс.Деньги</a> <a
+                    href="/obmen/PPUSD-YAMRUB/">Обмен PayPal на Яндекс.Деньги</a> <a href="/obmen/PPRUB-YAMRUB/">PayPal на Яндекс.Деньги</a> <a href="/obmen/BTC-SBRFRUB/">Обмен Bitcoin (BTC) на Сбербанк</a> <a
+                    href="/obmen/BTC-SBRFRUB/">Обмен Bitcoin (BTC) на Сбербанк</a> <a href="/obmen/P24UAH-SBRFRUB/">Обменять Приват24 на Сбербанк</a> <a href="/obmen/EXMRUB-QIWIRUR/">Обмен EXMO на Qiwi</a> <a
+                    href="/obmen/SKLEUR-YAMRUB/">Обмен Skrill на Яндекс.Деньги</a>
+            </div>
+        </div>
+    </div>
+ 
+
+
+</div>    </div>
+    <div class="tab-pane fade order-lg-0 order-1" id="pills-favorites" role="tabpanel" aria-labelledby="pills-favorites-tab">
+    <div id="tab-nav03" class="tab hidden favorite-list-vlt" data-block="vw-search-favorites" data-variant="1">
+        <span class="subtitle">Избранные направления:</span>
+    <ul class="popular-bar mt-3">
+        <li class="null-line ulpoad-history text-black-50  text-center">Загрузка ...</li>
+    </ul>
+</div>
+   
+    </div>
+</div>
+
+         <div id="vw-banners" class="my-4 flex-column d-lg-flex d-none" data-variant="1">
+    <div class="shadow mb-4 w-100">
+        <a  href="/redir/https%3A%2F%2Ft.me%2Fexchange_sumo/"  class="banners-link d-block"   data-gtm-name="{sidebar_tgbanner}" target="_blank" rel="nofollow">
+            <img src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/2595dfe9/images/tgbanner.jpg" class="banners-image w-100 h-100 nolazy" data-src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/2595dfe9/images/tgbanner.jpg" alt="Telegram канал" width="322" height="100">
+        </a>
+    </div>
+    <div class="shadow mb-4 w-100">
+        <a href="/chto-takoe-keshbjek/#kd" class="banners-link d-block" data-gtm-name="{sidebar_banner-cashback}">
+            <img src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/2595dfe9/images/banner-cashback.png" class="banners-image w-100 h-100 nolazy" data-src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/2595dfe9/images/banner-cashback.png" alt="Совершай обмен валют и получай кешбэк" width="322" height="142">
+        </a>
+    </div>
+        <div class="shadow mb-4 w-100">
+        <a  href="/redir/https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fexchangesumocom-%25D0%25BD%25D0%25B0%25D0%25B9%25D0%25B4%25D0%25B8-%25D0%25B2%25D1%258B%25D0%25B3%2Fmahepfoacncmlanpnpncgohoijnmnoma/"   class="banners-link d-block"  data-gtm-name="{sidebar_banner-chrome-extension}" target="_blank" rel="nofollow">
+            <img src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/2595dfe9/images/banner-chrome-extension.jpg" class="banners-image w-100 h-100 nolazy" data-src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/2595dfe9/images/banner-chrome-extension.jpg" alt="Хром расширение" width="322" height="142">
+        </a>
+    </div>
+</div>         <div id="banners-brief" class="gtm-test-redesignbanners only_desctop">
+    <div class="redesign-banners-block">
+        <a  href="/redir/https%3A%2F%2Ft.me%2FExsumoBot%3Fstart%3Dsidebanner/"    data-gtm-name="exsumoBot" class="redesign-banners-block-item" target="_blank" rel="nofollow">
+            <img class="lazy bb-image" src="" data-src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/c628ea77/images/telegram.png"/>
+            <div class="redesign-banners-block-title">ExsumoBot</div>
+            <div class="redesign-banners-block-desc">Подбор лучшего курса прямо в Telegram</div>
+            <span class="redesign-banners-block-btn">Перейти</span>
+        </a>
+        <a href="/chto-takoe-keshbjek/#kd" data-gtm-name="cashback" class="redesign-banners-block-item">
+            <img class="lazy bb-image" src="" data-src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/c628ea77/images/cashback.svg" style="width: 40px;height: 40px"/>
+            <div class="redesign-banners-block-title">Получай кешбэк до 35%</div>
+            <div class="redesign-banners-block-desc">за обмен + двойной кешбэк за отзыв</div>
+            <span class="redesign-banners-block-btn">Получить</span>
+        </a>
+    </div>
+
+    <div class="redesign-banners-block">
+        <a  href="/redir/https%3A%2F%2Ft.me%2Fsumochange_bot/"    data-gtm-name="sumochangeBot" class="redesign-banners-block-item" target="_blank" rel="nofollow">
+            <img class="lazy bb-image" src="" data-src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/c628ea77/images/sumochange-bot.svg"/>
+            <div class="redesign-banners-block-title">SumoChange Bot</div>
+            <div class="redesign-banners-block-desc">Безопасный обмен между пользователями с участием гаранта</div>
+            <span class="redesign-banners-block-btn">Перейти</span>
+        </a>
+        <a  href="/redir/https%3A%2F%2Ft.me%2Fexchange_sumo/"    data-gtm-name="exchangesumoBot" class="redesign-banners-block-item" target="_blank" rel="nofollow">
+            <img class="lazy bb-image" src="" data-src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/c628ea77/images/exchangesumo-bot.svg"/>
+            <div class="redesign-banners-block-title">ExchangeSumo Bot</div>
+            <div class="redesign-banners-block-desc">Новости о криптовалюте и финансовых технологиях</div>
+            <span class="redesign-banners-block-btn">Перейти</span>
+        </a>
+    </div>
+
+    <a  href="/redir/https%3A%2F%2Fchrome.google.com%2Fwebstore%2Fdetail%2Fexchangesumocom-%25D0%25BD%25D0%25B0%25D0%25B9%25D0%25B4%25D0%25B8-%25D0%25B2%25D1%258B%25D0%25B3%2Fmahepfoacncmlanpnpncgohoijnmnoma/"    data-gtm-name="extension" class="redesign-banners-row" target="_blank" rel="nofollow">
+        <img class="lazy bb-image" src="" data-src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/c628ea77/images/chrome.svg"/>
+        <div class="redesign-banners-row-item">
+            <span class="lnk-text">Расширение для Chrome</span>
+            <div class="redesign-banners-row-desc text-black">Лучшие курсы обмена в твоем браузере</div>
+        </div>
+    </a>
+
+    <a  href="/redir/https%3A%2F%2Fwww.youtube.com%2Fchannel%2FUCVko2q9vM-Puiv4IhdwP74Q/"    data-gtm-name="youtubeDi" class="redesign-banners-row" target="_blank" rel="nofollow">
+        <img class="lazy bb-image" src="" data-src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/c628ea77/images/youtube.svg"/>
+        <div class="redesign-banners-row-item">
+            <span class="redesign-banners-row-title">
+                <span class="lnk-text">Богатейший ДИ </span><span class="text-black">рекомендует нас</span>
+            </span>
+            <div class="redesign-banners-row-desc text-black">Главный YouTube канал о криптовалюте</div>
+        </div>
+    </a>
+</div>
+
+ 
+        </div>
+    
+        <!-- CONTENT -->
+         
+        <!-- layouts-main -->
+        <div id="content" class="preload-content overflow-hidden pt-3 px-xl-4 px-3 col-lg-8 col-12">
+        
+                   <!-- <div id="vw-content-title" class="d-flex align-items-baseline flex-column flex-lg-row" data-variant="1">
+            <h1 class="fs-4 mb-3 fw-bold">Page Partnership Rule</h1> 
+        </div> -->
+    <div id="vw-content-body-head" class="content-body-head">
+        
+    </div>
+    <div id="vw-content-text" class="content-text partnership-content mx-0 w-100">
+        <nav class="pop-questions">
+            <a href="#cashback-works" class="pop-questions_item">
+                Как работает кэшбек?
+            </a>
+            <a href="#cashback-get" class="pop-questions_item">
+                Как получить кэшбек?
+            </a>
+            <a href="#cashback-howtouse" class="pop-questions_item">
+                Как закрепиться за нашим мониторингом?
+            </a>
+            <a href="#cashback-howtoget-full" class="pop-questions_item">
+                Как получить 100% кэшбек?
+            </a>
+            <a href="#cashback-miss" class="pop-questions_item">
+                Когда кэшбек могут не начислить?
+            </a>
+            <a href="#cashback-obtain" class="pop-questions_item">
+                Какой % кэшбека я получу?
+            </a>
+        </nav>  
+        <section id="cashback-works" class="info-block cashback-works d-lg-flex align-items-lg-center">
+            <h1 class="info-block_title">
+                Как работает кэшбек?
+            </h1>
+            <div class="row cashback-works_wrapper">
+                <div class="col">      
+                    <div class="cashback-works_item next-pointer_ltr">
+                        <div class="img-wrapper d-flex align-content-center justify-content-center">
+                            <img src="/assets/cashback/img/online-exchange.svg" alt="Онлайн обмен exchangesumo">
+                        </div>
+                        <h4 class="cashback-works_title">Онлайн <br> обмен</h4>
+                        <p class="cashback-works_descr">В каждой операции обменник получает прибыль за свои услуги</p>
+                    </div>
+                </div>
+                <div class="col">      
+                    <div class="cashback-works_item next-pointer_ttb">
+                        <div class="img-wrapper d-flex align-content-center justify-content-center">
+                            <img src="/assets/cashback/img/exchanger-profit.svg" alt="Прибыль обменника exchangesumo">
+                        </div>
+                        <h4 class="cashback-works_title">Прибыль обменника</h4>
+                        <p class="cashback-works_descr">Обменник перечисляет часть своей прибыли нам</p>
+                    </div>
+                </div>
+                <div class="w-100"></div>
+                <div class="col">      
+                    <div class="cashback-works_item">
+                        <div class="img-wrapper d-flex align-content-center justify-content-center">
+                            <img src="/assets/cashback/img/cashback-profit.svg" alt="Кэшбек exchangesumo">
+                        </div>
+                        <h4 class="cashback-works_title">Кэшбек</h4>
+                        <p class="cashback-works_descr">Кэшбек - это часть нашей прибыли от обмена, которой мы делимся с вами</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cashback-get" class="cashback-get info-block">
+                <h2 class="info-block_title">
+                    Как получить кэшбек?
+                </h2>
+
+                <div class="cashback-get_item cashback-get_item-start">
+                    <div class="cashback-get_item-wrapper d-lg-flex justify-content-lg-between">
+                        <div class="cashback-get_item-descr next-pointer_ltr pointer_blue d-lg-flex">
+                            <p>Если вы не зарегистрированы, самое время это сделать. Можете авторизироваться через Google одним кликом или классическим методом - через почту</p>
+                        </div>
+                        <a href="https://next.exchangesumo.com/log-in?apsl_login_id=google_login&state=cmVkaXJlY3RfdG89aHR0cHM6Ly9hY2NvdW50cy5nb29nbGUuY29tL28vb2F1dGgyL2F1dGg/Y2xpZW50X2lkPTQ5ODMxMjMwMTYzNC1qc2llaGh2b3NnMTVvY2ExOWRvMnM4bzA2ZmkwMXF2dC5hcHBzLmdvb2dsZXVzZXJjb250ZW50LmNvbSZyZXNwb25zZV90eXBlPWNvZGUmcmVkaXJlY3RfdXJpPSZ4b2F1dGhfZGlzcGxheW5hbWU9RXhjaGFuZ2VTdW1vLmNvbSZzY29wZT1odHRwcyUzQSUyRiUyRnd3dy5nb29nbGVhcGlzLmNvbSUyRmF1dGglMkZ1c2VyaW5mby5wcm9maWxlJTIwaHR0cHMlM0ElMkYlMkZ3d3cuZ29vZ2xlYXBpcy5jb20lMkZhdXRoJTJGdXNlcmluZm8uZW1haWwmc3RhdGU9YTNkMzczZDk5ZDM3NTk0MmE0YTY2OWY0MTUwYWIxY2ZmNTU0OWU1NDcxY2M5ZGYwYjZlN2U0OTE2NTkwODE2ZA==" target="_blank" class="login-google_button cashback-get_item-button"></a>
+                    </div>
+                </div>
+
+                <div class="cashback-get_item cashback-get_item-dest d-lg-flex align-items-lg-center">
+                    <div class="cashback-get_item-wrapper order-lg-2 col-lg-7  d-flex align-items-start justify-content-between align-items-lg-center">
+                        <div class="cashback-get_item-descr d-flex">
+                            <p>Выберите направление и обменник с иконкой “Кэшбек”</p>
+                        </div>
+                        <img src="/assets/cashback/img/cashback-profit.svg" alt="Кэшбек exchangesumo">
+                    </div>
+                    <picture class="order-lg-1 col-lg-5">
+                        <source media="(min-width: 1200px)" srcset="/assets/cashback/img/cashback-dest-desktop.png">
+                        <img class="w-100" src="/assets/cashback/img/cashback-dest.png" alt="Кэшбек exchangesumo">
+                    </picture>           
+                </div>
+
+                <div class="cashback-get_item cashback-get_item-complete d-flex next-pointer_ltr pointer_blue align-items-lg-center justify-content-lg-between">
+                    <div class="cashback-get_item-wrapper order-lg-2 col-lg-7">
+                        <div class="cashback-get_item-descr d-lg-flex">
+                            <p>Перейдите на сайт обменника и совершите обмен</p>
+                        </div>
+                    </div>
+                    <div class="img-wrapper order-lg-1 col-lg-5">
+                        <img src="/assets/cashback/img/cashback-complete.svg" alt="Кэшбек exchangesumo">
+                    </div>
+                </div>
+
+                <div class="cashback-get_item cashback-get_item-site next-pointer_ltr pointer_blue d-lg-flex justify-content-lg-between align-items-lg-center">
+                    <div class="cashback-get_item-wrapper col-lg-7 order-lg-2 d-flex align-items-start justify-content-between">
+                        <div class="cashback-get_item-descr d-flex">
+                            <p>Вернитесь на вкладку с нашим сайтом и нажмите кнопку “Получить кэшбек”</p>
+                        </div>
+                    </div>
+                    <div class="info-block_panel col-lg-5 order-lg-1 d-flex align-items-center justify-content-center mx-auto">
+                        <img class="w-100" src="/assets/cashback/img/cashback-site.png" alt="Кэшбек exchangesumo">
+                    </div>
+                </div>
+
+                <div class="cashback-get_item cashback-get_item-callback">
+                    <div class="cashback-get_item-wrapper  d-flex align-items-center justify-content-lg-center">
+                        <div class="cashback-get_item-descr">
+                            
+                        </div>
+                        <a href="#" class="btn-callback">Отправить заявку</a>
+                    </div>
+                </div>
+        </section>
+
+        <section id="cashback-obtain" class="info-block cashback-obtain">
+            <div class="info-block_wrapper d-lg-flex align-items-lg-center">
+                <h2 class="info-block_title">
+                    Какой % кэшбека <br> я получу?
+                </h2>
+                <p>Размер кэшбека - это % от нашей прибыли по обмену. Т.е. если размер 70% - то вы получите 70% от нашей прибыли. Рассчет полученной суммы вы сможете увидеть при <a href="#">оформлении заявки</a>, если обменник поддерживает такую функцию</p>
+            </div>
+            <div class="cashback-obtain_item cashback-obtain_profit d-lg-flex justify-content-lg-between align-items-lg-center">
+                <div class="d-flex align-items-center justify-content-between">
+                    <img class="cashback-obtain_img" src="/assets/cashback/img/cashback-profit.svg" alt="Кэшбек exchangesumo">
+                    <span class="cashback-obtain_value">35%</span>
+                </div>
+                <p class="cashback-obtain_descr">Вы получите, оформив заявку с обменником, поддерживающим кэшбек.</p>
+            </div>
+            <div class="cashback-obtain_item cashback-obtain_rev d-lg-flex justify-content-lg-between align-items-lg-center">
+                <div class="d-flex align-items-center justify-content-between">
+                    <div class="info-block_panel">
+                        <img class="cashback-obtain_img" src="/assets/cashback/img/cashback-rev.png" alt="Кэшбек exchangesumo">
+                    </div>
+                    <span class="cashback-obtain_value">+35%</span>
+                </div>
+                <p class="cashback-obtain_descr">Еще 35% вы получите, написав отзыв об обмене на нашем сайте</p>
+            </div>
+            <div class="cashback-obtain_item cashback-obtain_rise d-lg-flex justify-content-lg-between align-items-lg-center">
+                <div class="d-flex align-items-center justify-content-between">
+                        <img class="cashback-obtain_img" src="/assets/cashback/img/cashback-rise.svg" alt="Кэшбек exchangesumo">
+                        <span class="cashback-obtain_value">+2-10%</span>
+                </div>
+                <p class="cashback-obtain_descr">Чем  дольше вы с нами и чем больше обменов вы проводите через нас, тем больше ваш <a href="#">БОНУС ЛОЯЛЬНОСТИ</a>.</p>
+            </div>
+            <div class="cashback-obtain_item cashback-obtain_final">
+                <div class="info-block_panel">
+                    Итого вы можете получить до <span>80%</span> кэшбека
+                </div>
+            </div>
+        </section>
+
+        <section id="cashback-miss" class="info-block cashback-miss">
+            <div class="info-block_wrapper">
+                <h2 class="info-block_title">
+                    когда кэшбек могут не начислить?
+                </h2>
+            </div>
+            <div class="cashback-miss_item d-flex flex-column flex-lg-row align-items-center">
+                <div class="col-lg-4">
+                    <img src="/assets/cashback/img/cashback-ex-miss.svg" alt="Кэшбек exchangesumo">
+                </div>
+                <div class="cashback-miss_wrapper">
+                    <h4 class="cashback-miss_subtitle">Вы перешли с другого мониторинга</h4>
+                    <p>Мы выплачиваем кэшбек только тем, кто перешел с нашего сайта и совершил обмен</p>
+                </div>
+            </div>
+            <div class="cashback-miss_item d-flex flex-column flex-lg-row align-items-center">
+                <div class="col-lg-4">
+                    <img src="/assets/cashback/img/cashback-ex-lose.svg" alt="Кэшбек exchangesumo">
+                </div>
+                <div class="cashback-miss_wrapper">
+                    <h4 class="cashback-miss_subtitle mt-4 mt-lg-0">Обменник ничего не заработал</h4>
+                    <p>Иногда обменник выставляет невыгодный для себя курс и проводит убыточную для себя операцию. Нет прибыли - нет кэшбека.</p>
+                </div> 
+            </div>
+            <div class="cashback-miss_item d-flex flex-column flex-lg-row align-items-center">
+                <div class="col-lg-4">
+                    <img src="/assets/cashback/img/cashback-ex-another.svg" alt="Кэшбек exchangesumo">
+                </div>
+                <div class="cashback-miss_wrapper">
+                    <h4 class="cashback-miss_subtitle">Вы уже закреплены за другим мониторингом</h4>
+                    <p>Если вы заходили на обменник через другой сайт, обменник может закрепить Вас за ним с помощью куки. Как этого избежать и удалить куки, читайте ниже.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="cashback-howtouse" class="info-block cashback-howto">
+            <div class="info-block_wrapper">
+                <h2 class="info-block_title">
+                    Как закрепиться за нашим мониторингом?
+                </h2>
+            </div>
+            <div class="cashback-howto_item cashback-howto_check d-flex">
+                <p>Убедитесь, что у вас закрыта вкладка обменника</p>
+            </div>
+            <div class="cashback-howto_item cashback-howto_check d-flex">
+                <p>Почистите cookie браузера. Ваш текущий браузер - Safari, если вы хотите отобразить инструкцию по другому браузеру - кликните на его иконку</p>
+            </div>
+            <div class="cashback-howto_tabs">
+                <div class="cashback-howto_tabs-nav d-flex align-items-end">
+                    <a href="#cashback-howto-tab1" class="cashback-howto_tabs-control">
+                        <img class="cashback-howto_tabs-ico" src="/assets/cashback/img/cashback-safari_ico.svg" alt="safari browser">
+                        <span>Safari</span>
+                    </a>
+                    <a href="#cashback-howto-tab2" class="cashback-howto_tabs-control">
+                        <img class="cashback-howto_tabs-ico" src="/assets/cashback/img/cashback-chrome.svg" alt="chrome browser">
+                        <span>Chrome</span>
+                    </a>
+                    <a href="#cashback-howto-tab3" class="cashback-howto_tabs-control">
+                        <img class="cashback-howto_tabs-ico" src="/assets/cashback/img/cashback-mozilla.svg" alt="mozilla browser">
+                        <span>Mozilla</span>
+                    </a>
+                    <a href="#cashback-howto-tab4" class="cashback-howto_tabs-control">
+                        <img class="cashback-howto_tabs-ico" src="/assets/cashback/img/cashback-other-browsers.svg" alt="other browsers">
+                        <span>Другие</span>
+                    </a>
+                </div>
+                <div class="cashback-howto_tabs-body">
+                    <div id="cashback-howto-tab1" class="cashback-howto_tab">
+                        <ol>
+                            <li>В приложении Safari на Mac выберите меню «<b>Safari</b>» > «<b>Настройки</b>», затем нажмите «<b>Конфиденциальность</b>».</li>
+                            <li>Нажмите «<b>Управлять данными веб-сайта</b>»</li>
+                            <li>Выберите сайт обменника, затем нажмите «<b>Удалить</b>» или просто нажмите «<b>Удалить</b> все».</li>
+                        </ol>
+                        <a class="d-block text-center" target="_blank" href="https://support.apple.com/ru-ru/guide/safari/sfri11471/mac">Подробная инструкция</a>
+                    </div>
+                    <div id="cashback-howto-tab2" class="cashback-howto_tab">
+                       <ol>
+                            <li>В правом верхнем углу экрана нажмите на значок с тремя точками Настройки.</li>
+                            <li>Выберите Конфиденциальность и безопасность Файлы cookie и другие данные сайтов.</li>
+                            <li>Нажмите Посмотреть все разрешения и данные сайтов <b>Удалить</b> все данные.</li>
+                            <li>Чтобы подтвердить действие, нажмите <b>Удалить</b>.</li>
+                       </ol>
+                        <a class="d-block text-center" href="https://support.google.com/chrome/answer/95647">Подробная инструкция</a>
+                    </div>
+                    <div id="cashback-howto-tab3" class="cashback-howto_tab">
+                        <ol>
+                            <li>Нажмите кнопку <img src="/assets/cashback/img/cashback-mozilla-menu.png" alt="mozilla browser menu"> и выберите <b>Настройки</b>.</li>
+                            <li>Выберите панель <b>Приватность и Защита</b> и перейдите в раздел <b>Куки и данные сайтов</b>.</li>
+                            <li>Нажмите на кнопку <b>Управление данными…</b>. Появится окно <b>Управление куками и данными сайтов</b>.</li>
+                            <li>Чтобы удалить все куки и данные хранилища для веб-сайта, нажмите на кнопку <b>Удалить все показанные</b></li>
+                        </ol>
+                        <a class="d-block text-center" href="https://support.mozilla.org/ru/kb/udalenie-kuki-i-dannyh-sajtov-v-firefox#w_udalit-kuki-dlia-liubogo-veb-saita" target="_blank">Подробная инструкция</a>
+                    </div>
+                    <div id="cashback-howto-tab4" class="cashback-howto_tab">
+                        <p>В большинстве Chromium браузеров работает такая последовательность:</p>
+                        <ol>
+                            <li>Нажмите в правом верхнем углу нажмите → «<b>Открыть все настройки браузера</b>».</li>
+                            <li>В разделе «<b>Конфиденциальность и безопасность</b>» нажмите «<b>Файлы cookie и прочие данные сайтов</b>».</li>
+                            <li>Нажмите «<b>Все файлы cookie и данные сайта</b>».</li>
+                            <li>Нажмите  «<b>Удалить</b>»</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="cashback-howto_item cashback-howto_check d-flex">
+                <p>Заходите на обменник через наш мониторинг и получайте кэшбек со всех следующих обменов! *
+                    <span>*Если вы уже были зарегистрированы на обменнике, то желательно не авторизироваться со старым логином, а создать новый</span></p>
+            </div>
+        </section>
+
+        <section id="cashback-howtoget-full" class="info-block cashback-howto cashback-howto-full">
+            <div class="info-block_wrapper">
+                <h2 class="info-block_title">
+                    Как получить 100% кэшбек
+                </h2>
+            </div>
+
+            <div class="cashback-howto_item cashback-howto_item-title cashback-howto_icon d-flex align-items-center">
+                <p>Вы можете получить 100% кэшбек на следующий обмен одним из способов:</p>
+            </div>
+            <div class="cashback-howto_item cashback-howto_check d-flex">
+                <p>Переодически мы предлагаем авторизированным пользователям пройти простые опросы из 1-3 пунктов. За каждый пройденный опрос с пометкой (100%) вы получите <strong>бонусный кэшбек</strong> на следующий обмен.</p>
+            </div>
+            <div class="cashback-howto_item cashback-howto_check d-flex">
+                <p>С 10% шансов после каждой успешной заявки вы получите <strong>бонусный кэшбек</strong>, который можно использовать в последующем обмене.</p>
+            </div>
+            <div class="cashback-howto_item cashback-howto_check d-flex">
+                <p>Следите за уведомлениями в профиле - переодически мы будем начислять Вам <strong>бонусные кэшбеки</strong> просто за то, что Вы с нами!</p>
+            </div>
+            <div class="cashback-howto_item cashback-howto_check d-flex">
+                <p>Каждый <strong>бонусный кэшбек</strong> потратить на выбор или на получение 100% кэшбека с заявок, или на 1 AML-проверку. Бонусные кэшбеки отображаются при клике на профиль и не сгорают со временем.</p>
+            </div>
+    </div>
+ 
+                <div class="d-flex justify-content-between align-items-baseline" id="breadcrumbs">
+   <nav class="float-start"><div id="links-breadcrumbs" class="breadcrumb"><span><a class="txt-home-link" href="/">Мониторинг обменников</a></span>&nbsp;»&nbsp; <strong class="breadcrumb-item active" aria-current="page">Page Partnership Rule</strong></div></nav> 
+       <div id="vw-page-rating" class="d-flex justify-content-center" >
+    </div>
+       
+ </div>
+         </div>
+        <!-- END CONTENT -->
+    </div>
+</div>
+<!-- FOOTER -->
+
+<footer id="vw-footer" data-variant="1" class="d-flex flex-column flex-lg-row flex-wrap align-items-center justify-content-md-between justify-content-xl-center px-3">
+
+    <div class="txt-copyright pt-2 pb-lg-3 pb-1 pe-lg-4 pe-0">Exchangesumo.com © 2015 -2023</div>
+
+
+    <div class="d-flex align-items-center flex-column flex-lg-row pb-lg-2 pb-1">
+        <ul class="menu-list list-group my-1 d-flex flex-lg-row pe-lg-3 pe-0">
+            <li class="list-inline"><a href="/karta-obmenov/">Карта обменов</a></li>
+            <li class="elm-list d-none d-lg-flex">|</li>
+            <li class="list-inline"><a href="/help-obmen/">Помощь</a></li>
+            <li class="elm-list d-none d-lg-flex">|</li>
+            <li class="list-inline"><a href="/dobavlenie-obmennogo-punkta/">Добавить обменник</a></li>
+            <li class="elm-list d-none d-lg-flex">|</li>
+            <li class="list-inline"><a href="/info/">Информация</a></li>
+            <li class="elm-list d-none d-lg-flex">|</li>
+            <li class="list-inline"><a href="/converter/">Конвертер</a></li>
+            <li class="elm-list d-none d-lg-flex">|</li>
+            <li class="list-inline"><a href="/wiki/">Wiki</a></li>
+        </ul>
+
+
+        <div class="mb-3">
+            <strong class="text-white txt-social-icon">Присоединяйтесь к нам</strong>
+            <ul class="social-list list-group d-flex flex-row justify-content-center gap-3">
+                <li class="list-inline"><a  href="/redir/https%3A%2F%2Ft.me%2Fexchange_sumo/" rel="nofollow noopener"  class="tg"  target="_blank" rel="nofollow"></a></li>
+                <li class="list-inline"><a rel="nofollow noopener" target="_blank" class="vk" href="/redir/https://vk.com/sumoexchange"></a></li>
+                <li class="list-inline"><a rel="nofollow noopener" target="_blank" class="yt"
+                                           href="/redir/https://www.youtube.com/channel/UCVko2q9vM-Puiv4IhdwP74Q"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer><!--Messengers feedback-->
+<div id="vw-messenger-feedback" data-variant="1" class="d-none d-lg-block">
+    <input id="share-switch" type="checkbox" hidden>
+    <nav class="share-button switched">
+        <a class="share-social icon-vk" href="/redir/https://vk.com/im?sel=-170811225" title="Перейти в vk" target="_blank">
+            <svg class="icon" viewBox="0 0 576 512">
+                <path d="M545 117.7c3.7-12.5 0-21.7-17.8-21.7h-58.9c-15 0-21.9 7.9-25.6 16.7 0 0-30 73.1-72.4 120.5-13.7 13.7-20 18.1-27.5 18.1-3.7 0-9.4-4.4-9.4-16.9V117.7c0-15-4.2-21.7-16.6-21.7h-92.6c-9.4 0-15 7-15 13.5 0 14.2 21.2 17.5 23.4 57.5v86.8c0 19-3.4 22.5-10.9 22.5-20 0-68.6-73.4-97.4-157.4-5.8-16.3-11.5-22.9-26.6-22.9H38.8c-16.8 0-20.2 7.9-20.2 16.7 0 15.6 20 93.1 93.1 195.5C160.4 378.1 229 416 291.4 416c37.5 0 42.1-8.4 42.1-22.9 0-66.8-3.4-73.1 15.4-73.1 8.7 0 23.7 4.4 58.7 38.1 40 40 46.6 57.9 69 57.9h58.9c16.8 0 25.3-8.4 20.4-25-11.2-34.9-86.9-106.7-90.3-111.5-8.7-11.2-6.2-16.2 0-26.2.1-.1 72-101.3 79.4-135.6z"></path>
+            </svg>
+        </a>
+        <a class="share-social icon-telegram" href="/redir/https://telegram.me/ExchangesumoBot" title="Перейти в telegram" target="_blank">
+            <svg class="icon" viewBox="0 0 448 512">
+                <path d="M446.7 98.6l-67.6 318.8c-5.1 22.5-18.4 28.1-37.3 17.5l-103-75.9-49.7 47.8c-5.5 5.5-10.1 10.1-20.7 10.1l7.4-104.9 190.9-172.5c8.3-7.4-1.8-11.5-12.9-4.1L117.8 284 16.2 252.2c-22.1-6.9-22.5-22.1 4.6-32.7L418.2 66.4c18.4-6.9 34.5 4.1 28.5 32.2z" class=""></path>
+            </svg>
+        </a>
+        <a class="share-social icon-facebook" href="/redir/https://m.me/100807152055111" title="Перейти в facebook" target="_blank">
+            <svg class="icon" viewBox="0 0 50 50">
+                <path d="M 30.085938 3.125 C 23.925781 3.125 20.3125 6.378906 20.3125 13.789062 L 20.3125 20.3125 L 12.5 20.3125 L 12.5 28.125 L 20.3125 28.125 L 20.3125 46.875 L 28.125 46.875 L 28.125 28.125 L 34.375 28.125 L 35.9375 20.3125 L 28.125 20.3125 L 28.125 15.113281 C 28.125 12.320312 29.035156 10.9375 31.65625 10.9375 L 35.9375 10.9375 L 35.9375 3.445312 C 35.195312 3.34375 33.039062 3.125 30.085938 3.125 Z M 30.085938 3.125 "/>
+            </svg>
+        </a>
+        <a class="share-social icon-mail" href="mailto:support@exchangesumo.com" title="Отправить письмо" target="_blank">
+            <svg class="icon" viewBox="0 0 512 512">
+                <path d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z"></path>
+            </svg>
+        </a>
+        <label for="share-switch" onclick="return true;" class="share-social share-show icon-regular">
+            <svg class="icon" viewBox="0 0 576 512">
+                <path d="M416 192c0-88.4-93.1-160-208-160S0 103.6 0 192c0 34.3 14.1 65.9 38 92-13.4 30.2-35.5 54.2-35.8 54.5-2.2 2.3-2.8 5.7-1.5 8.7S4.8 352 8 352c36.6 0 66.9-12.3 88.7-25 32.2 15.7 70.3 25 111.3 25 114.9 0 208-71.6 208-160zm122 220c23.9-26 38-57.7 38-92 0-66.9-53.5-124.2-129.3-148.1.9 6.6 1.3 13.3 1.3 20.1 0 105.9-107.7 192-240 192-10.8 0-21.3-.8-31.7-1.9C207.8 439.6 281.8 480 368 480c41 0 79.1-9.2 111.3-25 21.8 12.7 52.1 25 88.7 25 3.2 0 6.1-1.9 7.3-4.8 1.3-2.9.7-6.3-1.5-8.7-.3-.3-22.4-24.2-35.8-54.5z"></path>
+            </svg>
+            <span class="share-tip">Есть вопросы?</span>
+            <span class="share-close">&times;</span>
+        </label>
+    </nav>
+</div> 
+     
+<div class="login overlay_popup"></div>
+<div class="login popup-blocks" id="popup-login-wrap">
+    <div class="popup-window" id="popup-login">
+        <div class="popup-content d-flex mx-auto">
+        </div>
+        <a href="#" class="close"></a>
+    </div>
+</div>
+<script id="vw_send_ga4_end"> ga4.updateEventHandlers?.(document); </script><script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/a25dec15/js/bootstrap.bundle.js?v=1679050992"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/func-front.js?v=1697743022"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/func-cookie.js?v=1693556380"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/header/vw-header/vw-header.js?v=1697743022"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/footer/vw-footer/vw-footer.js?v=1690799618"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/18dda2bd/footer/vw-messenger-feedback/vw-messenger-feedback.js?v=1690799618"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/fa6630df/vw-user-menu/vw-user-menu.js?v=1697743022"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/34bcc988/vlt_list.json.js?v=1690751433" data-plugin="vlt_list"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/func-lib.js?v=1697743022"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-find-exchange-tabs/vw-find-exchange-tabs.js?v=1697743022" data-media="only screen and (min-width:992px)"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-favorites/vw-search-favorites.js?v=1697743022" data-media="only screen and (min-width:992px)"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-list/vw-search-list.js?v=1697743022" data-media="only screen and (min-width:992px)"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-list/vw-panel-list/vw-panel-list.js?v=1697743022" data-media="only screen and (min-width:992px)"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-list/vw-update-list/vw-update-list.js?v=1697743022" data-media="only screen and (min-width:992px)"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-list/vw-uploadgroup-list/vw-uploadgroup-list.js?v=1697743022" data-media="only screen and (min-width:992px)"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-populars/vw-search-populars.js?v=1697743022" data-media="only screen and (min-width:992px)"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-find-exchange-tabs/vw-find-exchange-tabs-mob.js?v=1697743022" data-media="only screen and (max-width:992px)"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-favorites/vw-search-favorites-mob.js?v=1697743022" data-media="only screen and (max-width:992px)"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-list/vw-search-list-mob.js?v=1697743022" data-media="only screen and (max-width:992px)"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-list/vw-update-list/vw-update-list-mob.js?v=1697743022" data-media="only screen and (max-width:992px)"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/85f13ca5/vw-search-populars/vw-search-populars-mob.js?v=1697743022" data-media="only screen and (max-width:992px)"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/d8960c6b/lib/lazyload.min.js?v=1697743022"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/ab32253/vw-page-rating/vw-page-rating.js?v=1693556381"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/fa6630df/vw-login-popup-wp/user-login-popup.js?v=1697743022"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/c7b49b6a/vw-last-exchanges.js?v=1697743022"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/2595dfe9/vw-banners.js?v=1690799618"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/c628ea77/banners-brief.js?v=1693556380"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/42e6c51e/analitika-client.js?v=1676555159"></script>
+<script src="https://vikweb.github.io/expoint_me_dan/partnership-rule/assets/42e6c51e/analitika-siga.js?v=1676555159"></script>
+<script>(function ($) {
+	$(function () {
+		setTimeout(function () {
+			var exSumoPP = {
+				'nonce': getCookie('exSumo-csrf')
+			};
+			exSumoPP && exSumoPP.nonce &&
+			$.ajax({
+				url: '/wp-content/plugins/exSumo-partners/ajax.php',
+				type: 'POST',
+				data: {'p_action': 'call_complete', 'rand':Math.random(), 'nonce':exSumoPP.nonce},
+				cache: false,
+				headers: {'X-Alt-Referer': document.referrer },
+			});
+		}, 15000);
+	})
+})(jQuery);</script>    <!-- Yandex.Metrika counter --> <script type="text/javascript" defer > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,k.onerror=function(e){sendSiGa('event', 'Error', 'Loading', 'YM' );} ,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(50526853, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/50526853" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
+</body>
+</html>
+

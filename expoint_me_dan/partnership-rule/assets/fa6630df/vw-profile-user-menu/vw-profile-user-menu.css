@@ -1,0 +1,41 @@
+#vw_profile_user_menu {
+  padding-top: 20px;
+}
+#vw_profile_user_menu .list-group-item {
+  font-size: 15px;
+  font-family: sans-serif;
+  padding: 0.4rem 1rem !important;
+}
+#vw_profile_user_menu .list-group-item a:hover {
+  color: black;
+}
+#vw_profile_user_menu .list-group-item .active {
+  font-weight: 600;
+  color: #3b5998;
+}
+#vw_profile_user_menu ul li:first-child {
+  background-color: #3b5998;
+  color: white;
+}
+#vw_profile_user_menu li:not(.list-group-submenu) a:hover {
+  text-decoration: none;
+}
+#vw_profile_user_menu .list-group-submenu {
+  padding-left: 1.7rem !important;
+}
+#vw_profile_user_menu .list-group-submenu:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+#vw_profile_user_menu .border-dotted {
+  border-style: dotted;
+}
+
+@media (max-width: 992px) {
+  body.profile-page #sidebar {
+    background: white;
+  }
+  body.profile-page #vw_profile_user_menu .list-group .list-group-item:last-child {
+    border-width: 0 0 1px;
+  }
+}/*# sourceMappingURL=vw-profile-user-menu.css.map */

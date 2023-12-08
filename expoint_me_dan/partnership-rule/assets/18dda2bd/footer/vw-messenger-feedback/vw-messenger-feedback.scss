@@ -1,0 +1,101 @@
+#vw-messenger-feedback {
+    z-index: 120;
+    position: absolute;
+    .share-button {
+        position: fixed;
+        right: 25px;
+        bottom: 25px;
+        z-index: 1;
+        .share-social {
+            display: block;
+            box-sizing: border-box;
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            text-align: center;
+            line-height: 50px;
+            visibility: hidden;
+            transition: visibility 0s linear 0.25s, all 0.25s linear;
+            opacity: 0;
+            &:hover {
+                transform: scale(1.05);
+                .share-tip {
+                    opacity: 1;
+                }
+            }
+        }
+
+        .share-tip {
+            position: absolute;
+            bottom: 0;
+            right: 50px;
+            margin-right: 16px;
+            padding: 10px 16px;
+            opacity: 0;
+            border: 1px solid #269bf6;
+            background-color: #fff;
+            font-size: 14px;
+            line-height: 18px;
+            border-radius: 6px;
+            white-space: nowrap;
+            transition: all 0.25s linear;
+            pointer-events: none;
+        }
+        .icon {
+            fill: white;
+            width: 25px;
+            height: 25px;
+            fill-rule: evenodd;
+        }
+        .icon-regular {
+            background: #269bf6;
+        }
+        .icon-telegram {
+            background: #2ca5e0;
+        }
+        .icon-vk {
+            background: #3673be;
+        }
+        .icon-facebook {
+            background: #0d7ec4;
+        }
+        .icon-mail {
+            background: #f0b849;
+        }
+        .share-show {
+            cursor: pointer;
+            position: relative;
+            opacity: 1;
+            user-select: none;
+            visibility: visible;
+        }
+        .share-close {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            color: #cfd2d9;
+            background: #fff;
+            border: 2px solid #cfd2d9;
+            font-size: 34px;
+            font-weight: 800;
+            line-height: 46px;
+            border-radius: 7px;
+            opacity: 0;
+            transition: all 0.25s linear;
+        }
+    }
+    [id$="-switch"]:checked+.share-button.switched .share-close {
+        opacity: 1;
+    }
+    [id$="-switch"]:checked+.share-button.switched .share-social {
+        margin-top: 10px;
+        visibility: visible;
+        opacity: 1;
+    }
+    [id$="-switch"]:checked+.share-button.switched .share-social:hover .share-tip {
+        opacity: 0;
+    }
+}

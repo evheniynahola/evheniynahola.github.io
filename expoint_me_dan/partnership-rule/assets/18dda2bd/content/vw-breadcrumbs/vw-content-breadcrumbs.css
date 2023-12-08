@@ -1,0 +1,13 @@
+#breadcrumbs {
+  font-size: 15px;
+  color: #333;
+}
+#breadcrumbs a.txt-home-link {
+  color: #537dd6;
+}
+#breadcrumbs a.txt-home-link:hover {
+  text-decoration: underline;
+}
+#breadcrumbs #links-breadcrumbs {
+  line-height: 21px;
+}/*# sourceMappingURL=vw-content-breadcrumbs.css.map */

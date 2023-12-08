@@ -1,0 +1,94 @@
+@mixin button-content-menu($bg){
+  display: inline-flex;
+  vertical-align: top;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9em;
+  line-height: 1em;
+  position: relative;
+  background: $bg;
+  padding: 5px 8px;
+  border-radius: 4px;
+}
+@mixin border-bottom-dashed(){
+  padding-bottom: 2px;
+  border-bottom: 1px dashed #b9c5db;
+  transition: border-color .2s ease-in-out;
+}
+
+#content_menu_head {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 0.5rem;
+  column-gap: 0.7rem;
+  .ui-button-orange {
+    @include button-content-menu(rgba(255,150,46,.2));
+    span{
+      @include border-bottom-dashed();
+    }
+  }
+
+  .ui-button-head {
+
+    @include button-content-menu(rgba(73,92,161,.1));
+
+    &.ic-direct span:before{
+      font-size: 13px;
+      padding-left: 16px;
+      content: '';
+      padding-right: 5px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik02IDdWNUgxMlYyLjQ4Mjg0QzEyIDIuMzA0NjYgMTIuMjE1NCAyLjIxNTQzIDEyLjM0MTQgMi4zNDE0MkwxNiA2TDEyLjM0MTQgOS42NTg1OEMxMi4yMTU0IDkuNzg0NTcgMTIgOS42OTUzNCAxMiA5LjUxNzE2VjdINloiIGZpbGw9IiMyNjJCM0UiLz4NCjxwYXRoIGQ9Ik0xMCA5TDEwIDExTDQgMTFMNCAxMy41MTcyQzQgMTMuNjk1MyAzLjc4NDU3IDEzLjc4NDYgMy42NTg1OCAxMy42NTg2TDMuNDk2OTFlLTA3IDEwTDMuNjU4NTggNi4zNDE0MkMzLjc4NDU3IDYuMjE1NDMgNCA2LjMwNDY2IDQgNi40ODI4NEw0IDlMMTAgOVoiIGZpbGw9IiMyNjJCM0UiLz4NCjwvc3ZnPg0K');
+    }
+
+    &.btn-favorites{
+      &.active {
+        font-weight: 500;
+        &:before {
+          content: 'Из избранного';
+          background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0iI0ZEQTgwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik03Ljk5OTggMS42Mzg2MUw5LjgxMjk2IDQuOTQxMzdMOS45MjYzNiA1LjE0NzkzTDEwLjE1NzkgNS4xOTE5NUwxMy44NTkzIDUuODk1NzVMMTEuMjc4NSA4LjY0MDc4TDExLjExNyA4LjgxMjQ2TDExLjE0NjcgOS4wNDYyM0wxMS42MjEyIDEyLjc4NEw4LjIxMjk2IDExLjE3NzdMNy45OTk4IDExLjA3NzNMNy43ODY2NSAxMS4xNzc3TDQuMzc4NDYgMTIuNzg0TDQuODUyOSA5LjA0NjIzTDQuODgyNTcgOC44MTI0Nkw0LjcyMTE2IDguNjQwNzhMMi4xNDAzNCA1Ljg5NTc1TDUuODQxNzUgNS4xOTE5NUw2LjA3MzI1IDUuMTQ3OTNMNi4xODY2NSA0Ljk0MTM3TDcuOTk5OCAxLjYzODYxWiIgc3Ryb2tlPSIjMjYyQjNFIi8+DQo8L3N2Zz4NCg==');
+        }
+        &:after {
+          content: "Добавлено в избранное";
+        }
+      }
+
+      &:before {
+        @include border-bottom-dashed();
+
+        content: 'В избранное';
+        text-align: center;
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAxNiAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxwYXRoIGQ9Ik03Ljk5OTggMS42Mzg2MUw5LjgxMjk2IDQuOTQxMzdMOS45MjYzNiA1LjE0NzkzTDEwLjE1NzkgNS4xOTE5NUwxMy44NTkzIDUuODk1NzVMMTEuMjc4NSA4LjY0MDc4TDExLjExNyA4LjgxMjQ2TDExLjE0NjcgOS4wNDYyM0wxMS42MjEyIDEyLjc4NEw4LjIxMjk2IDExLjE3NzdMNy45OTk4IDExLjA3NzNMNy43ODY2NSAxMS4xNzc3TDQuMzc4NDYgMTIuNzg0TDQuODUyOSA5LjA0NjIzTDQuODgyNTcgOC44MTI0Nkw0LjcyMTE2IDguNjQwNzhMMi4xNDAzNCA1Ljg5NTc1TDUuODQxNzUgNS4xOTE5NUw2LjA3MzI1IDUuMTQ3OTNMNi4xODY2NSA0Ljk0MTM3TDcuOTk5OCAxLjYzODYxWiIgc3Ryb2tlPSIjMjYyQjNFIi8+DQo8L3N2Zz4NCg==');
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-left: 16px;
+        font-size: 14px;
+      }
+
+      &:after {
+        content: "Удалено из избранного ";
+        color: white;
+        width: 180px;
+        position: absolute;
+        background: #3b5998;
+        left: 50%;
+        margin-left: -60px;
+        text-align: center;
+        line-height: 1.8;
+        border-radius: 4px;
+        top: 0;
+        transition: 0.5s;
+        opacity: 0;
+        box-shadow: 0 0 11px grey;
+        z-index: -1;
+      }
+
+      &.animete:after {
+        top: -25px;
+        opacity: 1;
+        z-index: 1080;
+      }
+    }
+  }
+}

@@ -1,0 +1,177 @@
+#tab-history .popular-banner {
+  padding: 18px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 4px 4px 8px rgba(128, 147, 161, 0.5607843137);
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  color: #000;
+}
+#tab-history .popular-banner .banner-text {
+  font-size: 16px;
+  font-weight: bold;
+}
+#tab-history .popular-banner .banner-icon {
+  display: inline-block;
+  width: 44px;
+  height: 40px;
+  box-sizing: border-box;
+  margin: 0 0 1px;
+  text-align: center;
+  color: #3c5999;
+  font-weight: 500;
+  font-size: 11px;
+  line-height: 15px;
+  background-repeat: no-repeat;
+  background-size: 40px 40px;
+  vertical-align: middle;
+}
+#tab-history .popular-banner .data-badge_have_cashback {
+  background-image: url(images/icn_have_cashback2.svg);
+}
+#tab-history .popular-banner .data-badge_have_cashback.data-badge_const-2 {
+  background-image: url(images/icn_have_cashback1.svg);
+}
+#tab-history .data-icon {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  z-index: 3;
+  line-height: 14px;
+  text-align: center;
+}
+#tab-history .title {
+  display: block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #26375c;
+  margin: 0 0 1px;
+}
+#tab-history .popular-bar {
+  min-height: 175px;
+  padding: 0;
+  margin: -4px 0 20px;
+  list-style: none;
+}
+#tab-history .popular-bar.with-banner {
+  min-height: 78px;
+}
+#tab-history .popular-bar .wrap-link {
+  display: flex;
+  padding-top: 8px;
+  padding-bottom: 5px;
+}
+#tab-history .popular-bar .item-name {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  padding: 2px 0 2px 23px;
+  font-size: 15px;
+  line-height: 18px;
+  z-index: 3;
+}
+#tab-history .popular-bar .small-arrow {
+  font-size: 1.2rem;
+}
+#tab-history .popular-bar .sprites,
+#tab-history .popular-bar .data-icon {
+  top: 3px;
+}
+#tab-history .popular-bar .popular-percent {
+  position: absolute;
+  top: 5px;
+  right: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 1px 4px 0;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, right 0.2s ease-in-out;
+  width: 54px;
+  height: 21px;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  background-color: #527a99;
+  text-align: center;
+  z-index: 3;
+}
+#tab-history .popular-bar .active .popular-percent {
+  background-color: #fcfdfe;
+  color: #323232;
+  right: 5px;
+}
+#tab-history .popular-bar li {
+  padding: 0;
+  position: relative;
+}
+#tab-history .popular-bar li a.wrap-link {
+  display: block;
+  padding: 5px 13px 5px 0;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #323232;
+  text-decoration: none;
+  position: relative;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, padding 0.2s ease-in-out;
+}
+#tab-history .popular-bar li a.wrap-link:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  height: 1px;
+  background-color: #ced6e8;
+}
+#tab-history .popular-bar li a.wrap-link:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  background: url(images/fone-last-active-item.png) 0 0 repeat;
+  transition: opacity 0.2s ease-in-out;
+  z-index: 2;
+}
+#tab-history .popular-bar li a.wrap-link:hover {
+  background: #e2eaf5;
+  padding-left: 5px;
+  /*  right: 5px*/
+}
+#tab-history .popular-bar li a.wrap-link .item-name {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #323232;
+  text-decoration: none;
+  white-space: nowrap;
+  overflow: hidden;
+}
+#tab-history .popular-bar li a.wrap-link .item-name:first-child {
+  flex-shrink: 0;
+}
+#tab-history .popular-bar li:hover .popular-percent {
+  right: 5px;
+}
+#tab-history .popular-bar li:hover .wrap-link {
+  background: #e2eaf5;
+  padding-left: 5px;
+}
+#tab-history .popular-bar li.active .wrap-link {
+  color: #fff;
+  background: 0 0;
+  padding-left: 5px;
+}
+#tab-history .popular-bar li.active .wrap-link:before {
+  opacity: 1;
+}/*# sourceMappingURL=vw-last-exchanges.css.map */

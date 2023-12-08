@@ -1,0 +1,39 @@
+#vw-content-gallery-news{
+  .carousel-item{
+    img{
+      width: 100%;
+    }
+    .blc-img{
+      width: 100%;
+      min-height: 340px;
+    }
+  }
+  .carousel-control-prev, .carousel-control-next {
+    opacity: 1;
+    width: 35px;
+  }
+  .carousel-control-prev-icon {
+    width: 9px;
+    height: 20px;
+    transform: rotate(180deg);
+    background-image: url("images/arrow-gallery.png");
+  }
+
+  .carousel-control-next-icon {
+    width: 9px;
+    height: 20px;
+    background-image: url("images/arrow-gallery.png");
+  }
+  .carousel-indicators [data-bs-target] {
+    width: 12px !important;
+    height: 12px !important;
+    border-radius: 50%;
+    background-color: #9095bd;
+  }
+  .carousel-indicators {
+    .active {
+      opacity: 1;
+      background-color: #4c57aa !important;
+    }
+  }
+}

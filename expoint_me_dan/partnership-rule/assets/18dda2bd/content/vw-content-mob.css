@@ -1,0 +1,12 @@
+#content {
+  box-shadow: none !important;
+}
+#content #vw-content-body-head #block-utp {
+  display: none;
+}
+#content #vw-content-body-head a {
+  color: #537dd6;
+}
+#content li strong {
+  font-weight: 700 !important;
+}/*# sourceMappingURL=vw-content-mob.css.map */

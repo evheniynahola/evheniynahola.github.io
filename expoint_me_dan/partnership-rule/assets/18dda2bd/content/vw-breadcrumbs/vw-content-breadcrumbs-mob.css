@@ -1,0 +1,8 @@
+#breadcrumbs {
+  font-weight: 400;
+  flex-direction: column;
+}
+#breadcrumbs .breadcrumb {
+  margin-bottom: 0;
+  display: block;
+}/*# sourceMappingURL=vw-content-breadcrumbs-mob.css.map */

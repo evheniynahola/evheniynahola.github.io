@@ -1,0 +1,110 @@
+#vw-header {
+  height: 48px;
+  background: white;
+
+  nav {
+    #vw-user-menu + div {
+      margin-right: 1rem;
+    }
+    .ex-header-logo{
+      position: absolute;
+      left: 0;
+    }
+  }
+
+  .logo-sumo-mob {
+    display: block;
+  }
+
+  .logo-sumo {
+    display: none;
+  }
+
+  .navbar-toggler {
+    background-image: url(images/icon-menu.png);
+    background-repeat: no-repeat;
+    height: 24px;
+    transform: scaleY(0.82);
+    cursor: pointer;
+  }
+
+  .offcanvas-header {
+    button {
+      font-size: 20px;
+      opacity: 1;
+    }
+  }
+
+  .offcanvas-end {
+    width: 250px;
+  }
+
+  .offcanvas-body {
+
+    ul li {
+      background: transparent;
+      cursor: pointer;
+
+      &.border-secondary {
+        border-color: #666666 !important;
+      }
+
+      &:hover {
+        background: rgba(255, 255, 255, .05);
+        transition: background-color .2s ease-in-out;
+      }
+
+      & .icon-cases {
+        width: 17px;
+        height: 17px;
+        background: url(images/icon-cases.svg) no-repeat;
+      }
+
+      & .icon-cashback {
+        width: 20px;
+        height: 20px;
+        background: url(images/icon-cashback.svg) no-repeat;
+      }
+    }
+  }
+
+  .banner-youtube-mob {
+    background: white url('data:image/png;base64,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') no-repeat center;
+    width: 180px;
+    height: 40px;
+
+    & span:first-child {
+      line-height: 5px;
+    }
+
+    & span:last-child {
+      color: red;
+    }
+
+    &:hover {
+      box-shadow: 1px 1px 20px #fff;
+    }
+  }
+}
+
+/* Баннер телеграмма */
+#vw-banner-head-tg {
+  background: #179bde;
+
+  .icon-tg {
+    background: url('https://img.exchangesumo.com/wp-content/themes/exchange_monitoring_v2/nres/images/icon_telegram.svg') no-repeat;
+    width: 18px;
+    height: 12px;
+  }
+
+  .txt-banner-tg {
+    line-height: 24px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 450px) {
+  .offcanvas-end {
+    width: 100% !important;
+  }
+}

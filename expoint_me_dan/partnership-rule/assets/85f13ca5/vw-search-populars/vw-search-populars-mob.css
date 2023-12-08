@@ -1,0 +1,22 @@
+.ex-search-populars .popular-bar {
+  margin: 10px 0 20px;
+}
+.ex-search-populars .popular-bar li.vlt1-vlt2 {
+  border-bottom: 1px solid #c3c8d5;
+}
+.ex-search-populars .popular-bar li.vlt1-vlt2 a.wrap-link {
+  white-space: nowrap;
+}
+.ex-search-populars .popular-bar .item-name {
+  padding: 2px 0 2px 20px;
+}
+.ex-search-populars .subtitle {
+  color: #3b5998;
+}
+.ex-search-populars .only_desctop {
+  display: none;
+}
+
+.ex-popular-block-vlt {
+  display: none;
+}/*# sourceMappingURL=vw-search-populars-mob.css.map */

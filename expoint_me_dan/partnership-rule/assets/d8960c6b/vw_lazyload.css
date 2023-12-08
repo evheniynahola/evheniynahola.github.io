@@ -1,0 +1,19 @@
+img.lazy[src=""] {
+  overflow: hidden;
+  position: relative !important;
+}
+img.lazy[src=""]:before {
+  content: " ";
+  display: block;
+  width: 100%;
+  height: calc(100% + 0px);
+}
+img.lazy[src=""]:after {
+  content: " Loading ... " attr(alt);
+  display: block;
+  color: rgb(100, 100, 100);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  text-align: center;
+}/*# sourceMappingURL=vw_lazyload.css.map */

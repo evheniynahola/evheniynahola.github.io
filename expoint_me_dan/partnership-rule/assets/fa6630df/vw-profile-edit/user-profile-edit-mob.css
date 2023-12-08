@@ -1,0 +1,28 @@
+#profile-form button.btn-primary {
+  border-radius: 5px;
+  margin-top: 1rem;
+  background-color: #325cf0;
+}
+#profile-form label {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+#profile-form .field-group.required label::after {
+  font-size: 21px;
+}
+#profile-form input {
+  color: #666;
+}
+#profile-form input::-moz-placeholder {
+  color: #c4c4c4;
+}
+#profile-form input::placeholder {
+  color: #c4c4c4;
+}
+#profile-form .field-hint {
+  font-style: oblique;
+  font-size: 13px;
+}
+#profile-form .field-profile-meta_nickname .form-text {
+  max-width: 40%;
+}/*# sourceMappingURL=user-profile-edit-mob.css.map */

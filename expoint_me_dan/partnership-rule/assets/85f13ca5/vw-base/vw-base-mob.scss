@@ -1,0 +1,17 @@
+
+
+.tab-content{
+    --bs-tab-font-size: 1rem;
+    --bs-tab-font-weight:400;
+    --bs-tab-color: #323232; 
+    --bs-tab-subtitle-font-size: 1.1em;
+    --bs-tab-subtitle-font-weight:500;
+    --bs-tab-subtitle-color: #323232; 
+}
+
+.tab-content{
+    .subtitle {
+        font-size: var(--bs-tab-subtitle-font-size);
+        font-weight: var(--bs-tab-subtitle-font-weight); 
+    }
+}

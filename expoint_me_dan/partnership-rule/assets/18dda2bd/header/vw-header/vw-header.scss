@@ -1,0 +1,68 @@
+#vw-header {
+  background: #3b5998;
+  font-family: 'Roboto', Tahoma, Helvetica, sans-serif;
+  font-size: 14px;
+  nav{
+    max-width: 1090px !important;
+  }
+  .logo-sumo-mob {
+    display: none;
+  }
+
+  .logo-sumo {
+    display: block;
+  }
+  .ex-border-grey {
+    border-left: 1px solid #314b7f;
+  }
+  .ex-header-logo {
+    flex-shrink: 0;
+  }
+
+  .ex-header-menu {
+    flex-shrink: 1;
+    height: 50px;
+    position: relative;
+
+    li.nav-item {
+      position: relative;
+
+      .active {
+        overflow: hidden;
+        display: block;
+
+        &:before {
+          position: absolute;
+          content: '';
+          width: 100%;
+          height: 3px;
+          background-color: white;
+          transform: translate(-8px, 40px);
+        }
+      }
+    }
+  }
+
+  .icon-cases {
+    // background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+DQo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMDAgMTAwMCI+DQo8cGF0aCBmaWxsPSIjZmZmIiBkPSJNNDA4LjcsMjcuM2M1My42LDEyNy4yLDEwLjEsMjMyLjctMzQsMjk2LjZjLTU3LjYsODMuNi0xNDMuOCwxNjQuNS0xNDkuOSwxNjJjLTYuMy0yLjctMjIuMS05OC45LTE0LjMtMTYwLjljOC44LTcwLDAuNS00OC4yLTkuNS0yNy45QzE4MC4xLDMzOS45LDYzLjYsNTA3LDUxLjksNjYzLjNDMzUsODg5LjgsMzE2LjQsOTkwLDMxNi40LDk5MHMtNjkuNC02MC0zOC42LTE4Mi4zYzMwLjktMTIyLjMsNzUuNy0xMzEuNCwxMDMuNi0xNjMuMWMyMi42LTI1LjgsMzEtNjMuOSwyOC4yLTExMi45YzAsMCw0My41LDQxLjMsMjkuMSwxNDIuN2MwLDAsMTE4LjMtMTU2LjgsODcuMS0yNTYuOGMtNS41LTE3LjYsMTg4LjQsMTcwLjksMTc2LjMsMzYwLjNjLTkuNCwxNDctNDQuMSwxNjQuMi02My45LDIxMi4xYzAsMCwyNjMuNi04NS42LDMwMy45LTMxMC4xYzI3LjgtMTU0LjgtMzIuNS0zMzAuNi0xMzcuNS00MjljLTg3LjQtODEuOS04My40LTg1LjYtNTgtOS41YzMzLjEsOTkuNCw1LjksMTQ5LjQtMS45LDE2MC40Yy00LDUuNi0xOS40LTc2LjctMTEwLjktMjA1LjZDNTUwLjksNzkuMyw0NzMuNSwzMi4zLDQzMi4xLDE3LjZDMzkzLjQsMy44LDQwMS40LDkuOCw0MDguNywyNy4zTDQwOC43LDI3LjN6Ii8+DQo8L3N2Zz4=');
+    background-image: url(images/icon-cases.svg);
+    background-repeat: no-repeat;
+    padding-left: 16px;
+    background-size: 16px;
+    width: 16px;
+    height: 16px;
+    float: left;
+    margin-left: 2px;
+    margin-top: 2px;
+
+    & ~ .nav-link {
+      padding-left: 2px;
+      float: left;
+    }
+  }
+  @media (max-width: 1150px) {
+    nav{
+      padding-inline: 1.5rem;
+    }
+  }
+}

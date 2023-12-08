@@ -1,0 +1,37 @@
+#vw-content-text {
+  font-size: 15px;
+  color: #333333;
+}
+#vw-content-text a {
+  text-decoration: none;
+  color: #537dd6;
+}
+#vw-content-text a:hover {
+  text-decoration: underline;
+}
+#vw-content-text p, #vw-content-text li {
+  font-weight: var(--bs-body-font-weight);
+}
+#vw-content-text h2 {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 22px;
+  color: #1d1e1e;
+}
+#vw-content-text h2::after {
+  content: "";
+  border-bottom: 1px solid #c9d1d8;
+  margin: 10px 0 16px;
+  display: flex;
+}
+#vw-content-text h6 {
+  color: #1d1e1e;
+}
+#vw-content-text .ex-end-bottom {
+  margin: 3rem -1.5rem 1.7rem;
+  border-bottom: 3px solid #eaf3fa;
+}
+#vw-content-text .clearfix {
+  padding-bottom: 15px;
+  clear: both;
+}/*# sourceMappingURL=vw-content-text.css.map */

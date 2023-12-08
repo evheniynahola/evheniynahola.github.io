@@ -1,0 +1,359 @@
+/**
+ * Created by PhpStorm.
+ * User: PretorDH
+ * Date: 20.09.2019
+ * Time: 21:44
+ */
+
+.pull-right {
+    float: right;
+}
+
+.red {
+    color: red;
+}
+
+[disabled] {
+    opacity: .5;
+    pointer-events: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.btn-copy {
+    padding: 0 20px;
+    margin: 0 0 0 10px;
+    border: 1px solid #4b2;
+    border-radius: 5px;
+    font-weight: bold;
+    background: #fff;
+    position: relative;
+    width: 100px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.btn-copy:active,
+.btn-copy:focus,
+.btn-copy:hover {
+    background: #4b2;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn-copy:active:after {
+    content: 'Скопировано';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    text-align: center;
+    background: #391;
+}
+
+.referrals-container {}
+
+.referrals-container .column-url {
+    white-space: normal;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+    max-width: 265px;
+}
+
+.referrals-container .referrals-visited .country-flag {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 12px;
+}
+
+.referrals-container input[type="text"] {
+    width: 70%;
+    float: right;
+    height: 36px;
+}
+
+.referrals-container input:invalid:not(:indeterminate) {
+    color: #700;
+}
+
+.referrals-container label {
+    display: block;
+    line-height: 37px;
+    clear: both;
+}
+
+.referrals-container textarea {
+    width: 70%;
+    float: right;
+}
+
+.referrals-container select {
+    float: right;
+    width: 70%;
+    padding: 2px 19px;
+    height: 36px;
+    color: #000;
+    margin: 0 0 20px;
+    border: 2px solid #c5cdda;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    background: #fff;
+    outline: none;
+    outline: 0;
+    font: 300 17px/22px 'Roboto', sans-serif;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -o-transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    -webkit-transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    transition: box-shadow 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.referrals-container label.exSumo-depricated span.hint {
+    clear: both;
+    margin-left: 0 !important;
+    position: absolute;
+    margin-top: -1.0em;
+    width: 30%;
+    height: 0;
+    line-height: 1.5em;
+    display: block;
+    font-size: 80%;
+    font-style: italic;
+    color: red;
+}
+
+.statistic-icon {
+    display: inline-block;
+    background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+PHN2ZyB2aWV3Qm94PSIwIDAgMTAyNCAxMDI0IiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxwYXRoIGQ9Ik05NS4xMDYgNTEyLjk3NGMwLTIzMC41MjcgMTg3LjU1Mi00MTguMDc3IDQxOC4wNzctNDE4LjA3N3M0MTguMDc1IDE4Ny41NSA0MTguMDc1IDQxOC4wNzdjMCAyMzAuNTI1LTE4Ny41NTIgNDE4LjA3Ny00MTguMDc1IDQxOC4wNzdzLTQxOC4wNzctMTg3LjU1Mi00MTguMDc3LTQxOC4wNzd6TTE3My40OTUgNTEyLjk3NGMwIDE4Ny4yOTggMTUyLjM3NiAzMzkuNjg0IDMzOS42ODcgMzM5LjY4NHMzMzkuNjg2LTE1Mi4zODYgMzM5LjY4Ni0zMzkuNjg0YzAtMTg3LjMtMTUyLjM3Ni0zMzkuNjg4LTMzOS42ODctMzM5LjY4OHMtMzM5LjY4NiAxNTIuMzg5LTMzOS42ODYgMzM5LjY4OXpNNDYwLjkyMSA2NjkuNzVsMC0xNTYuNzc1YzAtMjguODYgMjMuMzk5LTUyLjI2IDUyLjI2LTUyLjI2IDI4Ljg2IDAgNTIuMjYgMjMuMzk5IDUyLjI2IDUyLjI2bDAgMTU2Ljc3NWMwIDI4Ljg2LTIzLjM5OSA1Mi4yNi01Mi4yNiA1Mi4yNi0yOC44NiAwLTUyLjI2LTIzLjM5OS01Mi4yNi01Mi4yNnpNNDYwLjkyMSAzNTYuMTk2YzAtMjguODYzIDIzLjM5OS01Mi4yNjMgNTIuMjYtNTIuMjYzIDI4Ljg2IDAgNTIuMjYgMjMuMzk5IDUyLjI2IDUyLjI2MyAwIDI4Ljg1OC0yMy4zOTkgNTIuMjU3LTUyLjI2IDUyLjI1Ny0yOC44NiAwLTUyLjI2LTIzLjM5OS01Mi4yNi01Mi4yNTd6IiAvPjwvc3ZnPg==');
+    background-size: contain;
+    background-position: center;
+    height: 16px;
+    width: 16px;
+    margin: -2px 5px;
+    vertical-align: middle;
+}
+
+.statistic-icon.invert-icon {
+    filter: invert(100%);
+}
+
+
+/*.statistic-icon.error-icon {*/
+
+
+/*	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA1MCIgaGVpZ2h0PSIyMCIgd2lkdGg9IjIwIj4NCjxjaXJjbGUgZmlsbD0iI0Q1NSIgY3g9IjI1IiBjeT0iMjUiIHI9IjI1Ii8+DQo8ZyBzdHlsZT0ic3Ryb2tlOiNGRkY7c3Ryb2tlLXdpZHRoOjI7Ij4NCjxwb2x5bGluZSBwb2ludHM9IjE2LDM0IDM0LDE2Ii8+DQo8cG9seWxpbmUgcG9pbnRzPSIxNiwxNiAzNCwzNCIvPg0KPC9nPg0KPC9zdmc+DQo=");}*/
+
+
+/*.statistic-icon.question-icon {*/
+
+
+/*	background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIwIiB3aWR0aD0iMjAiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBmaWxsPSIjZmZmIiAgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4NCjxjaXJjbGUgZmlsbD0iI2ZiMSIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+DQo8Y2lyY2xlIGN4PSIyNTYiIGN5PSIzODAiIHI9IjIzIi8+DQo8cGF0aCBkPSJtMjg5IDI2OWMtNyAzLTEyIDExLTEyIDE5djljMCAxMS05IDIxLTIxIDIxcy0yMS05LTIxLTIxdi05YzAtMjQgMTQtNDcgMzctNTggMjEtMTAgMzctMzYgMzctNDkgMC0yOS0yMy01My01My01M3MtNTMgMjMtNTMgNTNjMCAxMS05IDIxLTIxIDIxcy0yMS05LTIxLTIxYzAtNTIgNDMtOTYgOTYtOTZzOTYgNDMgOTYgOTZjMCAyOC0yNSA3MS02MiA4OHptMCAwIi8+DQo8L3N2Zz4NCg==");}*/
+
+.statistic-icon.exclamation-icon {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjIwIiB3aWR0aD0iMjAiIHZpZXdCb3g9IjAgMCA0MDAgNDAwIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPg0KPGNpcmNsZSBmaWxsPSIjMjVBRTg4IiBjeD0iMjAwIiBjeT0iMjAwIiByPSIyMDAiLz4NCjxjaXJjbGUgZmlsbD0iI2ZmZiIgY3g9IjIwMCIgY3k9IjMyMCIgcj0iNDAiLz4NCjxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0xNjAsNDkgQzE2MCw0NCAxNjQsNDAgMTY5LDQwIEwyMzAsNDAgQzIzNSw0MCAyMzksNDQgMjM5LDQ5IEwyMzAsMjUwIEMyMzAsMjU1IDIyNSwyNjAgMjE5LDI2MCBMMTgwLDI2MCBDMTc0LDI2MCAxNjksMjU1IDE2OSwyNTAgTDE2MCw0OSBaIi8+DQo8L3N2ZyA+");
+}
+
+
+/*.statistic-icon.incognito-icon {*/
+
+
+/*	height:20px;*/
+
+
+/*	background-position: 1px;*/
+
+
+/*	background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMCAxMDAiPg0KPHBhdGggZD0iTTY5LjMsMTJjLTAtMC42LTAuOC0xLjAtMS41LTEuMGwtMjMuMCw0LjVsLTEyLjUtNC40Yy0wLjYsMC4wLTEuMywwLjUtMS41LDEuMSBsLTguMywyNy44aDU1LjRMNjkuMywxMi45eiBNNTAsNDcuM2MtMTYuNSwwLTMxLjcsMy42LTQzLjcsOS42aDg3LjVDODEuNyw1MS4wLDY2LjUsNDcuMyw1MCw0Ny4zeiBNNjcuNyw2MS4wYy02LjcsMC0xMi4zLDQuOS0xMy4yLDExLjRjLTIuOS0wLjYtNi4wLTAuNi05LjAtMC4wIGMtMS4wLTYuMy02LjUtMTEuMi0xMy4yLTExLjJjLTcuNCwwLTEzLjQsNi4wLTEzLjQsMTMuNGMwLDcuNCw2LjAsMTMuNCwxMy40LDEzLjQgYzYuNywwLDEyLjMtNS4wLDEzLjItMTEuNWMyLjktMC43LDYuMC0wLjcsOS4wLDAuMGMxLjAsNi40LDYuNSwxMS4zLDEzLjIsMTEuMyBjNy40LDAsMTMuNC02LjAsMTMuNC0xMy40QzgxLjIsNjcuMSw3NS4yLDYxLjAsNjcuNyw2MS4weiBNMzIuMiw4NC40Yy01LjQsMC05LjgtNC4zLTkuOC05LjggYzAtNS40LDQuMy05LjgsOS44LTkuOGM1LjQsMCw5LjgsNC4zLDkuOCw5LjhDNDIuMCw4MC4wLDM3LjYsODQuNCwzMi4yLDg0LjR6IE02Ny43LDg0LjMgYy01LjQsMC05LjgtNC4zLTkuOC05LjhjMC01LjQsNC4zLTkuOCw5LjgtOS44YzUuNCwwLDkuOCw0LjMsOS44LDkuOCBDNzcuNiw3OS45LDczLjIsODQuMyw2Ny43LDg0LjN6Ii8+DQo8L3N2ZyA+");}*/
+
+
+/*.statistic-icon.success-icon {*/
+
+
+/*	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MCA1MCI+DQo8Y2lyY2xlIHN0eWxlPSJmaWxsOiMyNUFFODg7IiBjeD0iMjUiIGN5PSIyNSIgcj0iMjUiLz4NCjxwb2x5bGluZSBzdHlsZT0iZmlsbDpub25lO3N0cm9rZTojRkZGO3N0cm9rZS13aWR0aDo0O3N0cm9rZS1saW5lY2FwOnJvdW5kOyIgcG9pbnRzPSIzOCwxNSAyMiwzMyAxMiwyNSIvPg0KPC9zdmc+");}*/
+
+
+/*.statistic-icon.shield-icon {*/
+
+
+/*	width: 20px;*/
+
+
+/*	height: 20px;*/
+
+
+/*	background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMjAiIHdpZHRoPSIyMSIgdmlld0JveD0iLTM4IDAgNTExIDUxMSI+CjxwYXRoIGZpbGw9IiMwRDciIGQ9Ik0gNDEzIDM0MSBDIDM5OSAzNzkgMzc4IDQxMSAzNTEgNDM4IEMgMzIwIDQ2OCAyNzkgNDkyIDIzMCA1MDkgQyAyMjkgNTEwIDIyNyA1MTAgMjI1IDUxMSBDIDIyMyA1MTEgMjIxIDUxMSAyMTggNTEyIEwgMjE4IDUxMiBDIDIxNiA1MTIgMjEzIDUxMSAyMTEgNTExIEMgMjA5IDUxMCAyMDcgNTEwIDIwNiA1MDkgQyAxNTcgNDkyIDExNiA0NjggODUgNDM4IEMgNTcgNDExIDM3IDM3OSAyMyAzNDEgQyAtMSAyNzQgLTAgMTk5IDEgMTM5IEwgMSAxMzggQyAxIDEzMyAxIDEyOCAxIDEyMiBDIDEgOTQgMjQgNzEgNTIgNjkgQyAxMTEgNjYgMTU2IDQ2IDE5NSA5IEwgMTk2IDggQyAyMDIgMiAyMTAgLTAgMjE4IDAgQyAyMjYgMCAyMzQgMyAyNDAgOCBMIDI0MSA5IEMgMjgwIDQ2IDMyNSA2NiAzODQgNjkgQyA0MTIgNzEgNDM1IDk0IDQzNSAxMjIgQyA0MzUgMTI4IDQzNSAxMzMgNDM1IDEzOCBMIDQzNiAxMzggQyA0MzcgMTk5IDQzOCAyNzMgNDEzIDM0MSBaIE0gNDEzIDM0MSAiLz4KPGNpcmNsZSBmaWxsPSIjZmZmIiBjeD0iMjE5IiBjeT0iMjU2IiByPSIxMjgiLz4KPHBhdGggZmlsbD0iIzAwMSIgb3BhY2l0eT0iLjIyIiBkPSJNIDQxMyAzNDEgQyAzOTkgMzc5IDM3OCA0MTEgMzUxIDQzOCBDIDMyMCA0NjggMjc5IDQ5MiAyMzAgNTA5IEMgMjI5IDUxMCAyMjcgNTEwIDIyNSA1MTEgQyAyMjMgNTExIDIyMSA1MTEgMjE4IDUxMiBMIDIxOCAwIEMgMjI2IDAgMjM0IDMgMjQwIDggTCAyNDEgOSBDIDI4MCA0NiAzMjUgNjYgMzg0IDY5IEMgNDEyIDcxIDQzNSA5NCA0MzUgMTIyIEMgNDM1IDEyOCA0MzUgMTMzIDQzNSAxMzggTCA0MzYgMTM4IEMgNDM3IDE5OSA0MzggMjczIDQxMyAzNDEgWiBNIDQxMyAzNDEgIi8+CjxjaXJjbGUgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iLjY1IiBjeD0iMjE5IiBjeT0iMjU2IiByPSIxMjgiIC8+CjxwYXRoIGZpbGw9IiM3OTkiIGQ9Ik0gMjc2IDIzNyBMIDIxOCAyOTUgTCAyMDYgMzA3IEMgMjAzIDMxMCAxOTkuNzUgMzExIDE5NSAzMTEgQyAxOTIgMzExIDE4OCAzMTAgMTg1IDMwNyBMIDE1OCAyODAgQyAxNTIgMjc0IDE1MiAyNjUgMTU4IDI1OSBDIDE2NCAyNTMgMTczIDI1MyAxNzkgMjU5IEwgMTk1IDI3NSBMIDI1NSAyMTYgQyAyNjEgMjEwIDI3MCAyMTAgMjc2IDIxNiBDIDI4MiAyMjIuMjUgMjgyIDIzMSAyNzYgMjM3IFogTSAyNzYgMjM3ICIvPgo8L3N2Zz4=");}*/
+
+.status-red {
+    color: #f55;
+}
+
+.status-yellow {
+    color: #fa5;
+}
+
+.status-green {
+    color: #5a5;
+}
+
+#wallets_message {
+    color: green;
+    margin-left: 2em;
+    line-height: 50px;
+}
+
+@media (max-width: 767px) {
+    section.referrals-container {
+        overflow-x: auto;
+    }
+    .referrals-container input[type],
+    .referrals-container textarea,
+    .referrals-container select {
+        width: 100%;
+    }
+    .referrals-container label.exSumo-depricated span.hint {
+        display: inline;
+        position: inherit;
+    }
+}
+@media (max-width: 950px) {
+    .adaptive-table .name-table{
+        order: 0;
+        flex: auto;
+    }
+    .referrals-visited.adaptive-table .column-url{
+        max-width:none;
+    }
+    .referrals-visited.adaptive-table{
+        width: 100%;
+    }
+    .referrals-visited.adaptive-table thead {
+        display: none;
+    }
+
+    .referrals-visited.adaptive-table tr {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .referrals-visited.adaptive-table th {
+        display: block;
+    }
+
+    .referrals-visited.adaptive-table td {
+        display: flex;
+        border-right: none;
+        padding: 0;
+        align-items: center;
+        height: auto;
+    }
+
+    .referrals-visited.adaptive-table td:last-child {
+        text-align: left;
+    }
+
+    .referrals-visited.adaptive-table td:first-child {
+        padding-left: 0;
+    }
+    .referrals-visited.adaptive-table td:after {
+        display: none;
+    }
+    table.referrals-visited.adaptive-table tbody tr td:before {
+        width: 110px;
+        background: #537DD6;
+        display: flex;
+        height: 100%;
+        color: white;
+        align-items: center;
+        margin-right: 5px;
+        top: 0;
+        position: relative;
+        padding: 10px 10px 10px 25px;
+    }
+
+    .referrals-visited.adaptive-table .no-data td:before {
+        display: none;
+    }
+    .referrals-visited.adaptive-table .no-data td{
+        padding-left: 26px;
+    }
+
+    .referrals-visited.adaptive-table.balance-table td:nth-child(1):before {
+        content: "ID:";
+    }
+
+    .referrals-visited.adaptive-table.balance-table td:nth-child(2):before {
+        content: "Дата:";
+    }
+
+    .referrals-visited.adaptive-table.balance-table td:nth-child(3):before {
+        content: "Сумма:";
+    }
+
+    .referrals-visited.adaptive-table.balance-table td:nth-child(4):before {
+        content: "Кошелёк:";
+    }
+
+    .referrals-visited.adaptive-table.balance-table td:nth-child(5):before {
+        content: "Примечания:";
+    }
+
+    .referrals-visited.adaptive-table.balance-table td:nth-child(6):before {
+        content: "Статус:";
+    }
+
+    .referrals-visited.adaptive-table.statistic-table td:nth-child(1):before {
+        content: "Дата:";
+    }
+
+    .referrals-visited.adaptive-table.statistic-table td:nth-child(2):before {
+        content: "IP:";
+    }
+
+    .referrals-visited.adaptive-table.statistic-table td:nth-child(3):before {
+        content: "Источник:";
+    }
+
+    .referrals-visited.adaptive-table.statistic-table td:nth-child(4):before {
+        content: "Браузер пользователя:";
+    }
+
+    .referrals-visited.adaptive-table.statistic-table td:nth-child(5):before {
+        content: "Статус:";
+    }
+
+    .referrals-visited.adaptive-table.statistic-table td:nth-child(6):before {
+        content: "Оплата:";
+    }
+
+    .referrals-visited.adaptive-table.referrals-table td:nth-child(1):before {
+        content: "Пользователь:";
+    }
+
+    .referrals-visited.adaptive-table.referrals-table td:nth-child(2):before {
+        content: "Дата:";
+    }
+
+    .referrals-visited.adaptive-table.referrals-table td:nth-child(3):before {
+        content: "Заработок с реферала:";
+    }
+
+    .referrals-visited.adaptive-table.referrals-table td:nth-child(4):before {
+        content: "Заработок с посетителей реферала:";
+    }
+
+    .referrals-visited.adaptive-table.referrals-table td:nth-child(5):before {
+        content: "Количество рефералов:";
+    }
+}

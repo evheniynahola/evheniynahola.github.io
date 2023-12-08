@@ -1,0 +1,170 @@
+.ex-search-populars {
+  .ex-popular-block-list {
+    a.wrap-link {
+      color: #818181;
+      font-size: 12px;
+      line-height: 26px;
+      transition: .2s;
+      text-decoration: none;
+
+      &:after {
+        content: '';
+        display: inline-block;
+        font-size: 40px;
+        color: #b8b8b8;
+        line-height: 0;
+        width: 3px;
+        height: 3px;
+        background: #b8b8b8;
+        border-radius: 100%;
+        margin-bottom: 4px;
+        margin-left: 6px;
+        margin-right: 4px;
+      }
+
+      &:last-child {
+        width: 0;
+      }
+    }
+  }
+
+  .ex-popular-block-title {
+    background: #e3e8ea;
+    width: 100%;
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 15px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-size: 16px;
+  }
+
+  .popular-bar {
+    padding: 0;
+    margin: -4px 0 20px;
+    list-style: none;
+
+    li.vlt1-vlt2 {
+      padding: 0;
+      position: relative;
+      border-bottom: 1px solid #c3c8d5;
+
+      a.wrap-link {
+        display: block;
+        padding: 8px 13px 5px 0;
+        font-size: 15px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #323232;
+        text-decoration: none;
+        position: relative;
+        transition: background-color .2s ease-in-out, color .2s ease-in-out, padding .2s ease-in-out;
+
+        &:hover {
+          background: #e2eaf5;
+          padding-left: 5px;
+        }
+
+        &:before {
+          content: '';
+          position: absolute;
+          top: -1px;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          opacity: 0;
+          //background: url(data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAcFBQYFBAcGBgYIBwcICxILCwoKCxYPEA0SGhYbGhkWGRgcICgiHB4mHhgZIzAkJiorLS4tGyIyNTEsNSgsLSz/2wBDAQcICAsJCxULCxUsHRkdLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCz/wgARCAAgACADAREAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAb/xAAVAQEBAAAAAAAAAAAAAAAAAAAABf/aAAwDAQACEAMQAAAAmbM4AAAAAAAf/8QAFxAAAwEAAAAAAAAAAAAAAAAAADJxsf/aAAgBAQABPwBpo00aaNNGmjTRpo00aaNNGmjTRpo00aaNNP/EABQRAQAAAAAAAAAAAAAAAAAAAED/2gAIAQIBAT8AB//EABQRAQAAAAAAAAAAAAAAAAAAAED/2gAIAQMBAT8AB//Z) 0 0 repeat;
+          background: url(images/fone-active-popular-item.jpeg) 0 0 repeat;
+          transition: opacity .2s ease-in-out;
+          z-index: 2;
+        }
+      }
+    }
+
+    .item-name {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      padding: 2px 0 2px 23px;
+      z-index: 3;
+    }
+
+    .sprites,
+    .popular-bar .data-icon {
+      top: 3px;
+    }
+
+    .small-arrow {
+      font-size: 1rem;
+    }
+  }
+
+  .bar-data .data-icon,
+  .popular-bar .data-icon {
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: 0;
+    top: 3px;
+    z-index: 3;
+    line-height: 14px;
+    text-align: center;
+  }
+
+
+  .widget_text_pop {
+    background: #fff;
+    margin-top: 25px;
+    border-radius: 2px;
+    display: block;
+
+    .pop_title {
+      background: #e3e8ea;
+      width: 100%;
+      display: block;
+      height: 40px;
+      line-height: 40px;
+      padding-left: 15px;
+      box-sizing: border-box;
+      border-radius: 2px;
+      font-size: 16px;
+    }
+
+    .link_box {
+      padding: 15px;
+
+      a {
+        color: #818181;
+        font-size: 12px;
+        line-height: 26px;
+        transition: 0.2s;
+      }
+
+      a:hover {
+        color: #26375c;
+      }
+
+      a:after {
+        content: '';
+        display: inline-block;
+        font-size: 40px;
+        color: #b8b8b8;
+        line-height: 0;
+        width: 3px;
+        height: 3px;
+        background: #b8b8b8;
+        border-radius: 100%;
+        margin-bottom: 4px;
+        margin-left: 6px;
+        margin-right: 4px;
+      }
+
+      a:last-child:after {
+        display: none;
+      }
+    }
+  }
+
+
+}
