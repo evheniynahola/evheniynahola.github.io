@@ -91,8 +91,9 @@
     position: relative;
     &:after {
         content: '';
+        aspect-ratio: 1 / 1;
         width: 51px;
-        height: 47px;
+        height: 51px;
         background: url('../img/next-pointer-ttb.svg') center/cover;
         position: absolute;
     }
@@ -106,6 +107,7 @@
         text-align: center;
         position: relative;
         .img-wrapper {
+            width: 100%;
             height: 94px;
         }
         &.next-pointer_ltr {
@@ -134,16 +136,6 @@
     counter-reset: cashbackCounter;
     &_item {
         counter-increment: cashbackCounter;
-        // &-wrapper {
-        //     &:before {
-        //         content: counter(cashbackCounter);
-        //         font-size: 90px;
-        //         font-weight: 900;
-        //         color: #cac9c9;
-        //         display: block;
-        //         margin: 20px 0;
-        //     }
-        // }  
         &-descr {
             &:before {
                 content: counter(cashbackCounter);
@@ -165,6 +157,12 @@
             margin-top: 26px;
         }
         &-dest {
+            &_img {
+                height: 470px;
+                img {
+                    width: 100%;
+                }
+            }
             margin-top: 14px;
             .cashback-get_item-descr {
                 &:before {
@@ -202,6 +200,10 @@
                     font-size: 70px;
                     margin-right: 6px;
                 }
+            }
+            img {
+                width: 100%;
+                aspect-ratio: 277 / 44;
             }
             p {
                 margin-bottom: 0;
@@ -242,9 +244,13 @@
             padding: 0 6px 0 4px;
             background-color: #D9F1D4;
         }
+        .cashback-obtain_img {
+            aspect-ratio: 17 / 2;
+        }
     }
     &_img {
         width: 111px;
+        aspect-ratio: 1 / 1;
     }
     &_value {
         color: var(--accent-dark);
@@ -344,6 +350,7 @@
             .cashback-howto_tabs-ico {
                 width: 30px;
                 height: 30px;
+                aspect-ratio: 1 / 1;
             }
             &:after {
                 content: '';
@@ -369,6 +376,7 @@
                 .cashback-howto_tabs-ico {
                     width: 45px;
                     height: 45px;
+                    aspect-ratio: 1 / 1;
                 }
                 &:after {
                     display: none;
@@ -392,8 +400,9 @@
         &:before {
             content: '';
             display: block;
-            min-width: 37px;
+            width: 37px;
             height: 39px;
+            aspect-ratio: 37 / 39;
             margin-right: 10px;
             background-image: url('../img/cashback-check.svg');
         }
@@ -406,8 +415,9 @@
         &:before {
             content: '';
             display: block;
-            min-width: 49px;
+            width: 49px;
             height: 51px;
+            aspect-ratio: 49 / 51;
             background-image: url('../img/cashback-100.svg');
             margin-right: 11px;
         }

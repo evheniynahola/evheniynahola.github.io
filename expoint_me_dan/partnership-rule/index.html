@@ -1120,10 +1120,12 @@ const sendToGTM = obj => {
                         </div>
                         <img src="./assets/cashback/img/cashback-profit.svg" alt="Кэшбек exchangesumo">
                     </div>
-                    <picture class="order-lg-1 col-lg-5">
-                        <source media="(min-width: 1200px)" srcset="./assets/cashback/img/cashback-dest-desktop.png">
-                        <img class="w-100" src="./assets/cashback/img/cashback-dest.png" alt="Кэшбек exchangesumo">
-                    </picture>           
+                    <div class="order-lg-1 col-lg-5 cashback-get_item-dest_img">
+                        <picture>
+                            <source media="(min-width: 1200px)" srcset="./assets/cashback/img/cashback-dest-desktop.png">
+                            <img src="./assets/cashback/img/cashback-dest.png" alt="Кэшбек exchangesumo">
+                        </picture>   
+                    </div>        
                 </div>
 
                 <div class="cashback-get_item cashback-get_item-complete d-flex next-pointer_ltr pointer_blue align-items-lg-center justify-content-lg-between">
@@ -1133,7 +1135,7 @@ const sendToGTM = obj => {
                         </div>
                     </div>
                     <div class="img-wrapper order-lg-1 col-lg-5">
-                        <img src="./assets/cashback/img/cashback-complete.svg" alt="Кэшбек exchangesumo">
+                        <img src="./assets/cashback/img/cashback-complete.svg" alt="Кэшбек exchangesumo" width="109" height="112">
                     </div>
                 </div>
 
@@ -1144,7 +1146,7 @@ const sendToGTM = obj => {
                         </div>
                     </div>
                     <div class="info-block_panel col-lg-5 order-lg-1 d-flex align-items-center justify-content-center mx-auto">
-                        <img class="w-100" src="./assets/cashback/img/cashback-site.png" alt="Кэшбек exchangesumo">
+                        <img src="./assets/cashback/img/cashback-site.png" alt="Кэшбек exchangesumo">
                     </div>
                 </div>
 
@@ -1203,7 +1205,7 @@ const sendToGTM = obj => {
             </div>
             <div class="cashback-miss_item d-flex flex-column flex-lg-row align-items-center">
                 <div class="col-lg-4">
-                    <img src="./assets/cashback/img/cashback-ex-miss.svg" alt="Кэшбек exchangesumo">
+                    <img src="./assets/cashback/img/cashback-ex-miss.svg" alt="Кэшбек exchangesumo" width="215" height="103">
                 </div>
                 <div class="cashback-miss_wrapper">
                     <h4 class="cashback-miss_subtitle">Вы перешли с другого мониторинга</h4>
@@ -1212,7 +1214,7 @@ const sendToGTM = obj => {
             </div>
             <div class="cashback-miss_item d-flex flex-column flex-lg-row align-items-center">
                 <div class="col-lg-4">
-                    <img src="./assets/cashback/img/cashback-ex-lose.svg" alt="Кэшбек exchangesumo">
+                    <img src="./assets/cashback/img/cashback-ex-lose.svg" alt="Кэшбек exchangesumo" width="99" height="108">
                 </div>
                 <div class="cashback-miss_wrapper">
                     <h4 class="cashback-miss_subtitle mt-4 mt-lg-0">Обменник ничего не заработал</h4>
@@ -1221,7 +1223,7 @@ const sendToGTM = obj => {
             </div>
             <div class="cashback-miss_item d-flex flex-column flex-lg-row align-items-center">
                 <div class="col-lg-4">
-                    <img src="./assets/cashback/img/cashback-ex-another.svg" alt="Кэшбек exchangesumo">
+                    <img src="./assets/cashback/img/cashback-ex-another.svg" alt="Кэшбек exchangesumo" width="114" height="114">
                 </div>
                 <div class="cashback-miss_wrapper">
                     <h4 class="cashback-miss_subtitle">Вы уже закреплены за другим мониторингом</h4>
@@ -1262,7 +1264,7 @@ const sendToGTM = obj => {
                     </a>
                 </div>
                 <div class="cashback-howto_tabs-body">
-                    <div id="cashback-howto-tab1" class="cashback-howto_tab">
+                    <div id="cashback-howto-tab1" class="cashback-howto_tab active">
                         <ol>
                             <li>В приложении Safari на Mac выберите меню «<b>Safari</b>» > «<b>Настройки</b>», затем нажмите «<b>Конфиденциальность</b>».</li>
                             <li>Нажмите «<b>Управлять данными веб-сайта</b>»</li>

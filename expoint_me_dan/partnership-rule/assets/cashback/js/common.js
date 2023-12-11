@@ -32,9 +32,9 @@ $(function () {
 
   $(".cashback-howto_tab.active").show();
 
-  new PerformanceObserver((entryList) => {
-    for (const entry of entryList.getEntries()) {
-      console.log("Layout shift:", entry);
-    }
-  }).observe({ type: "layout-shift", buffered: true });
+  // new PerformanceObserver((entryList) => {
+  //   for (const entry of entryList.getEntries()) {
+  //     console.log("Layout shift:", entry);
+  //   }
+  // }).observe({ type: "layout-shift", buffered: true });
 });
