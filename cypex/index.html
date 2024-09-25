@@ -82,7 +82,7 @@
 
 	<main>
 		<section class="keyPoints">
-			<div class="sectionTitle">
+			<div class="sectionTitle keyPoints__anim">
 				Key points
 			</div>
 			<div class="container">
@@ -90,7 +90,7 @@
 					<div class="col-12">
 						<div class="keyPoints__wrapper">
 						
-							<div class="infoItem">
+							<div class="infoItem keyPoints__anim">
 								<div class="infoItem__wrapper">
 									<div class="infoItem__title">
 										Contextual Insight
@@ -104,7 +104,7 @@
 								<img class="infoItem__photo" src="./img/main/info/info__item__1.svg" alt="Contextual Insight">
 							</div>
 
-							<div class="infoItem">
+							<div class="infoItem keyPoints__anim">
 								<div class="infoItem__wrapper">
 									<div class="infoItem__title">
 										Visual Investigations
@@ -118,7 +118,7 @@
 								<img class="infoItem__photo" src="./img/main/info/info__item__2.svg" alt="Contextual Insight">
 							</div>
 
-							<div class="infoItem">
+							<div class="infoItem keyPoints__anim">
 								<div class="infoItem__wrapper">
 									<div class="infoItem__title">
 										Threat Detection
@@ -137,7 +137,7 @@
 					<div class="col-12">
 						<div class="keyPoints__description">
 							<p>
-								<strong>The Cypex offering</strong> introduces a fresh and innovative perspective on IP addresses. While IP addresses are a fundamental component of the internet, traditional cyber solutions have struggled to provide a clear understanding of what each IP represents, its true location and context, and, most importantly, who or what is behind it.
+								<strong>The Cypex offering </strong> introduces a fresh and innovative perspective on IP addresses. While IP addresses are a fundamental component of the internet, traditional cyber solutions have struggled to provide a clear understanding of what each IP represents, its true location and context, and, most importantly, who or what is behind it.
 							</p>
 						</div>
 					</div>
@@ -146,80 +146,134 @@
 		</section>
 
 		<section class="products" id="products">
-			<div class="sectionTitle">
+			<div class="sectionTitle products__anim">
 				Our Products
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
 						<div class="productsTab">
-							<ul class="productsTab__nav">
+							<ul class="productsTab__nav products__anim">
 								<li><a class="productsTab__nav__item active" href="#" data-tab="tab1">RootIP</a></li>
 								<li><a class="productsTab__nav__item" href="#" data-tab="tab2">RedSight</a></li>
 								<li><a class="productsTab__nav__item" href="#" data-tab="tab3">ThreatLens</a></li>
 							</ul>
-							<div class="productsTab__body">
+							<div class="productsTab__body products__anim">
 								<!-- Tab 1 Content -->
 								<div class="productsTab__item active" id="tab1">
 									<div class="productsTab__content">
 
 										<label class="productsTab__toggle">
-											<input type="checkbox">
-											<div class="fSoc pos__1">For Soc team</div>
+											<input type="checkbox" class="toggleCheckbox">
+											<div class="fSoc pos__1" data-title>For Soc team</div>
 											<span class="toggle"></span>
 											<div class="fCiso pos__2">For Ciso</div>
 										</label>
 
-										<div class="productsTab__preTitle">
+										<div class="productsTab__preTitle changeable">
 											Real-Time Threat Detection with RootIP
 										</div>
-										<div class="productsTab__title">
+										<div class="productsTab__preTitle changeable hidden">
+											Real-Time Threat Detection with RootIP
+										</div>
+
+										<div class="productsTab__title changeable">
 											RootIP delivers real-time IP insights, enabling your SOC and SIEM products to detect and mitigate threats early
 										</div>
-										<div class="productsTab__description">
+										<div class="productsTab__title changeable hidden">
+											RootIP delivers real-time IP insights, enabling your SOC and SIEM products to detect and mitigate threats early
+										</div>
+
+										<div class="productsTab__description changeable">
 											<p>With centralized data, intuitive visualizations, and seamless API integration, your team can quickly interpret complex information, driving faster and more effective decision-making to stay ahead of cyber adversaries</p>
 										</div>
-										<a href="#" class="button fill button__lg">Read more</a>
+										<div class="productsTab__description changeable hidden">
+											<p>With centralized data, intuitive visualizations, and seamless API integration, your team can quickly interpret complex information, driving faster and more effective decision-making to stay ahead of cyber adversaries</p>
+										</div>
+
+										<a href="#" class="button fill button__lg changeable">Read more</a>
+										<a href="#" class="button fill button__lg changeable hidden">Read more</a>
 									</div>
-									<img src="./img/main/ourProducts__1.svg" alt="RootIP delivers real-time IP insights, enabling your SOC and SIEM products to detect and mitigate threats early" class="productsTab__photo">
+									<img src="./img/main/ourProducts__1_soc.svg" alt="RootIP delivers real-time IP insights, enabling your SOC and SIEM products to detect and mitigate threats early" class="productsTab__photo changeable">
+									<img src="./img/main/ourProducts__1_ciso.svg" alt="RootIP delivers real-time IP insights, enabling your SOC and SIEM products to detect and mitigate threats early" class="productsTab__photo changeable hidden">
 								</div>
 						
 								<!-- Tab 2 Content -->
 								<div class="productsTab__item" id="tab2">
 									<div class="productsTab__content">
+
 										<label class="productsTab__toggle">
-											<input type="checkbox">
-											<div class="fSoc pos__1">For Soc team</div>
+											<input type="checkbox" class="toggleCheckbox">
+											<div class="fSoc pos__1" data-title>For Soc team</div>
 											<span class="toggle"></span>
-											<div class="fCiso pos__2">For Ciso</div>
+											<div class="fCiso pos__2">Threat team</div>
 										</label>
-										<div class="productsTab__preTitle">Real-Time Threat Detection with RedSight</div>
-										<div class="productsTab__title">RedSight provides unparalleled visibility...</div>
-										<div class="productsTab__description">
-											<p>RedSight offers comprehensive tools for threat analysis...</p>
+
+										<div class="productsTab__preTitle changeable">
+											Comprehensive Investigation with RedSight
 										</div>
-										<a href="#" class="button fill button__lg">Read more</a>
+										<div class="productsTab__preTitle changeable hidden">
+											Strategic Threat Intelligence with ThreatLens
+										</div>
+
+										<div class="productsTab__title changeable">
+											Equip your SOC analysts with RedSight, an advanced platform offering deep investigative insights into IP activities
+										</div>
+										<div class="productsTab__title changeable hidden">
+											Harness the power of ThreatLens for in-depth analysis of online anonymity networks
+										</div>
+
+										<div class="productsTab__description changeable">
+											<p>From tracking hacker infrastructure to uncovering hidden tactics, RedSight integrates link analysis, an intuitive UI, and a smooth investigation flow to provide the detailed intelligence needed for informed, rapid decisions</p>
+										</div>
+										<div class="productsTab__description changeable hidden">
+											<p>Gain a strategic edge by understanding the complete range of threats targeting your organization, from cybercriminals to emerging dangers. With actionable insights from ThreatLens, your threat intelligence team can implement more effective and proactive security measures.</p>
+										</div>
+
+										<a href="#" class="button fill button__lg changeable">Read more</a>
+										<a href="#" class="button fill button__lg changeable hidden">Read more</a>
 									</div>
-									<img src="./img/main/ourProducts__1.svg" alt="RedSight" class="productsTab__photo">
+									<img src="./img/main/ourProducts__2_soc.svg" alt="RootIP delivers real-time IP insights, enabling your SOC and SIEM products to detect and mitigate threats early" class="productsTab__photo changeable">
+									<img src="./img/main/ourProducts__2_threat.svg" alt="RootIP delivers real-time IP insights, enabling your SOC and SIEM products to detect and mitigate threats early" class="productsTab__photo hidden changeable">
 								</div>
 						
 								<!-- Tab 3 Content -->
 								<div class="productsTab__item" id="tab3">
 									<div class="productsTab__content">
+
 										<label class="productsTab__toggle">
-											<input type="checkbox">
-											<div class="fSoc pos__1">For Soc team</div>
+											<input type="checkbox" class="toggleCheckbox">
+											<div class="fSoc pos__1" data-title>For Soc team</div>
 											<span class="toggle"></span>
 											<div class="fCiso pos__2">For Ciso</div>
 										</label>
-										<div class="productsTab__preTitle">Advanced Analysis with ThreatLens</div>
-										<div class="productsTab__title">ThreatLens enables proactive threat management...</div>
-										<div class="productsTab__description">
-											<p>Stay ahead of threats with predictive analysis tools...</p>
+
+										<div class="productsTab__preTitle changeable">
+											Gain a strategic edge with ThreatLens
 										</div>
-										<a href="#" class="button fill button__lg">Read more</a>
+										<div class="productsTab__preTitle changeable hidden">
+											Anonymity Network Monitoring with ThreatLens
+										</div>
+
+										<div class="productsTab__title changeable">
+											ThreatLens offers deep analysis of online anonymity networks and advanced threat detection, featuring automation that saves resources
+										</div>
+										<div class="productsTab__title changeable hidden">
+											ThreatLens allows you to monitor and analyze activities within anonymity networks, uncovering malicious behaviors that conventional tools often miss
+										</div>
+
+										<div class="productsTab__description changeable">
+											<p>Understand the full spectrum of threats, from cybercriminals to emerging dangers, and implement more effective, proactive security measures with actionable insights from ThreatLens, seamlessly integrating into your existing systems</p>
+										</div>
+										<div class="productsTab__description changeable hidden">
+											<p>It provides threat intelligence teams with actionable data, enabling them to track and mitigate emerging threats in real-time.</p>
+										</div>
+
+										<a href="#" class="button fill button__lg changeable">Read more</a>
+										<a href="#" class="button fill button__lg changeable hidden">Read more</a>
 									</div>
-									<img src="./img/main/ourProducts__1.svg" alt="ThreatLens" class="productsTab__photo">
+									<img src="./img/main/ourProducts__3_ciso.svg" alt="RootIP delivers real-time IP insights, enabling your SOC and SIEM products to detect and mitigate threats early" class="productsTab__photo changeable">
+									<img src="./img/main/ourProducts__3_threat.svg" alt="RootIP delivers real-time IP insights, enabling your SOC and SIEM products to detect and mitigate threats early" class="productsTab__photo changeable hidden">
 								</div>
 							</div>
 						</div>
@@ -233,7 +287,7 @@
 				Main Strengths of Our Company
 			</div>
 			<div class="mainStrengths__wrapper">
-				<div class="mainStrengths__item">
+				<div class="mainStrengths__item mainStrengths__anim">
 					<div class="mainStrengths__icon">
 						<img src="./img/main/strengths__1.svg" alt="Clear IP Understanding  ">
 					</div>
@@ -245,7 +299,7 @@
 					</div>
 				</div>
 
-				<div class="mainStrengths__item">
+				<div class="mainStrengths__item mainStrengths__anim">
 					<div class="mainStrengths__icon">
 						<img src="./img/main/strengths__2.svg" alt="Clear IP Understanding  ">
 					</div>
@@ -257,7 +311,7 @@
 					</div>
 				</div>
 
-				<div class="mainStrengths__item">
+				<div class="mainStrengths__item mainStrengths__anim">
 					<div class="mainStrengths__icon">
 						<img src="./img/main/strengths__3.svg" alt="Clear IP Understanding  ">
 					</div>
@@ -276,10 +330,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-12">
-						<div class="sectionTitle">
+						<div class="sectionTitle callback__anim">
 							Curious to learn more?
 						</div>
-						<div class="sectionTitle__description">
+						<div class="sectionTitle__description callback__anim">
 							Submit your request, and we'll gladly provide you with a personalized product presentation
 						</div>
 					</div>
@@ -289,7 +343,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<form class="mainForm">
+							<form class="mainForm callback__anim">
 								<label>
 									<input type="text" name="name" placeholder="Name" required>
 									<span class="error-message">Error Text</span>
@@ -305,6 +359,15 @@
 								</label>
 								<button class="button fill">Submit</button>
 							</form>
+							<div class="thanksWindow">
+								<img src="./img/main/thanksIcon.svg" alt="Thank you for your request" class="thanksWindow__icon">
+								<div class="thanksWindow__title">
+									Thank you for your request.
+								</div>
+								<div class="thanksWindow__description">
+									We have already sent our personalized presentation to your email.
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -318,7 +381,7 @@
 				<div class="col-lg-4 order-lg-1 order-2">
 					<div class="footer__copyWrapper">
 						<div class="footer__logo">
-							<img src="./img/main/footer__logo.svg" alt="cypex">
+							<img src="./img/main/mainLogo.svg" alt="cypex">
 						</div>
 						<div class="footer__copy">
 							© 2024. All Rights Reserved – Cypex.
@@ -360,6 +423,9 @@
 		</div>
 	</footer>
 
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+	<script src="./libs/gsap/CSSRulePlugin.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 	<script src="./js/scripts.min.js"></script>
 </body>
 </html>
