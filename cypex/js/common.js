@@ -280,19 +280,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
 
-      const stepsItems = document.querySelectorAll('.caseStudies__stepsItem');
+      // const stepsItems = document.querySelectorAll('.caseStudies__stepsItem');
 
-      stepsItems.forEach((item) => {
-        gsap.to(item, {
-          scrollTrigger: {
-            trigger: item,
-            start: "top top",
-            end: "center 50%",
-            toggleClass: "active",
-            markers: false,
-          }
-        });
-      });
+      // stepsItems.forEach((item) => {
+      //   gsap.to(item, {
+      //     scrollTrigger: {
+      //       trigger: item,
+      //       start: "top top",
+      //       end: "center 50%",
+      //       toggleClass: "active",
+      //       markers: false,
+      //     }
+      //   });
+      // });
 
     }
 
