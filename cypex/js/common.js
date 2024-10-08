@@ -222,28 +222,28 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     }
 
-    const cases = document.querySelector('#cases');
+    // const cases = document.querySelector('#cases');
 
-    if (cases) {
-      const casesItems = document.querySelectorAll('.cases__item');
+    // if (cases) {
+    //   const casesItems = document.querySelectorAll('.cases__item');
 
-      gsap.from(casesItems, {
-        scrollTrigger: {
-          trigger: '.cases__wrapper',
-          start: "top 90%",
-          end: "bottom 80%",
-          toggleActions: "play none none none",
-          scrub: true,
-        },
-        opacity: 0,
-        y: 200,
-        scale: 1.5,
-        filter: 'blur(10px)',
-        duration: 1.1,
-        stagger: 0.4,
-        ease: "power2.out"
-      });
-    }
+    //   gsap.from(casesItems, {
+    //     scrollTrigger: {
+    //       trigger: '.cases__wrapper',
+    //       start: "top 90%",
+    //       end: "bottom 80%",
+    //       toggleActions: "play none none none",
+    //       scrub: true,
+    //     },
+    //     opacity: 0,
+    //     y: 200,
+    //     scale: 1.5,
+    //     filter: 'blur(10px)',
+    //     duration: 1.1,
+    //     stagger: 0.4,
+    //     ease: "power2.out"
+    //   });
+    // }
 
     const caseStudies = document.querySelector('#caseStudies');
 
@@ -280,19 +280,19 @@ document.addEventListener("DOMContentLoaded", () => {
         });
       }
 
-      // const stepsItems = document.querySelectorAll('.caseStudies__stepsItem');
+      const stepsItems = document.querySelectorAll('.caseStudies__stepsItem');
 
-      // stepsItems.forEach((item) => {
-      //   gsap.to(item, {
-      //     scrollTrigger: {
-      //       trigger: item,
-      //       start: "top top",
-      //       end: "center 50%",
-      //       toggleClass: "active",
-      //       markers: false,
-      //     }
-      //   });
-      // });
+      stepsItems.forEach((item) => {
+        gsap.to(item, {
+          scrollTrigger: {
+            trigger: item,
+            start: "top top",
+            end: "center 50%",
+            toggleClass: "active",
+            markers: false,
+          }
+        });
+      });
 
     }
 
