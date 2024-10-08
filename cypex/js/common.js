@@ -286,8 +286,8 @@ document.addEventListener("DOMContentLoaded", () => {
         gsap.to(item, {
           scrollTrigger: {
             trigger: item,
-            start: "top top",
-            end: "center 50%",
+            start: "top 90%",
+            end: "center 40%",
             toggleClass: "active",
             markers: false,
           }
