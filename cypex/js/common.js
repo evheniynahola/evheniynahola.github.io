@@ -1,5 +1,23 @@
 document.addEventListener("DOMContentLoaded", () => {
 
+  const swiperInfo = new Swiper(".keyPoints__wrapper", {
+    direction: "horizontal",
+    loop: false,
+    breakpoints: {
+      992: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+      },
+      0: {
+        slidesPerView: 1.1,
+        spaceBetween: 16,
+      },
+    },
+    pagination: {
+      el: ".swiper-pagination",
+    },
+  });
+
   gsap.registerPlugin(ScrollTrigger);
   gsap.registerPlugin(CSSRulePlugin);
 

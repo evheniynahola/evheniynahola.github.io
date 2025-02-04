@@ -34,7 +34,7 @@
 <body id="homePage" class="homePage">
 
 	<header class="header">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row">
 				<div class="col-12">
 					<div class="header__topLine">
@@ -62,75 +62,95 @@
 			<div class="row">
 				<div class="col-12">
 					<div class="header__body">
-						<div class="infoPanel"></div>
+						<!-- UPD 03.02.25 -->
+						<!-- <div class="infoPanel"></div> -->
+						<!-- UPD 03.02.25 -->
 						<div class="header__title">
 							Unmask the invisible: redefining cyber threat intelligence
 						</div>
 						<div class="header__description">
 							<p>Empower your security operations with unparalleled visibility into hacker strategies and infrastructure. Stay ahead of emerging threats with data-driven insights from the red side</p>
 						</div>
-						<div class="btnGroup">
+						<!-- UPD 03.02.25 -->
+						<!-- <div class="btnGroup">
 							<a href="#products" class="button fill">How can we help you</a>
 							<a href="#mainStrengths" class="button blur">The strenghts of cypex</a>
-						</div>
+						</div> -->
+						<!-- UPD 03.02.25 -->
 					</div>
 				</div>
 			</div>
 		</div>
 	</header>
-
+	<!-- UPD 03.02.25 -->
 	<section class="keyPoints">
 		<div class="sectionTitle keyPoints__anim">
-			Key points
+			The Cypex unique value offering
 		</div>
 		<div class="container">
 			<div class="row">
 				<div class="col-12">
-					<div class="keyPoints__wrapper">
-					
-						<div class="infoItem keyPoints__anim">
-							<div class="infoItem__wrapper">
-								<div class="infoItem__title">
-									Contextual Insight
+
+						<div class="keyPoints__wrapper swiper">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide infoItem keyPoints__anim">
+									<div class="infoItem__wrapper">
+										<div class="infoItem__title">
+											Predictive threat intelligence
+										</div>
+										<div class="infoItem__body">
+											<p>
+												While others wait for IOCs to be published, Cypex predicts threats before they surface via constant, real-time global IP infrastructure monitoring, propriety data and Al-driven analysis
+											</p>
+										</div>
+									</div>
+									<img class="infoItem__photo" src="./img/main/info/info__item__1.svg" alt="Contextual Insight">
 								</div>
-								<div class="infoItem__body">
-									<p>
-										Cypex provides context to different attributes of IOCs and IP addresses
-									</p>
+
+								<div class="swiper-slide infoItem keyPoints__anim">
+									<div class="infoItem__wrapper">
+										<div class="infoItem__title">
+											Intelligence despite anonymization
+										</div>
+										<div class="infoItem__body">
+											<p>
+												Cypex identifies the fingerprints of malicious threats being prepared regardless to the actor’s utilized infrastructure or anonymization services (VPN, VPS, Proxies, Data centres, etc.)
+											</p>
+										</div>
+									</div>
+									<img class="infoItem__photo" src="./img/main/info/info__item__2.svg" alt="Contextual Insight">
+								</div>
+		
+								<div class="swiper-slide infoItem keyPoints__anim">
+									<div class="infoItem__wrapper">
+										<div class="infoItem__title">
+											TComplex CTI solution, made easy
+										</div>
+										<div class="infoItem__body">
+											<p>
+												Cypex myriad of IP attributes, analysis automation and intuitive design reduces the legacy dependency on fusing multiple, fragmented and costly tools and the expertise required to operate them
+											</p>
+										</div>
+									</div>
+									<img class="infoItem__photo" src="./img/main/info/info__item__3.svg" alt="Contextual Insight">
+								</div>
+		
+								<div class="swiper-slide infoItem keyPoints__anim">
+									<div class="infoItem__wrapper">
+										<div class="infoItem__title">
+											One solution for varied CTI tasks
+										</div>
+										<div class="infoItem__body">
+											<p>
+												Cypex supports the SOC & CISO diversified tasks with predictive threat detection, SOAR integration, real-time defence automation, IOC analysis and security protocol design insights
+											</p>
+										</div>
+									</div>
+									<img class="infoItem__photo" src="./img/main/info/info__item__4.svg" alt="Contextual Insight">
 								</div>
 							</div>
-							<img class="infoItem__photo" src="./img/main/info/info__item__1.svg" alt="Contextual Insight">
+							<div class="swiper-pagination"></div>
 						</div>
-
-						<div class="infoItem keyPoints__anim">
-							<div class="infoItem__wrapper">
-								<div class="infoItem__title">
-									Visual Investigations
-								</div>
-								<div class="infoItem__body">
-									<p>
-										Cypex uses visualization to highlight connections and enhance investigations
-									</p>
-								</div>
-							</div>
-							<img class="infoItem__photo" src="./img/main/info/info__item__2.svg" alt="Contextual Insight">
-						</div>
-
-						<div class="infoItem keyPoints__anim">
-							<div class="infoItem__wrapper">
-								<div class="infoItem__title">
-									Threat Detection
-								</div>
-								<div class="infoItem__body">
-									<p>
-										Cypex leverages unique data sources to identify malicious activities before they become active
-									</p>
-								</div>
-							</div>
-							<img class="infoItem__photo" src="./img/main/info/info__item__3.svg" alt="Contextual Insight">
-						</div>
-
-					</div>
 				</div>
 				<div class="col-12">
 					<div class="keyPoints__description">
@@ -142,9 +162,11 @@
 			</div>
 		</div>
 	</section>
+	<!-- UPD 03.02.25 -->
 
 	<main>
-		<section class="products" id="products">
+		<!-- UPD 03.02.25 -->
+		<!-- <section class="products" id="products">
 			<div class="sectionTitle products__anim">
 				Our Products
 			</div>
@@ -158,7 +180,6 @@
 								<li><a class="productsTab__nav__item" href="#" data-tab="tab3">ThreatLens</a></li>
 							</ul>
 							<div class="productsTab__body products__anim">
-								<!-- Tab 1 Content -->
 								<div class="productsTab__item active" id="tab1">
 									<div class="productsTab__content">
 
@@ -197,7 +218,6 @@
 									<img src="./img/main/ourProducts__1_ciso.svg" alt="RootIP delivers real-time IP insights, enabling your SOC and SIEM products to detect and mitigate threats early" class="productsTab__photo changeable hidden">
 								</div>
 						
-								<!-- Tab 2 Content -->
 								<div class="productsTab__item" id="tab2">
 									<div class="productsTab__content">
 
@@ -235,8 +255,7 @@
 									<img src="./img/main/ourProducts__2_soc.svg" alt="RootIP delivers real-time IP insights, enabling your SOC and SIEM products to detect and mitigate threats early" class="productsTab__photo changeable">
 									<img src="./img/main/ourProducts__2_threat.svg" alt="RootIP delivers real-time IP insights, enabling your SOC and SIEM products to detect and mitigate threats early" class="productsTab__photo hidden changeable">
 								</div>
-						
-								<!-- Tab 3 Content -->
+
 								<div class="productsTab__item" id="tab3">
 									<div class="productsTab__content">
 
@@ -279,51 +298,81 @@
 					</div>
 				</div>
 			</div>
-		</section>
+		</section> -->
+		<!-- UPD 03.02.25 -->
 
+		<!-- UPD 03.02.25 -->
 		<section class="mainStrengths" id="mainStrengths">
 			<div class="sectionTitle">
 				Main Strengths of Our Company
 			</div>
 			<div class="mainStrengths__wrapper">
-				<div class="mainStrengths__item mainStrengths__anim">
-					<div class="mainStrengths__icon">
-						<img src="./img/main/strengths__1.svg" alt="Clear IP Understanding  ">
-					</div>
-					<div class="mainStrengths__title">
-						Clear IP Understanding  
-					</div>
-					<div class="mainStrengths__content">
-						Cypex provides cyber researchers with comprehensive IP insights, revealing true location, context, and the entities behind it—something our competitors struggle to offer.
-					</div>
-				</div>
 
-				<div class="mainStrengths__item mainStrengths__anim">
-					<div class="mainStrengths__icon">
-						<img src="./img/main/strengths__2.svg" alt="Clear IP Understanding  ">
+				<div class="mainStrengths__row">
+					<div class="mainStrengths__item mainStrengths__anim">
+						<div class="mainStrengths__icon">
+							<img src="./img/main/strengths__1.svg" alt="Clear IP Understanding  ">
+						</div>
+						<div class="mainStrengths__title">
+							Clear IP Understanding  
+						</div>
+						<div class="mainStrengths__content">
+							Cypex provides cyber researchers with comprehensive IP insights, revealing true location, context, and the entities behind it—something our competitors struggle to offer.
+						</div>
 					</div>
-					<div class="mainStrengths__title">
-						Time-Saving All-in-One Solution 
+	
+					<div class="mainStrengths__item mainStrengths__anim">
+						<div class="mainStrengths__icon">
+							<img src="./img/main/strengths__2.svg" alt="Clear IP Understanding  ">
+						</div>
+						<div class="mainStrengths__title">
+							Time-Saving All-in-One Solution 
+						</div>
+						<div class="mainStrengths__content">
+							Unlike other tools that require switching between platforms, Cypex consolidates all essential threat intelligence data in one place, streamlining and simplifying cyber investigations.
+						</div>
 					</div>
-					<div class="mainStrengths__content">
-						Unlike other tools that require switching between platforms, Cypex consolidates all essential threat intelligence data in one place, streamlining and simplifying cyber investigations.
+	
+					<div class="mainStrengths__item mainStrengths__anim">
+						<div class="mainStrengths__icon">
+							<img src="./img/main/strengths__3.svg" alt="Clear IP Understanding  ">
+						</div>
+						<div class="mainStrengths__title">
+							Effective Data Visualization  
+						</div>
+						<div class="mainStrengths__content">
+							Cypex eliminates data overload by summarizing critical information, making it accessible for both beginners and experienced analysts. While others overwhelm, Cypex empowers users to "find the needle in the haystack" efficiently.
+						</div>
 					</div>
-				</div>
-
-				<div class="mainStrengths__item mainStrengths__anim">
-					<div class="mainStrengths__icon">
-						<img src="./img/main/strengths__3.svg" alt="Clear IP Understanding  ">
+	
+					<div class="mainStrengths__item mainStrengths__anim">
+						<div class="mainStrengths__icon">
+							<img src="./img/main/strengths__4.svg" alt="Clear IP Understanding  ">
+						</div>
+						<div class="mainStrengths__title">
+							Dynamic Visualizations 
+						</div>
+						<div class="mainStrengths__content">
+							Explore how an IP's connections and attributes change over time through advanced visualizations, uncovering hidden relationships and patterns
+						</div>
 					</div>
-					<div class="mainStrengths__title">
-						Effective Data Visualization
-					</div>
-					<div class="mainStrengths__content">
-						Cypex eliminates data overload by summarizing critical information, making it accessible for both beginners and experienced analysts. While others overwhelm, Cypex empowers users to "find the needle in the haystack" efficiently.
-					</div>
+	
+					<div class="mainStrengths__item mainStrengths__anim">
+						<div class="mainStrengths__icon">
+							<img src="./img/main/strengths__5.svg" alt="Clear IP Understanding  ">
+						</div>
+						<div class="mainStrengths__title">
+							Scalable and User-Friendly Platform
+						</div>
+						<div class="mainStrengths__content">
+							Designed for specific IP investigations and large-scale threat monitoring, Cypex scales effortlessly to meet your needs
+						</div>
+					</div> 
 				</div>
 				
 			</div>
 		</section>
+		<!-- UPD 03.02.25 -->
 
 		<section class="callback">
 			<div class="container">
@@ -425,6 +474,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 	<script src="./libs/gsap/CSSRulePlugin.min.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+	<script src="./libs/swiper/swiper-bundle.min.js"></script>
 	<script src="./js/scripts.min.js"></script>
 </body>
 </html>
